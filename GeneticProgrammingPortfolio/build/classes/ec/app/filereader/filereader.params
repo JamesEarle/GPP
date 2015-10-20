@@ -16,17 +16,17 @@ gp.fs.0.name = f0
 # We have five functions in the function set.  They are:
 # nc0 = 0 children, or terminals. nc2 likewise means 2 children.
 gp.fs.0.size = 5
-gp.fs.0.func.0 = ec.app.tutorial4.X
+gp.fs.0.func.0 = ec.app.filereader.X
 gp.fs.0.func.0.nc = nc0
-gp.fs.0.func.1 = ec.app.tutorial4.Y
+gp.fs.0.func.1 = ec.app.filereader.Y
 gp.fs.0.func.1.nc = nc0
-gp.fs.0.func.2 = ec.app.tutorial4.Add
+gp.fs.0.func.2 = ec.app.filereader.Add
 gp.fs.0.func.2.nc = nc2
-gp.fs.0.func.3 = ec.app.tutorial4.Sub
+gp.fs.0.func.3 = ec.app.filereader.Sub
 gp.fs.0.func.3.nc = nc2
-gp.fs.0.func.4 = ec.app.tutorial4.Mul
+gp.fs.0.func.4 = ec.app.filereader.Mul
 gp.fs.0.func.4.nc = nc2
 
-eval.problem = ec.app.tutorial4.MultiValuedRegression
-eval.problem.data = ec.app.tutorial4.DoubleData
+eval.problem = ec.app.filereader.FileInputRegression
+eval.problem.data = ec.app.filereader.DoubleData
 

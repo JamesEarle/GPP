@@ -47,7 +47,11 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
                 currentX = state.random[threadnum].nextDouble();
                 currentY = state.random[threadnum].nextDouble();
                 
-                expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
+                //new: 
+                expectedResult = Math.pow(Math.PI, currentX * currentX * currentY + currentX * currentY + currentY);
+                // old: 
+                
+                //expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
                 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
 

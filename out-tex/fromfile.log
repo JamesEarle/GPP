@@ -1,0 +1,333 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.5)  20 OCT 2015 02:37
+entering extended mode
+**fromfile.tex
+(D:\Development\GitHub\GPP\out-tex\fromfile.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\James Earle\AppData\Roaming\MiKTeX\2.9\tex\latex\eepic\epic.sty"
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count87
+\d@lta=\count88
+\@delta=\dimen103
+\@@delta=\dimen104
+\@gridcnt=\count89
+\@joinkind=\count90
+\@dotgap=\dimen105
+\@ddotgap=\dimen106
+\@x@diff=\count91
+\@y@diff=\count92
+\x@diff=\dimen107
+\y@diff=\dimen108
+\@dotbox=\box26
+\num@segments=\count93
+\num@segmentsi=\count94
+\@datafile=\read1
+)
+("C:\Users\James Earle\AppData\Roaming\MiKTeX\2.9\tex\latex\ecltree\ecltree.sty
+"
+ECL Tree graph macro by isozaki, Nov. 12, 1990 + 2e FIX
+\@BundleWidth=\dimen109
+\@BundleDepth=\dimen110
+\@BundleHeight=\dimen111
+\@NodeBox=\box27
+\GapDepth=\dimen112
+\GapWidth=\dimen113
+\EdgeLabelSep=\dimen114
+)
+("C:\Users\James Earle\AppData\Roaming\MiKTeX\2.9\tex\latex\fancybox\fancybox.s
+ty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen115
+\@Sbox=\box29
+\do@VerbBox=\toks14
+\the@fancyput=\toks15
+\this@fancyput=\toks16
+\EndVerbatimTokens=\toks17
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+)))
+(D:\Development\GitHub\GPP\out-tex\fromfile.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+("C:\Users\James Earle\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mki
+i"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen116
+\scratchbox=\box30
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen117
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks19
+)
+Overfull \hbox (75.79317pt too wide) in paragraph at lines 24--31
+[]\OT1/cmr/m/n/10 Generation: 0 Best In-di-vid-ual: Sub-pop-u-la-tion 0: Eval-u
+-ated: true Fit-ness: Stan-dard-ized=1.6083804769051422 Ad-justed=0.38337965218
+42187
+ []
+
+
+Overfull \hbox (75.79317pt too wide) in paragraph at lines 32--39
+[]\OT1/cmr/m/n/10 Generation: 1 Best In-di-vid-ual: Sub-pop-u-la-tion 0: Eval-u
+-ated: true Fit-ness: Stan-dard-ized=1.1894692172579293 Ad-justed=0.45673170105
+23631
+ []
+
+
+Overfull \hbox (75.79317pt too wide) in paragraph at lines 40--47
+[]\OT1/cmr/m/n/10 Generation: 2 Best In-di-vid-ual: Sub-pop-u-la-tion 0: Eval-u
+-ated: true Fit-ness: Stan-dard-ized=0.9504098752398453 Ad-justed=0.51271274448
+25044
+ []
+
+[1
+
+
+{C:/Users/James Earle/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (75.79317pt too wide) in paragraph at lines 48--55
+[]\OT1/cmr/m/n/10 Generation: 3 Best In-di-vid-ual: Sub-pop-u-la-tion 0: Eval-u
+-ated: true Fit-ness: Stan-dard-ized=0.5433957839995499 Ad-justed=0.64792194611
+84504
+ []
+
+[2]
+Overfull \hbox (75.79317pt too wide) in paragraph at lines 64--71
+[]\OT1/cmr/m/n/10 Generation: 5 Best In-di-vid-ual: Sub-pop-u-la-tion 0: Eval-u
+-ated: true Fit-ness: Stan-dard-ized=0.6736174469884916 Ad-justed=0.59750811142
+61809
+ []
+
+[3]
+Overfull \hbox (670.5392pt too wide) in paragraph at lines 74--81
+\OT1/cmr/m/n/10 justed=0.7497664385067779 Hits=4 Tree 0: [] 
+ []
+
+[4]
+Overfull \vbox (140.1488pt too high) has occurred while \output is active []
+
+
+[5]
+Overfull \hbox (890.5281pt too wide) in paragraph at lines 84--91
+\OT1/cmr/m/n/10 justed=0.7741786255107168 Hits=5 Tree 0: [] 
+ []
+
+[6]
+Overfull \vbox (248.82355pt too high) has occurred while \output is active []
+
+
+[7]
+Overfull \hbox (44.44589pt too wide) in paragraph at lines 92--97
+[]\OT1/cmr/m/n/10 Best In-di-vid-ual of Run: Sub-pop-u-la-tion 0: Eval-u-ated: 
+true Fit-ness: Stan-dard-ized=0.2912804613637645 Ad-justed=0.7744250996749897
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 97.
+! Undefined control sequence.
+\@chunk ...tected@edef \@EdgeLabels {\@EdgeLabels 
+                                                  {#1}}\setbox \@NodeBox =\v...
+l.97 ...\chunk{\gpbox{}}\end{bundle}}\end{bundle}}
+                                                  \chunk{\begin{bundle}{\gpb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@chunk ...tected@edef \@HandleList {\@HandleList 
+                                                  ,\expandafter \@RemoveDim ...
+l.97 ...\chunk{\gpbox{}}\end{bundle}}\end{bundle}}
+                                                  \chunk{\begin{bundle}{\gpb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\endbundle ...Box =\hbox {\vbox {\null \@TopLabel 
+                                                  }}\advance \@BundleHeight ...
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\endbundle ...eBox =\hbox to \z@ {\hss \@TopLabel 
+                                                  \hss }\hskip -\@BundleWidt...
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \@EdgeLabelsY 
+                         
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \@EdgeLabelsY 
+                         
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+\@DrawBundle ... \@NodeBox }\end {picture}\egroup 
+                                                  
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{[} on input line 97 ended by \end{bundle}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.97 ...le}}\end{bundle}}\end{bundle}}\end{bundle}
+                                                  
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (1155.43127pt too wide) detected at line 97
+\OML/cmm/m/it/10 scale \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5][
+][][] []  | []
+ []
+
+[8]
+Overfull \vbox (244.59863pt too high) has occurred while \output is active []
+
+
+[9] [10] (D:\Development\GitHub\GPP\out-tex\fromfile.aux) ) 
+Here is how much of TeX's memory you used:
+ 1329 strings out of 493921
+ 17338 string characters out of 3147265
+ 284070 words of memory out of 3000000
+ 4667 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 40i,51n,54p,5084b,825s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/latxfont/lcirclew.pfb>
+Output written on fromfile.pdf (10 pages, 168552 bytes).
+PDF statistics:
+ 47 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

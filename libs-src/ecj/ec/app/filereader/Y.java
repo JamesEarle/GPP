@@ -5,14 +5,14 @@
 */
 
 
-package ec.app.tutorial4;
+package ec.app.filereader;
 import ec.*;
 import ec.gp.*;
 import ec.util.*;
 
-public class Add extends GPNode
+public class Y extends GPNode
     {
-    public String toString() { return "+"; }
+    public String toString() { return "y"; }
 
 /*
   public void checkConstraints(final EvolutionState state,
@@ -21,16 +21,14 @@ public class Add extends GPNode
   final Parameter individualBase)
   {
   super.checkConstraints(state,tree,typicalIndividual,individualBase);
-  if (children.length!=2)
+  if (children.length!=0)
   state.output.error("Incorrect number of children for node " + 
   toStringForError() + " at " +
   individualBase);
   }
 */
-    @Override
-    public int expectedChildren() { return 2; }
+    public int expectedChildren() { return 0; }
 
-    @Override
     public void eval(final EvolutionState state,
         final int thread,
         final GPData input,
@@ -38,14 +36,8 @@ public class Add extends GPNode
         final GPIndividual individual,
         final Problem problem)
         {
-        double result;
         DoubleData rd = ((DoubleData)(input));
-
-        children[0].eval(state,thread,input,stack,individual,problem);
-        result = rd.x;
-
-        children[1].eval(state,thread,input,stack,individual,problem);
-        rd.x = result + rd.x;
+        rd.x = ((FileInputRegression)problem).currentY;
         }
     }
 
