@@ -1,0 +1,61 @@
+# Copyright 2009-2010 Jon Klein
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# A sample PushGP file for a simple test symbolic regression problem.
+# In this demo, the system solves the equation y = 12x^2 + 5, using
+# integer symbolic regression
+#
+# Jon Klein <jk [at] spiderland.org>
+# 06/14/2008
+#
+# Changes by Tom Helmuth <thelmuth (at) cs.umass.edu>
+# 06/05/2010
+#
+
+### Setup some standard GP parameters
+
+tournament-size         = 7
+trivial-geography-radius= 10
+max-points-in-program	= 100
+mutation-mode		= fair
+fair-mutation-range     = .5
+
+population-size 	= 2000
+mutation-percent	= 10
+crossover-percent	= 75
+simplification-percent	= 5
+max-generations		= 200
+max-random-code-size	= 40
+
+execution-limit		= 80
+
+reproduction-simplifications = 25
+report-simplifications	= 100
+final-simplifications	= 1000
+
+target-function-string = y = 12x^2 + 5
+
+
+### The problem class determines how test cases are setup and
+### how fitness scores are computed.  The IntSymbolicRegression
+### class uses a set of int inputs and a single output.
+
+problem-class		= org.spiderland.Psh.ProbClass.IntSymbolicRegression
+
+#This test case is for y = 12x^2 + 5
+test-cases		= ( ( 1 17 ) ( 2 53 ) ( 3 113 ) ( 4 197 ) ( 5 305 ) )
+
+#Instruction set for y = 12x^2 + 5
+instruction-set = (registered.integer registered.input input.makeinputs1)

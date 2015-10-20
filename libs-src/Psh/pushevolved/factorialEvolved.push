@@ -1,0 +1,3 @@
+((((exec.do*count integer.swap exec.= (boolean.flush boolean.dup) exec.do*count) integer.+)) (integer.stackdepth ((integer.dup integer.* integer.swap integer.+ integer.*) integer.*) (integer.* integer.* exec.pop boolean.dup integer.+)))
+200
+8

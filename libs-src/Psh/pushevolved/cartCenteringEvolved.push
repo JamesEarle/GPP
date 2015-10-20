@@ -1,0 +1,3 @@
+(float.abs input.in1 float.* float.neg float.<)
+150
+0.884483851852 0.463930712756
