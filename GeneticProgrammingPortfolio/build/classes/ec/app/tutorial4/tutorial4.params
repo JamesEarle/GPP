@@ -14,6 +14,7 @@ gp.fs.0 = ec.gp.GPFunctionSet
 gp.fs.0.name = f0
 
 # We have five functions in the function set.  They are:
+# nc0 = 0 children, or terminals. nc2 likewise means 2 children.
 gp.fs.0.size = 5
 gp.fs.0.func.0 = ec.app.tutorial4.X
 gp.fs.0.func.0.nc = nc0

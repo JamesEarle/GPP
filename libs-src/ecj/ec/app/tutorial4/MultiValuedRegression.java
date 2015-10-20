@@ -12,8 +12,7 @@ import ec.gp.*;
 import ec.gp.koza.*;
 import ec.simple.*;
 
-public class MultiValuedRegression extends GPProblem implements SimpleProblemForm
-    {
+public class MultiValuedRegression extends GPProblem implements SimpleProblemForm {
     private static final long serialVersionUID = 1;
 
     public double currentX;
@@ -43,25 +42,30 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
             double sum = 0.0;
             double expectedResult;
             double result;
-            for (int y=0;y<10;y++)
-                {
+            
+            for (int y=0;y<10;y++) {
                 currentX = state.random[threadnum].nextDouble();
                 currentY = state.random[threadnum].nextDouble();
-                expectedResult = currentX*currentX*currentY + currentX*currentY + currentY;
-                ((GPIndividual)ind).trees[0].child.eval(
-                    state,threadnum,input,stack,((GPIndividual)ind),this);
+                
+                //new: 
+                expectedResult = Math.pow(Math.PI, currentX * currentX * currentY + currentX * currentY + currentY);
+                // old: 
+                
+                //expectedResult = currentX * currentX * currentY + currentX * currentY + currentY;
+                
+                ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
 
                 result = Math.abs(expectedResult - input.x);
                 if (result <= 0.01) hits++;
                 sum += result;                  
-                }
+            }
 
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
             ind.evaluated = true;
-            }
         }
     }
+}
 
