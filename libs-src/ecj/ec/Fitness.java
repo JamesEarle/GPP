@@ -254,6 +254,7 @@ public abstract class Fitness implements Prototype, Comparable
         simply calls toString(), but you'll probably want to override this to something else. */
     public String fitnessToStringForHumans()
         {
+            System.out.println("testing");
         return toString();
         }
         

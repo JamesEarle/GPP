@@ -11,13 +11,19 @@ import static ec.gp.GPProblem.P_DATA;
 import ec.gp.koza.*;
 import ec.simple.*;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
- *
+ *  -p gp.tree.print-style=latex
+ *  -p gp.tree.print-style=dot
  * @author James Earle
  */
 public class FileInputRegression extends GPProblem implements SimpleProblemForm {
@@ -25,16 +31,33 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     private static final long serialVersionUID = 1;
 
     public BufferedReader br;
+    public PrintWriter pw;
     public double currentX;
     public double currentY;
+    
+    public ArrayList<Double> inputData;
     
     @Override
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
+        inputData = new ArrayList<>();
+        
         try {
+            Date date = new Date();
+            Format format = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+            pw = new PrintWriter("out_files\\" + new File(format.format(date)) + "_out.txt");
             br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\testinput.txt"));
-        } catch (FileNotFoundException ex) {
+            
+            String next;
+            while((next = br.readLine()) != null) {
+                inputData.add(Double.valueOf(next));
+            }
+            
+            pw.println("Standardized\tAdjusted\tHits");
+            
+            br.close();
+        } catch (IOException ex) {
             ex.printStackTrace();
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -47,7 +70,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     
     @Override
     public void evaluate(final EvolutionState state,final Individual ind,final int subpopulation,final int threadnum) {
-        if (!ind.evaluated) {  // don't bother reevaluating
+        if (!ind.evaluated) { // don't bother reevaluating 
             ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
         
             int hits = 0;
@@ -55,43 +78,31 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double expectedResult;
             double result;
             
-            for (int y=0;y<10;y++) {
-                //Old currentX
-                currentX = state.random[threadnum].nextDouble();
+            for (int i=1;i<=25;i++) {
+                currentX = i;
                 currentY = state.random[threadnum].nextDouble();
                 
-                //New currentX is read from file.
-                try {
-                    String next = br.readLine();
-                    if (next != null && !next.equals("")) {
-                        currentX = Double.valueOf(br.readLine());
-                        System.out.println(currentX);
-                    }
-                } catch (IOException ex) {
-                    Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                expectedResult = inputData.get(i-1);
                 
-                //currentX = state.random[threadnum].nextDouble();
-                //currentY = state.random[threadnum].nextDouble();
-                
-                //new: 
-                //expectedResult = Math.pow(Math.PI, currentX * currentX * currentY + currentX * currentY + currentY);
-                // old: 
-                
-                expectedResult = currentX * currentX + currentX * state.random[threadnum].nextDouble()  + Math.PI * currentX;
-                //expectedResult = currentX * currentX + currentX * currentY + currentX;
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
 
                 result = Math.abs(expectedResult - input.x);
-                if (result <= 0.01) hits++;
-                sum += result;                  
+                if (result <= 1.5) hits++;
+                sum += result;              
             }
 
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
+            f.writer = pw;
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
             ind.evaluated = true;
         }
+    }
+    
+    /* Post-execution cleanup. Close all writers, print out final values, etc. */
+    @Override
+    public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
+        pw.close();
     }
 }

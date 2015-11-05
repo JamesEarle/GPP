@@ -11,6 +11,7 @@ import ec.steadystate.*;
 import java.io.IOException;
 import ec.util.*;
 import java.io.File;
+import java.io.PrintWriter;
 
 /* 
  * SimpleStatistics.java
@@ -168,9 +169,12 @@ public class SimpleStatistics extends Statistics implements SteadyStateStatistic
             {
             if (doGeneration) state.output.println("Subpopulation " + x + ":",statisticslog);
             if (doGeneration) best_i[x].printIndividualForHumans(state,statisticslog);
-            if (doMessage && !silentPrint) state.output.message("Subpop " + x + " best fitness of generation" + 
-                (best_i[x].evaluated ? " " : " (evaluated flag not set): ") +
-                best_i[x].fitness.fitnessToStringForHumans());
+            
+            /*Breaking apart the string for better debugging of submethod calls. */
+            String append = best_i[x].fitness.fitnessToStringForHumans();
+            String str = "Subpop " + x + " best fitness of generation" + (best_i[x].evaluated ? " " : " (evaluated flag not set): ") + append;
+            
+            if (doMessage && !silentPrint) state.output.message(str);
                 
             // describe the winner if there is a description
             if (doGeneration && doPerGenerationDescription) 
@@ -198,7 +202,7 @@ public class SimpleStatistics extends Statistics implements SteadyStateStatistic
             {
             if (doFinal) state.output.println("Subpopulation " + x + ":",statisticslog);
             if (doFinal) best_of_run[x].printIndividualForHumans(state,statisticslog);
-            if (doMessage && !silentPrint) state.output.message("Subpop " + x + " best fitness of run: " + best_of_run[x].fitness.fitnessToStringForHumans());
+            if (doMessage && !silentPrint) state.output.message("Subpop " + x + " best fitness of run: " + best_of_run[x].fitness.fitnessToStringForHumans() + " dolla might");
 
             // finally describe the winner if there is a description
             if (doFinal && doDescription) 

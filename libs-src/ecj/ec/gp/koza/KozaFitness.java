@@ -41,6 +41,9 @@ import java.io.*;
 public class KozaFitness extends Fitness
     {
     public static final String P_KOZAFITNESS = "fitness";
+    
+    /* Custom printing file. */
+    public PrintWriter writer;
 
     /** This ranges from 0 (best) to infinity (worst).    I
         define it here as equivalent to the standardized fitness. */
@@ -116,7 +119,9 @@ public class KozaFitness extends Fitness
         return fitness();
         }
 
-    public void setup(final EvolutionState state, final Parameter base) { }
+    public void setup(final EvolutionState state, final Parameter base) { 
+        //System.out.println("my generation is this number" + state.generation);
+    }
     
     public boolean isIdealFitness()
         {
@@ -144,10 +149,28 @@ public class KozaFitness extends Fitness
         return FITNESS_PREAMBLE + Code.encode(standardizedFitness) + Code.encode(hits);
         }
         
+    private boolean printSwitch = true;
+    
     public String fitnessToStringForHumans()
         {
-        return FITNESS_PREAMBLE + "Standardized=" + standardizedFitness + " Adjusted=" + adjustedFitness() + " Hits=" + hits;
+            if(printSwitch) {
+                String stdFitness = String.valueOf(standardizedFitness);
+                String str = stdFitness.length() <= 15 ? appendSpaces(stdFitness) : stdFitness;
+                writer.println(str + "\t" + adjustedFitness() + "\t" + hits);
+                printSwitch = !printSwitch;
+            } else {
+                printSwitch = !printSwitch;
+            }
+            return FITNESS_PREAMBLE + "Standardized=" + standardizedFitness + " Adjusted=" + adjustedFitness() + " Hits=" + hits;
         }
+    
+    public String appendSpaces(String str) {
+        // Tabbed spacing for output formatting requires 17 spaces. 
+        while(str.length() < 17) {
+            str += " ";
+        }
+        return str;
+    }
             
     public void readFitness(final EvolutionState state, 
         final LineNumberReader reader)
