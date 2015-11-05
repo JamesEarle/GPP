@@ -1,0 +1,786 @@
+
+
+
+Generation 0
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 137.146
+Nodes/tree: [137.146]
+Avg Depth: 8.482
+Depth/tree: [8.482]
+Mean fitness raw: 925.062 adjusted: 0.0012784811 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=174.0 Adjusted=0.0057142857 Hits=0
+Tree 0:
+ (render-texture (rgb (% ERCFloat[d4590819186107744256|0.08541452884674072|]
+     (% (+ v (% u (noise ERCFloat[d4583582174803918848|0.027495205402374268|])))
+         ERCFloat[d4595068276710572032|0.16376501321792603|]))
+     (/ (- (* v (cos u)) (sin (- (% (* (- ERCFloat[d4606903053189120000|0.9689841866493225|]
+         u) (/ ERCFloat[d4605972918965370880|0.8657185435295105|]
+         ERCFloat[d4597593541386960896|0.23385518789291382|]))
+         (sin (sin v))) (- (power ERCFloat[d4598272590748844032|0.2554051876068115|]
+         u) u)))) (- v (log v))) (log ERCFloat[d4596289353092694016|0.19765669107437134|])))
+
+
+
+Generation 1
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 128.592
+Nodes/tree: [128.592]
+Avg Depth: 9.04
+Depth/tree: [9.04]
+Mean fitness raw: 848.986 adjusted: 0.0013172932 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=247.0 Adjusted=0.004032258 Hits=0
+Tree 0:
+ (render (rgb (log (power (power (+ (power
+     (/ u ERCFloat[d4594596912639770624|0.15068203210830688|])
+     ERCFloat[d4605539614210392064|0.8176120519638062|])
+     (* (* v v) (+ v v))) (cos (noise ERCFloat[d4596486530746286080|0.20312947034835815|])))
+     (* v (+ (sin (% u ERCFloat[d4605034499749707776|0.7615330815315247|]))
+         (% u (/ u v)))))) (% (cos ERCFloat[d4600854613418049536|0.39873623847961426|])
+     (% v ERCFloat[d4602337762262122496|0.4810675382614136|]))
+     (% (power v u) (log ERCFloat[d4604993356110495744|0.7569652199745178|])))
+     (circle ERCInt[d4624070917402656768|14.0|]
+         ERCInt[d4628293042053316608|27.0|] ERCradius[d4628574517030027264|28.0|]
+         ERCFloat[d4606021695835209728|0.8711338639259338|]
+         (rgb (log u) (/ ERCFloat[d4589948617711681536|0.07333296537399292|]
+             ERCFloat[d4605876251599568896|0.854986310005188|])
+             (- u v))))
+
+
+
+Generation 2
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 111.472
+Nodes/tree: [111.472]
+Avg Depth: 9.148
+Depth/tree: [9.148]
+Mean fitness raw: 795.64 adjusted: 0.0013741046 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=148.0 Adjusted=0.0067114094 Hits=0
+Tree 0:
+ (render-texture (rgb (% (power (log v) (%
+     u u)) v) (* (/ (/ (- ERCFloat[d4604533045674901504|0.7058604955673218|]
+     u) v) u) u) (noise ERCFloat[d4607033201972477952|0.9834336042404175|])))
+
+
+
+Generation 3
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 99.156
+Nodes/tree: [99.156]
+Avg Depth: 9.198
+Depth/tree: [9.198]
+Mean fitness raw: 784.29 adjusted: 0.0013749918 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=245.0 Adjusted=0.0040650405 Hits=0
+Tree 0:
+ (render (rgb (* (% (* v (power (% (- (+ u
+     u) (noise ERCFloat[d4607031738462371840|0.9832711219787598|]))
+     (power (- u ERCFloat[d4593552468935180288|0.12334644794464111|])
+         (- v v))) ERCFloat[d4602801217687519232|0.5135889649391174|]))
+     (noise ERCFloat[d4605943393749565440|0.8624405860900879|]))
+     (power (power u (sin (* (cos (sin ERCFloat[d4606448289166917632|0.918495237827301|]))
+         ERCFloat[d4594248227867328512|0.14100408554077148|])))
+         v)) (noise ERCFloat[d4606267223546265600|0.898392915725708|])
+     u) (circle ERCInt[d4635400285215260672|81.0|]
+     ERCInt[d4638848353679966208|132.0|] ERCradius[d4630263366890291200|36.0|]
+     ERCFloat[d4606371836601565184|0.9100072979927063|]
+     (rgb (log (% u u)) (cos (/ u v)) (noise ERCFloat[d4599008851222593536|0.2962758541107178|]))))
+
+
+
+Generation 4
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 107.716
+Nodes/tree: [107.716]
+Avg Depth: 9.488
+Depth/tree: [9.488]
+Mean fitness raw: 815.006 adjusted: 0.0013020962 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=229.0 Adjusted=0.004347826 Hits=0
+Tree 0:
+ (render-texture (rgb (log (% (log (+ (% v
+     v) u)) (power (% (- ERCFloat[d4603102562793553920|0.5470449924468994|]
+     u) u) u))) (% (noise ERCFloat[d4607176927684329472|0.9993903636932373|])
+     (% u ERCFloat[d4603093187416817664|0.5460041165351868|]))
+     (noise ERCFloat[d4602731311726067712|0.5058278441429138|])))
+
+
+
+Generation 5
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 100.616
+Nodes/tree: [100.616]
+Avg Depth: 9.696
+Depth/tree: [9.696]
+Mean fitness raw: 822.822 adjusted: 0.0013108898 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=177.0 Adjusted=0.0056179776 Hits=0
+Tree 0:
+ (render-texture (rgb (% (* (cos (* (* v ERCFloat[d4605905574951911424|0.858241856098175|])
+     (power v u))) v) (- u ERCFloat[d4604445666712748032|0.6961594820022583|]))
+     (- (cos u) (power ERCFloat[d4602573295047409664|0.49414223432540894|]
+         (noise ERCFloat[d4601006575803432960|0.4071718454360962|])))
+     (% (noise ERCFloat[d4605470362694582272|0.8099235892295837|])
+         (power v (sin (cos v))))))
+
+
+
+Generation 6
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 90.932
+Nodes/tree: [90.932]
+Avg Depth: 9.734
+Depth/tree: [9.734]
+Mean fitness raw: 826.682 adjusted: 0.0013048981 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=344.0 Adjusted=0.0028985508 Hits=0
+Tree 0:
+ (render (rgb (* (% (* v (power (% (power
+     ERCFloat[d4604421906416795648|0.6935215592384338|]
+     v) (power (- u ERCFloat[d4593552468935180288|0.12334644794464111|])
+     (- v v))) (noise ERCFloat[d4601724727621320704|0.4470372796058655|])))
+     (noise ERCFloat[d4605943393749565440|0.8624405860900879|]))
+     (power (power u (sin (* (cos (sin ERCFloat[d4606448289166917632|0.918495237827301|]))
+         ERCFloat[d4594248227867328512|0.14100408554077148|])))
+         v)) (noise ERCFloat[d4606267223546265600|0.898392915725708|])
+     u) (circle ERCInt[d4635400285215260672|81.0|]
+     ERCInt[d4638848353679966208|132.0|] ERCradius[d4630263366890291200|36.0|]
+     ERCFloat[d4606371836601565184|0.9100072979927063|]
+     (rgb (log (% u u)) (cos (/ u v)) (noise ERCFloat[d4599008851222593536|0.2962758541107178|]))))
+
+
+
+Generation 7
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 85.88
+Nodes/tree: [85.88]
+Avg Depth: 9.696
+Depth/tree: [9.696]
+Mean fitness raw: 807.87 adjusted: 0.0013428944 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=265.0 Adjusted=0.0037593986 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+         ERCFloat[d4573187855731392512|0.005670666694641113|])
+         (% ERCFloat[d4590819186107744256|0.08541452884674072|]
+             (% (+ v (% u (cos (* ERCFloat[d4602612211746078720|0.4963025450706482|]
+                 ERCFloat[d4603213230142128128|0.5593315362930298|]))))
+                 (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+                     (sin (log u)))))) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (% (log (cos (power u (noise ERCFloat[d4590350970247970816|0.07891672849655151|]))))
+         (cos (% (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+             u)) (power (sin v) (/ v ERCFloat[d4606516531902283776|0.9260717034339905|])))))))
+     (rectangle ERCInt[d4633781804099174400|61.0|]
+         ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+         ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+         (rgb (sin (+ (/ (cos (cos u)) ERCFloat[d4603282298048086016|0.566999614238739|])
+             (+ (% (noise ERCFloat[d4605216476440297472|0.7817365527153015|])
+                 (% u ERCFloat[d4603093187416817664|0.5460041165351868|]))
+                 (log (* ERCFloat[d4589123335450787840|0.06218993663787842|]
+                     (* (noise ERCFloat[d4606041099423711232|0.873288094997406|])
+                         (power (sin (cos v)) (- (+ ERCFloat[d4596594684465250304|0.20613133907318115|]
+                             u) (log v))))))))) u (sin (* (- (% (cos ERCFloat[d4597537994574921728|0.23231345415115356|])
+             (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+             (+ (sin u) (- u v))) u)))))
+
+
+
+Generation 8
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 79.718
+Nodes/tree: [79.718]
+Avg Depth: 9.8
+Depth/tree: [9.8]
+Mean fitness raw: 809.538 adjusted: 0.001331886 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=288.0 Adjusted=0.0034602077 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ v (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u))) u (sin (* (- (% (cos ERCFloat[d4597537994574921728|0.23231345415115356|])
+         (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (+ (sin u) (- u v))) (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 9
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 76.404
+Nodes/tree: [76.404]
+Avg Depth: 10.01
+Depth/tree: [10.01]
+Mean fitness raw: 823.258 adjusted: 0.0012990705 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=359.0 Adjusted=0.0027777778 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ v (log (+ (- u u) u))) u (sin (*
+         (- (% (cos ERCFloat[d4597537994574921728|0.23231345415115356|])
+             (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+             (+ (sin u) (- u v))) (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 10
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 79.232
+Nodes/tree: [79.232]
+Avg Depth: 10.142
+Depth/tree: [10.142]
+Mean fitness raw: 792.208 adjusted: 0.0013523699 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=427.0 Adjusted=0.0023364485 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (log v) (log (+ (cos (cos ERCFloat[d4604873554440224768|0.743664562702179|]))
+         u))) u (sin (* (- (% (cos ERCFloat[d4597537994574921728|0.23231345415115356|])
+         (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (+ (sin u) (- u v))) (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 11
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 84.104
+Nodes/tree: [84.104]
+Avg Depth: 10.244
+Depth/tree: [10.244]
+Mean fitness raw: 768.838 adjusted: 0.0014011892 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=413.0 Adjusted=0.002415459 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+         ERCFloat[d4573187855731392512|0.005670666694641113|])
+         (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (% (sin u) (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+         ERCFloat[d4573187855731392512|0.005670666694641113|]))))
+     (rectangle ERCInt[d4633781804099174400|61.0|]
+         ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+         ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+         (rgb (sin (+ (/ (cos (cos u)) ERCFloat[d4603282298048086016|0.566999614238739|])
+             (+ (+ (- (sin ERCFloat[d4606516531902283776|0.9260717034339905|])
+                 (* ERCFloat[d4600282984409464832|0.3670044541358948|]
+                     ERCFloat[d4591973308244688896|0.10143119096755981|]))
+                 (% (* (sin (% u v)) (- (noise ERCFloat[d4600699409406099456|0.3901206851005554|])
+                     (- ERCFloat[d4607165853111156736|0.9981608390808105|]
+                         u))) (- (noise ERCFloat[d4604894228802174976|0.7459598779678345|])
+                     u))) (log (* ERCFloat[d4589123335450787840|0.06218993663787842|]
+                 (/ u ERCFloat[d4598505372607578112|0.26832717657089233|]))))))
+             u (sin (* (- u (+ (sin u) (- u v))) u)))))
+
+
+
+Generation 12
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 79.486
+Nodes/tree: [79.486]
+Avg Depth: 10.3
+Depth/tree: [10.3]
+Mean fitness raw: 752.976 adjusted: 0.0014433557 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=395.0 Adjusted=0.0025252525 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+         ERCFloat[d4573187855731392512|0.005670666694641113|])
+         (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (/ (* (cos v) (/ u v)) (cos (noise ERCFloat[d4604033128661516288|0.6503585577011108|])))))
+     (rectangle ERCInt[d4633781804099174400|61.0|]
+         ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+         ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+         (rgb (sin (+ (/ (cos (cos u)) ERCFloat[d4603282298048086016|0.566999614238739|])
+             (+ (+ (- (sin ERCFloat[d4605402781384179712|0.8024205565452576|])
+                 (* ERCFloat[d4600282984409464832|0.3670044541358948|]
+                     ERCFloat[d4591973308244688896|0.10143119096755981|]))
+                 (log v)) (log (* ERCFloat[d4589123335450787840|0.06218993663787842|]
+                 (/ u ERCFloat[d4598505372607578112|0.26832717657089233|]))))))
+             (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+                 u)) (sin (* (cos (% (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+             u)) (power (sin v) (/ v ERCFloat[d4606516531902283776|0.9260717034339905|]))))
+             u)))))
+
+
+
+Generation 13
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 75.666
+Nodes/tree: [75.666]
+Avg Depth: 10.496
+Depth/tree: [10.496]
+Mean fitness raw: 719.432 adjusted: 0.0015159992 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=359.0 Adjusted=0.0027777778 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (cos (power u (% v v))) u (sin (* (-
+         (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+             ERCFloat[d4573187855731392512|0.005670666694641113|])
+         (+ (sin v) (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+             ERCFloat[d4573187855731392512|0.005670666694641113|])))
+         (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 14
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 71.998
+Nodes/tree: [71.998]
+Avg Depth: 10.278
+Depth/tree: [10.278]
+Mean fitness raw: 702.702 adjusted: 0.0015590842 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=290.0 Adjusted=0.0034364262 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb u u (sin (* (- (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+         u)) (+ (sin u) (- u (% u v)))) (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 15
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 67.588
+Nodes/tree: [67.588]
+Avg Depth: 9.984
+Depth/tree: [9.984]
+Mean fitness raw: 722.624 adjusted: 0.0015720575 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=209.0 Adjusted=0.004761905 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (* (* (noise ERCFloat[d4605458732996886528|0.8086324334144592|])
+         (power v v)) (/ ERCFloat[d4606824867604463616|0.9603038430213928|]
+         v)) (log (+ (cos u) u))) u (sin (* (- (%
+         (sin u) (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (+ (sin u) (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+             ERCFloat[d4573187855731392512|0.005670666694641113|])))
+         (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 16
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 64.686
+Nodes/tree: [64.686]
+Avg Depth: 9.832
+Depth/tree: [9.832]
+Mean fitness raw: 670.488 adjusted: 0.0016897033 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=210.0 Adjusted=0.0047393367 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (* (* (noise ERCFloat[d4605458732996886528|0.8086324334144592|])
+         (power v v)) (/ ERCFloat[d4606824867604463616|0.9603038430213928|]
+         v)) (log (+ (cos u) u))) u (sin (* (- (%
+         (sin u) (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+         u))) (+ (sin u) (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+         ERCFloat[d4573187855731392512|0.005670666694641113|])))
+         (noise ERCFloat[d4605216476440297472|0.7817365527153015|]))))))
+
+
+
+Generation 17
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 61.888
+Nodes/tree: [61.888]
+Avg Depth: 9.67
+Depth/tree: [9.67]
+Mean fitness raw: 672.86 adjusted: 0.0017141225 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=207.0 Adjusted=0.0048076925 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (* (* (noise ERCFloat[d4605458732996886528|0.8086324334144592|])
+         (power v v)) (/ ERCFloat[d4606824867604463616|0.9603038430213928|]
+         v)) (log (+ (cos u) u))) u (sin (* (- (%
+         (sin u) (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (+ (sin u) (power ERCFloat[d4604091858044321792|0.6568788290023804|]
+             ERCFloat[d4573187855731392512|0.005670666694641113|])))
+         (cos (% (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+             u)) (power (sin v) (/ v ERCFloat[d4606516531902283776|0.9260717034339905|])))))))))
+
+
+
+Generation 18
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 58.232
+Nodes/tree: [58.232]
+Avg Depth: 9.572
+Depth/tree: [9.572]
+Mean fitness raw: 648.34 adjusted: 0.0018456604 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=196.0 Adjusted=0.005076142 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (* (* (noise ERCFloat[d4605458732996886528|0.8086324334144592|])
+         (power v v)) (/ ERCFloat[d4606824867604463616|0.9603038430213928|]
+         v)) (log (+ (cos u) u))) u (sin (* (- (%
+         (sin u) (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (+ (sin u) (power (power ERCFloat[d4597910707541901312|0.2426583170890808|]
+             (power (/ (% v ERCFloat[d4588556253738827776|0.058255016803741455|])
+                 (* u u)) u)) ERCFloat[d4573187855731392512|0.005670666694641113|])))
+         (cos (% (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+             u)) (power (sin v) (/ v ERCFloat[d4606516531902283776|0.9260717034339905|])))))))))
+
+
+
+Generation 19
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 55.394
+Nodes/tree: [55.394]
+Avg Depth: 9.438
+Depth/tree: [9.438]
+Mean fitness raw: 657.32 adjusted: 0.0018445601 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=209.0 Adjusted=0.004761905 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% (* u ERCFloat[d4607162650139295744|0.9978052377700806|])
+         v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (% (+ v (noise ERCFloat[d4602832059310800896|0.5170130729675293|]))
+         (cos (% u v))) u (% u v))))
+
+
+
+Generation 20
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 55.072
+Nodes/tree: [55.072]
+Avg Depth: 9.542
+Depth/tree: [9.542]
+Mean fitness raw: 638.568 adjusted: 0.0019528958 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=235.0 Adjusted=0.004237288 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% (* u ERCFloat[d4607162650139295744|0.9978052377700806|])
+         v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (% (+ v (noise ERCFloat[d4602832059310800896|0.5170130729675293|]))
+         (cos (- v v))) u (% u v))))
+
+
+
+Generation 21
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 54.534
+Nodes/tree: [54.534]
+Avg Depth: 9.636
+Depth/tree: [9.636]
+Mean fitness raw: 613.132 adjusted: 0.0020587414 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=233.0 Adjusted=0.0042735045 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ v (+ (sin u) (- u ERCFloat[d4606516531902283776|0.9260717034339905|])))
+         u (sin (* (- (cos v) (+ (sin u) (power u
+         (noise ERCFloat[d4590350970247970816|0.07891672849655151|]))))
+         (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+             u))))))
+
+
+
+Generation 22
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 55.396
+Nodes/tree: [55.396]
+Avg Depth: 9.858
+Depth/tree: [9.858]
+Mean fitness raw: 577.95 adjusted: 0.0022262495 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=182.0 Adjusted=0.0054644807 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ v (+ (sin u) (- u ERCFloat[d4606516531902283776|0.9260717034339905|])))
+         u (sin (* (- (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         u) (% u v)) (+ (cos u) (power u (cos ERCFloat[d4597537994574921728|0.23231345415115356|]))))
+         (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+             u))))))
+
+
+
+Generation 23
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 57.654
+Nodes/tree: [57.654]
+Avg Depth: 9.994
+Depth/tree: [9.994]
+Mean fitness raw: 560.486 adjusted: 0.0023469888 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=180.0 Adjusted=0.005524862 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ (* (* (noise ERCFloat[d4605458732996886528|0.8086324334144592|])
+         (power v (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+             u))) (/ ERCFloat[d4606824867604463616|0.9603038430213928|]
+         v)) (+ (noise ERCFloat[d4594963715731750912|0.16086286306381226|])
+         (% v ERCFloat[d4582874759330529280|0.025040864944458008|])))
+         u (sin (* (- (% (sin u) (% v ERCFloat[d4603235915085643776|0.5618500709533691|]))
+         (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+             u)) (cos (% (log (% ERCFloat[d4591986163081805824|0.10160958766937256|]
+         u)) (power u (/ v ERCFloat[d4606516531902283776|0.9260717034339905|])))))))))
+
+
+
+Generation 24
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 59.072
+Nodes/tree: [59.072]
+Avg Depth: 9.984
+Depth/tree: [9.984]
+Mean fitness raw: 599.054 adjusted: 0.00211972 hits: 0.0
+
+Best Individual of Generation:
+Evaluated: false
+Fitness: Raw=178.0 Adjusted=0.005586592 Hits=0
+Tree 0:
+ (render (rgb ERCFloat[d4578471421419716608|0.012694358825683594|]
+     (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         v) (% u v)) (% (noise ERCFloat[d4606236196165648384|0.8949481844902039|])
+     (log (+ (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+         u) u)))) (rectangle ERCInt[d4633781804099174400|61.0|]
+     ERCInt[d4635541022703616000|83.0|] ERCradius[d4620693217682128896|8.0|]
+     ERCradius[d4624070917402656768|14.0|] ERCFloat[d4601757830008012800|0.448874831199646|]
+     (rgb (+ v (+ (sin u) (- u ERCFloat[d4606516531902283776|0.9260717034339905|])))
+         u (sin (* (- (% (% (noise ERCFloat[d4602845193857662976|0.5184713006019592|])
+         u) (% u v)) (+ (cos u) (power u (cos ERCFloat[d4597537994574921728|0.23231345415115356|]))))
+         (- (- (noise ERCFloat[d4602832059310800896|0.5170130729675293|])
+             u) u))))))
+
+
+
+Final Statistics
+================
+Total Individuals Evaluated: 12500
+
+Best Individual of Run:
+Evaluated: false
+Fitness: Raw=148.0 Adjusted=0.0067114094 Hits=0
+Tree 0:
+ (render-texture (rgb (% (power (log v) (%
+     u u)) v) (* (/ (/ (- ERCFloat[d4604533045674901504|0.7058604955673218|]
+     u) v) u) u) (noise ERCFloat[d4607033201972477952|0.9834336042404175|])))
+
+
+
+Timings
+=======
+Initialization: 0.031 secs total, 68573 nodes, 2212032.2 nodes/sec
+Evaluating: 1887.514 secs total, 998817 nodes, 529.17065 nodes/sec
+Breeding: 0.262 secs total, 930244 nodes, 3550549.8 nodes/sec
+
+
+
+Memory Usage
+==============
+Initialization: 5601.3047 KB total, 68573 nodes, 12.242327 nodes/KB
+Evaluating: 184408.64 KB total, 998817 nodes, 5.416324 nodes/KB
+Breeding: 34603.58 KB total, 930244 nodes, 26.882885 nodes/KB

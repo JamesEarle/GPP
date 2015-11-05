@@ -45,8 +45,10 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         
         try {
             Date date = new Date();
-            Format format = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-            pw = new PrintWriter("out_files\\" + new File(format.format(date)) + "_out.txt");
+            Format forFiles = new SimpleDateFormat("mm-ss-SS"); // Minute, Second, Millisecond
+            Format forDirs =  new SimpleDateFormat("dd-HH"); // Day, Hour
+            new File("out_files\\" + forDirs.format(date)).mkdir();
+            pw = new PrintWriter("out_files\\" + forDirs.format(date) + "\\" + new File(forFiles.format(date)) + "_out.txt");
             br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\testinput.txt"));
             
             String next;
@@ -54,7 +56,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 inputData.add(Double.valueOf(next));
             }
             
-            pw.println("Standardized\tAdjusted\tHits");
+            //pw.println("Standardized\tAdjusted\tHits");
             
             br.close();
         } catch (IOException ex) {

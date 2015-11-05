@@ -1,0 +1,196 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter&nbsp;1.&nbsp;Introduction</title><link href="style.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.73.2" name="generator"><link rel="start" href="index.html" title="JTexGen Procedural Texture Library"><link rel="up" href="index.html" title="JTexGen Procedural Texture Library"><link rel="prev" href="pr01.html" title="Preface"><link rel="next" href="ch02.html" title="Chapter&nbsp;2.&nbsp;Texture Basics"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">Chapter&nbsp;1.&nbsp;Introduction</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="pr01.html">Prev</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;<a accesskey="n" href="ch02.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="Introduction"></a>Chapter&nbsp;1.&nbsp;Introduction</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="sect1"><a href="ch01.html#Overview">1.1. Overview</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch01.html#whatisatexture">1.1.1. What is a procedural texture?</a></span></dt><dt><span class="sect2"><a href="ch01.html#inputParams">1.1.2. Input Parameters</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch01.html#N10047">1.2. Implementing Textures</a></span></dt><dt><span class="sect1"><a href="ch01.html#firstTextures">1.3. Our First Textures</a></span></dt></dl></div><p>
+			This section introduces the concepts and ideas of procedural
+			textures and how they relate to the key parts of the
+			framework.
+		</p><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Overview"></a>1.1.&nbsp;Overview</h2></div></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="whatisatexture"></a>1.1.1.&nbsp;What is a procedural texture?</h3></div></div></div><p>
+					Put simply, a procedural texture is a procedure
+					which takes input values derived from the point on
+					the surface being textured, and returns a color
+					value for that point on the surface. When the
+					surface is considered as a whole (i.e. the
+					collection of individual points), we end up with a
+					textured surface.
+				</p><p>
+					Note that we can apply procedural textures in 2 or 3
+					dimensions, but for now, we are only considering 2
+					dimensions. The third dimension can often be
+					represented by time creating an animated surface
+					texture that changes over time.
+				</p></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="inputParams"></a>1.1.2.&nbsp;Input Parameters</h3></div></div></div><p>
+					Since we are only dealing in 2 dimensions, our
+					textures will mostly consist of 2D rectangles. In
+					this case, our input points consist of 2 values, one
+					going across the rectangle and one going down
+					forming cartesian coordinates for any point on the
+					rectangle.
+				</p><div class="mediaobject" align="center"><img src="../img/surfaceExample.png" align="middle"></div><p>
+					Our procedural texture takes a
+					<code class="code">(u,v)</code>
+					coordinate as an input parameter and returns a color
+					based on the position on the surface.
+				</p><p>
+					The colors that we return are composed of values
+					representing the red, green and blue components. We
+					have an
+					<code class="code">RGBAColor</code>
+					class that we use to represent a color. The 'A' part
+					refers to the Alpha channel which indicates how
+					transparent this color is. Transparency ranges from
+					0 to 1 with 0 being totally transparent and 1 being
+					totally opaque. Colors can be specified using
+					integers 0..255 or fractional values from 0..1. In
+					both cases, the alpha is always specified as ranging
+					from 0 to 1.
+				</p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10047"></a>1.2.&nbsp;Implementing Textures</h2></div></div></div><p>
+				We start with a
+				<code class="code">Texture</code>
+				interface that encapsulates the concepts so far. Our
+				interface contains methods to return a color based on
+				the input values.
+			</p><pre class="programlisting">
+				
+public interface Texture {
+
+    RGBAColor getColor(double u, double v);
+    void getColor(double u, double v, RGBAColor value);
+}
+
+			</pre><p>
+				We have two methods because rather than keep creating
+				<code class="code">RGBAColor</code>
+				instances to return from the texture, we just pass in a
+				single
+				<code class="code">RGBAColor</code>
+				instance that we re-use each time. If you consider a 100
+				X 100 image calls the texture 10,000 times, and since we
+				could be chaining textures together, we could end up
+				creating tens of thousands of
+				<code class="code">RGBAColor</code>
+				instances. By re-using the same one and passing it
+				around, we only create one and we get a 10-15% speedup.
+			</p><p>
+				One goal is to make the texture generation view
+				independent. For example, we might display the texture
+				in a small window when developing and testing it, but if
+				we wanted to generate a texture for printing or saving,
+				we would want to make it high resolution, and we
+				probably don't want to display it. However, we do want
+				to end up with the same image, but at a higher
+				resolution. Therefore we decouple the view from the
+				texture generation and render textures in view
+				independent terms. We should be able to call our
+				textures using any
+				<code class="code">(u,v)</code>
+				values and it should be able to calculate the color from
+				that point. It is this de-coupling that lets us render
+				the texture at any size, rather than define the texture
+				in terms of on screen pixels.
+			</p><p>
+				There is an abstract class called
+				<code class="code">AbstractTexture</code>
+				which implements the
+				<code class="code">Texture</code>
+				interface and contains a number of helper functions. The
+				most important one is
+				<code class="code">calculateColorFromTexture</code>
+				which takes the
+				<code class="code">(u,v)</code>
+				coordinates, a texture and checks for null textures and
+				puts the texture value in the target result color.
+			</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="firstTextures"></a>1.3.&nbsp;Our First Textures</h2></div></div></div><p>
+				Let's take a look at writing our first simple texture
+				which is just a solid color.
+			</p><pre class="programlisting">
+				
+public class SolidBlue extends AbstractTexture {
+
+    public void getColor(double u, double v, RGBAColor value) {
+        value.setColor(0,0,255);
+    }
+
+}
+			</pre><p>
+				Our simple example here just returns the same constant
+				color no matter what we pass in. In order to view this
+				texture, we use a class called
+				<code class="code">TextureWindow</code>
+				which is a Swing window that lets you render textures in
+				it.
+			</p><pre class="programlisting">
+				
+import org.texturemaker.gui.TextureViewer;
+import org.texturemaker.textures.tester.SolidBlue;
+
+public class SolidBlueDemo {
+
+    public static void main(String[] args) {
+        TextureViewer.show(new SolidBlue());
+
+    }
+}
+			</pre><p>
+				This class can be run from the console or an IDE and
+				should give you a Swing window which can be resized.
+				Clicking the Start button starts the rendering process.
+				Render Gradually produces really quick low res images
+				which can be handy for complex textures. The anti-alias
+				checkbox will use multiple samples per pixel. Neither of
+				these effects can be seen in this demo because our
+				texture is a single solid color.
+			</p><div class="mediaobject" align="center"><img src="../img/solidbluedemo.png" align="middle"></div><p>
+				Not much really to look at here. Let's try something a
+				bit fancier. Change our demo to use a different texture
+				by passing a different texture to the
+				<code class="code">TextureViewer</code>
+				class. Let's try the
+				<code class="code">
+					org.texturemaker.textures.composite.ComplexMarble
+				</code>
+				class which is composed of a number of different
+				textures to produce a nice marble effect.
+			</p><pre class="programlisting">
+				
+public class SolidBlueDemo {
+
+    public static void main(String[] args) {
+        TextureViewer.show(new ComplexMarble());
+
+    }
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/marbledemo.png" align="middle"></div><p>
+				This is much more interesting! It also took much longer
+				to create as it is more complex. If you resize the
+				window, you will notice that the pattern stays the same,
+				it scales to the window size and adds more detail to
+				fill the space. Now when you generate a high resolution
+				texture, you know you will get the same basic image, but
+				with more detail.
+			</p><p>
+				Here is another view of the same texture. This time, we
+				expanded the window to fill the screen causing the
+				texture to be rendered at a higher resolution. The
+				picture below shows the top left hand corner of the
+				texture. If you compare to the previous full image of
+				the marble, we can see that where we have zoomed in at a
+				higher resolution, our procedural texture has produced
+				more artifacts and details.
+			</p><div class="mediaobject" align="center"><img src="../img/marbledemo_closeup.png" align="middle"></div><p>
+				This means that if we write our textures properly, we
+				can make them resolution independent. In which case, we
+				can produce very high resolution versions which can be
+				printed or used in other situations where we need high
+				resolution detailed textures.
+			</p><p>
+				We use a decorator type of pattern quite often when we
+				want to transform the inputs to and outputs from signals
+				or textures. We can wrap another signal or texture
+				around the existing one, and adjust the inputs or
+				outputs to the signal or texture. For example, we might
+				have a signal from 0 to 1 which is passed to a gradient
+				texture. We can wrap the signal in a noisy signal so the
+				output from the signal is jiggled around to produce not
+				such a smooth gradient.
+			</p><p>
+				So now we have an easy way to test and view our
+				textures, lets start looking at how we write them.
+			</p></div></div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="pr01.html">Prev</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;<a accesskey="n" href="ch02.html">Next</a></td></tr><tr><td valign="top" align="left" width="40%">Preface&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td><td valign="top" align="right" width="40%">&nbsp;Chapter&nbsp;2.&nbsp;Texture Basics</td></tr></table></div></body></html>

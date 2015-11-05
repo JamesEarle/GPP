@@ -1,0 +1,21 @@
+
+JTexGen - Procedural Texture Generation Library
+=========================================================
+
+version 1.1 July 2009
+
+This software is distributed under the terms of the FSF Lesser Gnu
+Public License (see lgpl.txt). 
+
+Release Notes v 1.1
+-------------------
+
+* Moved to maven
+* Moved to project Kenai
+
+
+Release Notes v 1.0
+-------------------
+* Prepped and polished for release, 
+* Initial Release
+

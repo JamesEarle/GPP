@@ -1,0 +1,723 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter&nbsp;2.&nbsp;Texture Basics</title><link href="style.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.73.2" name="generator"><link rel="start" href="index.html" title="JTexGen Procedural Texture Library"><link rel="up" href="index.html" title="JTexGen Procedural Texture Library"><link rel="prev" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Introduction"><link rel="next" href="ch03.html" title="Chapter&nbsp;3.&nbsp;More Textures"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">Chapter&nbsp;2.&nbsp;Texture Basics</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="ch01.html">Prev</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;<a accesskey="n" href="ch03.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="textureBasics"></a>Chapter&nbsp;2.&nbsp;Texture Basics</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="sect1"><a href="ch02.html#simpleGradient">2.1. Simple Gradients</a></span></dt><dt><span class="sect1"><a href="ch02.html#N10114">2.2. Cum on feel the Noise()</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch02.html#N10171">2.2.1. Marbellous Textures</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch02.html#compositing">2.3. Bringing it all together</a></span></dt><dt><span class="sect1"><a href="ch02.html#N101EB">2.4. Filtering And Signals</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch02.html#N10239">2.4.1. Reusing Filtering</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch02.html#N10264">2.5. Transforming Inputs</a></span></dt><dt><span class="sect1"><a href="ch02.html#N102DD">2.6. Other transformations</a></span></dt><dt><span class="sect1"><a href="ch02.html#N1031E">2.7. Thread Safety</a></span></dt></dl></div><p>
+			From here on, we focus mainly on the texture class itself,
+			and assume that you are using the
+			<code class="code">TextureView</code>
+			class or something similar to display the texture.
+		</p><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="simpleGradient"></a>2.1.&nbsp;Simple Gradients</h2></div></div></div><p>
+				We'll start by looking at some simple gradient textures
+				based on the u or v values, and then start looking at
+				the
+				<code class="code">ColorGradient</code>
+				class which provides us with some fundamental building
+				blocks.
+			</p><p>
+				A gradient is simply an interpolation from one point to
+				another, or in this case, one color to another. As a
+				simple example, let's make the red component of the
+				resulting texture color equal to the u value.
+			</p><pre class="programlisting">
+				
+public class UGradient extends AbstractTexture {
+
+    public void getColor(double u, double v, RGBAColor value) {
+        value.setColor(u,0,0,1);
+    }
+
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/ugradient.png" align="middle"></div><p>
+				Fairly simple, the red component of the resulting color
+				increases as we go from left to right. This is because
+				the U value increases in value from 0 to 1 as we go from
+				left to right.
+			</p><p>
+				Let's extend this and set the green component to the v
+				value of the input.
+			</p><pre class="programlisting">
+				
+public class UVGradient extends AbstractTexture {
+
+    public void getColor(double u, double v, RGBAColor value) {
+        value.setColor(u,v,0,1);
+    }
+
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/uvgradient.png" align="middle"></div><p>
+				Nothing we wouldn't expect, but we need something a
+				little more interesting. More complex gradients can be
+				achieved by using the u or v value to interpolate
+				through multiple points or colors. The
+				<code class="code">ColorGradient</code>
+				class lets us easily perform this task.
+			</p><pre class="programlisting">
+				
+public class SunsetTexture extends AbstractTexture {
+
+    private ColorGradient gradient;
+
+    public SunsetTexture() {
+        gradient = new ColorGradient();
+        gradient.add(new RGBAColor(16, 32, 64))
+                .add(new RGBAColor(32, 64, 128))
+                .add(new RGBAColor(128, 160, 255))                
+                .add(new RGBAColor(192, 210, 255))                               
+                .add(new RGBAColor(250, 240, 192));
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        gradient.interpolate(v, value);
+    }
+}
+			</pre><p>
+				Our
+				<code class="code">ColorGradient</code>
+				class takes a list of colors and when we are rendering
+				our texture, we use those colors to calculate the
+				resultant color based on the v value. This produces a
+				sunset like effect in our final texture.
+			</p><div class="mediaobject" align="center"><img src="../img/sunset.png" align="middle"></div><p>
+				Gradients are fairly simple components to use and are
+				often building blocks for more complex textures.
+			</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10114"></a>2.2.&nbsp;Cum on feel the Noise()</h2></div></div></div><p>
+				On key element of procedural textures is the ability to
+				introduce controlled randomness to the texture. This is
+				so don't have to worry about individually placing
+				elements (clouds, dirt etc) and also so we can render
+				larger textures without worrying about repeating
+				elements. However, we don't want to just use a random
+				number generator, we want some pre-determination that
+				will allow us to calculate the same result for the same
+				inputs.
+			</p><p>
+				Also, if we have two points, for which we can always
+				calculate the same value, as we move between the two
+				points, we want our random value move between the two
+				points correspondingly. To achieve this, we look at Ken
+				Perlin, a graphics guru and inventor of Perlin Noise in
+				1985. He has a page describing Perlin Noise at
+				<a class="ulink" href="http://www.noisemachine.com/talk1/" target="_top">
+					http://www.noisemachine.com/talk1/
+				</a>
+				.
+			</p><p>
+				I'll try and give a brief description of the technique
+				of generating noise here, but Ken Perlin's page has a
+				much more technical overview.
+			</p><p>
+				Let's start by considering 1 dimensional noise where we
+				have a list of pure random numbers. We generate noise
+				from a single floating point value by using the integer
+				part of the index to look up the first value and using
+				the integer value plus one to get the next integer
+				value. Once we have the two integer parts, we use the
+				floating point value to interpolate between the two
+				points.
+			</p><pre class="programlisting">
+				
+//Pseudo Code for a 1 dimensional noise function
+//assumes a numbers[] array with 255 elements
+function getNoise(double input) {
+   int ix = floor(input); //get the integer part of the input value
+   double fx = frac(input);  //get the floating point part of the input value
+   double v1 = numbers[ix &amp;&amp; 255];  //get the first number
+   double v2 = numbers[(ix+1) &amp;&amp; 255];   //get the second number
+   double result = (v1 * (1-fx)) +  (v2 * fx);
+}
+			</pre><p>
+				In practice, for the
+				<code class="code">PerlinNoise</code>
+				classes used here, I use a function which combines
+				several prime and large numbers to create a pseudo
+				random sequence of numbers for a given integer input
+				rather than an array of pre computed random values.
+			</p><p>
+				Two and Three dimensional noise can be achieved my using
+				multiple input values and interpolating multiple times
+				to achieve the correct value. Consider 2 dimensional
+				noise which is calculated by
+				<code class="code">noise(x,y)</code>
+				since we need 2 inputs for the 2 dimensions. We
+				determine the 4 'random' numbers for points we use to
+				determine the final value. Logically, we can think of
+				this as a 4 corner square which as part of a big grid
+				where each point in the grid is indexed by the integer
+				part of the input values and values plus one and each
+				points has a random value associated with it. The
+				fractional parts determine how far along the way to the
+				next point we are.
+			</p><p>
+				Given our input (x,y), we determine the integer parts
+				(ix,iy) and the fractional part (fx,fy). Using the
+				integer parts, we calculate the points of the square
+				using ix,iy and ix+1,iy+1 to form the 4 corners. We
+				label the 4 corner values as N1,N2, N3 and N4. We take
+				these corner values and pair them together, and
+				interpolate them using the
+				<code class="code">fx</code>
+				value. This produces two mid points from N1 to N2, and
+				N3 to N4. We then interpolate these two points based on
+				the value of
+				<code class="code">fy</code>
+				which determines how far between the two points we are.
+				A diagram provides a much clearer example of what is
+				going on. Note that we can also use this technique to
+				perform bi-linear interpolation of images.
+			</p><div class="mediaobject" align="center"><img src="../img/2dNoiseDiagram.png" align="middle"></div><p>
+				Regardless, you don't need to fully understand how the
+				noise functions work to see what they do and how you can
+				use them in textures. Here is a simple noise texture
+				with the greyscale value set to the noise result for the
+				<code class="code">(u,v)</code>
+				values of the texture.
+			</p><pre class="programlisting">
+				
+public class GreyNoise extends AbstractTexture {
+
+    public void getColor(double u, double v, RGBAColor value) {
+        double noiseValue = noise.noise2(u*10,v*10);
+        value.setColor(noiseValue,noiseValue,noiseValue,1);
+    }
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/greyNoise.png" align="middle"></div><p>
+				As you can see, this looks fairly blocky and
+				unappealing. The noise itself is just an interpolation
+				between various single points. What we can do is sum the
+				noise at different frequencies, scale them with
+				different amplitudes, and add them to the result to
+				create a richer noise function. To do this, we can use
+				the
+				<code class="code">PerlinNoise.fbmNoise()</code>
+				method which takes the input parameters and the number
+				of octaves to use. It then calculates the noise at
+				different frequencies and sums them together.
+			</p><pre class="programlisting">
+				Noise = noise(i) + 1/2noise(2i) + 1/4noise(4i) ...
+			</pre><p>
+				We can demonstrate this using multiple images for
+				different noise coefficients and then merging them to
+				create a final complex noise texture.
+			</p><div class="mediaobject" align="center"><img src="../img/multiNoise.png" align="middle"></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="N10171"></a>2.2.1.&nbsp;Marbellous Textures</h3></div></div></div><p>
+					Another key basic texture is a marble type texture
+					that is calculated by summing up noise functions at
+					different frequencies and then passing the value
+					through a sine function. In the noise class, there
+					is a
+					<code class="code">noiseSine()</code>
+					method that calculates this. The parameters for this
+					are speed, which determines how fast the sine wave
+					moves. Scale determines how much noise we apply to
+					it, and octaves determine how many frequencies we
+					use to sample the noise.
+				</p><div class="mediaobject" align="center"><img src="../img/noisesinedemo.png" align="middle"></div><p>
+					These images were generated using an anonymous
+					texture class around a
+					<code class="code">MarbleSignal</code>
+					signal to get the marble value.
+				</p><pre class="programlisting">
+									
+    public static void main(String[] args) {
+
+        Texture texture = new AbstractTexture() {
+
+            private ChannelSignal signal = new MarbleSignal(0,0,5,1,5,10);
+            
+            public void getColor(double u, double v, RGBAColor value) {
+                double val = signal.getValue(u, v);
+                value.setColor(val,val,val,1);
+            }
+        };
+        TextureViewer.show(texture);
+
+    }
+				
+				</pre></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="compositing"></a>2.3.&nbsp;Bringing it all together</h2></div></div></div><p>
+				Now we have a number of textures to create, we need a
+				way to bring them all together, to take multiple
+				textures and combine them to form one single texture. To
+				do this, we have several composition textures that take
+				one or more textures as input and produce an output
+				based on the those textures and optionally based on the
+				<code class="code">(u,v)</code>
+				input parameters. Usually, we need to consider the alpha
+				channel as it is used when compositing one texture over
+				another. We composite textures in such a way that the
+				visibility of the background texture is dependent on the
+				alpha value of the texture laid over it.
+			</p><p>
+				The simplest method of compositing is to use the
+				<code class="code">MergedTexture</code>
+				texture. This texture takes two source textures, a
+				background and an overlay texture and merges them. It
+				does this by calculating the point for each texture at
+				point
+				<code class="code">(u,v)</code>
+				and returns the color based on the source inputs and the
+				overlay's alpha value. If the overlay is anyway
+				transparent, we will see the background texture through
+				the overlay texture.
+			</p><p>
+				As an example of this, lets create a composite texture
+				that takes a
+				<code class="code">Marble</code>
+				texture and merges it with a white background. In this
+				case, the
+				<code class="code">Marble</code>
+				texture only produces the veins of the marble in a
+				specific color with varying alpha transparency. It is
+				supposed to be laid over another texture to provide a
+				background which is what this texture does.
+			</p><pre class="programlisting">
+				
+public class MergeTest extends AbstractTexture {
+
+    private MergedTexture mixer;
+
+    public MergeTest() {
+        Marble marble = new Marble(RGBAColor.black());
+        SolidTexture background = new SolidTexture(RGBAColor.white());
+        mixer = new MergedTexture(background,marble);    
+    }
+    
+    public void getColor(double u, double v, RGBAColor value) {
+        mixer.getColor(u, v,value);
+    }
+}
+			</pre><p>
+				You can see the results below. The marble texture always
+				returns a solid color, but the alpha value varies
+				between 0 and 1 depending on the value returned from the
+				marbling noise method. When the alpha value is less than
+				1, then it is mixed proportionally with the background
+				texture.
+			</p><div class="mediaobject" align="center"><img src="../img/mergetest.png" align="middle"></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+					When creating textures like the basic marble which
+					is meant to be used in other textures, it is better
+					to return a color with varying alpha rather than
+					mixing the white and black in the marble texture.
+					This is so that it can be placed over other textures
+					and let the texture show through. This lets us
+					create more re-usable textures.
+				</p></div><p>
+				Another alternative is to take one or more input sources
+				and return the average of the mixed results. We do this
+				by summing up the colors and then dividing by the number
+				of colors mixed into the result. We can do this with the
+				<code class="code">TextureMixer</code>
+				class. A simpler version of this class is the
+				<code class="code">MixTexture</code>
+				class which takes two textures and and optional mix
+				level (defaults to 0.5) and the result is based on :
+			</p><pre class="programlisting">
+				Result = (SourceA * level) + (SourceB * (1-level))
+			</pre><p>
+				The
+				<code class="code">MultiMergeTexture</code>
+				can be used to compose multiple texture elements onto a
+				final texture which can then be composed onto a
+				background. These textures are merged in the order that
+				they are added. This next example takes a number of
+				marble textures and puts them into a
+				<code class="code">MultiMergeTexture</code>
+				and composites the multiple marble textures into one
+				complex marble.
+			</p><pre class="programlisting">
+				
+    public static void main(String[] args) {
+        MultiMergeTexture mixer = new MultiMergeTexture();
+        mixer.getTextures().add(new UVRotate(new Marble(new RGBAColor(255,255,255,0.7),20.7,20,0.2,19,12,1),35));
+        mixer.getTextures().add(new UVRotate(new Marble(new RGBAColor(255,128,64,0.5),20.7,3,4,19,12,1),45));
+        mixer.getTextures().add(new Marble(new RGBAColor(200,200,200,0.6),1.5,5,7,4,10,1));        
+        mixer.getTextures().add(new Marble(new RGBAColor(0,0,0,0.4),20,20,4,5,13,1.4));        
+        mixer.getTextures().add(new UVRotate(new Marble(new RGBAColor(255,176,80,0.5),20.7,3,4,19,12,1),145));        
+        mixer.getTextures().add(new Marble(new RGBAColor(255,176,80,0.5),10.5,10,4,5,20,1));        
+        TextureViewer.show(new Background(mixer,new RGBAColor(122,80,67)));    
+    }
+			</pre><div class="mediaobject" align="center"><img src="../img/mergeMarble.png" align="middle"></div><p>
+				Probably the easiest way of putting a texture onto a
+				background is to use the
+				<code class="code">Background</code>
+				texture which takes a texture and overlays it on a solid
+				white background. You can use other colors in the
+				constructor, but white is the default.
+			</p><pre class="programlisting">
+				
+  Marble marble = new Marble(RGBAColor.black());
+  mixer = new Background(marble);
+			</pre><p>
+				If you want to merge textures and layers using
+				gradients, specifically by using gradients with the
+				alpha channel, then the next section on filtering should
+				help you create some more interesting effects.
+			</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N101EB"></a>2.4.&nbsp;Filtering And Signals</h2></div></div></div><p>
+				The previous section looked at merging two textures
+				based on the calculated alpha value for one of them,
+				however, we can also use the
+				<code class="code">ChannelSignal</code>
+				interface to merge textures together (as well as much
+				more). Channel signals are similar to textures in that
+				they take
+				<code class="code">(u,v)</code>
+				input values, and return a result which is consistently
+				the same each time it is called for that
+				<code class="code">(u,v)</code>
+				value. For signals however, we only return a single
+				double value instead of a color. That value can then be
+				processed by a texture that is able to use the value for
+				a number of things.
+			</p><p>
+				The
+				<code class="code">ChannelSignal</code>
+				interface is as simple as the
+				<code class="code">Texture</code>
+				interface we saw earlier. This interface is implemented
+				in an
+				<code class="code">AbstractChannelSignal</code>
+				class.
+			</p><pre class="programlisting">
+							
+public interface ChannelSignal {
+
+    public enum Channel {
+
+        RED, GREEN, BLUE, ALPHA;
+    }
+
+    double getValue(double u, double v);
+}
+			</pre><p>
+				Let's jump right in and create a simple channel signal.
+				For our example, it will just return the u value that is
+				passed in. That means that as we process the texture
+				across the surface from left to right, the signal will
+				change from 0 to 1.
+			</p><pre class="programlisting">
+				
+public class ChannelTester extends AbstractChannelSignal {
+
+    public double getValue(double u, double v) {
+        return u;
+    }
+
+}
+			</pre><p>
+				We will test this with our
+				<code class="code">Threshold</code>
+				texture which takes two source textures and a
+				<code class="code">ChannelSignal</code>
+				and returns one texture if the signal is below a certain
+				threshold value, and returns another texture if the
+				signal is above a certain threshold value. The default
+				switch level is 0.5, which means that since our
+				<code class="code">ChannelSignal</code>
+				just returns the
+				<code class="code">u</code>
+				value, the output should switch from one texture to the
+				other around the middle of the surface texture.
+			</p><pre class="programlisting">
+				
+			
+public class ChannelMergeTest extends AbstractTexture {
+
+    private Texture texture;
+
+    public ChannelMergeTest() {
+        Texture marble = new ComplexMarble();        
+        SolidTexture background = new SolidTexture(RGBAColor.blue());
+        
+        texture = new Threshold(marble, background, new ChannelTester());        
+                
+    }
+    
+    public void getColor(double u, double v, RGBAColor value) {
+        texture.getColor(u, v,value);
+    }
+}
+			</pre><p>
+				This isn't a very good example, but if we change the
+				source signal in the
+				<code class="code">ChannelTester</code>
+				class to one of the built-in ones, e.g. the
+				<code class="code">NoiseSignal()</code>
+				signal which returns a noise value for the given
+				<code class="code">(u,v)</code>
+				values, we can create a slightly more interesting
+				texture.
+			</p><div class="mediaobject" align="center"><img src="../img/holeytexture.png" align="middle"></div><p>
+				Again, still not a very good texture, but it does offer
+				us some possibilities. By using a Noisy signal with a
+				threshold, we can let textures poke through other
+				textures at random points.
+			</p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="N10239"></a>2.4.1.&nbsp;Reusing Filtering</h3></div></div></div><p>
+					Using Channel Signals has actually expanded the
+					ability to create re-usable components drastically.
+					For example, the
+					<code class="code">GradientSignalTexture</code>
+					texture takes a
+					<code class="code">ColorGradient</code>
+					and a
+					<code class="code">ChannelSignal</code>
+					. For each
+					<code class="code">(u,v)</code>
+					we calculate the output of the signal which results
+					in a double value. This value is then used to
+					interpolate the gradient to obtain the final texture
+					color. This texture has been used to rewrite a
+					number of the existing textures such as the
+					horizontal and vertical gradients (we use a
+					<code class="code">USignal</code>
+					and
+					<code class="code">VSignal</code>
+					to interpolate the gradient across the
+					<code class="code">(u,v)</code>
+					values). We even used it to generate a
+					<code class="code">Mandelbrot</code>
+					texture using a Mandelbrot
+					<code class="code">ChannelSignal</code>
+					that returns the calculated fractal value for the
+					point on the texture.
+				</p><p>
+					We refactored a
+					<code class="code">MarbleSignal</code>
+					signal from the original marble texture and we now
+					use it not only in the refactored
+					<code class="code">Marble</code>
+					texture but in the
+					<code class="code">Flame</code>
+					texture. The difference is that one takes a signal
+					and assigns it to the resulting color's alpha
+					channel while the other uses the value to
+					interpolate a gradient giving a colored marble
+					effect. We can easily re-use our signals for
+					different types of textures and they will probably
+					be used more in the future to create a more
+					pluggable system.
+				</p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10264"></a>2.5.&nbsp;Transforming Inputs</h2></div></div></div><p>
+				There are times when we want to modify the
+				<code class="code">(u,v)</code>
+				inputs to reflect either scale, translation or rotation.
+				Scale multiplies the
+				<code class="code">(u,v)</code>
+				value by a scalar value. Rotation rotates the values
+				around the point 0,0 and translation adds values to the
+				<code class="code">(u,v)</code>
+				values. Each of these can useful effects on our
+				textures. Scaling can allow us to zoom in or out of the
+				texture, while rotation can give us a new angle on some
+				textures which by default look more vertical or
+				horizontal in nature. Translation can help us move the
+				texture around on the surface which can be used to move
+				more interesting parts of the texture into the center,
+				or also reduce the visibility of patterns based on noise
+				functions which are shared by two different textures.
+				Also, we can apply noise to the
+				<code class="code">(u,v)</code>
+				inputs to disturb the values slightly.
+			</p><p>
+				Most of these textures are passive in that they obtain
+				the actual texture color value from a source texture we
+				pass in to the transformation texture using the
+				<code class="code">(u,v)</code>
+				values once they have been transformed.
+			</p><p>
+				We can demonstrate the use of these textures using a
+				pattern based texture such as the
+				<code class="code">DirtyBrick</code>
+				,
+				<code class="code">Checker</code>
+				, or an image based texture.
+			</p><p>
+				The example below demonstrates the different types of
+				transformations that can be performed.
+			</p><pre class="programlisting">
+
+				
+// Rotation				
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  TextureViewer.show(new UVRotate(texture, 45));
+  
+
+// Scale
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  TextureViewer.show(new UVScale(texture, 2,3));
+  
+
+// Translation				
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  TextureViewer.show(new UVTranslate(texture,0.2,0.5););
+
+
+			</pre><div class="mediaobject" align="center"><img src="../img/uvTransforms.png" align="middle"></div><p>
+				These transformations can be combined to produce more
+				sophisticated transformations.For example, the texture
+				is rotated around the
+				<code class="code">(0,0)</code>
+				point, where you may want to transform around the center
+				of the texture. To do this, we first translate the
+				texture so the center is at
+				<code class="code">(0,0)</code>
+				, then we rotate the texture and then translate the
+				texture back to the center. Like all transformations,
+				the ordering is important.
+			</p><pre class="programlisting">
+				
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  
+  texture = new UVTranslate(texture,-0.5,-0.5);        
+  texture = new UVRotate(texture, 45);
+  texture = new UVScale(texture,2,2);
+  texture = new UVTranslate(texture,0.5,0.5);
+        
+  TextureViewer.show(texture);
+
+			</pre><p>
+				In this example, we also applied a scale to the rotated
+				texture so we can see the whole image rotated in the
+				middle of the texture.
+			</p><div class="mediaobject" align="center"><img src="../img/centerRotate.png" align="middle"></div><div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Caution</h3><p>
+					Note that transformations and rotations could lead
+					to
+					<code class="code">(u,v)</code>
+					parameters that are outside of the range 0 to 1. For
+					this reason, you need to use the
+					<code class="code">normalize(double value)</code>
+					function in the
+					<code class="code">AbstractTexture</code>
+					class. This method converts the out of range value
+					into an in-range value. For example,
+					<code class="code">normalize(-5.3)</code>
+					returns 0.7 since -5.3 is 0.7 from the next lowest
+					integer value. This method can resolve your
+					<code class="code">(u,v)</code>
+					values for textures where the size of the fractional
+					part is an issue (i.e. the
+					<code class="code">Checker</code>
+					pattern).
+				</p></div><p>
+				In order to make things easier when using
+				transformations, we have a
+				<code class="code">UVTransformer</code>
+				texture class which lets you use scale,rotation and
+				translation all in one texture. The transformations are
+				applied in the order of scale,rotation and then
+				translation. The transformations are automatically
+				applied to the texture around the center as opposed to
+				the top left corner where (0,0) is. This is similar to
+				the multi-transformation example shown above. Below is
+				an example of using this texture to create a series of
+				rounded boxes with a semi-transparent gradient fill.
+				Each box is moved to the right a little more and scaled
+				up in size as we go from left to right.
+			</p><pre class="programlisting">
+				
+  public static void main(String[] args) {
+    //make the color a gradient
+    Texture gradient = new HorizontalGradient(ColorGradient.buildFire());
+    //Put an alpha filter texture over it
+    gradient = new AlphaSignal(gradient, 0.75);
+
+    //make a rounded corner that uses our gradient as the color
+    RoundedCornerTexture box = new RoundedCornerTexture(gradient, 0.3);
+
+    //create the final merging texture
+    MultiMergeTexture mixer = new MultiMergeTexture();
+
+    for (int i = 0; i &lt; 20; i++) {
+      //calcualte the scale and offset for this box
+      double offset = ((double) i / 22) - 0.5;
+      double scale = 14 - (i / 2);
+      //create the new transformer texture wrapped around the box
+      UVTransformer transformer = new UVTransformer(box, offset, 0, scale, scale, i * 3);
+      //add it to the final merged texture
+      mixer.getTextures().add(transformer);
+    }
+    //display it on a black background.
+    TextureViewer.show(new Background(mixer, RGBAColor.black()));
+}
+			</pre><p>
+				We use a lot of textures here to create an interesting
+				effect. We also see how we can use other simple textures
+				to modify existing ones. For example, we apply an
+				<code class="code">AlphaFilter</code>
+				to the gradient so we don't have to build a new gradient
+				with a different alpha value. Also note that we re-use
+				the rounded corner box instance that we created to
+				re-display the box. We just apply a different
+				transformation to each instance. We can re-use the box,
+				and most textures, because there is no data contained in
+				the texture instances. They in essence act like
+				singletons or stateless beans.
+			</p><div class="mediaobject" align="center"><img src="../img/transformedBoxes.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N102DD"></a>2.6.&nbsp;Other transformations</h2></div></div></div><p>
+				We can transform the
+				<code class="code">(u,v)</code>
+				points in other non-constant ways. One is to wrap the
+				texture in a
+				<code class="code">UVNoise</code>
+				texture which takes the
+				<code class="code">(u,v)</code>
+				input and generates noise from them to create 2 new
+				<code class="code">(u,v)</code>
+				values.
+			</p><pre class="programlisting">
+				
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  
+  texture = new UVNoise(texture,1,5);                
+  TextureViewer.show(texture);        
+
+			</pre><div class="mediaobject" align="center"><img src="../img/uvNoise.png" align="middle"></div><p>
+				Another way is to use the
+				<code class="code">UVNoiseTranslate</code>
+				texture which takes the input
+				<code class="code">(u,v)</code>
+				parameters and adds a little bit of noise to them so the
+				resultng
+				<code class="code">(u,v)</code>
+				values are somewhere near where they were originally and
+				not some pseudo random values like the previous example.
+			</p><pre class="programlisting">
+				
+// Less Noise
+				
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  texture = new UVNoiseTranslate(texture,4,4,0.3);        
+  TextureViewer.show(texture);
+
+
+// More Noise
+
+  Texture texture = new ImageTexture("c://camelback.jpg");
+  texture = new UVNoiseTranslate(texture,4,4,0.3);        
+  TextureViewer.show(texture);
+
+
+			</pre><div class="mediaobject" align="center"><img src="../img/uvNoiseTranslate.png" align="middle"></div><p>
+				These two examples demonstrate the use of different
+				quantities of noise to offset the
+				<code class="code">(u,v)</code>
+				values. One gives a slighly perturbed image while the
+				other is larger and looks like raindrops in a reflective
+				puddle type of image.
+			</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N1031E"></a>2.7.&nbsp;Thread Safety</h2></div></div></div><p>
+				By default, when a texture is rendered, it is done so by
+				spawning one or more threads. The number of threads is
+				defaulted to the the number of processors available.
+				This means that any signals or textures that you use to
+				render a texture need to be thread safe because chances
+				are that they are running in multiple threads on
+				multiple processors. On the plus size, this will pretty
+				much speed up the time taken to render the texture by
+				the number of processors on the system.
+			</p><p>
+				As a general guide to creating thread safe textures and
+				signals, make sure that they are immutable so that once
+				you pass parameter values in to the signal/texture in
+				the constructor, they cannot be changed by either the
+				object itself or the calling code. The texture and
+				signal objects should be stateless such that they carry
+				no state from one call to the next. Any color objects
+				passed to a texture are defensively copied so you can
+				modify the object in calling code as it won't affect the
+				texture holding a copy of it. All the textures and
+				signals provided with the library to the best of my
+				knowledge are thread safe with the caveat that they may
+				use non-thread safe user defined textures or channels.
+			</p></div></div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="ch01.html">Prev</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;<a accesskey="n" href="ch03.html">Next</a></td></tr><tr><td valign="top" align="left" width="40%">Chapter&nbsp;1.&nbsp;Introduction&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td><td valign="top" align="right" width="40%">&nbsp;Chapter&nbsp;3.&nbsp;More Textures</td></tr></table></div></body></html>

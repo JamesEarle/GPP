@@ -1,0 +1,225 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter&nbsp;4.&nbsp;Textured Tiger Burning Bright</title><link href="style.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.73.2" name="generator"><link rel="start" href="index.html" title="JTexGen Procedural Texture Library"><link rel="up" href="index.html" title="JTexGen Procedural Texture Library"><link rel="prev" href="ch03.html" title="Chapter&nbsp;3.&nbsp;More Textures"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">Chapter&nbsp;4.&nbsp;Textured Tiger Burning Bright</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="ch03.html">Prev</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;</td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="tiger"></a>Chapter&nbsp;4.&nbsp;Textured Tiger Burning Bright</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="sect1"><a href="ch04.html#N105C4">4.1. Elements in the texture</a></span></dt><dt><span class="sect1"><a href="ch04.html#N105CF">4.2. Implementing Tiger Colors</a></span></dt><dt><span class="sect1"><a href="ch04.html#N105F9">4.3. Adding a fur texture</a></span></dt></dl></div><p>
+			This chapter walks through the process of building a complex
+			texture from start to finish. In this case, we will build a
+			tigerskin texture. We start by thinking about the different
+			components that go into the texture, and then the best way
+			to build the texture such that we can re-use the different
+			elements of it. We start by dividing the texture into
+			different elements.
+		</p><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N105C4"></a>4.1.&nbsp;Elements in the texture</h2></div></div></div><table summary="Simple list" border="0" class="simplelist"><tr><td>
+					1) The main fur color, in this case a gold to
+					white/grey gradient.
+				</td></tr><tr><td>
+					2) The actual stripes themselves, sort of noisy
+					black lines running across the texture in one
+					direction.
+				</td></tr><tr><td>
+					3) The fur texture itself which gives the impression
+					that the color is painted on individual hairs. This
+					will be tricky, and will mostly consist of a noise
+					that is scaled across the fur in one direction.
+				</td></tr></table></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N105CF"></a>4.2.&nbsp;Implementing Tiger Colors</h2></div></div></div><p>
+				We can split this into several different textures. The
+				first will be called
+				<code class="code">TigerColor</code>
+				and will consist of the main fur colors with the stripes
+				on top of them. The stripes themselves will be generated
+				from a
+				<code class="code">ChannelSignal</code>
+				called
+				<code class="code">AnimalStripes</code>
+				. Once we have our tiger colors, we can see how we like
+				it and then pass that texture into our
+				<code class="code">Fur</code>
+				texture which will apply a directional noise to the
+				texture.
+			</p><pre class="programlisting">
+				
+public class TigerColors extends AbstractTexture {
+
+    private ColorGradient baseFurGradient = new ColorGradient();
+    private Texture  stripe;
+    private Texture mixer;
+
+    public TigerColors() {
+        
+        baseFurGradient.add(new RGBAColor(201,203,202));
+        baseFurGradient.add(new RGBAColor(171,118,40));
+        baseFurGradient.add(new RGBAColor(108,53,0));
+        baseFurGradient.add(new RGBAColor(173,103,43));
+        baseFurGradient.add(new RGBAColor(200,205,198));        
+
+        //based our stripe on a black texture with the alpha channel varied by our AnimalStripe signal.        
+        stripe = new AlphaSignal(new RGBAColor(0,0,0,0.7),new NoisySignal(new AnimalStripe(),1,15,3));
+        //add some noise in here so it's not so sharp on the edges.
+        stripe = new UVNoiseTranslate(stripe,8,6,0.05);
+        
+        //make the background based on the horizonal gradient using our fur colors.
+        Texture background = new HorizontalGradient(baseFurGradient);
+        //again, apply a translation to the colors so it is not such a straight gradient 
+        background = new UVNoiseTranslate(background,10,4,0.2);
+        
+        //create a mixer that applies our black stripes to our gradient
+        mixer = new MergedTexture(background, stripe);       
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        mixer.getColor(u, v,value);         
+    }       
+}
+
+			</pre><p>
+				The only thing left here is to define our
+				<code class="code">AnimalStripe</code>
+				signal. We calculate this by using multiple sine values,
+				some of them rotated and then we scale, add and subtract
+				one value from another. We also apply noise to the
+				values to give us more random edges.
+			</p><pre class="programlisting">
+				
+public class AnimalStripe extends AbstractChannelSignal {
+
+    private static PerlinNoise noise = new PerlinNoise();
+    private ChannelSignal sine1;
+    private ChannelSignal sine2;
+    private ChannelSignal sine3;
+    
+    private double centralDisplacementSize;
+
+    public AnimalStripe(double centralDisplacementSize) {
+        this.centralDisplacementSize = centralDisplacementSize;
+        sine1 = new SineWave(10, 3, 1);
+        sine2 = new SignalUVRotate(new SineWave(12, 4, 1), 30);
+        sine3 = new SignalUVRotate(new SineWave(12, 4, 1), -30);
+
+    }
+
+    public double getValue(double u, double v) {
+
+        //calculate the distance from the vertical center
+        //this doesn't handle out of range u,v values
+        double dist = Math.abs(0.5-v);
+        u = u + (dist * centralDisplacementSize);
+
+        //scale our u,v
+        u = u * 3.5;
+        v = v * 3.5;
+        
+        //calculate a couple of re-usable noise values
+        double n1 = noise.fbmNoise2(u, v, 3) * 1;
+        double n2 = noise.fbmNoise2(u + 37, v + 29, 3) * 1;
+
+        //rescale u,v so we get an elongated set of stripes
+        u = u * 1.5;
+        v = v * 0.5;
+
+        //calculate the sines and add/substract
+        double s1 = sine1.getValue(u, v) * 0.5;
+        double s2 = sine2.getValue(u + n2, v) * 1.4;
+        double s3 = sine3.getValue(u + n2, v + n1);
+        double value = s1 + s2 - s3;
+
+        //clip the value so only 0.5 and above is a stripe
+        return clip(value);
+
+    }
+
+    //if value &gt; 0.55 return 1
+    // if 0.55 &gt; value &gt; 0.5, return 0..1
+    // else return 0 
+    private double clip(double value) {
+        if (value &gt;= 0.5) {
+            if (value &gt; 0.55) {
+                return 1;
+            } else {
+                return (value - 0.5) * 10;
+            }
+        } else {
+            return 0;
+        }
+    }
+
+    public double getCentralDisplacementSize() {
+        return centralDisplacementSize;
+    }
+
+    public void setCentralDisplacementSize(double centralDisplacementSize) {
+        this.centralDisplacementSize = centralDisplacementSize;
+    }
+}				
+				
+			</pre><div class="mediaobject" align="center"><img src="../img/tigerCols.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N105F9"></a>4.3.&nbsp;Adding a fur texture</h2></div></div></div><p>
+				Now we have our colors, we could technically just use
+				this texture if we were interested in texture mapping a
+				3D model. However, to complex the exercise, we will
+				apply the fur coloring to a
+				<code class="code">Fur</code>
+				texture which will give it a fur-like grain.
+			</p><p>
+				Our fur texture simply takes the source texture (our fur
+				color) , and disturbs it in the direction of the fur. It
+				also applies a directional noise texture over the top of
+				it. I also added a Channel Signal to rotate the
+				<code class="code">(u,v)</code>
+				values to rotate the direction of the fur as it moved. I
+				set the angle for each point based on a noise value
+				based on the
+				<code class="code">(u,v)</code>
+				values.
+			</p><pre class="programlisting">
+				
+public class Fur extends AbstractTexture {
+
+    private Texture furColor;
+    private ChannelSignal noiseSignal;
+    private SignalUVRotate rotationSignal;    
+
+    public Fur(Texture furColor) {
+        this.furColor = furColor;
+        noiseSignal = new NoiseSignal(1,4,0.5);
+        noiseSignal = new SignalUVScale(noiseSignal, 14,128);        
+        rotationSignal = new SignalUVRotate(noiseSignal, 10);
+        
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {    
+                
+        double angle = noise.fbmNoise2(u*3, v*3, 3);
+        rotationSignal.setAngle(angle*10);
+        double val = calculateSignalFromFilter(u, v, rotationSignal);
+        //make it fall off quickly
+        val = val * val;
+        
+        //get the fur color
+        calculateColorFromTexture(u, v,getFurColor(), value);
+        //invert the coefficient value
+        value.scale(1-val);
+        //set the alpha to 1, this shouldn't be scaled.
+        value.setAlpha(1);        
+    }
+
+    public Texture getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(Texture furColor) {
+        this.furColor = furColor;
+    }    
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/tigerFur.png" align="middle"></div><p>
+				This demo can be seen by invoking
+				<code class="code">
+					TextureViewer.show(new Fur(new TigerColors()));
+				</code>
+				in an application. If you are rendering this at a high
+				resolution, you might want to add a UV Noise Translator
+				to jiggle the U,V values slightly to reduce some of the
+				smoothness. While the textures can render at different
+				resolutions, they don't always look their best at all
+				resolutions. You can see the effects with the noise
+				translator by using
+				<code class="code">
+					TextureViewer.show(new UVNoiseTranslate(new Fur(new
+					TigerColors()),100,3,0.01));
+				</code>
+			</p></div></div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="ch03.html">Prev</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;</td></tr><tr><td valign="top" align="left" width="40%">Chapter&nbsp;3.&nbsp;More Textures&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td><td valign="top" align="right" width="40%">&nbsp;</td></tr></table></div></body></html>

@@ -1,0 +1,181 @@
+
+
+
+Generation 0
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 23.224609375
+Nodes/tree: [23.224609375]
+Avg Depth: 4.427734375
+Depth/tree: [4.427734375]
+Mean fitness raw: 10.869981 adjusted: 0.11858196 hits: 0.1025390625
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=0.16255748 Adjusted=0.8601725 Hits=5
+Tree 0:
+ (+ y (* (+ y (* x (* x y))) x))
+
+
+
+Generation 1
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 15.6640625
+Nodes/tree: [15.6640625]
+Avg Depth: 4.197265625
+Depth/tree: [4.197265625]
+Mean fitness raw: 6.112308 adjusted: 0.1812096 hits: 0.234375
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=0.4130375 Adjusted=0.7076953 Hits=4
+Tree 0:
+ (+ y (* (* y x) (+ (+ x x) (* y (* y y)))))
+
+
+
+Generation 2
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 14.62109375
+Nodes/tree: [14.62109375]
+Avg Depth: 4.3349609375
+Depth/tree: [4.3349609375]
+Mean fitness raw: 5.046444 adjusted: 0.21463351 hits: 0.30078125
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=0.38126478 Adjusted=0.72397417 Hits=5
+Tree 0:
+ (+ y (* (+ y (* (* y (+ y y)) x)) x))
+
+
+
+Generation 3
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 14.8515625
+Nodes/tree: [14.8515625]
+Avg Depth: 4.8203125
+Depth/tree: [4.8203125]
+Mean fitness raw: 4.451592 adjusted: 0.2404901 hits: 0.4189453125
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=0.42295596 Adjusted=0.7027624 Hits=2
+Tree 0:
+ (+ (* (+ (+ x y) (* x x)) y) (* y x))
+
+
+
+Generation 4
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 15.91796875
+Nodes/tree: [15.91796875]
+Avg Depth: 5.3779296875
+Depth/tree: [5.3779296875]
+Mean fitness raw: 3.8292413 adjusted: 0.28255478 hits: 0.61328125
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=1.110223E-16 Adjusted=1.0 Hits=10
+Tree 0:
+ (+ (* y (+ x (* x x))) y)
+
+
+
+Generation 5
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 17.0390625
+Nodes/tree: [17.0390625]
+Avg Depth: 5.962890625
+Depth/tree: [5.962890625]
+Mean fitness raw: 3.622649 adjusted: 0.3028162 hits: 0.7314453125
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=4.9960036E-16 Adjusted=1.0 Hits=10
+Tree 0:
+ (+ y (* y (+ (* x x) (+ (* (- x x) (+ y x))
+     (- (+ y x) y)))))
+
+
+
+Generation 6
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 18.267578125
+Nodes/tree: [18.267578125]
+Avg Depth: 6.54296875
+Depth/tree: [6.54296875]
+Mean fitness raw: 3.2025726 adjusted: 0.33186883 hits: 0.9091796875
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=1.3877788E-17 Adjusted=1.0 Hits=10
+Tree 0:
+ (+ y (* (+ y (* y x)) x))
+
+
+
+Generation 7
+================
+
+Subpopulation 0
+----------------
+Avg Nodes: 19.662109375
+Nodes/tree: [19.662109375]
+Avg Depth: 6.951171875
+Depth/tree: [6.951171875]
+Mean fitness raw: 2.979668 adjusted: 0.35001096 hits: 1.2119140625
+
+Best Individual of Generation:
+Evaluated: true
+Fitness: Raw=7.4940054E-16 Adjusted=1.0 Hits=10
+Tree 0:
+ (+ (* (+ y (* y x)) x) y)
+
+
+
+Final Statistics
+================
+Total Individuals Evaluated: 8192
+
+Best Individual of Run:
+Evaluated: true
+Fitness: Raw=1.110223E-16 Adjusted=1.0 Hits=10
+Tree 0:
+ (+ (* y (+ x (* x x))) y)
+
+
+
+Timings
+=======
+Initialization: 0.078 secs total, 23782 nodes, 304897.44 nodes/sec
+Evaluating: 0.095 secs total, 142590 nodes, 1500947.4 nodes/sec
+Breeding: 0.155 secs total, 118808 nodes, 766503.25 nodes/sec
+
+
+
+Memory Usage
+==============
+Initialization: 885.84375 KB total, 23782 nodes, 26.846722 nodes/KB
+Evaluating: 0.0 KB total, 142590 nodes, Infinity nodes/KB
+Breeding: 3758.7969 KB total, 118808 nodes, 31.607986 nodes/KB

@@ -1,0 +1,958 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Chapter&nbsp;3.&nbsp;More Textures</title><link href="style.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.73.2" name="generator"><link rel="start" href="index.html" title="JTexGen Procedural Texture Library"><link rel="up" href="index.html" title="JTexGen Procedural Texture Library"><link rel="prev" href="ch02.html" title="Chapter&nbsp;2.&nbsp;Texture Basics"><link rel="next" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Textured Tiger Burning Bright"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">Chapter&nbsp;3.&nbsp;More Textures</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="ch02.html">Prev</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;<a accesskey="n" href="ch04.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="moreTextures"></a>Chapter&nbsp;3.&nbsp;More Textures</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="sect1"><a href="ch03.html#N1032B">3.1. Eclipse of the Sun</a></span></dt><dt><span class="sect1"><a href="ch03.html#N10371">3.2. Web Background</a></span></dt><dt><span class="sect1"><a href="ch03.html#N10385">3.3. Filtering based on a source texture</a></span></dt><dt><span class="sect1"><a href="ch03.html#N103AC">3.4. Setting Suns</a></span></dt><dt><span class="sect1"><a href="ch03.html#N103F3">3.5. Polka, Polka, Polka</a></span></dt><dt><span class="sect1"><a href="ch03.html#N10426">3.6. Fractal Fun</a></span></dt><dt><span class="sect1"><a href="ch03.html#N1046B">3.7. Where did my texture go?</a></span></dt><dt><span class="sect1"><a href="ch03.html#N104A8">3.8. Using Anonymous Classes</a></span></dt><dt><span class="sect1"><a href="ch03.html#N104BD">3.9. Map Texture Map</a></span></dt><dt><span class="sect1"><a href="ch03.html#N104DA">3.10. Saving High Resolution Images</a></span></dt><dt><span class="sect1"><a href="ch03.html#N104F2">3.11. Signals, Signals Everywhere</a></span></dt><dt><span class="sect1"><a href="ch03.html#N10557">3.12. Springing Along</a></span></dt></dl></div><p>
+			This section deals with making some more textures based on
+			the principles illustrated in the previous chapters
+		</p><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N1032B"></a>3.1.&nbsp;Eclipse of the Sun</h2></div></div></div><p>
+				Let's start with a fireball texture first. First, we'll
+				create a texture which consists of a radial gradient
+				which goes from the center of the texture towards the
+				edges.
+			</p><pre class="programlisting">
+				
+public class Fireball extends AbstractTexture {
+
+    private Texture texture;
+    
+
+    public Fireball() {
+        this(buildFireGradient(), 14, 6, 0.2);
+    }
+
+    protected static ColorGradient buildFireGradient() {
+        ColorGradient gradient = ColorGradient.buildFire();
+       
+        gradient.add(RGBAColor.black());
+        gradient.add(RGBAColor.black());
+        gradient.add(RGBAColor.black());
+        gradient.add(RGBAColor.black());
+
+        return gradient;
+
+    }
+
+    public Fireball(double scale, int octaves, double size) {
+        this(buildFireGradient(), scale, octaves, size);
+    }
+
+    public Fireball(ColorGradient gradient, double scale, int octaves, double size) {
+        texture = new RadialGradient(gradient);    
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        texture.getColor(u, v,value);       
+    }
+}
+
+			</pre><p>
+				We added addition black colors on the end of the
+				gradient since we don't want the fire ball to cover the
+				entire texture, we want it positioned more in the
+				center. This creates a fairly predictable texture.
+			</p><div class="mediaobject" align="center"><img src="../img/fireball1.png" align="middle"></div><p>
+				Now we want to perturb the
+				<code class="code">(u,v)</code>
+				points using a noise function so we create a flame
+				effect. We do this using the
+				<code class="code">UVTranslate</code>
+				texture which takes a source texture and uses it to
+				generate the texture colors by calling it with
+				<code class="code">(u,v)</code>
+				values that have been adjusted by noise. We make this
+				change in the constructor where we decorate the radial
+				gradient texture with a UV noise translation texture
+			</p><pre class="programlisting">
+				
+    public Fireball(ColorGradient gradient, double scale, int octaves, double size) {
+        texture = new RadialGradient(gradient);    
+        texture = new UVNoiseTranslate(texture,14,5,0.2);
+    }
+			</pre><p>
+				This gives us a rather pleasing result with a nice
+				glowing fireball in the middle of our texture
+			</p><div class="mediaobject" align="center"><img src="../img/fireball2.png" align="middle"></div><p>
+				Now let's extend the example to make the fireball look
+				like an eclipsed sun by inserting a big dark circle in
+				the middle. We'll make this a composite texture and
+				create the black circle as an anonymous class. We'll
+				then overlay the black circle texture over the fireball
+				and use transparency to show the fire around the planet.
+			</p><pre class="programlisting">
+				
+public class SunEclipse extends AbstractTexture {
+
+    Texture texture;
+
+    public SunEclipse() {
+        Texture planet = buildPlanet();
+        Texture fireball = new Fireball();
+        texture = new MergedTexture(fireball, planet);
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        texture.getColor(u, v, value);
+    }
+
+    private Texture buildPlanet() {
+
+        //get the distance from the center of the texture, 
+        //if &lt; 10, it is opaque black
+        //if &gt; 10.5 it is transparent
+        //else we interpolate the transparency between 10-10.5 to give
+        //it a nice transition
+        return new AbstractTexture() {
+
+            public void getColor(double u, double v, RGBAColor value) {
+                u = u - 0.5;
+                v = v - 0.5;
+                double dist = Math.sqrt((u * u) + (v * v));
+                dist = dist * 50;
+                if (dist &lt; 10) {
+                    value.setColor(0, 0, 0, 1);
+                } else {
+                    if (dist &gt; 10.5) {
+                        value.setColor(0, 0, 0, 0);
+                    } else {
+                        //in between                        
+                        double fd = dist - (int) dist;
+                        fd = fd * 2;
+
+                        value.setColor(0, 0, 0, 1 - fd);
+                    }
+                }
+            }
+        };
+
+    }
+} 
+			</pre><div class="mediaobject" align="center"><img src="../img/sunEclipse.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10371"></a>3.2.&nbsp;Web Background</h2></div></div></div><p>
+				We can use color gradients with some transparent colors
+				to generated faded background textures. We start with a
+				marble texture and overlay it with a color gradient that
+				has the same color across the gradient, but different
+				alpha values.
+			</p><pre class="programlisting">
+				
+  Texture marble = new ComplexMarble();
+        
+  ColorGradient gradient = new ColorGradient();
+  gradient.add(new RGBAColor(16,32,64,0.3));
+  gradient.add(new RGBAColor(16,32,64,1));        
+  gradient.add(new RGBAColor(16,32,64,1));
+        
+  Texture overlay = new VerticalGradient(gradient);
+                
+  Texture texture  = new MergedTexture(marble, overlay);
+        
+  TextureViewer.show(texture);				
+
+			</pre><div class="mediaobject" align="center"><img src="../img/webBackground.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10385"></a>3.3.&nbsp;Filtering based on a source texture</h2></div></div></div><p>
+				We can use one texture to drive the channel signal for
+				another texture. In this example, we use our image
+				texture to set the alpha value for another texture which
+				is a solid color. Because the alpha value of this
+				texture is driven from the input signal, we get the
+				shape of the image poking through on the final texture.
+				This is overlaid onto a background image which shows
+				through depending on the alpha value of the overlay.
+			</p><pre class="programlisting">
+				
+    public static void main(String[] args) {
+        
+        //get out image texture
+        Texture image = new ImageTexture("c://camelback.jpg");
+        
+        //build a channel signal to return the red component of the image
+        ChannelSignal signal = new TextureSignal(image,Channel.RED);
+        
+        //create an alpha filter based on a black background and the channel signal
+        Texture overlay = new AlphaSignal(SolidTexture.blackBackground(), new InvertSignal(signal));
+        
+        //select the background texture 
+        Texture background = SolidTexture.whiteBackground();
+        
+        //merge the overlay and the background
+        Texture merged = new MergedTexture( background,overlay);
+        
+        //show the texture
+        TextureViewer.show( merged);
+    }
+
+			</pre><div class="mediaobject" align="center"><img src="../img/alphaFilterWhite.png" align="middle"></div><p>
+				We can alter the makeup of this texture by using
+				different textures with the alpha filter and also for
+				the background texture.
+			</p><pre class="programlisting">
+				
+				
+  // Image A
+  Texture background = new Fireball();
+  
+  // Image B
+  Texture overlay = new AlphaSignal(SolidTexture.whiteBackground(), new InvertSignal(signal));        
+  Texture background = new ColorFilter(new ComplexMarble(), new RGBAColor(64,128,255));
+
+  //Image C  
+  Texture background = new UVTranslate(new Flame(Flame.greenFlame),1.2,0);    
+		
+
+			</pre><div class="mediaobject" align="center"><img src="../img/alphaFilterTriple.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N103AC"></a>3.4.&nbsp;Setting Suns</h2></div></div></div><p>
+				Let's use our noise functions to create some cloud
+				textures and apply it to our sunset texture we created
+				earlier. We'll use two different sets of clouds and let
+				them grow smaller as they appear further in the
+				distance.
+			</p><p>
+				We start with two gradients that are used to color the
+				cloud textures. These two gradients are used to create
+				two new
+				<code class="code">HorizonalGradient</code>
+				textures which are then run through a
+				<code class="code">NoisyTexture</code>
+				texture. The
+				<code class="code">NoisyTexture</code>
+				texture takes an input and sets the alpha value to a the
+				result of a noise function. We take our two cloud
+				textures and merge them into a single
+				<code class="code">clouds</code>
+				texture. This texture is then laid over the top of our
+				<code class="code">SunsetTexture</code>
+				we created earlier.
+			</p><pre class="programlisting">
+				
+public class CloudTexture extends AbstractTexture {
+
+    ColorGradient redCloudGradient;
+    ColorGradient lightCloudGradient;
+    MergedTexture clouds;
+    NoisyTexture redCloud;
+    NoisyTexture lightCloud;
+    MergedTexture mixer;
+
+    public CloudTexture() {
+
+        redCloudGradient = new ColorGradient()
+            .add(new RGBAColor(255, 240, 230))
+            .add(new RGBAColor(255, 140, 64));
+
+        lightCloudGradient = new ColorGradient()
+            .add(new RGBAColor(255, 250, 240))
+            .add(new RGBAColor(255, 255, 245));
+
+        redCloud = new NoisyTexture(
+            new HorizontalGradient(redCloudGradient));
+        lightCloud = new NoisyTexture(
+            new HorizontalGradient(lightCloudGradient));
+
+        //merge the clouds into one texture            
+        clouds = new MergedTexture(lightCloud, redCloud);
+        
+        //lay the clouds over the sunset background
+        mixer = new MergedTexture(new SunsetTexture(), clouds);
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        mixer.getColor(u, v, value);
+    }
+				
+
+			</pre><p>
+				If we look at the texture now, we get some flat clouds
+				over the top of a distant sunset.
+			</p><div class="mediaobject" align="center"><img src="../img/flatClouds.png" align="middle"></div><p>
+				What we want to do is try and speed up the rate of the
+				noise the 'further away' the cloud texture is. In this
+				case, the clouds are further away the closer we get to
+				the bottom of the texture (as v approaches 1). Also, the
+				further away the clouds are, the more dense they appear.
+				This is because when we look at clouds above us, we are
+				looking through a thing sliver of cloud. Further away,
+				our line of sight cuts through the cloud layer at an
+				angle making it appear denser. To resolve this, we
+				change the scale and size values of the noise functions
+				the nearer to the bottom of the texture we get.
+			</p><pre class="programlisting">
+				
+    public void getColor(double u, double v, RGBAColor value) {
+        redCloud.setScale(2 + (v * 14));
+        lightCloud.setScale(0.4 + (v * 18));
+
+        redCloud.setSize(0.3 + (v * 1.2));
+        lightCloud.setSize(0.3 + v);
+
+        mixer.getColor(u, v, value);
+    }
+
+			</pre><div class="mediaobject" align="center"><img src="../img/sunsetFinal.png" align="middle"></div><p>
+				Not a thoroughly realistic sunset, but it might suffice
+				for an image where you need some kind of background
+				which will be out of focus in the background, especially
+				if you are using a 3D renderer which will handle depth
+				of field for you. This image was composed in a paint
+				package and the background was manually blurred.
+			</p><div class="mediaobject" align="center"><img src="../img/photoCoke.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N103F3"></a>3.5.&nbsp;Polka, Polka, Polka</h2></div></div></div><p>
+				If we are looking to create a polkadot type of texture,
+				we have to consider that we want an almost random
+				pattern in how we position the dots, yet we need to be
+				able to reliably get the same position back for
+				subsequent calls regarding dot positions.
+			</p><p>
+				We do this in the
+				<code class="code">Polkadot</code>
+				texture by scaling the
+				<code class="code">(u,v)</code>
+				params by a value (in this case 8) and extracting the
+				integer and floating point parts. This has the effect of
+				splitting the texture into an 8 X 8 grid, and we have
+				the integer part indicating which square it is by
+				<code class="code">(iu,iv)</code>
+				and the floating point part which is
+				<code class="code">(fu,fv)</code>
+				to indicate the position of the texture in that square.
+			</p><p>
+				Once we have this, we can call the noise function to get
+				the position of the center to the circle by passing in
+				the integer components of our scaled
+				<code class="code">(u,v)</code>
+				. Since
+				<code class="code">(iu,iv)</code>
+				is the same for all points in the square, we can
+				reliably get the same noise value back so we will always
+				know the center of our dot in each square.
+			</p><p>
+				When we know the position of the center of the dot, we
+				can determine how far our
+				<code class="code">(fu,fv)</code>
+				point is and whether it is inside or outside of the dot.
+				Once we know that, we can determine the final color. In
+				this case, we provide two textures to the
+				<code class="code">Polkadot</code>
+				texture one for the background and one for the dots. We
+				also include some smoothing so that rather than switch
+				from dot to background, we interpolate between the two
+				at the dot edges.
+			</p><pre class="programlisting">
+				
+public class Polkadot extends AbstractTexture {
+
+    private Texture backgroundTexture;
+    private Texture dotTexture;
+    private double scale;
+    private double dotSize;
+
+    public Polkadot() {
+        this(SolidTexture.whiteBackground(), SolidTexture.blackBackground());
+    }
+
+    public Polkadot(Texture backgroundTexture, Texture dotTexture) {
+        this(backgroundTexture, dotTexture, 8, 0.4);
+    }
+
+    public Polkadot(Texture backgroundTexture, Texture dotTexture, double scale, double dotSize) {
+        this.backgroundTexture = backgroundTexture;
+        this.dotTexture = dotTexture;
+        this.scale = scale;
+        this.dotSize = dotSize;
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+
+        RGBAColor dotColor = new RGBAColor();
+
+        calculateColorFromTexture(u, v, backgroundTexture, value);
+        calculateColorFromTexture(u, v, dotTexture, dotColor);
+
+        //make it an 8 X 8 grid
+        u = u * 8;
+        v = v * 8;
+
+
+        //get the integer and fractional parts
+        int iu = (int) u;
+        int iv = (int) v;
+        double fu = u - iu;
+        double fv = v - iv;
+
+        //iu,iv determines which square we are on
+        //noise(iu,iv) determines the center of the
+        //dot for that square.
+        double du = noise.noise2(iu, iv);
+        double dv = noise.noise2(iu + 565, iv + 273);
+
+        //center the dot in the center are of the square
+        //we have to place the dot at least dotSize/2 away 
+        //from the edge of the square.
+        du = du * (1 - dotSize);
+        dv = dv * (1 - dotSize);
+        du = du + (dotSize * 0.5);
+        dv = dv + (dotSize * 0.5);
+
+        //du,dv = location of dot center in this square
+        du = du - fu;
+        dv = dv - fv;
+
+        //calculate the distance of fu,fv from the center
+        //of the dot
+        double dist = Math.sqrt((du * du) + (dv * dv));
+
+        //if the distance is less than dotsize/2 then 
+        //it is in the dot
+        if (dist &lt; (dotSize * 0.5)) {
+            //check if it is on the dot edge
+            if (dist &lt; (dotSize * 0.45)) {
+                //if not, just merge the dot color
+                value.merge(dotColor);
+            } else {
+                //this point is on the dot edge so we need 
+                //to smooth it.
+                
+                //dist is in the range dotSize * (0.45 to 0.5)
+                dist = dist - 0.45;
+                double alpha = dotColor.getAlpha();
+
+                alpha = alpha * (dist * 20);
+                dotColor.setAlpha(1 - alpha);
+                value.merge(dotColor);
+            }
+
+        }
+    }
+}
+
+			</pre><div class="mediaobject" align="center"><img src="../img/polkaDefault.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10426"></a>3.6.&nbsp;Fractal Fun</h2></div></div></div><p>
+				We have a number of textures which take a
+				<code class="code">ChannelSignal</code>
+				and use it to interpolate a
+				<code class="code">ColorGradient</code>
+				. Typically, these are noise based values, but we can
+				also use other sources. In this example, we will use a
+				Mandelbrot generator in a
+				<code class="code">ChannelSignal</code>
+				to give us fractal values.
+			</p><pre class="programlisting">
+				
+public class Mandelbrot extends AbstractTexture {
+
+    private ColorGradient gradient;
+    private MandelbrotSignal signal;
+				
+    public Mandelbrot(ColorGradient gradient, double startX, double startY, double endX, double endY) {
+        signal = new MandelbrotSignal(startX,startY,endX,endY);
+        this.gradient = gradient;
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        double val = calculateSignalFromFilter(u, v, signal);
+        gradient.interpolate(val,value);
+        
+    }
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/mandelbrot1.png" align="middle"></div><p>
+				As part of the constructor, the
+				<code class="code">Mandelbrot</code>
+				texture will take start and end parameters for the range
+				to generate. Unless you have a mandelbrot viewer,
+				picking values can be hit and miss so here are some
+				examples.
+			</p><pre class="programlisting">
+				
+    Texture texture = new Mandelbrot(0.35, 0.35, 0.3507, 0.3507);
+    Texture texture = new Mandelbrot(-1.487,-0.006950,-1.46944,0.007);
+    Texture texture = new Mandelbrot(-0.86429,-0.2578125,-0.5671,-0.01406);
+    Texture texture = new Mandelbrot(-0.75401,-0.23191,-0.68671,-0.1735);
+    Texture texture = new Mandelbrot(-0.745725,-0.215732,-0.728179,-0.200524);				
+
+
+			</pre><div class="mediaobject" align="center"><img src="../img/mandelbrotSamples.png" align="middle"></div><p>
+				This is another example of wrapping the texture logic in
+				a Channel Signal that can be re-used in other textures.
+				We can use the channel signal to drive the alpha value
+				for merging two textures.
+			</p><pre class="programlisting">
+				
+    public static void main(String[] args) {
+        Texture texture = new AlphaSignal(new ComplexMarble(),new MandelbrotSignal(-0.745725,-0.215732,-0.728179,-0.200524));
+        MergedTexture text = new MergedTexture(new CloudTexture(), texture);
+        TextureViewer.show(text);
+    }
+
+			</pre><div class="mediaobject" align="center"><img src="../img/MandelbrotMixer.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N1046B"></a>3.7.&nbsp;Where did my texture go?</h2></div></div></div><p>
+				This texture involves using
+				<code class="code">NoiseSignal</code>
+				textures to toggle between different textures to create
+				a camouflage effect. Let's start with 3 simple colors to
+				use in our texture and two
+				<code class="code">SmoothThreshold</code>
+				textures switching between two solid color textures. The
+				<code class="code">SmoothThreshold</code>
+				texture is the same as the
+				<code class="code">Threshold</code>
+				texture except that when the texture switches, it does
+				so smoothly instead of toggling instantly between the
+				two.
+			</p><pre class="programlisting">
+				
+  SolidTexture green = new SolidTexture(new RGBAColor(119,139,111));       
+  SolidTexture brown = new SolidTexture(new RGBAColor(119,110,100));
+  SolidTexture beige = new SolidTexture(new RGBAColor(166,150,116));        
+        
+  Texture cam1 = new SmoothThreshold(green,beige, new NoiseSignal(4,10,1,10),0.42);
+  Texture cam2 = new SmoothThreshold(beige,brown, new NoiseSignal(4,10,1,10),0.25);
+        
+        
+			</pre><p>
+				Now let's take these two textures
+				<code class="code">cam1</code>
+				and
+				<code class="code">cam2</code>
+				and toggle between the two. Before we do that let's
+				apply a rotation and scale to the UV values before
+				calculating the texture. This lets us scale and rotate
+				the UV value per texture so we get skewed and rotated
+				results.
+			</p><pre class="programlisting">
+				
+        Texture rotatedCam1 = new UVRotate(new UVScale(cam1,1,4),20);
+        Texture rotatedCam2 = new UVRotate(new UVScale(cam2,1,6),34);
+        texture = new SmoothThreshold(rotatedCam1, rotatedCam2, new NoiseSignal(6,4,1));       
+        
+        texture = new Dirty(texture,RGBAColor.black(),0.32);
+			</pre><p>
+				We take our rotated and scaled textures and create a new
+				<code class="code">Threshold</code>
+				texture which will merge them based on another noise
+				signal.
+			</p><p>
+				Finally we add a
+				<code class="code">Dirty</code>
+				texture to the final texture. This creates colored noise
+				(black in this case) and applies it to the source
+				texture with a given strength. In this case, we are
+				using it to just dirty up the final texture.
+			</p><pre class="programlisting">
+				
+public class Camouflage extends AbstractTexture {
+
+    private Texture texture;
+
+    public Camouflage() {        
+        SolidTexture green = new SolidTexture(new RGBAColor(119,139,111));       
+        SolidTexture brown = new SolidTexture(new RGBAColor(119,110,100));
+        SolidTexture beige = new SolidTexture(new RGBAColor(166,150,116));        
+        
+        Texture cam1 = new SmoothThreshold(green,beige, new NoiseSignal(4,10,1,10),0.42);
+        Texture cam2 = new SmoothThreshold(beige,brown, new NoiseSignal(4,10,1,10),0.25);
+        
+        
+        Texture rotatedCam1 = new UVRotate(new UVScale(cam1,1,4),20);
+        Texture rotatedCam2 = new UVRotate(new UVScale(cam2,1,6),34);
+        texture = new SmoothThreshold(rotatedCam1, rotatedCam2, new NoiseSignal(6,4,1));       
+        
+        texture = new Dirty(texture,RGBAColor.black(),0.32);
+
+    }
+    
+    public void getColor(double u, double v, RGBAColor value) {
+        texture. getColor(u*1.3, v*1.3,value);
+    }
+}
+
+			</pre><div class="mediaobject" align="center"><img src="../img/camouflage.png" align="middle"></div><p>
+				You could create a huge image of this texture and use it
+				in 3D modelling applications to texture map tanks and so
+				on.
+			</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N104A8"></a>3.8.&nbsp;Using Anonymous Classes</h2></div></div></div><p>
+				There are times when you might not need to create a
+				brand new Signal or Texture class where you can simple
+				use anonymous classes to implement the functionality.
+				Doing so is easy with our single method interfaces.
+			</p><pre class="programlisting">
+				
+
+  //create anonymous signal 
+  ChannelSignal signal = new ChannelSignal() {
+
+      public double getValue(double u, double v) {
+         return Math.sin(u * v * 10);
+      }
+  };
+        
+  Texture texture = new GradientSignalTexture(signal,ColorGradient.buildFire());
+        
+  TextureViewer.show( texture);
+
+			</pre><div class="mediaobject" align="center"><img src="../img/anonymousSignal.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N104BD"></a>3.9.&nbsp;Map Texture Map</h2></div></div></div><p>
+				Let's try making a map out of our noise function and
+				shade the landscape according to the height and add in a
+				sea level at which point we just shade the texture blue.
+			</p><p>
+				We'll start with a
+				<code class="code">Map</code>
+				texture class that takes a gradient, a sea color, and
+				the usual noise parameters for scale and octaves, and a
+				value indicating where the sea level is. To calculate
+				the map, we'll calculate a noise value based on the
+				<code class="code">(u,v)</code>
+				values, and adjust it so the values fill the range 0..1
+				a little better. Since the value could go outside the
+				0..1 range, we will clamp it. Finally, we check the
+				height value and if it is above sea level, we use a map
+				color. If it is below sea level, we use the sea color.
+				We don't want to fade into the sea color since the edge
+				of the water on land is a fairly hard edge.
+			</p><pre class="programlisting">
+				
+    double height = noise.fbmNoise2(u * scale, v * scale, octaves);
+    height = height * 1.65;
+    height = height - 0.25;
+    height = GraphUtils.clamp(height);
+
+    if (height &lt; seaLevel) {
+        value.setColor(seaColor);
+    } else {
+        value.setColor(gradient.interpolate(height));
+    }
+			</pre><div class="mediaobject" align="center"><img src="../img/map.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N104DA"></a>3.10.&nbsp;Saving High Resolution Images</h2></div></div></div><p>
+				If you want to generate a high resolution image outside
+				of the viewer, and save it to disk for printing or using
+				as a background, you can do so by going directly to the
+				<code class="code">TextureImage</code>
+				class which is the foundation class for rendering
+				textures that the
+				<code class="code">TextureViewer</code>
+				class uses. We simply create an instance and pass a
+				resolution into the constructor and call the
+				<code class="code">render</code>
+				method. Once the image has rendered to its internal
+				canvas, we can then save the image, or in the case of
+				the viewer, render it in the window. Note that since the
+				renderer is multi-threaded by default, the
+				<code class="code">renderAndWait</code>
+				method must be used so it will not execute
+				asynchonously. If we use the
+				<code class="code">render</code>
+				method, then we will probably end up saving the image
+				when it is only 10% of the way through.
+			</p><pre class="programlisting">
+				
+public class SaveFileDemo {
+
+    public static void main(String[] args) {
+    
+        TextureImage textureImage = new TextureImage(2400, 2400);
+        Texture mand = new Mandelbrot(-0.86429,-0.2578125,-0.5671,-0.01406);
+        
+        //we want 4X4 anti-aliasing
+        textureImage.setAntiAliased(true);
+        
+        textureImage.renderAndWait(mand);
+        
+        textureImage.saveAsPNG("c:\\myImage.png");
+    }
+}
+			</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N104F2"></a>3.11.&nbsp;Signals, Signals Everywhere</h2></div></div></div><p>
+				It could be quite easy to go overboard with using
+				signals in textures and use them for every single
+				constant numerical value. We have a
+				<code class="code">ConstantSignal</code>
+				signal class that just returns a single value that could
+				be used for default constant values. For example, we
+				could make the speed or octaves of a noise texture
+				dependent on the
+				<code class="code">u,v</code>
+				values. As an example, we will create a
+				<code class="code">UVRotation</code>
+				texture where the angle of rotation is dependent on a
+				<code class="code">ChannelSignal</code>
+				used.
+			</p><pre class="programlisting">
+							
+public class UVSignalRotateTexture extends AbstractTexture {
+        
+    private ChannelSignal signal;
+    private Texture source;
+
+    public UVSignalRotateTexture(Texture source, ChannelSignal signal) {                
+        this.signal = signal;
+        this.source = source;
+    }
+
+    public void getColor(double u, double v, RGBAColor value) {
+        //get the angle from the signal
+        double radAngle = calculateSignalFromFilter(u, v, signal);
+        //do the rotation
+        double ru = Math.cos(radAngle) * u - Math.sin(radAngle) * v;
+        double rv = Math.sin(radAngle) * u + Math.cos(radAngle) * v;
+        //get the final color with the newly rotated u,v values
+        calculateColorFromTexture(ru, rv, source,value);
+    }
+}
+			</pre><p>
+				We get a value from the signal and then use this to
+				drive the angle of rotation. Let's try it out using a
+				<code class="code">USignal</code>
+				signal that returns the value 0 to 1 as it moves across
+				the texture.
+			</p><pre class="programlisting">
+				
+public static void main(String[] args) {
+
+    Texture texture = new DirtyBrick();
+    ChannelSignal signal = new USignal();
+    texture = new UVSignalRotateTexture(texture, signal);
+        
+    TextureViewer.show(texture);        
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/rotatedBrick.png" align="middle"></div><p>
+				Again, we gain the benefits of a pluggable system where
+				we can plug on signal or texture into another and use
+				that new value. We can plug this signal into a
+				<code class="code">NoisySignal</code>
+				signal which will add random elements into it. We also
+				changed it from a
+				<code class="code">USignal</code>
+				to a
+				<code class="code">VSignal</code>
+				.
+			</p><pre class="programlisting">
+				
+public static void main(String[] args) {        
+        
+  Texture texture = new DirtyBrick();
+  ChannelSignal signal = new  VSignal();
+  signal = new NoisySignal(signal,0.2,8,12);
+  texture = new UVSignalRotateTexture(texture, signal);       
+  TextureViewer.show(texture);        
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/NoisyRotatedBrick.png" align="middle"></div><p>
+				We could make every single numerical parameter in a
+				texture a signal parameter, but it would be over the
+				top. However, it does indicate how useful the
+				<code class="code">ChannelSignal</code>
+				architecture can be. We also have a class which lets you
+				provide
+				<code class="code">ChannelSignals</code>
+				to make up the red,green, blue, and alpha channels. You
+				can pass in either 1 signal to be used for all channels,
+				or one for each channel.
+			</p><pre class="programlisting">
+				
+Listing A:
+				
+public static void main(String[] args) {
+
+  ChannelSignal signal1 = new MandelbrotSignal(-1.487, -0.006950, -1.46944, 0.007);
+  ChannelSignal signal2 = new MandelbrotSignal(0.35, 0.35, 0.3507, 0.3507);
+  ChannelSignal signal3 = new MandelbrotSignal(-0.75401, -0.23191, -0.68671, -0.1735);
+
+  ChannelSignal signal4 = new SineWave(100, 10, 2);// new ConstantSignal(1);
+
+  Texture texture = new ChannelTexture(signal1, signal2, signal3, signal4);
+  TextureViewer.show(new Background(texture, RGBAColor.black()));
+}
+			</pre><pre class="programlisting">
+				
+Listing B:					
+
+  public static void main(String[] args) {
+
+    Texture image = new ImageTexture("c://camelback.jpg");            
+
+    ChannelSignal signalRed = new AnimalStripe();        
+    ChannelSignal signalGreen = new TextureSignal(image,ChannelSignal.Channel.GREEN);
+    ChannelSignal signalBlue = new TextureSignal(image,ChannelSignal.Channel.BLUE);
+
+    ChannelSignal signal4 = new ConstantSignal();
+        
+    signal4 = new InvertSignal(new RadialSignal(10));
+
+
+    Texture texture = new ChannelTexture(signalRed, signalGreen, signalBlue, signal4);
+    TextureViewer.show(new Background(texture, RGBAColor.black()));
+
+    }
+}
+			</pre><pre class="programlisting">
+				
+Listing C (variation on B):					
+
+  public static void main(String[] args) {
+
+    Texture image = new ImageTexture("c://camelback.jpg");            
+
+    ChannelSignal stripe = new AnimalStripe();
+    ChannelSignal imageRed = new TextureSignal(image,ChannelSignal.Channel.RED);
+    ChannelSignal defaultValue = new ConstantSignal(1);
+        
+    ChannelSignal signalRed = new SignalThreshold(defaultValue,imageRed,stripe);        
+                
+    ChannelSignal signalGreen = new TextureSignal(image,ChannelSignal.Channel.GREEN);
+    ChannelSignal signalBlue = new TextureSignal(image,ChannelSignal.Channel.BLUE);
+
+    ChannelSignal signal4 = new ConstantSignal();
+        
+    signal4 = new InvertSignal(new RadialSignal(0.9));
+
+
+    Texture texture = new ChannelTexture(signalRed, signalGreen, signalBlue, signal4);
+    TextureViewer.show(new Background(texture, RGBAColor.black()));
+
+  }
+}
+			</pre><div class="mediaobject" align="center"><img src="../img/SignalDemo.png" align="middle"></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10557"></a>3.12.&nbsp;Springing Along</h2></div></div></div><p>
+				This section describes how to hook up textures and
+				signals using Spring. This way, we could modify our
+				textures without recompiling, and we can re-use some of
+				the items much easier. This demonstration describes the
+				content of the
+				<code class="code">application.xml</code>
+				configuration part as well as the code required to fetch
+				the final texture bean.
+			</p><p>
+				To start with, we'll create a fire gradient using a
+				<code class="code">ColorGradient</code>
+				. Not only do we have to create a bean for the gradient,
+				but also for the colors it contains.
+			</p><pre class="programlisting">
+				
+    &lt;bean name="fireGradient" class="org.texturemaker.geom.ColorGradient"&gt;
+        &lt;property name="colors"&gt;
+            &lt;list&gt;
+                &lt;ref bean="blackColor"/&gt;
+                &lt;ref bean="blackColor"/&gt;
+                &lt;ref bean="redColor"/&gt;
+                &lt;ref bean="orangeColor"/&gt;
+                &lt;ref bean="yellowColor"/&gt;
+                &lt;ref bean="whiteColor"/&gt;
+            &lt;/list&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean class="org.texturemaker.geom.RGBAColor" name="whiteColor"&gt;
+        &lt;property name="red" value="255"/&gt;
+        &lt;property name="green" value="255"/&gt;
+        &lt;property name="blue" value="255"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean class="org.texturemaker.geom.RGBAColor" name="orangeColor"&gt;
+        &lt;property name="red" value="255"/&gt;
+        &lt;property name="green" value="128"/&gt;
+        &lt;property name="blue" value="0"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean class="org.texturemaker.geom.RGBAColor" name="yellowColor"&gt;
+        &lt;property name="red" value="255"/&gt;
+        &lt;property name="green" value="255"/&gt;
+        &lt;property name="blue" value="0"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean class="org.texturemaker.geom.RGBAColor" name="redColor"&gt;
+        &lt;property name="red" value="255"/&gt;
+        &lt;property name="green" value="0"/&gt;
+        &lt;property name="blue" value="0"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean class="org.texturemaker.geom.RGBAColor" name="blackColor"&gt;
+        &lt;property name="red" value="0"/&gt;
+        &lt;property name="green" value="0"/&gt;
+        &lt;property name="blue" value="0"/&gt;
+    &lt;/bean&gt;
+    				
+
+
+
+			</pre><p>
+				This creates the fire gradient that we need. We will
+				construct our fire using a chain of textures to modify
+				the basic horizontal fire gradient. We start with a
+				<code class="code">NoisySignal</code>
+				that uses a
+				<code class="code">VSignal</code>
+				signal as its source signal. This is used to disturb the
+				<code class="code">(u,v)</code>
+				values used to calculate the fire color in the
+				<code class="code">ColorGradient</code>
+			</p><pre class="programlisting">
+				
+
+    &lt;bean name="vSignal" class="org.texturemaker.signals.VSignal"/&gt;
+    
+    &lt;bean name="noisySignal" class="org.texturemaker.signals.NoisySignal"&gt;
+        &lt;property name="source" ref="vSignal"/&gt;
+        &lt;property name="size" value="0.3"/&gt;
+        &lt;property name="octaves" value="15"/&gt;
+        &lt;property name="scale" value="15"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean name="verticalFire" class="org.texturemaker.textures.signal.GradientSignalTexture"&gt;
+        &lt;property name="gradient" ref="fireGradient"/&gt;
+        &lt;property name="signal" ref="noisySignal"/&gt;
+    &lt;/bean&gt;    
+    
+
+			</pre><div class="mediaobject" align="center"><img src="../img/fire1.png" align="middle"></div><p>
+				This looks ok, but we don't have much intensity (white
+				parts) of the fire at the bottom, and it looks fairly
+				flat with no flames leaping upwards. We can use a
+				translation to move the fire upwards so we can see more
+				of the bottom, but while we are at it, we could
+				introduce some more noise to the fire. To do this, we
+				add another
+				<code class="code">NoisySignal</code>
+				that is fed into our original noisy signal. This time,
+				we give it a negative size value so the fire shifts
+				upwards as the noise is introduced.
+			</p><pre class="programlisting">
+				
+    &lt;bean name="noisySignal" class="org.texturemaker.signals.NoisySignal"&gt;
+        &lt;property name="source" ref="offsetNoisySignal"/&gt;
+        &lt;property name="size" value="0.3"/&gt;
+        &lt;property name="octaves" value="15"/&gt;
+        &lt;property name="scale" value="15"/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean name="offsetNoisySignal" class="org.texturemaker.signals.NoisySignal"&gt;
+        &lt;property name="source" ref="vSignal"/&gt;
+        &lt;property name="size" value="-0.3"/&gt;
+        &lt;property name="octaves" value="5"/&gt;
+        &lt;property name="scale" value="5"/&gt;
+        
+    &lt;/bean&gt;
+    
+			</pre><div class="mediaobject" align="center"><img src="../img/fire2.png" align="middle"></div><p>
+				Now we have some more of a white heat at the bottom, but
+				it still looks rather flat. To remedy this, we can scale
+				the image so the
+				<code class="code">v</code>
+				value changes much faster.
+			</p><pre class="programlisting">
+				
+&lt;bean name="scaleUV" class="org.texturemaker.textures.uv.UVScale"&gt;
+    &lt;constructor-arg index="0" ref="verticalFire"/&gt;
+    &lt;constructor-arg index="1" value="2.5"/&gt;
+    &lt;constructor-arg index="2" value="1"/&gt;        
+&lt;/bean&gt;
+    
+			</pre><p>
+				This time, we also used the constructor arguments to set
+				the bean up. In order to view our texture, we need to
+				initialize the Spring environment, pass it the
+				<code class="code">application.xml</code>
+				file and request and instance of the texture we want to
+				display.
+			</p><pre class="programlisting">
+				
+public static void main(String[] args) {
+    Resource res = new ClassPathResource("applicationContext.xml");
+    XmlBeanFactory factory = new XmlBeanFactory(res);
+    Texture bean = (Texture) factory.getBean("scaleUV");
+    TextureViewer.show(bean);        
+}
+			</pre><p>
+				It is really that simple. Using Spring to set up the
+				textures could be very useful for defining a library of
+				often used textures, that can just be imported into your
+				spring configuration. It can even let you define
+				commonly re-used textures such as
+				<code class="code">NoisySignal</code>
+				instances to re-use for putting a subtle amount of noise
+				on a signal for example.
+			</p><div class="mediaobject" align="center"><img src="../img/fire3.png" align="middle"></div></div></div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="ch02.html">Prev</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;<a accesskey="n" href="ch04.html">Next</a></td></tr><tr><td valign="top" align="left" width="40%">Chapter&nbsp;2.&nbsp;Texture Basics&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">Home</a></td><td valign="top" align="right" width="40%">&nbsp;Chapter&nbsp;4.&nbsp;Textured Tiger Burning Bright</td></tr></table></div></body></html>
