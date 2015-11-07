@@ -1,5 +1,6 @@
 from os import listdir
 from os import walk
+import sys
 
 ## Author: James Earle.
 ##
@@ -8,35 +9,52 @@ from os import walk
 ## such that row 1 of every file is summed for standardfitness, adjusted, and hits.
 ##
 
-dirPath = '../GeneticProgrammingPortfolio/out_files'
-
+# Get the active directory and list all subfolders and files. 
+dirPath = '..\GeneticProgrammingPortfolio\out_files'
 folders = listdir(dirPath)
-print(folders)
-
 activeDir = dirPath + "/" + folders[len(folders)-1]
 
 files = listdir(activeDir)
 
-print(files)
-print(len(files))
+# Each array will be size 52 at the end. Total summation will occur, divide by 25 runs for avgs.
+std = []
+adj = []
+hit = []
 
-with open('outfile.txt', 'w+') as o:
-	max = len(files) - 26
-	# We want to process 25 files, also account for index offset in list
-	if max<-1:
-		print("Not enough files!")
-	else:
-		for i in range(len(files)-1, max, -1):
-			#o.write(files[i] + '\n')
-			with open(activeDir + "/" + files[i]) as w:
-				print(w)
-				for line in w:
-					print(line)
-		
+# Initialize each array with the first files contents before summing the rest.
+with open(activeDir + "/" + files[0]) as w:
+	for line in w:
+		arr = line.split("\t")
+		std.append(float(arr[0]))
+		adj.append(float(arr[1]))
+		hit.append(int(arr[2].split('\n')[0])) # last character on line, doesn't need new line char 
 
+# Currently the number of runs in each execution is 25, so we set a max so we only process the 
+# 25 most recent run output files.
+max = len(files) - 26
+if max<-1:
+	print("Not enough files to process")
+	sys.exit(1)
+else:
+	print("Number of files is correct")
+	for i in range(len(files)-1, max, -1): #decrement through the last 25 runs
+		with open(activeDir + "/" + files[i]) as w:
+			ind = 0
+			for line in w:
+				# Values are tab delimited in raw output files, split on this and sum.
+				arr = line.split('\t')
+				std[ind] += float(arr[0])
+				adj[ind] += float(arr[1])
+				hit[ind] += int(arr[2].split('\n')[0])
+				ind += 1
+				
+# Finally, write all output to the summed output files as averages (over 25).
+with open('stdfit.txt', 'w+') as stdFile, open('adjfit.txt', 'w+') as adjFile, open('hits.txt', 'w+') as hitFile:
+	for i in range(0, len(std)):
+		stdFile.write(str(std[i] / 25) + '\n')
+		adjFile.write(str(adj[i] / 25) + '\n')
+		hitFile.write(str(hit[i] / 25) + '\n')
 
-# with open('58-04-191_out.txt') as i:
-# 	with open('myOutputFile.txt', 'w+') as o:
-# 		for line in i:
-# 			o.write(line)
-# 			print(line)
+# And we're happy!
+print("Done!")
+sys.exit(0)
