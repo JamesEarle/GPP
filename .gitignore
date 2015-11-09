@@ -43,4 +43,5 @@ Temporary Items
 .apdisk
 
 # For referenced files in project being different on laptop vs desktop
-*.properties
+GeneticProgrammingPortfolio/nbproject/private/private.properties
+GeneticProgrammingPortfolio/nbproject/private/private.xml
