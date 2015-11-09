@@ -50,10 +50,14 @@ else:
 				
 # Finally, write all output to the summed output files as averages (over 25).
 with open('stdfit.txt', 'w+') as stdFile, open('adjfit.txt', 'w+') as adjFile, open('hits.txt', 'w+') as hitFile:
+	
 	for i in range(0, len(std)):
 		stdFile.write(str(std[i] / 25) + '\n')
 		adjFile.write(str(adj[i] / 25) + '\n')
-		hitFile.write(str(hit[i] / 25) + '\n')
+		hitFile.write(str(float(hit[i]) / 25) + '\n')
+		
+		# Excel building
+			
 
 # And we're happy!
 print("Done!")
