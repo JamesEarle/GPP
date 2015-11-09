@@ -43,10 +43,11 @@ else:
 			for line in w:
 				# Values are tab delimited in raw output files, split on this and sum.
 				arr = line.split('\t')
-				std[ind] += float(arr[0])
-				adj[ind] += float(arr[1])
-				hit[ind] += int(arr[2].split('\n')[0])
-				ind += 1
+				if(ind < len(std)):
+					std[ind] += float(arr[0])
+					adj[ind] += float(arr[1])
+					hit[ind] += int(arr[2].split('\n')[0])
+					ind += 1
 				
 # Finally, write all output to the summed output files as averages (over 25).
 with open('stdfit.txt', 'w+') as stdFile, open('adjfit.txt', 'w+') as adjFile, open('hits.txt', 'w+') as hitFile:

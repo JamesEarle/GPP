@@ -19,6 +19,7 @@ import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
@@ -80,15 +81,20 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double expectedResult;
             double result;
             
+            currentY = ThreadLocalRandom.current().nextDouble(0, 11);
+            
             for (int i=1;i<=25;i++) {
                 currentX = i;
-                currentY = state.random[threadnum].nextDouble();
-                
+                //currentY = state.random[threadnum].nextDouble();
+
+                //if(i == 1) System.out.println(currentY);                
                 expectedResult = inputData.get(i-1);
                 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
 
                 result = Math.abs(expectedResult - input.x);
+                
+                //System.out.println("(" + currentX + ", " + currentY + ") " + expectedResult + " - " + input.x + " = " +result);
                 if (result <= 1.5) hits++;
                 sum += result;              
             }

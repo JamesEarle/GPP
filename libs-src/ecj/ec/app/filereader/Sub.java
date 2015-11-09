@@ -12,6 +12,7 @@ import ec.util.*;
 
 public class Sub extends GPNode
     {
+    @Override
     public String toString() { return "-"; }
 
 /*
@@ -27,8 +28,10 @@ public class Sub extends GPNode
   individualBase);
   }
 */
+    @Override
     public int expectedChildren() { return 2; }
 
+    @Override
     public void eval(final EvolutionState state,
         final int thread,
         final GPData input,

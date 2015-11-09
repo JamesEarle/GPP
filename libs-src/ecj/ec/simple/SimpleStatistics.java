@@ -197,12 +197,12 @@ public class SimpleStatistics extends Statistics implements SteadyStateStatistic
         
         // for now we just print the best fitness 
         
-        if (doFinal) state.output.println("\nBest Individual of Run:",statisticslog);
+        if (doFinal) state.output.println("\nBest Individual of Run:", statisticslog);
         for(int x=0;x<state.population.subpops.length;x++ )
             {
-            if (doFinal) state.output.println("Subpopulation " + x + ":",statisticslog);
+            if (doFinal) state.output.println("Subpopulation " + x + ":", statisticslog);
             if (doFinal) best_of_run[x].printIndividualForHumans(state,statisticslog);
-            if (doMessage && !silentPrint) state.output.message("Subpop " + x + " best fitness of run: " + best_of_run[x].fitness.fitnessToStringForHumans() + " dolla might");
+            if (doMessage && !silentPrint) state.output.message("Subpop " + x + " best fitness of run: " + best_of_run[x].fitness.fitnessToStringForHumans() + "");
 
             // finally describe the winner if there is a description
             if (doFinal && doDescription) 

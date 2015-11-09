@@ -782,10 +782,22 @@ public class Evolve {
         This will skip all Python analytics as well as the script will simply
         output "Not enough files"
     */
-    public static boolean debug = false;
+    public static boolean debug;
 
     /** Top-level evolutionary loop.  */
     public static void main(String[] args) {
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        System.out.println("Full execution? y/n: ");
+        String input = "";
+        try {
+            input = br.readLine();
+        } catch (IOException ex) {
+            Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        debug = !input.equals("y");
         
         if(!debug) {
             // Executes 25 runs. This will allow us to do statistical analysis.
@@ -808,8 +820,6 @@ public class Evolve {
                 str.append(userDir[i]).append("\\");
             }
             
-            //System.out.println(str.toString());
-            //System.out.println("py " + str.toString() + "py\\read.py");
             Process p = r.exec("py " + str.toString() + "py\\read.py");
             p.waitFor();
             

@@ -138,6 +138,7 @@ public abstract class ERC extends GPNode
 
     /** This defaults to simply name() + "[" + encode() + "]".   You probably shouldn't deviate from this. */
     public String toString() 
+//        { return name() + "[" + encode() + "]"; }
         { return name() + "[" + encode() + "]"; }
 
     /** Encodes data from the ERC, using ec.util.Code.  */
