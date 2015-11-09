@@ -43,4 +43,4 @@ Temporary Items
 .apdisk
 
 # For referenced files in project being different on laptop vs desktop
-private.properties
+*.properties
