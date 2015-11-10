@@ -1,0 +1,151 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.14)  10 NOV 2015 00:30
+entering extended mode
+**full-language.tex
+(full-language.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eepic\epic.sty"
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count87
+\d@lta=\count88
+\@delta=\dimen103
+\@@delta=\dimen104
+\@gridcnt=\count89
+\@joinkind=\count90
+\@dotgap=\dimen105
+\@ddotgap=\dimen106
+\@x@diff=\count91
+\@y@diff=\count92
+\x@diff=\dimen107
+\y@diff=\dimen108
+\@dotbox=\box26
+\num@segments=\count93
+\num@segmentsi=\count94
+\@datafile=\read1
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ecltree\ecltree.sty"
+ECL Tree graph macro by isozaki, Nov. 12, 1990 + 2e FIX
+\@BundleWidth=\dimen109
+\@BundleDepth=\dimen110
+\@BundleHeight=\dimen111
+\@NodeBox=\box27
+\GapDepth=\dimen112
+\GapWidth=\dimen113
+\EdgeLabelSep=\dimen114
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen115
+\@Sbox=\box29
+\do@VerbBox=\toks14
+\the@fancyput=\toks15
+\this@fancyput=\toks16
+\EndVerbatimTokens=\toks17
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+)))
+(full-language.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen116
+\scratchbox=\box30
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen117
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks19
+)
+Overfull \hbox (44.44589pt too wide) in paragraph at lines 20--26
+[]\OT1/cmr/m/n/10 Best In-di-vid-ual of Run: Sub-pop-u-la-tion 0: Eval-u-ated: 
+true Fit-ness: Stan-dard-ized=0.5032281212002445 Ad-justed=0.6652350271371689
+ []
+
+
+Overfull \hbox (2957.44649pt too wide) in paragraph at lines 20--26
+\OT1/cmr/m/n/10 Hits=25 Tree 0: [] 
+ []
+
+[1
+
+
+{C:/Users/JamesEarle/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \vbox (176.37372pt too high) has occurred while \output is active []
+
+
+[2] (full-language.aux) ) 
+Here is how much of TeX's memory you used:
+ 1325 strings out of 493673
+ 17090 string characters out of 3141515
+ 309595 words of memory out of 3000000
+ 4718 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 36i,45n,50p,3820b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/latxfont/lcirclew.pfb>
+Output written on full-language.pdf (2 pages, 86713 bytes).
+PDF statistics:
+ 17 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

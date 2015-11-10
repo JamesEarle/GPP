@@ -807,6 +807,7 @@ public class Evolve {
         } else {
             // Execute once, will not run read.py for statistical analysis.
             mainExecute(args);
+            System.exit(0);
         }
         
         // Process output using read.py

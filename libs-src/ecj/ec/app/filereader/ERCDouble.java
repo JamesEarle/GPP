@@ -22,7 +22,7 @@ public class ERCDouble extends ERCAdaptorDouble {
     
     @Override
     public double setNumber(final EvolutionState state, final int thread) {
-        return state.random[thread].nextDouble() * 10.0;
+        return state.random[thread].nextDouble() * 30.0;
     }
 
     

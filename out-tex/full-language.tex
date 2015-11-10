@@ -1,0 +1,27 @@
+\documentclass[]{article}
+\usepackage{epic}	% required by ecltree and fancybox packages
+\usepackage{ecltree}	% to draw the GP trees
+\usepackage{fancybox}	% required by \Ovalbox
+\usepackage{lscape}
+\begin{document}
+\begin{landscape}
+% minimum distance between nodes on the same line
+\setlength{\GapWidth}{1em}    
+
+% draw with a thick dashed line, very nice looking
+\thicklines \drawwith{\dottedline{2}}   
+
+% draw an oval and center it with the rule.  You may want to fool with the
+% rule values, though these seem to work quite well for me.  If you make the
+% rule smaller than the text height, then the GP nodes may not line up with
+% each other horizontally quite right, so watch out.
+\newcommand{\gpbox}[1]{\Ovalbox{#1\rule[-.7ex]{0ex}{2.7ex}}}
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=0.5032281212002445 Adjusted=0.6652350271371689 Hits=25
+Tree 0:
+\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{x}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{/}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[3.585753780377977]}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[8.426740536392911]}}\chunk{\gpbox{C[9.962476831383942]}}\end{bundle}}\end{bundle}}\chunk{\gpbox{C[6.709970631983686]}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[9.779413364041595]}}\chunk{\gpbox{C[1.109742130316811]}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[8.426740536392911]}}\chunk{\gpbox{C[9.962476831383942]}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{/}}\chunk{\gpbox{x}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{x}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{/}}\chunk{\gpbox{x}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[8.426740536392911]}}\chunk{\gpbox{C[9.962476831383942]}}\end{bundle}}\end{bundle}}\chunk{\gpbox{C[6.709970631983686]}}\end{bundle}}\chunk{\gpbox{x}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\gpbox{x}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\gpbox{C[0.29156723471918666]}}\chunk{\gpbox{C[6.709970631983686]}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{C[2.952635332879263]}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{C[2.952635332879263]}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[8.927934907749718]}}\chunk{\gpbox{C[3.3251476216310283]}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[3.585753780377977]}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{C[2.952635332879263]}}\chunk{\gpbox{x}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[3.585753780377977]}}\chunk{\gpbox{x}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{-}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\begin{bundle}{\gpbox{+}}\chunk{\gpbox{C[8.426740536392911]}}\chunk{\gpbox{C[9.962476831383942]}}\end{bundle}}\end{bundle}}\chunk{\gpbox{C[6.709970631983686]}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{log}}\chunk{\gpbox{C[9.962476831383942]}}\end{bundle}}\end{bundle}}\end{bundle}}\chunk{\gpbox{C[3.3251476216310283]}}\end{bundle}}\end{bundle}}\chunk{\begin{bundle}{\gpbox{*}}\chunk{\gpbox{C[3.4924479808715225]}}\chunk{\gpbox{C[2.587340526335724]}}\end{bundle}}\end{bundle}}\end{bundle}}\end{bundle}
+\end{landscape}
+\end{document}
