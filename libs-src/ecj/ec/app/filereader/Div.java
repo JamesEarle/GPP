@@ -3,7 +3,6 @@ package ec.app.filereader;
 import ec.*;
 import ec.gp.*;
 /**
- *
  * @author JamesEarle
  */
 public class Div extends GPNode {
@@ -15,12 +14,8 @@ public class Div extends GPNode {
     public int expectedChildren() { return 2; }
     
     @Override
-    public void eval (final EvolutionState state,
-                     final int thread,
-                     final GPData input,
-                     final ADFStack stack,
-                     final GPIndividual individual,
-                     final Problem problem) {
+    public void eval (final EvolutionState state, final int thread, final GPData input,
+        final ADFStack stack, final GPIndividual individual, final Problem problem) {
 
         DoubleData rd = ((DoubleData)(input));
 

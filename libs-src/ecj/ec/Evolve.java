@@ -782,7 +782,6 @@ public class Evolve {
         This will skip all Python analytics as well as the script will simply
         output "Not enough files"
     */
-    public static boolean debug;
 
     /** Top-level evolutionary loop.  */
     public static void main(String[] args) {
@@ -797,9 +796,7 @@ public class Evolve {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        debug = !input.equals("y");
-        
-        if(!debug) {
+        if(input.equals("y")) {
             // Executes 25 runs. This will allow us to do statistical analysis.
             for(int i=0;i<25;i++) {
                 mainExecute(args);

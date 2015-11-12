@@ -80,7 +80,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double expectedResult;
             double result;
             
-            // Sample all 25 data points for currentX
+            // Sample all data points for currentX
             for (int i=1;i<=inputData.size();i++) {
                 currentX = i;
                 expectedResult = inputData.get(i-1);
@@ -92,7 +92,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 if (result <= 500) hits++;
                 sum += result;              
             }
-
+            
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
             f.writer = pw;

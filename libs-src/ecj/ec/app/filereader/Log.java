@@ -3,7 +3,6 @@ package ec.app.filereader;
 import ec.*;
 import ec.gp.*;
 /**
- *
  * @author JamesEarle
  */
 public class Log extends GPNode {
