@@ -22,7 +22,7 @@ adj = []
 hit = []
 
 # Initialize each array with the first files contents before summing the rest.
-with open(activeDir + "/" + files[0]) as w:
+with open(activeDir + "/" + files[len(files) - 1]) as w:
 	for line in w:
 		arr = line.split("\t")
 		std.append(float(arr[0]))
@@ -37,7 +37,7 @@ if max<-1:
 	sys.exit(1)
 else:
 	print("Number of files is correct")
-	for i in range(len(files)-1, max, -1): # Decrement through the last 25 runs
+	for i in range(len(files) - 2, max, -1): # Decrement through the last 25 runs
 		with open(activeDir + "/" + files[i]) as w:
 			ind = 0
 			for line in w:
@@ -49,9 +49,10 @@ else:
 					hit[ind] += int(arr[2].split('\n')[0])
 					ind += 1
 				else:
+					ind = ind
 					# Really shouldn't be reaching this case... possible java problem.
-					print(str(ind) + ", " + str(len(std)))
-					sys.stderr.write("Some damn bugs")
+					#print(str(ind) + ", " + str(len(std)))
+					#sys.stderr.write("Some damn bugs")
 				
 # Finally, write all output to the summed output files as averages (over 25).
 with open('stdfit.txt', 'w+') as stdFile, open('adjfit.txt', 'w+') as adjFile, open('hits.txt', 'w+') as hitFile:

@@ -49,8 +49,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             new File("out_files\\" + forDirs.format(date)).mkdir();
             
             pw = new PrintWriter("out_files\\" + forDirs.format(date) + "\\" + new File(forFiles.format(date)) + "_out.txt");
-            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\testinput.txt"));
-            
+            //br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\gdp_1960_2015.txt"));
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\sp500.txt"));
+
             String next;
             while((next = br.readLine()) != null) {
                 inputData.add(Double.valueOf(next));
