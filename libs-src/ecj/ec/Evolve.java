@@ -782,8 +782,11 @@ public class Evolve {
         This will skip all Python analytics as well as the script will simply
         output "Not enough files"
     */
+    
+    public static final int NUM_RUNS = 20;
 
-    /** Top-level evolutionary loop.  */
+    /** Top-level evolutionary loop.
+     * @param args */
     public static void main(String[] args) {
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -797,9 +800,16 @@ public class Evolve {
         }
         
         if(input.equals("y")) {
-            // Executes 25 runs. This will allow us to do statistical analysis.
-            for(int i=0;i<25;i++) {
-                mainExecute(args);
+            // Executes 20 runs. This will allow us to do statistical analysis.
+            for(int i=0;i<NUM_RUNS/2;i++) {
+                new Thread(() -> mainExecute(args)).start();
+                Thread waiter = new Thread(() -> mainExecute(args));
+                waiter.start();
+                try {
+                    waiter.join();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         } else {
             // Execute once, will not run read.py for statistical analysis.
@@ -818,7 +828,7 @@ public class Evolve {
                 str.append(userDir[i]).append("\\");
             }
             
-            Process p = r.exec("py " + str.toString() + "py\\read.py");
+            Process p = r.exec("py " + str.toString() + "py\\read.py " + NUM_RUNS);
             p.waitFor();
             
             BufferedReader stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -837,7 +847,14 @@ public class Evolve {
                 System.out.println(s);
             }
             System.out.println("********************************************");
-
+            
+            p = r.exec("py " + str.toString() + "py\\text.py ");
+            p.waitFor();
+            
+            stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            while((s = stdin.readLine()) != null) {
+                System.out.println(s);
+            }
             
         } catch (IOException | InterruptedException ex) {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);

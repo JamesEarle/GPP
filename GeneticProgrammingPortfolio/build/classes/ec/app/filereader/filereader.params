@@ -36,3 +36,25 @@ gp.fs.0.func.6.nc = nc1
 eval.problem = ec.app.filereader.FileInputRegression
 eval.problem.data = ec.app.filereader.DoubleData
 
+# run for 51 generations, quit prematurely if I find something ideal
+generations =				51
+quit-on-run-complete =			true
+
+# subpop size is 1024 individuals
+pop.subpop.0.size =			1024
+# don't bother trying to eliminate duplicates from the
+# initial population
+pop.subpop.0.duplicate-retries =	0
+
+pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
+# Koza's decision here was odd...
+pop.subpop.0.species.pipe.generate-max = false
+# Subsidiary pipelines:
+pop.subpop.0.species.pipe.num-sources = 3
+pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
+pop.subpop.0.species.pipe.source.0.prob = 0.9
+pop.subpop.0.species.pipe.source.1 = ec.breed.ReproductionPipeline
+pop.subpop.0.species.pipe.source.1.prob = 0.02
+pop.subpop.0.species.pipe.source.2 = ec.gp.koza.MutationPipeline
+pop.subpop.0.species.pipe.source.2.prob = 0.08
+

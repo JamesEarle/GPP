@@ -28,6 +28,7 @@ import java.util.logging.Logger;
 public class FileInputRegression extends GPProblem implements SimpleProblemForm {
     
     private static final long serialVersionUID = 1;
+    private static double MAX_VALUE = 0;
 
     public BufferedReader br;
     public PrintWriter pw;
@@ -44,21 +45,23 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         
         try {
             Date date = new Date();
-            Format forFiles = new SimpleDateFormat("mm-ss-SS"); // Minute, Second, Millisecond
-            Format forDirs =  new SimpleDateFormat("dd-HH"); // Day, Hour
+            Format forFiles = new SimpleDateFormat("HH-mm-ss-" + Double.toString(Math.random())); // Hour, Minute, Second, Random (for sorted uniqueness)
+            Format forDirs =  new SimpleDateFormat("dd"); // Day
             new File("out_files\\" + forDirs.format(date)).mkdir();
             
             pw = new PrintWriter("out_files\\" + forDirs.format(date) + "\\" + new File(forFiles.format(date)) + "_out.txt");
-            //br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\gdp_1960_2015.txt"));
-            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "\\sp500.txt"));
-
+            
+            //String dataInputFile = "\\sp500.txt"; 
+            String dataInputFile = "\\sp500_2005_2015_daily_normalized.txt";
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + dataInputFile));
+            
             String next;
             while((next = br.readLine()) != null) {
+                
+                MAX_VALUE = Double.valueOf(next) >= MAX_VALUE ? Double.valueOf(next) : MAX_VALUE;
                 inputData.add(Double.valueOf(next));
             }
-            
-            //pw.println("Standardized\tAdjusted\tHits");
-            
+                        
             br.close();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -90,7 +93,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
                 result = Math.abs(expectedResult - input.x);
                 
-                if (result <= 500) hits++;
+                // Hit radius as 2.5% of the max value
+                if (result <= 0.025*MAX_VALUE) hits++;
                 sum += result;              
             }
             

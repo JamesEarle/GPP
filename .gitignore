@@ -45,3 +45,7 @@ Temporary Items
 # For referenced files in project being different on laptop vs desktop
 GeneticProgrammingPortfolio/nbproject/private/private.properties
 GeneticProgrammingPortfolio/nbproject/private/private.xml
+/GeneticProgrammingPortfolio/dist/
+
+# Ignore the python text file, so the Twilio SID and auth token aren't public.
+py/text.py
