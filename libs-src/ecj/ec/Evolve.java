@@ -820,16 +820,25 @@ public class Evolve {
         // Process output using read.py
         Runtime r = Runtime.getRuntime();
         
-        try {
-            String[] userDir = System.getProperty("user.dir").split("\\\\");
-            
+        try {    
+            Process p;
             StringBuilder str = new StringBuilder();
-            for(int i = 0;i<userDir.length - 1;i++) {
-                str.append(userDir[i]).append("\\");
-            }
+            String[] userDir = System.getProperty("user.dir").split("\\\\");            
             
-            Process p = r.exec("py " + str.toString() + "py\\read.py " + NUM_RUNS);
-            p.waitFor();
+            if(userDir.length == 1) { //UNIX system
+                p = r.exec("python " + System.getProperty("user.dir") + "/py/read.py " + NUM_RUNS + " --linux");
+                p.waitFor();
+            } else {
+                System.out.println(userDir.length);
+                for(int i = 0;i<userDir.length - 1;i++) {
+                    str.append(userDir[i]).append("\\");
+                }
+                System.out.println(str);
+                System.out.println("\n\n***\n\n");
+
+                p = r.exec("py " + str.toString() + "py/read.py " + NUM_RUNS);
+                p.waitFor();
+            }
             
             BufferedReader stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
             BufferedReader stderr = new BufferedReader(new InputStreamReader(p.getErrorStream()));
@@ -848,7 +857,10 @@ public class Evolve {
             }
             System.out.println("********************************************");
             
-            p = r.exec("py " + str.toString() + "py\\text.py ");
+            // First option is for UNIX systems. Alias won't stay for some reason, plus uses /
+            p = userDir.length == 1 ? 
+                    r.exec("python " + System.getProperty("user.dir") + "/py/text.py") 
+                  : r.exec("py " + str.toString() + "py\\text.py ");
             p.waitFor();
             
             stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
