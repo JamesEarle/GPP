@@ -40,8 +40,8 @@ eval.problem.data = ec.app.filereader.DoubleData
 generations =				51
 quit-on-run-complete =			true
 
-# subpop size is 1024 individuals
-pop.subpop.0.size =			1024
+# Population size
+pop.subpop.0.size =			1000
 # don't bother trying to eliminate duplicates from the
 # initial population
 pop.subpop.0.duplicate-retries =	0

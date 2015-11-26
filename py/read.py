@@ -32,7 +32,7 @@ else:
 
 files = listdir(activeDir)
 
-# Total summation will occur, divide by 25 runs for avgs.
+# Total summation will occur, divide by runs for avgs.
 std = []
 adj = []
 hit = [] 

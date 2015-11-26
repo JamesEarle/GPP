@@ -802,14 +802,15 @@ public class Evolve {
         if(input.equals("y")) {
             // Executes 20 runs. This will allow us to do statistical analysis.
             for(int i=0;i<NUM_RUNS/2;i++) {
-                new Thread(() -> mainExecute(args)).start();
-                Thread waiter = new Thread(() -> mainExecute(args));
-                waiter.start();
-                try {
-                    waiter.join();
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                mainExecute(args);
+//                new Thread(() -> mainExecute(args)).start();
+//                Thread waiter = new Thread(() -> mainExecute(args));
+//                waiter.start();
+//                try {
+//                    waiter.join();
+//                } catch (InterruptedException ex) {
+//                    Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
+//                }
             }
         } else {
             // Execute once, will not run read.py for statistical analysis.
