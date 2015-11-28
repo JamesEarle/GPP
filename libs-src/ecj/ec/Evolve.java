@@ -15,6 +15,17 @@ import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import de.progra.charting.*;
+import de.progra.charting.model.*;
+import de.progra.charting.render.*;
+import java.awt.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 /* 
  * Evolve.java
  * 
@@ -669,13 +680,11 @@ public class Evolve {
  * way you like -- it's ONLY used by this main() loop.
  *
  */
-
-
-
     
     public static void mainExecute(String[] args) {
         
         EvolutionState state;
+        
         ParameterDatabase parameters;
 
         // should we print the help message and quit?
@@ -775,6 +784,8 @@ public class Evolve {
               }
             */
         }
+        
+        System.out.println(state.population.subpops.length);
     }
 
     /* 
@@ -824,18 +835,18 @@ public class Evolve {
         try {    
             Process p;
             StringBuilder str = new StringBuilder();
-            String[] userDir = System.getProperty("user.dir").split("\\\\");            
+            String[] userDir = System.getProperty("user.dir").split("\\\\");
+            
+            String destinationDirectory = new SimpleDateFormat("HH-mm-ss").format(new Date());
+            new File("docs-img/" + destinationDirectory).mkdir();
             
             if(userDir.length == 1) { //UNIX system
                 p = r.exec("python " + System.getProperty("user.dir") + "/py/read.py " + NUM_RUNS + " --linux");
                 p.waitFor();
-            } else {
-                System.out.println(userDir.length);
+            } else { // Window System
                 for(int i = 0;i<userDir.length - 1;i++) {
                     str.append(userDir[i]).append("\\");
                 }
-                System.out.println(str);
-                System.out.println("\n\n***\n\n");
 
                 p = r.exec("py " + str.toString() + "py/read.py " + NUM_RUNS);
                 p.waitFor();
@@ -858,20 +869,88 @@ public class Evolve {
             }
             System.out.println("********************************************");
             
-            // First option is for UNIX systems. Alias won't stay for some reason, plus uses /
-            p = userDir.length == 1 ? 
-                    r.exec("python " + System.getProperty("user.dir") + "/py/text.py") 
-                  : r.exec("py " + str.toString() + "py\\text.py ");
-            p.waitFor();
+            textMe(p, r, str, userDir);
             
-            stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            while((s = stdin.readLine()) != null) {
-                System.out.println(s);
-            }
+            System.out.println("Busy Graphing...");
+
+            BufferedReader hitReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/hits.txt"));
+            BufferedReader stdReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/stdfit.txt"));
+            BufferedReader adjReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/adjfit.txt"));
+            
+            produceGraph(hitReader, "Average hits per generation", "docs-img/" + destinationDirectory + "/hits.png");
+            produceGraph(stdReader, "Average Standardized Fitness per generation", "docs-img/" + destinationDirectory + "/std.png");
+            produceGraph(adjReader, "Average Adjusted Fitness per generation", "docs-img/" + destinationDirectory + "/adj.png");
+                        
+            System.out.println("Done!");
             
         } catch (IOException | InterruptedException ex) {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
         }
         System.exit(0);
+    }
+    
+    private static void textMe(Process p, Runtime r, StringBuilder str, String[] userDir) throws IOException, InterruptedException {
+        // First option is for UNIX systems. Alias won't stay for some reason, plus uses /
+        p = userDir.length == 1 ? 
+                r.exec("python " + System.getProperty("user.dir") + "/py/text.py") 
+              : r.exec("py " + str.toString() + "py\\text.py ");
+        p.waitFor();
+
+        BufferedReader stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        String s;
+        while((s = stdin.readLine()) != null) {
+            System.out.println(s);
+            }
+    }
+    
+    private static void produceGraph(BufferedReader r, String graphTitle, String fileName) throws IOException {
+        String s = "";
+        ArrayList<Double> modelList = new ArrayList<>();
+        while((s = r.readLine()) != null) {
+            modelList.add(Double.valueOf(s));
+        }
+        
+        double[][] model = { 
+                convertIntegers(modelList)
+        };
+        
+        double[] columns = columnsBySize(modelList);
+        
+        String[] rows = {"A"};
+
+        int width = 800;
+        int height = 480;
+        
+        DefaultChartDataModel data = new DefaultChartDataModel(model, columns, rows);
+        DefaultChart c = new DefaultChart(data, graphTitle, DefaultChart.LINEAR_X_LINEAR_Y);
+        c.addChartRenderer(new LineChartRenderer(c.getCoordSystem(), data), 1);
+        c.setBounds(new Rectangle(0, 0, width, height));
+
+         try {
+             ChartEncoder.createEncodedImage(new FileOutputStream(System.getProperty("user.dir") + "/" + fileName), c, "png");
+        } catch(FileNotFoundException | EncodingException e) {
+            e.printStackTrace();
+        }
+
+    }
+    
+    private static double[] columnsBySize(ArrayList<Double> model) {
+        double[] result = new double[model.size()];
+        
+        for(int i=0;i<result.length;i++) {
+            result[i] = i;
+        }
+        
+        return result;
+    }
+
+    private static double[] convertIntegers(ArrayList<Double> model) {
+        double[] result = new double[model.size()];
+        
+        for(int i=0;i<model.size();i++) {
+            result[i] = model.get(i);
+        }
+        
+        return result;
     }
 }

@@ -41,7 +41,7 @@ generations =				51
 quit-on-run-complete =			true
 
 # Population size
-pop.subpop.0.size =			1000
+pop.subpop.0.size =			500
 # don't bother trying to eliminate duplicates from the
 # initial population
 pop.subpop.0.duplicate-retries =	0

@@ -16,19 +16,26 @@ parser.add_argument('--linux', dest='parse', action='store_true', help='Flag whe
 args = parser.parse_args()
 
 numfiles = args.numfiles
-print(numfiles[0])
 
 if(args.parse):
 	# Operating on the Linux VM, use correct directory structure and slashes.
 	dirPath = 'out_files'
 	folders = listdir(dirPath)
 	activeDir = dirPath + "/" + folders[len(folders)-1]
+	
+	outPath = 'docs-img'
+	outfolders = listdir(outPath)
+	outDir = outPath + "/" + outFolders[len(outFolders)-1]
 else: 
 	# We are operating on Windows
 	# Get the active directory and list all subfolders and files. 
 	dirPath = '..\GeneticProgrammingPortfolio\out_files'
 	folders = listdir(dirPath)
 	activeDir = dirPath + "/" + folders[len(folders)-1]
+	
+	outPath = '..\GeneticProgrammingPortfolio\docs-img'
+	outFolders = listdir(outPath)
+	outDir = outPath + "/" + outFolders[len(outFolders)-1]
 
 files = listdir(activeDir)
 
@@ -43,6 +50,7 @@ if max<-1:
 	print("Not enough files to process")
 	sys.exit(1)
 else:
+	print("Number of files is correct")
 	# Initialize each array with the first files contents before summing the rest.
 	with open(activeDir + "/" + files[len(files) - 1]) as w:
 		for line in w:
@@ -52,8 +60,7 @@ else:
 			hit.append(int(arr[2].split('\n')[0])) 
 			# last character on line, doesn't need new line char
 			
-	print("Number of files is correct")
-	for i in range(len(files) - 2, max, -1): # Decrement through the last 25 runs
+	for i in range(len(files) - 2, max, -1): # Decrement through the last n runs
 		with open(activeDir + "/" + files[i]) as w:
 			ind = 0
 			for line in w:
@@ -67,9 +74,9 @@ else:
 				else:
 					ind = ind
 					# Really shouldn't be reaching this case... possible java problem.
-				
-# Finally, write all output to the summed output files as averages (over 25).
-with open('stdfit.txt', 'w+') as stdFile, open('adjfit.txt', 'w+') as adjFile, open('hits.txt', 'w+') as hitFile:
+
+# Finally, write all output to the summed output files as averages.
+with open(outDir + '/stdfit.txt', 'w+') as stdFile, open(outDir + '/adjfit.txt', 'w+') as adjFile, open(outDir + '/hits.txt', 'w+') as hitFile:
 	
 	for i in range(0, len(std)):
 		stdFile.write(str(std[i] / numfiles[0]) + '\n')
