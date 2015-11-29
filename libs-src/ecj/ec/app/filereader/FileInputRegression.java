@@ -47,8 +47,19 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             Date date = new Date();
             Format forFiles = new SimpleDateFormat("HH-mm-ss-" + Double.toString(Math.random())); // Hour, Minute, Second, Random (for sorted uniqueness)
             Format forDirs =  new SimpleDateFormat("dd"); // Day
+            
+            // Create the directory if it doesn't already exist.
             new File("out_files/" + forDirs.format(date)).mkdir();
             
+            File file = new File("out_files/" + forDirs.format(date) + "/" + new File(forFiles.format(date)) + "_out.txt");
+            
+            file.setExecutable(true);
+            file.setReadable(true);
+            file.setWritable(true);
+            
+//            System.out.println(file.getAbsolutePath());
+//            System.out.println(file.canExecute() + ", " + file.canRead() + ", " + file.canWrite());
+            //Runtime.getRuntime().exec("chmod 777 " + file.getAbsolutePath());
             pw = new PrintWriter("out_files/" + forDirs.format(date) + "/" + new File(forFiles.format(date)) + "_out.txt");
             
             //String dataInputFile = "/sp500.txt"; 

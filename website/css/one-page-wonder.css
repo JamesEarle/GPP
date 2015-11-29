@@ -1,0 +1,562 @@
+/*!
+ * Start Bootstrap - One Page Wonder HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    position: relative; /* For Scrollyspy.js */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #7CB2A3; /* Light green */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.footer-icon-linkedin, .footer-icon-twitter,
+.footer-icon-github, .footer-icon-google-plus {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align:text-top;
+    margin:0px;
+    padding:0px;
+    width:48px;
+    height:48px;
+    background-position: 0 0;
+    /*float:left;*/
+    text-decoration: none !important; 
+}
+
+.footer-icon-twitter {
+    background: url('../img/twitter-spritesheet.png');
+}
+
+.footer-icon-linkedin {
+    background: url('../img/linkedin-spritesheet.png');
+}
+
+.footer-icon-github {
+    background: url('../img/github-spritesheet.png');
+}
+
+.footer-icon-google-plus {
+    background: url('../img/google-plus-spritesheet.png');
+}
+
+.footer-icon-linkedin:hover, .footer-icon-twitter:hover,
+.footer-icon-google-plus:hover {
+    animation: five .5s steps(5) 1;
+    background-position: -300px 0;
+}
+
+.footer-icon-github:hover {
+    animation: six .5s steps(6) 1;
+    background-position: -350px 0;
+}
+
+@keyframes six {
+    0% { background-position: -50px 0; }
+    100% { background-position: -350px 0; }
+}
+
+@keyframes five {
+    0% { background-position: -50px 0; }
+    100% { background-position: -300px 0; }
+}
+
+.icon-wrapper{ 
+    width: 235px; 
+    margin:0 auto; 
+}
+
+.embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tiny { 
+    width: 200px;
+    height: 100px;
+    padding:30px;
+}
+
+.push-the-button {
+    background-color: red;
+    color: white;
+    border: 0px solid;
+    float: center;
+}
+.the-button:hover {
+    display: block;
+}
+
+p.lead > span {
+    text-decoration: underline;
+}
+
+tr > td > span {
+    color:red;
+    font-weight: bold;
+}
+ /* Bootstrap extension for IE8 */
+.img-circle {
+    behavior: url(../js/PIE.htc);
+    zoom:1;
+    position:relative;
+}
+
+.img-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.header-round {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+
+    /* IE8 */
+    behavior: url(../js/PIE.htc);
+    zoom:1;
+    position:relative;
+}
+
+th {
+    text-align: center;
+}
+
+td, th {
+    padding: 3.5px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.headline {
+    padding: 0;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h3 {
+    font-size: 43px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    padding-bottom: 4px;
+}
+
+.featurette-divider {
+    margin: 60px 0;
+}
+
+.featurette-divider-sub {
+    margin: 30px 0;
+}
+
+.featurette {
+    overflow: hidden;
+
+    /* Adding borders around each featurette might look strange*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 5px solid rgba(178, 98, 75, 0.15);
+    /* #b2624b */
+
+    /* IE8 */
+    behavior: url(../js/PIE.htc);
+    zoom:1;
+    position:relative;
+
+    padding: 50px; /**/
+}
+
+.bordered {
+    border: 2px solid rgba(100, 100, 100, 0.15);
+    border-radius: 10px;
+    /* IE8 */
+    behavior: url(../js/PIE.htc);
+    zoom:1;
+    position:relative;
+}
+
+.bulletless {
+    list-style-type: none;
+}
+
+.body-centered {
+    text-align: center;
+    display:inline;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.image-normal {
+    width: 350px;
+    height: 350px;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+.image-extra {
+    width: 250px;
+    height: 250px;
+    min-height: 100px;
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+.superimpose {
+    background-image: url(../img/portrait-text-350x350.jpg);
+}
+
+.superimpose:hover {
+    background-image: url(../img/portrait-350x350.jpg);
+}
+
+.grow { 
+    left:-20px;
+    transition: .15s ease-in-out;
+}
+
+.grow:hover { 
+    transform:         scale(1.05); 
+    -webkit-transform: scale(1.05);
+    -ms-transform:     scale(1.05);
+    -o-transform:      scale(1.05);
+    -moz-transform:    scale(1.05);
+
+    transition:         .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+    -o-transition:      .15s ease-in-out;
+    -moz-transition:    .15s ease-in-out;
+    -ms-transition:     .15s ease-in-out;
+
+    -webkit-box-shadow: 0px 0px 6px 3px #777777;
+    -moz-box-shadow:    0px 0px 6px 3px #777777;
+    box-shadow:         0px 0px 6px 3px #777777;
+}
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-image.pull-right-big {
+    height: 500px;
+    width: 500px;
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+/* Consider using carousel instead of accordion, might be better for personal projects */
+/* For accordion list */
+.accordion-anchor {
+    text-decoration: none !important;
+}
+
+.accordion-heading {
+    font-size: 30px;
+}
+
+/* To make the accordion pieces red, rather than red border and grey boxes
+.panel-heading {
+    background-color: rgba(178, 98, 75, 0.15) !important;
+}
+*/
+
+.panel-heading:hover {
+    background-color: #dcdcdc;
+}
+
+/* Override bootstrap */
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2.accordion-heading {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.footer-image {
+    text-align: center;
+}
+
+.hideme {
+    opacity:0;
+}
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-image.pull-right-big {
+        height: 500px;
+        width: 500px;
+        margin-left: 40px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+
+    .headline {
+        padding: 70px 0;
+    }
+
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+
+    .image-normal {
+        width: 315px;
+        height: 315px;
+        background-size: 315px;
+        background-position: -10px;
+    }
+
+    .image-extra {
+        width: 215px;
+        height: 215px;
+    }
+}
+
+@media(max-width:768px) {
+    .superimpose {
+        left: -15px;
+    }
+
+    .headline {
+        padding: 55px 0;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+
+    .image-normal {
+        width: 265px;
+        height: 265px;
+        min-width: 265px;
+        min-height: 265px;
+        background-size:265px;
+        background-position: -5px;
+    }
+
+    .image-extra {
+        width: 165px;
+        height: 165px;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:668px) {
+    .superimpose {
+        left: -25px;
+    }
+
+    .headline {
+        padding: 40px 0;
+    }
+
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+
+    .image-normal {
+        width: 235px;
+        height: 235px;
+    }
+
+    .image-extra {
+        width: 135px;
+        height: 135px;
+    }
+}
+
+@media(max-width:640px) {
+
+    .headline {
+        padding: 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+
+    .image-normal {
+        width: 215px;
+        height: 215px;
+        min-width: 215px;
+        min-height: 215px;
+        background-size: 215px;
+    }
+
+    .image-extra {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+@media(max-width: 560px) {
+    .image-normal {
+        width: 175px;
+        height: 175px;
+    }
+
+    .image-extra {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 490px) {
+    .image-normal {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width:361px) {
+    .superimpose {
+        left: -100px;
+    }
+}
+
+@media(max-width:375px) {
+    .superimpose {
+        left: 0px;
+    }
+    .featurette {
+        padding: 40px;
+    }
+
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}

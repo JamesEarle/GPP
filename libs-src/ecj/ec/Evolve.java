@@ -799,18 +799,12 @@ public class Evolve {
     /** Top-level evolutionary loop.
      * @param args */
     public static void main(String[] args) {
-        
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
-        System.out.println("Full execution? y/n: ");
-        String input = "";
-        try {
-            input = br.readLine();
-        } catch (IOException ex) {
-            Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
+                
+        for(String s : args) {
+            System.out.println(s);
         }
         
-        if(input.equals("y")) {
+        if(args.length >= 3 && args[2].equals("--long")) {
             // Executes 20 runs. This will allow us to do statistical analysis.
             for(int i=0;i<NUM_RUNS/2;i++) {
                 mainExecute(args);
