@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -794,7 +796,12 @@ public class Evolve {
         output "Not enough files"
     */
     
+    // These need to be accessed in FileInputRegression, but cannot be passed 
+    // in regular execution, so we declare them publicly.
     public static final int NUM_RUNS = 20;
+    public static boolean isItLong = false;
+    public static String dayDir = "";
+    public static String hourDir = "";
 
     /** Top-level evolutionary loop.
      * @param args */
@@ -804,18 +811,26 @@ public class Evolve {
             System.out.println(s);
         }
         
-        if(args.length >= 3 && args[2].equals("--long")) {
+        // Also assessed at the end of every run in implementation file.
+        isItLong = args.length >= 3 && args[2].equals("--long");
+        if(isItLong) {
+            
+            // Create output directory. Timestamped folders
+            dayDir = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            hourDir = new SimpleDateFormat("HH-mm-ss").format(new Date());
+            
+            File f = new File("docs-img/" + dayDir + "/" + hourDir);
+            
+            if(!f.mkdirs()) {
+                System.out.println("CANNOT MAKE DIRECTORIES");
+                System.exit(1);
+            } else {
+                System.out.println("DIRECTORIES CREATED SUCCESSFULLY");
+            }
+            
             // Executes 20 runs. This will allow us to do statistical analysis.
-            for(int i=0;i<NUM_RUNS/2;i++) {
+            for(int i=0;i<NUM_RUNS;i++) {
                 mainExecute(args);
-//                new Thread(() -> mainExecute(args)).start();
-//                Thread waiter = new Thread(() -> mainExecute(args));
-//                waiter.start();
-//                try {
-//                    waiter.join();
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
-//                }
             }
         } else {
             // Execute once, will not run read.py for statistical analysis.
@@ -830,9 +845,6 @@ public class Evolve {
             Process p;
             StringBuilder str = new StringBuilder();
             String[] userDir = System.getProperty("user.dir").split("\\\\");
-            
-            //String destinationDirectory = new SimpleDateFormat("HH-mm-ss").format(new Date());
-            //new File("docs-img/" + destinationDirectory).mkdir();
             
             if(userDir.length == 1) { //UNIX system
                 p = r.exec("python " + System.getProperty("user.dir") + "/py/read.py " + NUM_RUNS + " --linux");
@@ -870,7 +882,7 @@ public class Evolve {
 //            BufferedReader hitReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/hits.txt"));
 //            BufferedReader stdReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/stdfit.txt"));
 //            BufferedReader adjReader = new BufferedReader(new FileReader("docs-img/" + destinationDirectory +"/adjfit.txt"));
-//            
+            
 //            produceGraph(hitReader, "Average hits per generation", "docs-img/" + destinationDirectory + "/hits.png");
 //            produceGraph(stdReader, "Average Standardized Fitness per generation", "docs-img/" + destinationDirectory + "/std.png");
 //            produceGraph(adjReader, "Average Adjusted Fitness per generation", "docs-img/" + destinationDirectory + "/adj.png");

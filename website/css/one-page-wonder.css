@@ -120,6 +120,22 @@ tr > td > span {
     color:red;
     font-weight: bold;
 }
+
+table.form-table {
+    margin-top: 15px;
+}
+
+.overflow-box {
+    overflow-y: scroll;
+    max-width:100%;
+    max-height:300px;
+    margin-top:20px;
+}
+
+.form-table {
+    border: 0px solid;
+}
+
  /* Bootstrap extension for IE8 */
 .img-circle {
     behavior: url(../js/PIE.htc);

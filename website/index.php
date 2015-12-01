@@ -63,6 +63,11 @@
 			graphing process, as well as updating the information displayed below automatically on executions.
 		</p>
 		<p class="lead">
+			<a href="papers/Lit_Review.pdf">Here</a> is a link to the literature review I wrote recently, covering 
+			work done in the field. This ranges from general GP best practices with symbolic regression, as well as 
+			the specific problem of symbolic regression as a tool for forecasting economic welfare.
+		</p>
+		<p class="lead">
 			In the below executions, we've experimented with only the number of generations in a single run of the GP system,
 			as well as the population size. It is clear that the population size of 1000 is advantageous, and that an increased
 			number of generations does yield some benefits, but only marginally so and at an high cost due to computation times.
@@ -228,12 +233,44 @@
 ?>
 <hr>
 <div class="container text-center">
-	<div id="the-button" class="container tiny">
+	<h2 class="header-round">Want to run your own execution of GPP?</h2>
+	<p class="lead">You can also leave these fields blank to use default values.</p>
+	
+	<div class="container text-center">
 		<form method="POST" action="run.php">
-			<div class="form-group">
-				<button id="run-button" type="submit" class="btn btn-default push-the-button">Don't do it</button>
+			<table class="form-table" style="width:100%">
+				<tr>
+					<td class="form-table">
+						<div class="form-group">
+							<label for="crossover-rate">Crossover Rate</label>
+							<input type="text" id="crossover-rate" name="crossover-rate" placeholder="e.g. 0.9">
+						</div>
+					</td>
+					<td class="form-table">
+						<div class="form-group">
+							<label for="mutation-rate">Mutation Rate</label>
+							<input type="text" id="mutation-rate" name="mutation-rate" placeholder="e.g. 0.1">
+						</div>
+					</td>
+					<td class="form-table">
+						<div class="form-group">
+							<label for="population">Population Size</label>
+							<input type="text" id="population" name="population" placeholder="e.g. 500">
+						</div>
+					</td>
+					<td class="form-table">
+						<div class="form-group">
+							<label for="generations">Number of Generations</label>
+							<input type="text" id="generations" name="generations" placeholder="e.g. 50">
+						</div>
+					</td>
+				<tr>
+			</table>
+			<div id="the-button" class="container tiny">
+				<div class="form-group">
+					<button id="run-button" type="submit" class="btn btn-default push-the-button">Well, do you?</button>
+				</div>
 			</div>
-			<input type="hidden" name="button-submit" value=true>
 		</form>
 	</div>
 </div>
@@ -249,7 +286,7 @@ var button = document.getElementById("run-button");
 var bg = document.getElementById("the-button");
 
 button.addEventListener("mouseout", function() {
-	button.textContent = "Don't do it";	
+	button.textContent = "Well, do you?";	
 	bg.style.background="";
 }, true);
 
@@ -260,6 +297,7 @@ button.addEventListener("mouseover", function() {
 	bg.style.backgroundSize="200px 100px";
 	
 }, true);
+
 </script>
 
 </body>

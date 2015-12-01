@@ -21,11 +21,13 @@ if(args.parse):
 	# Operating on the Linux VM, use correct directory structure and slashes.
 	dirPath = 'out_files'
 	folders = listdir(dirPath)
-	activeDir = dirPath + "/" + folders[len(folders)-1]
+	activeDir = dirPath + "/" + folders[len(folders) - 1]
 	
 	outPath = 'docs-img'
 	outfolders = listdir(outPath)
-	outDir = outPath + "/" + outFolders[len(outFolders)-1]
+	outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
+	outDayFolders = listdir(outDayDir)
+	outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
 else: 
 	# We are operating on Windows
 	# Get the active directory and list all subfolders and files. 
@@ -35,7 +37,12 @@ else:
 	
 	outPath = '..\GeneticProgrammingPortfolio\docs-img'
 	outFolders = listdir(outPath)
-	outDir = outPath + "/" + outFolders[len(outFolders)-1]
+	print("***")
+	print(outFolders)
+	print("***")	
+	outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
+	outDayFolders = listdir(outDayDir)
+	outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
 
 files = listdir(activeDir)
 
@@ -76,7 +83,7 @@ else:
 					# Really shouldn't be reaching this case... possible java problem.
 
 # Finally, write all output to the summed output files as averages.
-with open(outDir + '/stdfit.txt', 'w+') as stdFile, open(outDir + '/adjfit.txt', 'w+') as adjFile, open(outDir + '/hits.txt', 'w+') as hitFile:
+with open(outHourDir + '/stdfit.txt', 'w+') as stdFile, open(outHourDir + '/adjfit.txt', 'w+') as adjFile, open(outHourDir + '/hits.txt', 'w+') as hitFile:
 	
 	for i in range(0, len(std)):
 		stdFile.write(str(std[i] / numfiles[0]) + '\n')
