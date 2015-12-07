@@ -64,13 +64,27 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             file.setReadable(true);
             file.setWritable(true);
             
-            // as a cheap work around, we can also execute a chmod command instead. 
+            // As a work around, we can also execute a chmod command instead. 
             Runtime.getRuntime().exec("chmod 777 " + file.getAbsolutePath());
             pw = new PrintWriter("out_files/" + forDirs.format(date) + "/" + new File(forFiles.format(date)) + "_out.txt");
             
-            // Get the data input file being used for this input.
-            String dataInputFile = "/sp500_2005_2015_daily_normalized.txt";
-            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + dataInputFile));
+            // List of used files. sp500 is non-normalized data, but data scaled down into a [0, 1]
+            // range makes for easier readability + interpretation. Files with *_n, where n is 1, 2, or 5, 
+            // represent the interval of data sampling. Being every 1, 2, or 5 values. This provides a "fuzzy"
+            // approach to the sampling, which is good because we don't want to overfit our values.
+            String[] dataInputFiles = {
+                "/input/sp500.txt",   // 2518 entries, not normalized
+                "/input/sp500_1.txt", // 2518 entries
+                "/input/sp500_2.txt", // 1258 entries
+                "/input/sp500_5.txt",  // 504 entries
+                "/input/dowjones_05-07.txt",   // 284 entries, not normalized
+                "/input/dowjones_05-07_1.txt", // 284 entries
+                "/input/dowjones_05-07_2.txt", // 142 entries
+                "/input/dowjones_05-07_5.txt"  // 58 entries
+            };
+            
+            // Remember to change this index based on which file is to be used.
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + dataInputFiles[5]));
             
             String next;
             while((next = br.readLine()) != null) {
@@ -105,16 +119,17 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
             // Sample all data points for currentX
             for (int i=1;i<=inputData.size();i++) {
+                
                 currentX = i;
                 expectedResult = inputData.get(i-1);
-                
+
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
 
                 result = Math.abs(expectedResult - input.x);
-                
+
                 // Hit radius as 2.5% of the max value
                 if (result <= 0.025*MAX_VALUE) hits++;
-                sum += result;              
+                sum += result;  
             }
             
             // the fitness better be KozaFitness!
@@ -131,36 +146,28 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
         String destinationDirectory = "docs-img/" + ec.Evolve.dayDir + "/" + ec.Evolve.hourDir;
         
-        if(ec.Evolve.isItLong) {
-            ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
+        ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
 
-            try {
-                PrintWriter bestFunction = new PrintWriter(destinationDirectory + "/best_ind.txt");
-
-                // Sample all data points for currentX
-                for (int i=1;i<=inputData.size();i++) {
-                    currentX = i;                
-                    ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
-
-                    bestFunction.println(input.x);
-                }
-                
-                bestFunction.close();
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        
         try {
-            PrintWriter bestFunctionTree = new PrintWriter(destinationDirectory + "best_ind_tree.txt");
-            bestFunctionTree.println(bestIndividual.genotypeToStringForHumans());
+            PrintWriter bestFunction = new PrintWriter(destinationDirectory + "/best_ind.txt");
+            PrintWriter bestFunctionTree = new PrintWriter(destinationDirectory + "/best_ind_tree.txt");
+
+            // Sample all data points for currentX
+            for (int i=1;i<=inputData.size();i++) {
+                currentX = i;                
+                ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
+
+                bestFunction.println(input.x);
+            }
+            
+            bestIndividual.printIndividual(state, bestFunctionTree);
+            
+            bestFunction.close();
+            bestFunctionTree.close();
+            
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
         pw.close();
     }
 }

@@ -7,6 +7,8 @@
 <div class="headline">
 	<div class="container text-center">
 		<h2 class="header-round">Genetic Programming Portfolio</h2>
+		<br>
+		<p class="lead"><a href="#the-button">Click Here</a> to run a sample version of the system in your browser!</p>
 	</div>
 </div>
 <hr>
@@ -62,6 +64,13 @@
 			averaged files are just brought into excel for graphing, but in the future I intend to automate the 
 			graphing process, as well as updating the information displayed below automatically on executions.
 		</p>
+		<p class="lead">
+			The below graph shows the target function as well as some sample functions mapped from the system. The 
+			orange is intentionally weak to show some variation, while the grey was given strong parameters.
+		<p>
+		<div class="container text-center">
+			<img style="margin:15px" src="img/target_best_weak.png" alt="">
+		</div>
 		<p class="lead">
 			<a href="papers/Lit_Review.pdf">Here</a> is a link to the literature review I wrote recently, covering 
 			work done in the field. This ranges from general GP best practices with symbolic regression, as well as 
@@ -222,15 +231,6 @@
 		</ul>
 	</div>
 </footer>
-<?php 
-	if(isset($_POST['button-submit'])) {
-		echo "She's set, baby";
-		$out = [];
-		echo exec("runit", $out);
-		
-		echo count($out);
-	}
-?>
 <hr>
 <div class="container text-center">
 	<h2 class="header-round">Want to run your own execution of GPP?</h2>

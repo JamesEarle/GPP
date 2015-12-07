@@ -15,7 +15,7 @@ gp.fs.0.name = f0
 
 # We have five functions in the function set.  They are:
 # nc0 = 0 children, or terminals. nc2 likewise means 2 children.
-gp.fs.0.size = 7
+gp.fs.0.size = 10
 gp.fs.0.func.0 = ec.app.filereader.X
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = ec.app.filereader.ERCDouble
@@ -30,6 +30,13 @@ gp.fs.0.func.5 = ec.app.filereader.Div
 gp.fs.0.func.5.nc = nc2
 gp.fs.0.func.6 = ec.app.filereader.Log
 gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.7 = ec.app.filereader.Cos
+gp.fs.0.func.7.nc = nc1
+gp.fs.0.func.8 = ec.app.filereader.Sin
+gp.fs.0.func.8.nc = nc1
+gp.fs.0.func.9 = ec.app.filereader.IFLT
+gp.fs.0.func.9.nc = nc4
+
 #gp.fs.0.func.7 = ec.app.filereader.Exp
 #gp.fs.0.func.7.nc = nc1
 
@@ -61,7 +68,7 @@ pop.subpop.0.species.pipe.source.2.prob = 0.1
 # By default elitism isn't done.  If you want to do elitism for, say,
 # the top 10 individuals in subpopulation 0, you'd say:
 
-breed.elite.0 =                         0
+breed.elite.0 =                        0
 
 # one thread
 evalthreads = 				auto
