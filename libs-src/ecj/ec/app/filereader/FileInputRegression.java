@@ -11,15 +11,11 @@ import static ec.gp.GPProblem.P_DATA;
 import ec.gp.koza.*;
 import ec.simple.*;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.Format;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
@@ -35,6 +31,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public PrintWriter pw;
     public double currentX;
     public double currentY;
+    public InputFile in;
     
     public ArrayList<Double> inputData;
     
@@ -45,46 +42,14 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         inputData = new ArrayList<>();
         
         try {
+            IOManager io = new IOManager("out_files/", false);
+            io.executionSetup();
+            pw = io.makePrintWriter("_out.txt");
             
-            // The directory structure here is where every individual run's stats get processed to.
-            // You should never really need to access these, as read.py will process them into 
-            // the appropriate folder in the docs-img/ directory.
-            Date date = new Date();
-            Format forFiles = new SimpleDateFormat("HH-mm-ss-" + Double.toString(Math.random())); // Hour, Minute, Second, Random (for sorted uniqueness)
-            Format forDirs =  new SimpleDateFormat("yyyy-MM-dd"); // Day
-            
-            // Create the directory if it doesn't already exist.
-            new File("out_files/" + forDirs.format(date)).mkdir();
-            
-            File file = new File("out_files/" + forDirs.format(date) + "/" + new File(forFiles.format(date)) + "_out.txt");
-            
-            // Permissions good in Windows, but need to be altered in Linux. 
-            // The below methods set them to true, but doesn't ALWAYS work, it seems...
-            file.setExecutable(true);
-            file.setReadable(true);
-            file.setWritable(true);
-            
-            // As a work around, we can also execute a chmod command instead. 
-            Runtime.getRuntime().exec("chmod 777 " + file.getAbsolutePath());
-            pw = new PrintWriter("out_files/" + forDirs.format(date) + "/" + new File(forFiles.format(date)) + "_out.txt");
-            
-            // List of used files. sp500 is non-normalized data, but data scaled down into a [0, 1]
-            // range makes for easier readability + interpretation. Files with *_n, where n is 1, 2, or 5, 
-            // represent the interval of data sampling. Being every 1, 2, or 5 values. This provides a "fuzzy"
-            // approach to the sampling, which is good because we don't want to overfit our values.
-            String[] dataInputFiles = {
-                "/input/sp500.txt",   // 2518 entries, not normalized
-                "/input/sp500_1.txt", // 2518 entries
-                "/input/sp500_2.txt", // 1258 entries
-                "/input/sp500_5.txt",  // 504 entries
-                "/input/dowjones_05-07.txt",   // 284 entries, not normalized
-                "/input/dowjones_05-07_1.txt", // 284 entries
-                "/input/dowjones_05-07_2.txt", // 142 entries
-                "/input/dowjones_05-07_5.txt"  // 58 entries
-            };
+            in = InputFile.DJ_NORM;
             
             // Remember to change this index based on which file is to be used.
-            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + dataInputFiles[5]));
+            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
             
             String next;
             while((next = br.readLine()) != null) {
@@ -97,7 +62,6 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                         
             br.close();
         } catch (IOException ex) {
-            ex.printStackTrace();
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -124,8 +88,16 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 expectedResult = inputData.get(i-1);
 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
-
+                
                 result = Math.abs(expectedResult - input.x);
+                
+                /* 
+                    Sum of Squared Residuals fitness is a tight band, but
+                    only useful on less granular data. 
+                */
+                if(dataIsDowJones()) {
+                    result = Math.pow(result, 2);
+                }
 
                 // Hit radius as 2.5% of the max value
                 if (result <= 0.025*MAX_VALUE) hits++;
@@ -141,17 +113,30 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         }
     }
     
+    public boolean dataIsDowJones() {
+        switch(in) {
+            case DJ_ORIG:
+            case DJ_NORM:
+            case DJ_NORM_2:
+            case DJ_NORM_5:
+                return true;
+            default:
+                return false;
+        }
+    }
+    
     /* Post-execution cleanup. Close all writers, print out final values, etc. */
     @Override
     public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
-        String destinationDirectory = "docs-img/" + ec.Evolve.dayDir + "/" + ec.Evolve.hourDir;
+        IOManager io = ec.Evolve.io;
         
         ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
 
         try {
-            PrintWriter bestFunction = new PrintWriter(destinationDirectory + "/best_ind.txt");
-            PrintWriter bestFunctionTree = new PrintWriter(destinationDirectory + "/best_ind_tree.txt");
-
+            
+            PrintWriter bestFunction = io.makePrintWriter("/best_ind.txt");
+            PrintWriter bestFunctionTree = io.makePrintWriter("/best_ind_tree.txt");
+            
             // Sample all data points for currentX
             for (int i=1;i<=inputData.size();i++) {
                 currentX = i;                

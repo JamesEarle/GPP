@@ -7,6 +7,12 @@
 
 import plotly.plotly as py
 import plotly.graph_objs as go
+import bs4 as bs
+from urllib import parse
+import urllib.request
+import os
+from os import listdir
+import sys
 
 py.sign_in('roland23', 'plxezgfw1z')
 
@@ -17,7 +23,13 @@ std_arr = []
 adj_arr = []
 i = 0
 
-with open("hits.txt") as h, open("stdfit.txt") as s, open("adjfit.txt") as a:
+outPath = 'docs-img'
+outFolders = listdir(outPath)
+outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
+outDayFolders = listdir(outDayDir)
+outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
+
+with open(outHourDir + "/hits.txt") as h, open(outHourDir + "/stdfit.txt") as s, open(outHourDir + "/adjfit.txt") as a:
 	for line in h:
 		hit_arr.append(float(line))
 		x_arr.append(i)
@@ -57,11 +69,47 @@ trace2 = go.Scatter(
 	)
 )
 
-plot_url1 = py.plot([trace0], filename='line-plot')
-plot_url2 = py.plot([trace1], filename='line-plot')
-plot_url3 = py.plot([trace2], filename='line-plot')
+#### Hits Plot ####
+plot_url1 = py.plot({
+	"data": [trace0],
+	"layout": { "title" : "Hits" }
+	}, filename='line-plot')
 
-print(plot_url1)
-print(plot_url2)
-print(plot_url3)
+url = str(plot_url1) + "/hits.png"
 
+webFile = urllib.request.urlopen(url)
+localFile = open(outHourDir + "/hits.png", 'wb')
+localFile.write(webFile.read())
+webFile.close()
+localFile.close()
+#### #### #### ####
+
+#### Stds Plot ####
+plot_url1 = py.plot({
+	"data": [trace1],
+	"layout": { "title" : "Standardized Fitness" }
+	}, filename='line-plot')
+
+url = str(plot_url1) + "/standardized-fitness.png"
+
+webFile = urllib.request.urlopen(url)
+localFile = open(outHourDir + "/standardized-fitness.png", 'wb')
+localFile.write(webFile.read())
+webFile.close()
+localFile.close()
+#### #### #### ####
+
+#### Adjs Plot ####
+plot_url1 = py.plot({
+	"data": [trace2],
+	"layout": { "title" : "Adjusted Fitness" }
+	}, filename='line-plot')
+
+url = str(plot_url1) + "/adjusted-fitness.png"
+
+webFile = urllib.request.urlopen(url)
+localFile = open(outHourDir + "/adjusted-fitness.png", 'wb')
+localFile.write(webFile.read())
+webFile.close()
+localFile.close()
+#### #### #### ####

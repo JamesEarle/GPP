@@ -1,4 +1,0 @@
-Evaluated: T
-Fitness: d4638945431014386620|134.7591037911751|i257|
-Tree 0:
- (log (log (log (log (/ (/ (* x (/ x (+ (+ (+ (log x) (cos (+ (log x) (cos (log x))))) (cos (+ (+ (log x) (cos (log x))) (log x)))) (cos (* (* (log x) C[2.19068783387784]) C[2.19068783387784]))))) x) C[18.269365397695466])))))

@@ -3,20 +3,20 @@
   Licensed under the Academic Free License version 3.0
   See the file "LICENSE" for more information
 */
-
-
 package ec;
+
 import ec.util.*;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.BufferedReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import ec.app.filereader.IOManager;
+
 
 //import de.progra.charting.*;
 //import de.progra.charting.model.*;
@@ -790,6 +790,16 @@ public class Evolve {
         
         System.out.println(state.population.subpops.length);
     }
+    
+    public static boolean checkFullExecution(String[] args) {
+        boolean result = false;
+        for (String arg : args) {
+            if (arg.equals("--long")) {
+                result = true;
+            }
+        }
+        return result;
+    }
 
     /* 
         Change this to true if you want quicker execution times and only one run.
@@ -801,27 +811,29 @@ public class Evolve {
     // in regular execution, so we declare them publicly.
     public static final int NUM_RUNS = 20;
     public static boolean isItLong = false;
-    public static String dayDir = "";
-    public static String hourDir = "";
+    public static IOManager io;
 
     /** Top-level evolutionary loop.
      * @param args */
     public static void main(String[] args) {
         // Also assessed at the end of every run in implementation file.
-        isItLong = args.length >= 3 && args[2].equals("--long");
+        isItLong = checkFullExecution(args);
         
         // Create output directory. Timestamped folders
-        dayDir = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        hourDir = new SimpleDateFormat("HH-mm-ss").format(new Date());
+//        dayDir = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+//        hourDir = new SimpleDateFormat("HH-mm-ss").format(new Date());
+//        
+//        File f = new File("docs-img/" + dayDir + "/" + hourDir);
+//            
+//        if(!f.mkdirs()) {
+//            System.out.println("CANNOT MAKE DIRECTORIES");
+//            System.exit(1);
+//        } else {
+//            System.out.println("DIRECTORIES CREATED SUCCESSFULLY");
+//        }
         
-        File f = new File("docs-img/" + dayDir + "/" + hourDir);
-            
-        if(!f.mkdirs()) {
-            System.out.println("CANNOT MAKE DIRECTORIES");
-            System.exit(1);
-        } else {
-            System.out.println("DIRECTORIES CREATED SUCCESSFULLY");
-        }
+        io = new IOManager("docs-img/", true);
+        io.makeDirectory(io.getPath());
         
         if(isItLong) {
             // Executes 20 runs. This will allow us to do statistical analysis.
@@ -873,6 +885,31 @@ public class Evolve {
             
             textMe(p, r, str, userDir);
             
+            System.out.println("Graphing...");
+            
+            p = userDir.length == 1 ? 
+                r.exec("python " + System.getProperty("user.dir") + "/py/graphs.py") 
+              : r.exec("py " + str.toString() + "py\\graphs.py ");
+            p.waitFor();
+            
+            stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            stderr = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+            
+            System.out.println("Output: ");
+            while((s = stdin.readLine()) != null) {
+                System.out.println(s);
+            }
+            
+            System.out.println("Errors: ");
+            System.out.println("There should be nothing between these stars.");
+            System.out.println("********************************************");
+            while((s = stderr.readLine()) != null) {
+                System.out.println(s);
+            }
+            System.out.println("********************************************");
+            
+            System.out.println("Done!");
+            
         } catch (IOException | InterruptedException ex) {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -890,7 +927,7 @@ public class Evolve {
         String s;
         while((s = stdin.readLine()) != null) {
             System.out.println(s);
-            }
+        }
     }
     
 //    private static void produceGraph(BufferedReader r, String graphTitle, String fileName) throws IOException {

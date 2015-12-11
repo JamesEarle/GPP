@@ -15,7 +15,7 @@ gp.fs.0.name = f0
 
 # We have five functions in the function set.  They are:
 # nc0 = 0 children, or terminals. nc2 likewise means 2 children.
-gp.fs.0.size = 10
+gp.fs.0.size = 9
 gp.fs.0.func.0 = ec.app.filereader.X
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = ec.app.filereader.ERCDouble

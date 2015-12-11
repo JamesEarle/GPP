@@ -24,7 +24,7 @@ if(args.parse):
 	activeDir = dirPath + "/" + folders[len(folders) - 1]
 	
 	outPath = 'docs-img'
-	outfolders = listdir(outPath)
+	outFolders = listdir(outPath)
 	outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
 	outDayFolders = listdir(outDayDir)
 	outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
@@ -37,9 +37,6 @@ else:
 	
 	outPath = '..\GeneticProgrammingPortfolio\docs-img'
 	outFolders = listdir(outPath)
-	print("***")
-	print(outFolders)
-	print("***")	
 	outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
 	outDayFolders = listdir(outDayDir)
 	outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
