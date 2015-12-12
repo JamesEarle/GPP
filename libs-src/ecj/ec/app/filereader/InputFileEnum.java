@@ -4,7 +4,7 @@ package ec.app.filereader;
  * ENUM to allow for easier access to 
  * @author James Earle
  */
-public enum InputFile {
+public enum InputFileEnum {
     
     SP_ORIG("/input/sp500.txt"),
     SP_NORM("/input/sp500_1.txt"),
@@ -17,7 +17,7 @@ public enum InputFile {
     
     private final String fileName;
     
-    private InputFile(String fileName) {
+    private InputFileEnum(String fileName) {
         this.fileName = fileName;
     }
     

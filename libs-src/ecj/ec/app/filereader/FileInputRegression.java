@@ -31,7 +31,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public PrintWriter pw;
     public double currentX;
     public double currentY;
-    public InputFile in;
+    public InputFileEnum in;
     
     public ArrayList<Double> inputData;
     
@@ -46,7 +46,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             io.executionSetup();
             pw = io.makePrintWriter("_out.txt");
             
-            in = InputFile.DJ_NORM;
+            in = InputFileEnum.DJ_NORM;
             
             // Remember to change this index based on which file is to be used.
             br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));

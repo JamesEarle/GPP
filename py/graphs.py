@@ -70,10 +70,13 @@ trace2 = go.Scatter(
 )
 
 #### Hits Plot ####
-plot_url1 = py.plot({
-	"data": [trace0],
-	"layout": { "title" : "Hits" }
-	}, filename='line-plot')
+plot_url1 = py.plot(
+	{
+		"data": [trace0],
+		"layout": { "title" : "Hits" }
+	}, 
+	filename='line-plot',
+	auto_open=False)
 
 url = str(plot_url1) + "/hits.png"
 
@@ -85,10 +88,13 @@ localFile.close()
 #### #### #### ####
 
 #### Stds Plot ####
-plot_url1 = py.plot({
-	"data": [trace1],
-	"layout": { "title" : "Standardized Fitness" }
-	}, filename='line-plot')
+plot_url1 = py.plot(
+	{
+		"data": [trace1],
+		"layout": { "title" : "Standardized Fitness" }
+	},
+	filename='line-plot',
+	auto_open=False)
 
 url = str(plot_url1) + "/standardized-fitness.png"
 
@@ -100,10 +106,13 @@ localFile.close()
 #### #### #### ####
 
 #### Adjs Plot ####
-plot_url1 = py.plot({
-	"data": [trace2],
-	"layout": { "title" : "Adjusted Fitness" }
-	}, filename='line-plot')
+plot_url1 = py.plot(
+	{
+		"data": [trace2],
+		"layout": { "title" : "Adjusted Fitness" }
+	},
+	filename='line-plot',
+	auto_open=False)
 
 url = str(plot_url1) + "/adjusted-fitness.png"
 
