@@ -1,7 +1,8 @@
 package ec.app.filereader;
 
 /**
- * ENUM to allow for easier access to 
+ * ENUM to allow for easier access to many different input files. There is
+ * no setter function in this instance, because the 
  * @author James Earle
  */
 public enum InputFileEnum {

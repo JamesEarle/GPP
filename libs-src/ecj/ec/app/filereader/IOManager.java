@@ -44,6 +44,26 @@ public class IOManager {
     }
     
     /**
+     * Blank constructor builds with default assumed values.
+     */
+    public IOManager() {
+        this.rootDir = "docs-img/";
+        this.subdirectory = true;
+        
+        // Instantiate a new Date object on construction of the IOManager.
+        Date date = new Date();
+        
+        String format = subdirectory ? "HH-mm-ss" : "HH-mm-ss-" + Double.toString(Math.random());
+        
+        /* Hour, Minute, Second, Random (for sorted uniqueness) */
+        this.fileName = new SimpleDateFormat(format).format(date);
+        
+        /* Year, Month, Day */
+        String suffix = subdirectory ? "/" + this.fileName : "";
+        this.path = this.rootDir + "/" + new SimpleDateFormat("yyyy-MM-dd").format(date) + suffix;
+    }
+    
+    /**
      * Sets permission of the given File object to be globally readable,
      * writable, and executable.
      * 

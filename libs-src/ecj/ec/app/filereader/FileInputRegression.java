@@ -26,19 +26,22 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     
     private static final long serialVersionUID = 1;
     private static double MAX_VALUE = 0;
+    private static final double PERCENT_VERIFY = 0.95;
 
-    public BufferedReader br;
     public PrintWriter pw;
     public double currentX;
     public double currentY;
-    public InputFileEnum in;
+    public BufferedReader br;
     
+    public InputFileEnum in;
+    public VerificationManager vm;
     public ArrayList<Double> inputData;
     
     @Override
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
+        in = InputFileEnum.DJ_NORM;
         inputData = new ArrayList<>();
         
         try {
@@ -46,19 +49,19 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             io.executionSetup();
             pw = io.makePrintWriter("_out.txt");
             
-            in = InputFileEnum.DJ_NORM;
-            
             // Remember to change this index based on which file is to be used.
             br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
             
             String next;
             while((next = br.readLine()) != null) {
-                
                 // Store the max value found in our input data to take an appropriate 
                 // hits radius (2.5% the max value, we want this to be somewhat fuzzy)
                 MAX_VALUE = Double.valueOf(next) >= MAX_VALUE ? Double.valueOf(next) : MAX_VALUE;
                 inputData.add(Double.valueOf(next));
             }
+            
+            // The chosen boundary for verification will be a percentage of the given data set.
+            vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
                         
             br.close();
         } catch (IOException ex) {
@@ -82,7 +85,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX
-            for (int i=1;i<=inputData.size();i++) {
+            for (int i=1;i<=vm.getRange();i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i-1);
@@ -93,7 +96,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 
                 /* 
                     Sum of Squared Residuals fitness is a tight band, but
-                    only useful on less granular data. 
+                    seems more useful on less granular data. 
                 */
                 if(dataIsDowJones()) {
                     result = Math.pow(result, 2);
@@ -129,30 +132,54 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     @Override
     public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
         IOManager io = ec.Evolve.io;
+//        IOManager io = new IOManager(); 
+        
+//        PrintWriterFactory factory = new PrintWriterFactory();
         
         ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
-
+        
         try {
             
-            PrintWriter bestFunction = io.makePrintWriter("/best_ind.txt");
-            PrintWriter bestFunctionTree = io.makePrintWriter("/best_ind_tree.txt");
+//            factory.makePrintWriter("/best_ind_training.txt");      // 0
+//            factory.makePrintWriter("/best_ind_verification.txt");  // 1
+//            factory.makePrintWriter("/best_ind_tree.txt");          // 2
+
+            PrintWriter bestIndFunction = io.makePrintWriter("/best_ind_training.txt");
+            PrintWriter bestIndFunctionVerification = io.makePrintWriter("/best_ind_verification.txt");
             
-            // Sample all data points for currentX
+            PrintWriter bestIndTree = io.makePrintWriter("/best_ind_tree.txt");
+            
             for (int i=1;i<=inputData.size();i++) {
+
+                // Sample all data points for currentX
                 currentX = i;                
                 ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
-
-                bestFunction.println(input.x);
+                
+                // Write to training text file if data is in training range
+                if(!vm.inVerificationRange(i)) {
+//                    factory.getPrinter(0).println(input.x);
+                    bestIndFunction.println(input.x);
+                } else { // else it is non-training data, write to separate text file.
+//                    factory.getPrinter(1).println(input.x);
+                    bestIndFunctionVerification.println(input.x);
+                }
             }
             
-            bestIndividual.printIndividual(state, bestFunctionTree);
+            // Print individual statistics and the actual GP tree.
+//            bestIndividual.printIndividual(state, factory.getPrinter(2));
+            bestIndividual.printIndividual(state, bestIndTree);
+
+            // Finally, we close our output streams.
+            bestIndFunctionVerification.close();
+            bestIndFunction.close();
+            bestIndTree.close();
             
-            bestFunction.close();
-            bestFunctionTree.close();
+//            factory.close();
             
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         pw.close();
     }
 }

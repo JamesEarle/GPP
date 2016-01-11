@@ -10,11 +10,14 @@ parent.0 = ../../gp/koza/koza.params
 # We have one function set, of class GPFunctionSet
 gp.fs.size = 1
 gp.fs.0 = ec.gp.GPFunctionSet
+
 # We'll call the function set "f0".
 gp.fs.0.name = f0
 
-# We have five functions in the function set.  They are:
-# nc0 = 0 children, or terminals. nc2 likewise means 2 children.
+
+# Defining the Function Set and Terminal Set.
+# nc0 defines a Function or Terminal with 0 children. 
+# Likewise, nc2 means two children.
 gp.fs.0.size = 9
 gp.fs.0.func.0 = ec.app.filereader.X
 gp.fs.0.func.0.nc = nc0
@@ -43,19 +46,20 @@ gp.fs.0.func.9.nc = nc4
 eval.problem = ec.app.filereader.FileInputRegression
 eval.problem.data = ec.app.filereader.DoubleData
 
-# run for 51 generations, quit prematurely if I find something ideal
+# Run for this many generations, or quit prematurely if ideal is found
 generations =				100
 quit-on-run-complete =			true
 
 # Population size
 pop.subpop.0.size =			1000
-# don't bother trying to eliminate duplicates from the
-# initial population
+
+# Retries to eliminate duplicates from init population.
 pop.subpop.0.duplicate-retries =	0
 
 pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
 # Koza's decision here was odd...
 pop.subpop.0.species.pipe.generate-max = false
+
 # Subsidiary pipelines:
 pop.subpop.0.species.pipe.num-sources = 3
 pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
@@ -65,12 +69,13 @@ pop.subpop.0.species.pipe.source.1.prob = 0
 pop.subpop.0.species.pipe.source.2 = ec.gp.koza.MutationPipeline
 pop.subpop.0.species.pipe.source.2.prob = 0.1
 
-# By default elitism isn't done.  If you want to do elitism for, say,
-# the top 10 individuals in subpopulation 0, you'd say:
 
+
+# Elitism
 breed.elite.0 =                        0
 
-# one thread
+# Thread management. Auto is used to calculate number of 
+# cores on the machine and maxes out. 
 evalthreads = 				auto
 breedthreads = 				auto
 
