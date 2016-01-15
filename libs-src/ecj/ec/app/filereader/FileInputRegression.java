@@ -26,14 +26,15 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     
     private static final long serialVersionUID = 1;
     private static double MAX_VALUE = 0;
-    private static final double PERCENT_VERIFY = 0.95;
+    private static final double PERCENT_VERIFY = 0.90;
 
     public PrintWriter pw;
     public double currentX;
     public double currentY;
-    public BufferedReader br;
+//    public BufferedReader br;
     
     public InputFileEnum in;
+    public LagSurrogate surrogate;
     public VerificationManager vm;
     public ArrayList<Double> inputData;
     
@@ -41,16 +42,19 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
+        // Define the input data and time lag preferences.
         in = InputFileEnum.DJ_NORM;
+        surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
         
         try {
+            // Set up the IOManager to keep track of output data
             IOManager io = new IOManager("out_files/", false);
             io.executionSetup();
             pw = io.makePrintWriter("_out.txt");
             
             // Remember to change this index based on which file is to be used.
-            br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
+            BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
             
             String next;
             while((next = br.readLine()) != null) {
@@ -84,21 +88,33 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double expectedResult;
             double result;
             
-            // Sample all data points for currentX
-            for (int i=1;i<=vm.getRange();i++) {
+            // Sample all data points for currentX. 
+            // We begin counting at the surrogate's index so the X_Lag begins at 0
+            for (int i=surrogate.getLag();i<=vm.getRange();i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i-1);
+                
+                // The lagged X_Lag value is the raw input data point at time interval
+                // "present - givenLag". Dow Jones lag is 5 days. S&P lag is 23.
+//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+                surrogate.setLagResult(i - surrogate.getLag());
 
+//                System.out.println(surrogate.getLagResult() + "\n---------------");
+                
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
                 
+                // Save all input.x values into some dynamically growing array. 
+                // Don't start evaluating fitness until we are at surrogate.getLag() index
+                // Then we can compare input.x (now) to input.x (5 intervals ago), using 
+                // the same form of access as the lag setup now (see XLag with LagSurrogate)
                 result = Math.abs(expectedResult - input.x);
                 
                 /* 
                     Sum of Squared Residuals fitness is a tight band, but
                     seems more useful on less granular data. 
                 */
-                if(dataIsDowJones()) {
+                if(surrogate.dataIsDowJones(in)) {
                     result = Math.pow(result, 2);
                 }
 
@@ -116,37 +132,34 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         }
     }
     
-    public boolean dataIsDowJones() {
-        switch(in) {
-            case DJ_ORIG:
-            case DJ_NORM:
-            case DJ_NORM_2:
-            case DJ_NORM_5:
-                return true;
-            default:
-                return false;
-        }
-    }
+//    public boolean dataIsDowJones() {
+//        switch(in) {
+//            case DJ_ORIG:
+//            case DJ_NORM:
+//            case DJ_NORM_2:
+//            case DJ_NORM_5:
+//                return true;
+//            default:
+//                return false;
+//        }
+//    }
     
     /* Post-execution cleanup. Close all writers, print out final values, etc. */
     @Override
     public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
         IOManager io = ec.Evolve.io;
 //        IOManager io = new IOManager(); 
-        
 //        PrintWriterFactory factory = new PrintWriterFactory();
         
         ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
         
         try {
-            
 //            factory.makePrintWriter("/best_ind_training.txt");      // 0
 //            factory.makePrintWriter("/best_ind_verification.txt");  // 1
 //            factory.makePrintWriter("/best_ind_tree.txt");          // 2
 
             PrintWriter bestIndFunction = io.makePrintWriter("/best_ind_training.txt");
             PrintWriter bestIndFunctionVerification = io.makePrintWriter("/best_ind_verification.txt");
-            
             PrintWriter bestIndTree = io.makePrintWriter("/best_ind_tree.txt");
             
             for (int i=1;i<=inputData.size();i++) {
@@ -161,6 +174,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                     bestIndFunction.println(input.x);
                 } else { // else it is non-training data, write to separate text file.
 //                    factory.getPrinter(1).println(input.x);
+                    // the lag calculation will use non training data, but real data,
+                    // if we don't save the input.x evaluations
                     bestIndFunctionVerification.println(input.x);
                 }
             }

@@ -17,29 +17,29 @@ public class IOManager {
     
     private final String rootDir;
     private final String fileName, path;
-    private final boolean subdirectory;
+    private final boolean subDir;
     
     /**
      * Receives the top level directory as a parameter and creates the file and subdirectory 
      * patterns to match. This is for file manipulation, such as output.txt files.
      * 
      * @param rootDir the top level directory for the IOManager to manipulate beneath. 
-     * @param subdirectory if true, the fileName variable actually represents another directory level
+     * @param subDir if true, the fileName variable actually represents another directory level
      */
-    public IOManager(String rootDir, boolean subdirectory) {
+    public IOManager(String rootDir, boolean subDir) {
         this.rootDir = rootDir;
-        this.subdirectory = subdirectory;
+        this.subDir = subDir;
         
         // Instantiate a new Date object on construction of the IOManager.
         Date date = new Date();
         
-        String format = subdirectory ? "HH-mm-ss" : "HH-mm-ss-" + Double.toString(Math.random());
+        String format = subDir ? "HH-mm-ss" : "HH-mm-ss-" + Double.toString(Math.random());
         
         /* Hour, Minute, Second, Random (for sorted uniqueness) */
         this.fileName = new SimpleDateFormat(format).format(date);
         
         /* Year, Month, Day */
-        String suffix = subdirectory ? "/" + this.fileName : "";
+        String suffix = subDir ? "/" + this.fileName : "";
         this.path = this.rootDir + "/" + new SimpleDateFormat("yyyy-MM-dd").format(date) + suffix;
     }
     
@@ -48,18 +48,18 @@ public class IOManager {
      */
     public IOManager() {
         this.rootDir = "docs-img/";
-        this.subdirectory = true;
+        this.subDir = true;
         
         // Instantiate a new Date object on construction of the IOManager.
         Date date = new Date();
         
-        String format = subdirectory ? "HH-mm-ss" : "HH-mm-ss-" + Double.toString(Math.random());
+        String format = subDir ? "HH-mm-ss" : "HH-mm-ss-" + Double.toString(Math.random());
         
         /* Hour, Minute, Second, Random (for sorted uniqueness) */
         this.fileName = new SimpleDateFormat(format).format(date);
         
         /* Year, Month, Day */
-        String suffix = subdirectory ? "/" + this.fileName : "";
+        String suffix = subDir ? "/" + this.fileName : "";
         this.path = this.rootDir + "/" + new SimpleDateFormat("yyyy-MM-dd").format(date) + suffix;
     }
     
@@ -120,7 +120,7 @@ public class IOManager {
     }
     
     public PrintWriter makePrintWriter(String suffix) throws FileNotFoundException {
-        return subdirectory ? new PrintWriter(this.path + "/" + suffix) : new PrintWriter(this.path + "/" + this.fileName + suffix);
+        return subDir ? new PrintWriter(this.path + "/" + suffix) : new PrintWriter(this.path + "/" + this.fileName + suffix);
     }
     
     /**
