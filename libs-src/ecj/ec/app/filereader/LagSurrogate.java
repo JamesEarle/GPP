@@ -8,10 +8,13 @@ package ec.app.filereader;
  */
 public class LagSurrogate {
     
-    private int timeLag; 
-    private double lagResult; 
+    /* Constants */
     private final int SHORT_LAG = 5; // 1 Week, minues 2-day weekened
     private final int LONG_LAG = 23; // 4 Weeks, minus 4x2-day weekends
+    
+    /* Class attributes */
+    private int timeLag; 
+    private double lagResult;
     
     /**
      * 
@@ -23,6 +26,9 @@ public class LagSurrogate {
         } else {
             this.timeLag = LONG_LAG;
         }
+        
+        // If left uninitialized will throw error when XLag refers to it.
+        this.lagResult = 0;
     }
     
     /**

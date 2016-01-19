@@ -9,7 +9,7 @@ import ec.*;
 public class XLag extends GPNode {
     
     @Override
-    public String toString() { return "y"; }
+    public String toString() { return "x_t"; }
     
     @Override
     public int expectedChildren() { return 0; }
@@ -22,7 +22,6 @@ public class XLag extends GPNode {
         DoubleData rd = ((DoubleData)input);
         
         rd.x = surrogate.getLagResult();
-//        System.out.println(rd.x);
     }
     
 }
