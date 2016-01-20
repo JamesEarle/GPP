@@ -90,51 +90,30 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
             // Sample all data points for currentX. 
             // We begin counting at the surrogate's index so the X_Lag begins at 0
-            for (int i=0;i<=vm.getRange();i++) {
+            for (int i=surrogate.getLag();i<=vm.getRange();i++) {
                 
-                if(i < surrogate.getLag()) {
-                    ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
-                    
-                    evalDataHistory.add(input.x);
-                } else {
-                    currentX = i;
-                    expectedResult = inputData.get(i-1);
+                currentX = i;
+                expectedResult = inputData.get(i-1);
+                
+                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
-                    // Throws a NullPointerException in an unrelated part of code... (KozaFitness PrintWriter object is unset)
-//                    surrogate.setLagResult(evalDataHistory.get(i - surrogate.getLag()));
-                    
-                    // Nonsense solution, e.g. the tree is just "x_t"
-//                    surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
-                    
-                    // Works...?
-                    surrogate.setLagResult(i - surrogate.getLag()); 
+                ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
+                result = Math.abs(expectedResult - input.x);
 
-                    ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
+                // Sum of Squared Residuals
+//                if(surrogate.dataIsDowJones(in)) {
+//                    result = Math.pow(result, 2);
+//                }
 
-                    // Save all input.x values into some dynamically growing array. 
-                    // Don't start evaluating fitness until we are at surrogate.getLag() index
-                    // Then we can compare input.x (now) to input.x (5 intervals ago), using 
-                    // the same form of access as the lag setup now (see XLag with LagSurrogate)
-                    result = Math.abs(expectedResult - input.x);
-
-                    /* 
-                        Sum of Squared Residuals fitness is a tight band, but
-                        seems more useful on less granular data. Thus, we 
-                        only use on Dow Jones data. 
-                    */
-                    if(surrogate.dataIsDowJones(in)) {
-                        result = Math.pow(result, 2);
-                    }
-
-                    // Hit radius as 2.5% of the max value
-                    if (result <= 0.025*MAX_VALUE) hits++;
-                    sum += result;  
-                } // else
+                // Hit radius as 2.5% of the max value
+                if (result <= 0.025*MAX_VALUE) hits++;
+                sum += result;  
             } // for 
             
             
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
+            if(pw == null) System.out.println("pw is null!!!");
             f.writer = pw;
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
@@ -170,7 +149,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             PrintWriter bestIndFunctionVerification = io.makePrintWriter("/best_ind_verification.txt");
             PrintWriter bestIndTree = io.makePrintWriter("/best_ind_tree.txt");
             
-            for (int i=1;i<=inputData.size();i++) {
+            for(int i=surrogate.getLag()+1;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
                 currentX = i;                
@@ -182,8 +161,6 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                     bestIndFunction.println(input.x);
                 } else { // else it is non-training data, write to separate text file.
 //                    factory.getPrinter(1).println(input.x);
-                    // the lag calculation will use non training data, but real data,
-                    // if we don't save the input.x evaluations
                     bestIndFunctionVerification.println(input.x);
                 }
             }

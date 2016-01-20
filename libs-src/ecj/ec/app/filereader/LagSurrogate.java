@@ -9,7 +9,7 @@ package ec.app.filereader;
 public class LagSurrogate {
     
     /* Constants */
-    private final int SHORT_LAG = 5; // 1 Week, minues 2-day weekened
+    private final int SHORT_LAG = 15; // 1 Week, minues 2-day weekened
     private final int LONG_LAG = 23; // 4 Weeks, minus 4x2-day weekends
     
     /* Class attributes */
