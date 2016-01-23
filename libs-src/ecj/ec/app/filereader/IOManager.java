@@ -6,6 +6,7 @@ import java.util.Date;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
+
 /**
  * The IOManager class is an all around Input / Output helper class to hold 
  * the logic associated with creating directories, writing to files, etc.
@@ -86,10 +87,6 @@ public class IOManager {
     public void executionSetup() throws IOException {        
         makeDirectory(this.path);
         makeOutFile(this.path, this.fileName);
-    }
-    
-    public void makeMultiDirStructure() {
-        //FILL THIS IN
     }
     
     /**

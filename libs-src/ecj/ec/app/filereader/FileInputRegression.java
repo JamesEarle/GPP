@@ -28,7 +28,6 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public PrintWriter pw;
     public double currentX;
     public double currentY;
-//    public BufferedReader br;
     
     public InputFileEnum in;
     public LagSurrogate surrogate;
@@ -42,7 +41,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         super.setup(state, base);
         
         // Define the input data and time lag preferences.
-        in = InputFileEnum.DJ_NORM;
+        in = InputFileEnum.DJ_NORM_1;
         surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
         evalDataHistory = new ArrayList<>();
@@ -53,7 +52,6 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             io.executionSetup();
             pw = io.makePrintWriter("_out.txt");
             
-            // Remember to change this index based on which file is to be used.
             BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
             
             String next;
@@ -89,26 +87,25 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX. 
-            // We begin counting at the surrogate's index so the X_Lag begins at 0
             for (int i=surrogate.getLag();i<=vm.getRange();i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i-1);
                 
-                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
                 result = Math.abs(expectedResult - input.x);
 
                 // Sum of Squared Residuals
-//                if(surrogate.dataIsDowJones(in)) {
-//                    result = Math.pow(result, 2);
-//                }
+                if(surrogate.dataIsDowJones(in)) {
+                    result = Math.pow(result, 2);
+                }
 
                 // Hit radius as 2.5% of the max value
                 if (result <= 0.025*MAX_VALUE) hits++;
                 sum += result;  
-            } // for 
+            }
             
             
             // the fitness better be KozaFitness!
@@ -134,48 +131,32 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
      */
     @Override
     public void describe(EvolutionState state, Individual bestIndividual, int subpopulation, int threadnum, int log) {
-        IOManager io = ec.Evolve.io;
-//        IOManager io = new IOManager(); 
-//        PrintWriterFactory factory = new PrintWriterFactory();
-        
+        PrintWriterFactory factory = new PrintWriterFactory(ec.Evolve.io);
         ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
         
         try {
-//            factory.makePrintWriter("/best_ind_training.txt");      // 0
-//            factory.makePrintWriter("/best_ind_verification.txt");  // 1
-//            factory.makePrintWriter("/best_ind_tree.txt");          // 2
-
-            PrintWriter bestIndFunction = io.makePrintWriter("/best_ind_training.txt");
-            PrintWriter bestIndFunctionVerification = io.makePrintWriter("/best_ind_verification.txt");
-            PrintWriter bestIndTree = io.makePrintWriter("/best_ind_tree.txt");
+            factory.makePrintWriter("/best_ind_training.txt");      // 0
+            factory.makePrintWriter("/best_ind_verification.txt");  // 1
+            factory.makePrintWriter("/best_ind_tree.txt");          // 2
             
-            for(int i=surrogate.getLag()+1;i<=inputData.size();i++) {
+            for(int i=0;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
                 currentX = i;                
                 ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
                 
-                // Write to training text file if data is in training range
-                if(!vm.inVerificationRange(i)) {
-//                    factory.getPrinter(0).println(input.x);
-                    bestIndFunction.println(input.x);
-                } else { // else it is non-training data, write to separate text file.
-//                    factory.getPrinter(1).println(input.x);
-                    bestIndFunctionVerification.println(input.x);
+                if(!vm.inVerificationRange(i)) { 
+                    // Training Data
+                    factory.getPrinter(0).println(input.x);
+                } else { 
+                    // Verification Data
+                    factory.getPrinter(1).println(input.x);
                 }
             }
             
             // Print individual statistics and the actual GP tree.
-//            bestIndividual.printIndividual(state, factory.getPrinter(2));
-            bestIndividual.printIndividual(state, bestIndTree);
-
-            // Finally, we close our output streams.
-            bestIndFunctionVerification.close();
-            bestIndFunction.close();
-            bestIndTree.close();
-            
-//            factory.close();
-            
+            bestIndividual.printIndividual(state, factory.getPrinter(2));
+            factory.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
         }

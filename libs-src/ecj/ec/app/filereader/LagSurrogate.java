@@ -39,7 +39,7 @@ public class LagSurrogate {
     public final boolean dataIsDowJones(InputFileEnum inputType) {
         switch(inputType) {
             case DJ_ORIG:
-            case DJ_NORM:
+            case DJ_NORM_1:
             case DJ_NORM_2:
             case DJ_NORM_5:
                 return true;

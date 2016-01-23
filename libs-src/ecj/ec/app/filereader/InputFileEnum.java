@@ -16,13 +16,24 @@ package ec.app.filereader;
 public enum InputFileEnum {
     
     SP_ORIG("/input/sp500.txt"),
-    SP_NORM("/input/sp500_1.txt"),
+    SP_NORM_1("/input/sp500_1.txt"),
     SP_NORM_2("/input/sp500_2.txt"),
     SP_NORM_5("/input/sp500_5.txt"),
     DJ_ORIG("/input/dowjones_05-07.txt"),
-    DJ_NORM("/input/dowjones_05-07_1.txt"),
+    DJ_NORM_1("/input/dowjones_05-07_1.txt"),
     DJ_NORM_2("/input/dowjones_05-07_2.txt"),
-    DJ_NORM_5("/input/dowjones_05-07_5.txt");
+    DJ_NORM_5("/input/dowjones_05-07_5.txt"),
+    MSFT_OPEN_1("/input/msft_open_14-16_1.txt"),
+    MSFT_HIGH_1("/input/msft_high_14-16_1.txt"),
+    MSFT_LOW_1("/input/msft_low_14-16_1.txt"),
+    MSFT_CLOSE_1("/input/msft_close_14-16_1.txt"),
+    MSFT_VOLUME_1("/input/msft_volume_14-16_1.txt"),
+    MSFT_OPEN_2("/input/msft_open_14-16_2.txt"),
+    MSFT_HIGH_2("/input/msft_high_14-16_2.txt"),
+    MSFT_LOW_2("/input/msft_low_14-16_2.txt"),
+    MSFT_CLOSE_2("/input/msft_close_14-16_2.txt"),
+    MSFT_VOLUME_2("/input/msft_volume_14-16_2.txt");
+
     
     /* Class attributes */
     private final String fileName;
