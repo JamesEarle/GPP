@@ -41,7 +41,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         super.setup(state, base);
         
         // Define the input data and time lag preferences.
-        in = InputFileEnum.DJ_NORM_1;
+        in = InputFileEnum.MSFT_VOLUME_1;
         surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
         evalDataHistory = new ArrayList<>();
@@ -87,7 +87,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX. 
-            for (int i=surrogate.getLag();i<=vm.getRange();i++) {
+            for (int i=1;i<=vm.getRange();i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i-1);
@@ -139,7 +139,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             factory.makePrintWriter("/best_ind_verification.txt");  // 1
             factory.makePrintWriter("/best_ind_tree.txt");          // 2
             
-            for(int i=0;i<=inputData.size();i++) {
+            for(int i=1;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
                 currentX = i;                
