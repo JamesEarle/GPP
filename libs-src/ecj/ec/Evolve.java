@@ -809,9 +809,11 @@ public class Evolve {
     
     // These need to be accessed in FileInputRegression, but cannot be passed 
     // in regular execution, so we declare them publicly.
-    public static final int NUM_RUNS = 20;
-    public static boolean isItLong = false;
+    private static final int NUM_RUNS = 21;
+    private static boolean isItLong = false;
+    
     public static IOManager io;
+    public static int runNumber = 0;
 
     /** Top-level evolutionary loop.
      * @param args */
@@ -819,19 +821,7 @@ public class Evolve {
         // Also assessed at the end of every run in implementation file.
         isItLong = checkFullExecution(args);
         
-        // Create output directory. Timestamped folders
-//        dayDir = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-//        hourDir = new SimpleDateFormat("HH-mm-ss").format(new Date());
-//        
-//        File f = new File("docs-img/" + dayDir + "/" + hourDir);
-//            
-//        if(!f.mkdirs()) {
-//            System.out.println("CANNOT MAKE DIRECTORIES");
-//            System.exit(1);
-//        } else {
-//            System.out.println("DIRECTORIES CREATED SUCCESSFULLY");
-//        }
-        
+        // Create timestamped directory
         io = new IOManager("docs-img/", true);
         io.makeDirectory(io.getPath());
         
@@ -839,6 +829,7 @@ public class Evolve {
             // Executes 20 runs. This will allow us to do statistical analysis.
             for(int i=0;i<NUM_RUNS;i++) {
                 mainExecute(args);
+                runNumber = i;
             }
         } else {
             // Execute once, will not run read.py for statistical analysis.
@@ -916,6 +907,15 @@ public class Evolve {
         System.exit(0);
     }
     
+    /**
+     * 
+     * @param p
+     * @param r
+     * @param str
+     * @param userDir
+     * @throws IOException
+     * @throws InterruptedException 
+     */
     private static void textMe(Process p, Runtime r, StringBuilder str, String[] userDir) throws IOException, InterruptedException {
         // First option is for UNIX systems. Alias won't stay for some reason, plus uses /
         p = userDir.length == 1 ? 

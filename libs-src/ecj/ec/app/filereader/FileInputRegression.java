@@ -33,18 +33,20 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public LagSurrogate surrogate;
     public VerificationManager vm;
     
+    public MovingAveragePipeline pipeline;
+    
     public ArrayList<Double> inputData;
-    public ArrayList<Double> evalDataHistory;
+//    public ArrayList<Double> evalDataHistory;
     
     @Override
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
         // Define the input data and time lag preferences.
-        in = InputFileEnum.MSFT_VOLUME_1;
+        in = InputFileEnum.DJ_NORM_1;
         surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
-        evalDataHistory = new ArrayList<>();
+//        evalDataHistory = new ArrayList<>();
         
         try {
             // Set up the IOManager to keep track of output data
@@ -64,6 +66,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
             // The chosen boundary for verification will be a percentage of the given data set.
             vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
+            
+            pipeline = new MovingAveragePipeline(inputData);
+            pipeline.calculateMovingAverages();
                         
             br.close();
         } catch (IOException ex) {
@@ -87,12 +92,17 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX. 
-            for (int i=1;i<=vm.getRange();i++) {
+            int start = pipeline.getDuration() + 1;
+            int finish = vm.getRange();
+            
+            for (int i=start;i<=finish;i++) {
                 
                 currentX = i;
-                expectedResult = inputData.get(i-1);
+                expectedResult = inputData.get(i - 1);
                 
-//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+                // Pass values to time-dependent terminals.
+                pipeline.setValue(pipeline.getValueAt(i - start));
+                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
                 result = Math.abs(expectedResult - input.x);
@@ -110,7 +120,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
-            if(pw == null) System.out.println("pw is null!!!");
+//            if(pw == null) System.out.println("pw is null!!!");
             f.writer = pw;
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
@@ -134,15 +144,24 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         PrintWriterFactory factory = new PrintWriterFactory(ec.Evolve.io);
         ec.app.filereader.DoubleData input = (ec.app.filereader.DoubleData)(this.input);
         
+        double sum = 0.0;
+        
         try {
-            factory.makePrintWriter("/best_ind_training.txt");      // 0
-            factory.makePrintWriter("/best_ind_verification.txt");  // 1
-            factory.makePrintWriter("/best_ind_tree.txt");          // 2
+            factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_training.txt");      // 0
+            factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_verification.txt");  // 1
+            factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_tree.txt");          // 2
             
-            for(int i=1;i<=inputData.size();i++) {
+            int start = pipeline.getDuration() + 1;
+            for(int i=start;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
                 currentX = i;                
+                
+                // Pass values to time-dependent terminals.
+                pipeline.setValue(pipeline.getValueAt(i - start));
+                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+
+                
                 ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
                 
                 if(!vm.inVerificationRange(i)) { 
@@ -151,11 +170,30 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 } else { 
                     // Verification Data
                     factory.getPrinter(1).println(input.x);
+                    
+                    // Calculate fitness of verification data.
+                    double expectedResult = inputData.get(i-1);
+                    double result = Math.abs(expectedResult - input.x);
+                    
+                    // Sum of Squared Residuals
+                    if(surrogate.dataIsDowJones(in)) {
+                        result = Math.pow(result, 2);
+                    }
+                    
+                    sum += result;
                 }
             }
-            
+
             // Print individual statistics and the actual GP tree.
+            KozaFitness f = ((KozaFitness)bestIndividual.fitness);
+            
+            factory.getPrinter(2).println("STD: " + sum + "\n\n");
+            factory.getPrinter(2).println("ADJ: " + f.adjustedFitness());
+            factory.getPrinter(2).println("HIT: " + f.hits + "\n\n");
+            
             bestIndividual.printIndividual(state, factory.getPrinter(2));
+
+            // Close all writers in the factory
             factory.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);

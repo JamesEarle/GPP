@@ -1,0 +1,7 @@
+0.8282631852751686
+
+
+Evaluated: T
+Fitness: d4596638436636939549|0.20734570578284997|i246|
+Tree 0:
+ (/ (/ (- (/ (log x) (log (log C[4.928677231640258]))) (- (cos (log x)) x)) C[25.878919762654228]) (+ C[8.808091494342092] (/ (/ (/ (/ (log (/ (log x) (+ (cos (log (log x))) (log C[4.928677231640258])))) (cos (cos (/ (log x) (+ (cos (log (log x))) (cos (log (log (log x))))))))) (cos (cos (/ (log x) (cos (cos (/ (log x) (+ (cos (log (log x))) (cos (log (log (log C[4.928677231640258])))))))))))) (cos (cos (/ (log C[4.928677231640258]) (cos (cos (/ (log x) (+ (cos (log (log x))) (cos (log (log C[4.928677231640258]))))))))))) (cos (cos (/ (log x) (+ (cos (/ (log x) (+ (cos (log (log x))) (cos (log (log (log x))))))) (cos (log (log (log (log (log C[4.928677231640258])))))))))))))

@@ -1,0 +1,4 @@
+Evaluated: T
+Fitness: d4613256901019963344|2.697612009304045|i227|
+Tree 0:
+ (log (+ (log (log (log (log (+ (log (sin (sin (log x)))) (log x)))))) (sin (sin (sin (sin (* (log (sin (log (log (log (+ (log x) (sin (sin (log x))))))))) (log (+ (log (log (+ (log (sin (sin (sin C[29.144525820409314])))) (log x)))) (sin (* (log C[1.6089055051623113]) (log x))))))))))))

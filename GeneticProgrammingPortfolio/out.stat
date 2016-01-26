@@ -3,2340 +3,805 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.936742454217516 Adjusted=0.04177677902131607 Hits=197
+Fitness: Standardized=2.021831909252575 Adjusted=0.3309250911468936 Hits=232
 Tree 0:
- (cos C[11.09438300677713])
+ x_t
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.503038564385527 Adjusted=0.042547690046993054 Hits=193
+Fitness: Standardized=2.0396478711878716 Adjusted=0.3289854754160085 Hits=231
 Tree 0:
- (/ (/ C[18.621649852124147] C[17.22793960039531])
-     C[9.199432371955945])
+ (/ x_t (cos (/ x_t x)))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.346190080397125 Adjusted=0.04283354142822903 Hits=204
+Fitness: Standardized=2.0251749535429826 Adjusted=0.3305593942025845 Hits=232
 Tree 0:
- (sin C[18.95776202749181])
+ x_t
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.346190080397125 Adjusted=0.04283354142822903 Hits=204
+Fitness: Standardized=1.9848096017081596 Adjusted=0.33502974508917277 Hits=233
 Tree 0:
- (sin C[18.95776202749181])
+ (log x_t)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.32908428316409 Adjusted=0.04286494865645757 Hits=205
+Fitness: Standardized=1.9922921319699192 Adjusted=0.3341919691984314 Hits=232
 Tree 0:
- (* (cos (cos C[18.289172127032234])) (sin
-     (sin C[25.299252792626465])))
+ (log x_t)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.32903221804936 Adjusted=0.04286504432131194 Hits=205
+Fitness: Standardized=1.9761785678185926 Adjusted=0.33600134441293145 Hits=233
 Tree 0:
- (/ (sin C[18.95776202749181]) (cos C[0.15218190598764947]))
+ (log x_t)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.32903221804936 Adjusted=0.04286504432131194 Hits=205
+Fitness: Standardized=1.992393238531501 Adjusted=0.3341806775672117 Hits=232
 Tree 0:
- (log (/ (sin C[18.95776202749181]) (cos C[0.15218190598764947])))
+ x_t
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.32903221804936 Adjusted=0.04286504432131194 Hits=205
+Fitness: Standardized=2.004770177951021 Adjusted=0.3328041549859592 Hits=232
 Tree 0:
- (log (/ (sin C[18.95776202749181]) (cos C[0.15218190598764947])))
+ x_t
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.32821675687478 Adjusted=0.04286654271185567 Hits=206
+Fitness: Standardized=1.99649786829009 Adjusted=0.3337229138663249 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (sin C[18.95776202749181])))
+ x_t
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.324053750899616 Adjusted=0.04287419376922975 Hits=205
+Fitness: Standardized=1.9907745659255032 Adjusted=0.3343615434587419 Hits=232
 Tree 0:
- (/ (log (/ (cos (- x x)) C[9.199432371955945]))
-     (cos C[0.15218190598764947]))
+ x_t
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.324052698060726 Adjusted=0.042874195704554585 Hits=205
+Fitness: Standardized=2.0225260836436734 Adjusted=0.3308490885856952 Hits=232
 Tree 0:
- (/ (/ (sin C[18.95776202749181]) (cos (/
-     (sin C[18.95776202749181]) (cos C[0.15218190598764947]))))
-     (cos C[0.15218190598764947]))
+ x_t
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.324027066738033 Adjusted=0.04287424282001806 Hits=205
+Fitness: Standardized=2.0067214186618774 Adjusted=0.33258817853668793 Hits=232
 Tree 0:
- (log (/ (/ (sin C[18.95776202749181]) (cos
-     (/ (sin (/ (sin C[18.95776202749181]) (cos
-         C[0.15218190598764947]))) (cos C[0.15218190598764947]))))
-     (cos C[0.15218190598764947])))
+ x_t
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.324012341884053 Adjusted=0.042874269887272005 Hits=205
+Fitness: Standardized=2.003004468170235 Adjusted=0.3329998375291501 Hits=232
 Tree 0:
- (/ (log (/ (sin C[18.95776202749181]) (cos
-     C[0.15218190598764947]))) (cos (/ (/ (log
-     (/ (/ (sin C[18.95776202749181]) (cos (sin
-         C[18.95776202749181]))) (cos C[0.15218190598764947])))
-     (cos C[0.15218190598764947])) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.200626368040012 Adjusted=0.04310228457355567 Hits=208
+Fitness: Standardized=1.9946468136458055 Adjusted=0.3339291950701055 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (sin x) (+ x x))
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (sin C[18.95776202749181])))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.200594900088678 Adjusted=0.0431023430350132 Hits=208
+Fitness: Standardized=1.9935063238305766 Adjusted=0.3340564180670817 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (sin x) (+ x x))
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (sin (/ (/ (sin C[18.95776202749181])
-             (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.13418456019727 Adjusted=0.04322607513560326 Hits=209
+Fitness: Standardized=2.014338576595961 Adjusted=0.33174773655628365 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (sin x) (+ x x))
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (sin (/ (/ (sin (cos (sin C[18.95776202749181])))
-             (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=22.12978708594794 Adjusted=0.04323429335013339 Hits=209
+Fitness: Standardized=1.9935756122841897 Adjusted=0.3340486860918036 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (sin x) (+ x x))
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (sin (/ (/ (sin (cos (sin C[18.95776202749181])))
-             (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-         (cos (/ (sin (sin C[18.95776202749181]))
-             (cos C[0.15218190598764947]))))))
+ x_t
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.971587395173064 Adjusted=0.04353203732930212 Hits=210
+Fitness: Standardized=1.9810743817382666 Adjusted=0.3354495299164254 Hits=232
 Tree 0:
- (log (/ (log (/ (sin C[18.95776202749181])
-     (cos (/ (sin (/ (log (* (/ (sin x) (+ x x))
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (sin (/ (/ (sin (cos (sin C[18.95776202749181])))
-             (cos C[18.95776202749181])) (sin (/ (sin
-             C[18.95776202749181]) (cos C[0.15218190598764947]))))))))
-         (cos C[0.15218190598764947]))))) (cos (/
-     (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-     (cos C[0.15218190598764947])))))
+ x_t
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.9748192469218 Adjusted=0.04352591370806895 Hits=208
+Fitness: Standardized=1.9930599491401022 Adjusted=0.3341062380949961 Hits=232
 Tree 0:
- (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin x) (+ x x)) (*
-         (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.89333416636259 Adjusted=0.04368083708266969 Hits=206
+Fitness: Standardized=2.003566263457115 Adjusted=0.3329375523245479 Hits=232
 Tree 0:
- (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.893295061298836 Adjusted=0.04368091169586601 Hits=206
+Fitness: Standardized=2.0011555374107393 Adjusted=0.3332049897229767 Hits=232
 Tree 0:
- (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (sin C[18.95776202749181]))))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.85246769825835 Adjusted=0.04375895037699638 Hits=207
+Fitness: Standardized=1.9937277833416498 Adjusted=0.33403170641112295 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) C[0.15218190598764947]))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos C[0.15218190598764947]))) (cos C[18.95776202749181]))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.85077400904718 Adjusted=0.04376219377094516 Hits=206
+Fitness: Standardized=2.010126969692919 Adjusted=0.33221190005218154 Hits=232
 Tree 0:
- (/ (/ (cos (- x x)) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) C[0.15218190598764947]))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             C[18.95776202749181])) (cos C[18.95776202749181]))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.84614219801541 Adjusted=0.04377106608777335 Hits=205
+Fitness: Standardized=1.9914503534131338 Adjusted=0.3342860090788527 Hits=232
 Tree 0:
- (/ (sin C[18.95776202749181]) (cos (/ (sin
-     (/ (log (* (/ (cos C[18.498730888123642])
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.813999948388577 Adjusted=0.04383273438512623 Hits=203
+Fitness: Standardized=2.020393320509196 Adjusted=0.3310827080730711 Hits=232
 Tree 0:
- (log (/ (/ (sin (sin C[18.95776202749181]))
-     (cos (/ (sin (/ (log (* (/ (sin (cos (sin
-         C[18.95776202749181]))) (+ x x)) (* (cos
-         C[0.15218190598764947]) C[13.54269229297171])))
-         (cos (cos C[0.15218190598764947])))) (cos
-         C[0.15218190598764947])))) (cos (/ (/ (sin
-     (sin (* (/ (cos (- x x)) (+ x x)) (* (cos
-         (/ (sin C[18.95776202749181]) (cos C[0.15218190598764947])))
-         C[13.54269229297171])))) (cos (/ C[0.15218190598764947]
-     C[9.199432371955945]))) (cos C[0.15218190598764947])))))
+ x_t
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.69415977665026 Adjusted=0.04406420021017423 Hits=205
+Fitness: Standardized=1.9937596267387832 Adjusted=0.3340281534524327 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (/ (log (* (/ (sin x) (+ x x)) (* (cos (cos
-                 C[0.15218190598764947])) C[13.54269229297171])))
-                 (cos C[0.15218190598764947])))))))) (cos
-         C[0.15218190598764947])))) (cos (/ (sin (/
-     (log (* (/ (cos C[0.15218190598764947]) (+
-         (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) (cos C[0.15218190598764947])))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (sin
-     C[18.95776202749181]) (cos C[18.95776202749181]))
-     (sin (/ (sin C[18.95776202749181]) (cos C[18.95776202749181]))))))))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.69820143407518 Adjusted=0.04405635410824982 Hits=204
+Fitness: Standardized=1.9743496632631654 Adjusted=0.3362079490354533 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (/ C[0.15218190598764947] (cos (sin (/ (/
-                 (sin C[18.95776202749181]) (cos C[18.95776202749181]))
-                 (cos C[0.15218190598764947]))))))))))) (cos
-         C[0.15218190598764947])))) (cos (/ (sin (/
-     (log (* (/ (cos C[0.15218190598764947]) (+
-         (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-     (/ (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (/ (cos C[0.15218190598764947]) (+ x
-             x))))) (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.686939208751863 Adjusted=0.04407822451493296 Hits=205
+Fitness: Standardized=2.030408086109211 Adjusted=0.3299885598193199 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos C[0.15218190598764947])
-             C[0.15218190598764947]))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) (cos C[0.15218190598764947])))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (sin
-         C[18.95776202749181]) (cos C[18.95776202749181]))
-         (sin (/ (sin C[18.95776202749181]) (cos C[18.95776202749181]))))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.68041256742067 Adjusted=0.04409090870932622 Hits=202
+Fitness: Standardized=2.0228998352488974 Adjusted=0.330808182374876 Hits=232
 Tree 0:
- (/ (/ (cos C[18.95776202749181]) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (/ (cos (/ (/
-         (sin (sin C[18.95776202749181])) (cos (/
-         (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (sin x)))) (cos C[18.95776202749181]))
-         (+ (/ (sin (cos (/ (/ (sin x) (+ x x)) (cos
-             C[18.95776202749181])))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos C[0.15218190598764947]))) (cos C[18.95776202749181]))
-         (cos C[0.15218190598764947])))))) (sin (cos
-         (sin C[18.95776202749181]))))))
+ x_t
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.63788040310757 Adjusted=0.04417374693183409 Hits=204
+Fitness: Standardized=1.9975613466595914 Adjusted=0.3336045152551675 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (* C[7.940138099526733] (sin (- (- C[28.031046755633426]
-                 x) (cos C[19.448003827050723])))))))))) (cos
-         C[0.15218190598764947])))) (cos (/ (sin (/
-     (log (* (/ (cos C[0.15218190598764947]) (+
-         (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-     (/ (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (/ (cos C[0.15218190598764947]) (+ x
-             x))))) (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.63788040310757 Adjusted=0.04417374693183409 Hits=204
+Fitness: Standardized=2.009303950864208 Adjusted=0.3323027571584523 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (* C[7.940138099526733] (sin (- (- C[28.031046755633426]
-                 x) (cos C[19.448003827050723])))))))))) (cos
-         C[0.15218190598764947])))) (cos (/ (sin (/
-     (log (* (/ (cos C[0.15218190598764947]) (+
-         (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-     (/ (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (/ (cos C[0.15218190598764947]) (+ x
-             x))))) (cos C[18.95776202749181])) (cos C[0.15218190598764947]))))))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.63318478072307 Adjusted=0.044182911494263545 Hits=205
+Fitness: Standardized=2.0152780316109555 Adjusted=0.3316443755820871 Hits=232
 Tree 0:
- (/ (/ (cos C[18.95776202749181]) C[9.199432371955945])
-     (cos (/ (sin (/ (log (* (/ (/ (cos (/ (/
-         (/ (sin C[18.95776202749181]) (cos C[0.15218190598764947]))
-         (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (sin x)))) (cos C[18.95776202749181]))
-         (+ (/ (sin (cos (/ (/ (sin x) (+ x x)) (cos
-             C[18.95776202749181])))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (* (/ (sin (cos (sin C[18.95776202749181])))
-                 (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171]))))
-         (cos (cos (cos C[0.15218190598764947]))))
-         (cos C[0.15218190598764947])))))) (sin (cos
-         (sin C[18.95776202749181]))))))
+ x_t
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.556130339805208 Adjusted=0.044333845608051044 Hits=203
+Fitness: Standardized=2.0205068464986837 Adjusted=0.3310702643032184 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (/ C[0.15218190598764947] (cos (sin (/ (/
-                 (sin C[18.95776202749181]) (cos C[18.95776202749181]))
-                 (cos C[0.15218190598764947]))))))))))) (cos
-         C[0.15218190598764947])))) (cos (/ (sin (/
-     (log (* (/ (cos C[0.15218190598764947]) (+
-         (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-     (/ (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos (/ (cos C[0.15218190598764947]) (+ x
-             x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-     (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-     (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.51854648362028 Adjusted=0.04440783958802083 Hits=207
+Fitness: Standardized=2.0008762444716415 Adjusted=0.3332360012653798 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos C[0.15218190598764947])
-             (* (cos (cos C[0.15218190598764947])) C[13.54269229297171]))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) (cos C[9.199432371955945])))
-             C[18.95776202749181]) (+ (/ (sin (cos C[0.15218190598764947]))
-             C[18.95776202749181]) x))) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (sin
-         C[18.95776202749181]) (cos C[18.95776202749181]))
-         (sin (sin C[18.95776202749181]))))))) (cos
-     C[0.15218190598764947]))))
+ x_t
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.51275816145674 Adjusted=0.04441925741964674 Hits=207
+Fitness: Standardized=1.959584527068543 Adjusted=0.337885264250417 Hits=233
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos C[0.15218190598764947])
-             (* (cos (cos C[0.15218190598764947])) C[13.54269229297171]))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (/ (log (/ (sin C[18.95776202749181])
-             (cos C[0.15218190598764947]))) (cos C[9.199432371955945])))
-             C[18.95776202749181]) (+ (/ (sin C[18.95776202749181])
-             C[18.95776202749181]) x))) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (sin
-         C[18.95776202749181]) (cos C[18.95776202749181]))
-         (sin (sin C[18.95776202749181]))))))) (cos
-     C[0.15218190598764947]))))
+ x_t
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.486587728442757 Adjusted=0.04447095362250643 Hits=207
+Fitness: Standardized=2.022495476031559 Adjusted=0.3308524389631075 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (* (/ (sin (cos (sin C[18.95776202749181])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171]))
-         C[13.54269229297171]))) (cos (cos (/ (sin
-         C[18.95776202749181]) (cos (/ C[0.15218190598764947]
-         (cos (sin x))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (cos (cos C[0.15218190598764947])))
-             (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) C[18.95776202749181])))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.453012707049577 Adjusted=0.0445374530824556 Hits=205
+Fitness: Standardized=2.0192157766696055 Adjusted=0.331211835777788 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (log
-             (sin (* (/ (cos (+ x (cos C[0.15218190598764947])))
-                 (+ x x)) (* (cos (/ (sin C[18.95776202749181])
-                 (cos C[0.15218190598764947]))) C[13.54269229297171])))))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 (cos C[18.95776202749181])))))) (sin (sin
-         (* (/ (cos (cos C[18.95776202749181])) (+
-             x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.453013276460656 Adjusted=0.04453745195298051 Hits=205
+Fitness: Standardized=1.9903256803639566 Adjusted=0.33441173533923857 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (log
-             (sin (* (/ (cos (+ x (cos C[0.15218190598764947])))
-                 (+ x x)) (* (cos (/ (sin C[18.95776202749181])
-                 (cos C[0.15218190598764947]))) C[13.54269229297171])))))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (cos C[0.15218190598764947]))))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 (cos C[18.95776202749181])))))) (sin (sin
-         (* (/ (cos (cos C[18.95776202749181])) (+
-             x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.44080365669047 Adjusted=0.044561683944053465 Hits=205
+Fitness: Standardized=2.01160182762919 Adjusted=0.33204920744361005 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (log
-             (sin (* (/ (cos (+ x (cos C[0.15218190598764947])))
-                 (+ x x)) (* (cos (/ (sin C[18.95776202749181])
-                 (cos C[0.15218190598764947]))) C[13.54269229297171])))))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (cos C[0.15218190598764947]))))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (/ (sin (cos (sin C[18.95776202749181])))
-             (+ x x)) (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945]))) (cos (/ (cos C[0.15218190598764947])
-             (+ x (cos C[18.95776202749181])))))) (sin
-         (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.44779258233414 Adjusted=0.044547810050016914 Hits=205
+Fitness: Standardized=1.9967362656239436 Adjusted=0.3336963654330096 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (cos C[0.15218190598764947]))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (log
-             (sin (* (/ (cos (+ x (cos C[0.15218190598764947])))
-                 (+ x x)) (* (cos (/ (sin C[18.95776202749181])
-                 (cos C[0.15218190598764947]))) C[13.54269229297171])))))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (cos C[0.15218190598764947]))))
-             (* (cos (cos C[0.15218190598764947])) C[13.54269229297171]))
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (/ (sin (cos (sin C[18.95776202749181])))
-             (+ x x)) (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945]))) (cos (/ (cos C[0.15218190598764947])
-             (+ x (cos C[18.95776202749181])))))) (sin
-         (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.343606138744587 Adjusted=0.04475553291578862 Hits=209
+Fitness: Standardized=2.0196336323228246 Adjusted=0.33116600282093145 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.342013458239844 Adjusted=0.04475872337419952 Hits=209
+Fitness: Standardized=2.0164911327479214 Adjusted=0.3315110026824557 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (sin C[18.95776202749181]) x)) (* (cos
-         (cos C[0.15218190598764947])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin (sin C[18.95776202749181]))
-             (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.334051471697762 Adjusted=0.044774679653050126 Hits=209
+Fitness: Standardized=1.9916620817204505 Adjusted=0.3342623507214151 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (+ x x) C[9.199432371955945]))) (cos (/
-             (cos C[0.15218190598764947]) (+ x x)))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.32386425546114 Adjusted=0.044795112018089236 Hits=211
+Fitness: Standardized=2.010126969692919 Adjusted=0.33221190005218154 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ C[0.15218190598764947] (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.32386425546114 Adjusted=0.044795112018089236 Hits=211
+Fitness: Standardized=1.9930606656231218 Adjusted=0.3341061581161808 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ C[0.15218190598764947] (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.282274798456818 Adjusted=0.0448787212726259 Hits=211
+Fitness: Standardized=2.0001248180241133 Adjusted=0.3333194652409834 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (sin (cos
-         (sin C[18.95776202749181]))) (+ (/ (sin (-
-         x x)) C[18.95776202749181]) x)) (* (cos (cos
-         C[0.15218190598764947])) C[13.54269229297171])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         C[0.15218190598764947]) (sin (sin (* (/ (cos
-         (cos C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.282274798456818 Adjusted=0.0448787212726259 Hits=211
+Fitness: Standardized=2.0064671225402373 Adjusted=0.33261630985509516 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (sin (cos
-         (sin C[18.95776202749181]))) (+ (/ (sin (-
-         x x)) C[18.95776202749181]) x)) (* (cos (cos
-         C[0.15218190598764947])) C[13.54269229297171])))
-         (+ x x)) (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         C[0.15218190598764947]) (sin (sin (* (/ (cos
-         (cos C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.286629102395572 Adjusted=0.04486995298416443 Hits=209
+Fitness: Standardized=2.0306080720578503 Adjusted=0.3299667842965183 Hits=231
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (- x x)) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         (cos x)) C[13.54269229297171]))) (cos (cos
-         (/ (sin C[18.95776202749181]) (cos (+ x x)))))))
-         (cos C[0.15218190598764947])))) (cos (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.286629102395572 Adjusted=0.04486995298416443 Hits=209
+Fitness: Standardized=2.01818804221035 Adjusted=0.33132461795443885 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (- x x) C[18.95776202749181]) x)) (*
-         (cos (cos C[0.15218190598764947])) C[13.54269229297171])))
-         (+ x x)) (* (cos (cos x)) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ x
-                 x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.246659851558384 Adjusted=0.04495056816045802 Hits=212
+Fitness: Standardized=1.9903407349899787 Adjusted=0.33441005177068933 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ (sin
-                 (- x x)) x))))) (sin (sin (* (/ (cos (cos
-         C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.246187777421998 Adjusted=0.0449515220317845 Hits=212
+Fitness: Standardized=1.9931994363590897 Adjusted=0.33409066828383277 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos C[18.95776202749181])))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (cos
-             (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ (sin
-                 (- x x)) x))))) (sin (sin (* (/ (cos (cos
-         C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.246031375091377 Adjusted=0.04495183806670741 Hits=212
+Fitness: Standardized=2.013332519780459 Adjusted=0.33185849667625017 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos C[18.95776202749181])))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (sin C[18.95776202749181])) (sin
-             (log (log (- C[13.873705074589607] C[27.81746747902451])))))
-             (cos (/ (cos C[0.15218190598764947]) (+ (sin
-                 (- x x)) x))))) (sin (sin (* (/ (cos (cos
-         C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.232843257738313 Adjusted=0.044978502677652 Hits=214
+Fitness: Standardized=2.0210810367849765 Adjusted=0.33100734069159443 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (+
-             x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (/ (cos C[0.15218190598764947])
-             (+ (sin (- x x)) x))))) (sin (sin (* (/ (cos
-         (cos C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.22495327772254 Adjusted=0.04499447029219911 Hits=211
+Fitness: Standardized=2.0157300242375524 Adjusted=0.3315946692717706 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (/ (cos C[0.15218190598764947])
-             (+ x (cos C[0.15218190598764947]))) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin (/ C[18.95776202749181] (cos C[0.15218190598764947])))
-             (cos (/ (cos (cos C[0.15218190598764947]))
-                 C[9.199432371955945]))) (cos (/ (cos C[0.15218190598764947])
-             (+ x x))))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-         (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.220676021062125 Adjusted=0.045003131275220355 Hits=210
+Fitness: Standardized=2.0213328952841336 Adjusted=0.33097974789896745 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos C[18.95776202749181])))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.498730888123642]) (cos (/
-             (cos C[0.15218190598764947]) C[9.199432371955945])))
-             (cos (/ (cos C[0.15218190598764947]) (+ (sin
-                 (- x x)) x))))) (sin (sin (* (/ (cos (cos
-         C[18.95776202749181])) (+ x x)) (/ C[18.95776202749181]
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.21878611828658 Adjusted=0.04500695918653164 Hits=214
+Fitness: Standardized=2.029293689378862 Adjusted=0.3301099538503458 Hits=231
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos C[0.15218190598764947])
-         (+ (/ (* (cos C[0.15218190598764947]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ C[0.15218190598764947] (cos
-             (+ x x))))))) (cos (/ (/ (sin (/ C[18.95776202749181]
-         (cos C[0.15218190598764947]))) (cos (/ (cos
-         (cos C[0.15218190598764947])) C[9.199432371955945])))
-         (cos (/ (cos C[0.15218190598764947]) (+ x
-             x)))))))) (cos (/ (sin (/ (log (* (/ (cos
-     C[0.15218190598764947]) (+ (/ (sin (cos (cos
-     (sin (sin C[18.95776202749181]))))) C[18.95776202749181])
-     x)) (* (cos (cos C[0.15218190598764947]))
-     C[13.54269229297171]))) (cos (sin (/ (/ (cos
-     (/ (/ (sin (sin C[18.95776202749181])) (cos
-         (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-         (cos x))) (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-     (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-     (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.19592546538648 Adjusted=0.045053314021956586 Hits=212
+Fitness: Standardized=2.018742445323782 Adjusted=0.33126376897408444 Hits=232
 Tree 0:
- (/ (/ (/ (sin (sin C[18.95776202749181]))
-     (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-     (cos (/ (sin (/ (log (* (/ (sin (* (/ (cos
-         (/ C[0.15218190598764947] (cos (+ x x))))
-         (+ (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[18.498730888123642]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (/ (+ (cos
-             (sin C[12.660805380594317])) x) (* (log (cos
-             x)) (+ (/ C[0.15218190598764947] x) (+ C[6.95935489396295]
-             C[5.780424847264118]))))) (sin (* (+ C[23.995053772817545]
-             C[9.94610330931857]) (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.19592546538648 Adjusted=0.045053314021956586 Hits=212
+Fitness: Standardized=1.991556733668461 Adjusted=0.3342741218127354 Hits=232
 Tree 0:
- (/ (/ (/ (sin (sin C[18.95776202749181]))
-     (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-     (cos (/ (sin (/ (log (* (/ (sin (* (/ (cos
-         (/ C[0.15218190598764947] (cos (+ x x))))
-         (+ (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[18.498730888123642]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (/ (+ (cos
-             (sin C[12.660805380594317])) x) (* (log (cos
-             x)) (+ (/ C[0.15218190598764947] x) (+ C[6.95935489396295]
-             C[5.780424847264118]))))) (sin (* (+ C[23.995053772817545]
-             C[9.94610330931857]) (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.19327368495027 Adjusted=0.045058697251957075 Hits=212
+Fitness: Standardized=2.031147477839795 Adjusted=0.3299080652824814 Hits=231
 Tree 0:
- (/ (/ (/ (sin (sin (sin C[18.95776202749181])))
-     (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-     (cos (/ (sin (/ (log (* (/ (sin (* (/ (cos
-         (/ C[0.15218190598764947] (cos (+ x x))))
-         (+ (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[18.498730888123642]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (/ (+ (cos
-             (sin C[12.660805380594317])) x) (* (log (cos
-             x)) (+ (/ C[0.15218190598764947] x) (+ C[6.95935489396295]
-             C[5.780424847264118]))))) (sin (* (+ C[23.995053772817545]
-             C[9.94610330931857]) (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.19246653738974 Adjusted=0.04506033605211055 Hits=212
+Fitness: Standardized=2.013165365340324 Adjusted=0.33187690642629375 Hits=232
 Tree 0:
- (/ (/ (/ (sin (sin (sin C[18.95776202749181])))
-     (cos (/ (cos C[0.15218190598764947]) C[9.199432371955945])))
-     (cos (/ (sin (/ (log (* (/ (sin (* (/ (cos
-         (/ C[0.15218190598764947] (cos (+ x x))))
-         (+ (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (sin C[18.95776202749181]) (cos
-             (+ x x))))))) (cos C[18.498730888123642]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos C[0.15218190598764947]))
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (/ (+ (cos
-             (sin C[12.660805380594317])) x) (* (log (cos
-             x)) (+ (/ C[0.15218190598764947] x) (+ C[6.95935489396295]
-             C[5.780424847264118]))))) (sin (* (+ C[23.995053772817545]
-             C[9.94610330931857]) (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.181144830987744 Adjusted=0.045083335761956216 Hits=214
+Fitness: Standardized=2.018173825125783 Adjusted=0.33132617865650094 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.181144830987744 Adjusted=0.045083335761956216 Hits=214
+Fitness: Standardized=2.0241919739479184 Adjusted=0.33066683881663583 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.173852376671604 Adjusted=0.0450981626021858 Hits=214
+Fitness: Standardized=2.0007917579280976 Adjusted=0.333245383441886 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (+ (cos C[0.15218190598764947])
-             x))) C[18.95776202749181]) x)) (* (cos (cos
-         C[0.15218190598764947])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-             (log (log (cos x)))) (cos (sin (/ x (log
-             C[23.589963124678615])))))) (sin (sin (*
-             (/ (cos (cos C[18.95776202749181])) (+ x
-                 x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.173852376671604 Adjusted=0.0450981626021858 Hits=214
+Fitness: Standardized=2.028604120526911 Adjusted=0.3301851150575671 Hits=231
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (+ (cos C[0.15218190598764947])
-             x))) C[18.95776202749181]) x)) (* (cos (cos
-         C[0.15218190598764947])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-             (log (log (cos x)))) (cos (sin (/ x (log
-             C[23.589963124678615])))))) (sin (sin (*
-             (/ (cos (cos C[18.95776202749181])) (+ x
-                 x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.141770276829433 Adjusted=0.0451635071404595 Hits=213
+Fitness: Standardized=2.0067214186618774 Adjusted=0.33258817853668793 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (sin (cos (cos (sin x)))) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.139995482196774 Adjusted=0.04516712755448033 Hits=213
+Fitness: Standardized=1.9925451139609263 Adjusted=0.33416371747739576 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.139995482196774 Adjusted=0.04516712755448033 Hits=213
+Fitness: Standardized=2.00458537492595 Adjusted=0.3328246247702799 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.139995482196774 Adjusted=0.04516712755448033 Hits=213
+Fitness: Standardized=2.0132958126315743 Adjusted=0.3318625392860713 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.139995482196774 Adjusted=0.04516712755448033 Hits=213
+Fitness: Standardized=2.024629487586435 Adjusted=0.3306190077509198 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.139995482196774 Adjusted=0.04516712755448033 Hits=213
+Fitness: Standardized=2.0143272659479408 Adjusted=0.3317489813719751 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.137529890499504 Adjusted=0.045172158092902585 Hits=213
+Fitness: Standardized=1.9926898585299262 Adjusted=0.33414755530037504 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (* (/ (cos (/ C[0.15218190598764947]
-             (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-             C[13.54269229297171]) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-             C[13.54269229297171])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.137529890499504 Adjusted=0.045172158092902585 Hits=213
+Fitness: Standardized=2.009090136611916 Adjusted=0.33232636930110365 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (* (/ (cos (/ C[0.15218190598764947]
-             (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-             C[13.54269229297171]) C[18.95776202749181])
-             x)) (* (cos (cos C[0.15218190598764947]))
-             C[13.54269229297171])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.137111430102756 Adjusted=0.04517301198747041 Hits=213
+Fitness: Standardized=1.9913087050735139 Adjusted=0.3343018386246511 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (cos C[18.95776202749181])) (+
-             x x)) x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.137111430102756 Adjusted=0.04517301198747041 Hits=213
+Fitness: Standardized=2.01045506492557 Adjusted=0.3321756938513626 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (cos C[18.95776202749181])) (+
-             x x)) x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.131379716626213 Adjusted=0.04518471115692572 Hits=213
+Fitness: Standardized=2.0218911213403334 Adjusted=0.33091860687437963 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.131379716626213 Adjusted=0.04518471115692572 Hits=213
+Fitness: Standardized=1.9976279958450058 Adjusted=0.3335970979007715 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.131379716626213 Adjusted=0.04518471115692572 Hits=213
+Fitness: Standardized=1.9914119262444931 Adjusted=0.3342903032600494 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.131379716626213 Adjusted=0.04518471115692572 Hits=213
+Fitness: Standardized=1.993409276972363 Adjusted=0.3340672482352411 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.131367780791305 Adjusted=0.04518473552583315 Hits=213
+Fitness: Standardized=1.9933547218609922 Adjusted=0.33407333674717044 Hits=232
 Tree 0:
- (/ (/ (sin (sin C[18.95776202749181])) (cos
-     (/ (sin (/ (log (* (/ (sin (* (/ (cos (/
-         C[0.15218190598764947] (cos (+ x x)))) (+
-         (/ (* (cos C[18.498730888123642]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-         (cos (cos (/ (cos (cos C[0.15218190598764947]))
-             (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos C[0.15218190598764947]) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127428214977463 Adjusted=0.04519278021307179 Hits=214
+Fitness: Standardized=1.993132327623321 Adjusted=0.33409815889898997 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127428214977463 Adjusted=0.04519278021307179 Hits=214
+Fitness: Standardized=1.9920127479547869 Adjusted=0.33422317491245906 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127428214977463 Adjusted=0.04519278021307179 Hits=214
+Fitness: Standardized=1.9903407349899787 Adjusted=0.33441005177068933 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127129916122072 Adjusted=0.04519338946310379 Hits=214
+Fitness: Standardized=2.0386706907336083 Adjusted=0.32909127107767505 Hits=231
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos (cos (cos C[0.15218190598764947])))
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127027737054952 Adjusted=0.04519359815893182 Hits=214
+Fitness: Standardized=2.022641041946966 Adjusted=0.3308365055997098 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (cos (cos C[0.15218190598764947]))
-         (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127027737054952 Adjusted=0.04519359815893182 Hits=214
+Fitness: Standardized=2.019812283260574 Adjusted=0.33114641116707844 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (cos (cos C[0.15218190598764947]))
-         (+ x x)))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127038336066118 Adjusted=0.04519357651087191 Hits=214
+Fitness: Standardized=1.9994809427755977 Adjusted=0.33339101633852714 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (/ x (log C[23.589963124678615])))) (+ (/
-         (* (cos (+ C[29.718484516261217] x)) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x x)))))) (cos
-     C[0.15218190598764947])))) (cos (/ (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.127038336066118 Adjusted=0.04519357651087191 Hits=214
+Fitness: Standardized=2.0043787701210576 Adjusted=0.3328475124192501 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (/ x (log C[23.589963124678615])))) (+ (/
-         (* (cos (+ C[29.718484516261217] x)) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x x)))))) (cos
-     C[0.15218190598764947])))) (cos (/ (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.12691552920438 Adjusted=0.045193827340288005 Hits=214
+Fitness: Standardized=1.996827975593443 Adjusted=0.33368615354105413 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (* (cos C[18.498730888123642]) C[13.54269229297171])))
-         (+ (/ (* (cos C[18.95776202749181]) C[13.54269229297171])
-             C[18.95776202749181]) x)) (+ x (cos C[0.15218190598764947])))))))
-     (cos C[0.15218190598764947])))) (cos (/ (/
-     (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.12687739134575 Adjusted=0.04519390523631316 Hits=214
+Fitness: Standardized=1.9945296093205527 Adjusted=0.33394226488443246 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (- (cos C[17.7952091566157])
-         (sin (sin x)))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.12687739134575 Adjusted=0.04519390523631316 Hits=214
+Fitness: Standardized=1.9873532226046948 Adjusted=0.3347444796394357 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (- (cos C[17.7952091566157])
-         (sin (sin x)))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.12687739134575 Adjusted=0.04519390523631316 Hits=214
+Fitness: Standardized=1.9823390723470926 Adjusted=0.33530727919981373 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (- (cos C[17.7952091566157])
-         (sin (sin x)))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.126742366115142 Adjusted=0.04519418102555388 Hits=214
+Fitness: Standardized=2.0017454782398034 Adjusted=0.3331395040816022 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (- (cos C[17.7952091566157])
-         (sin (log (log (cos x)))))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.1266921213367 Adjusted=0.04519428365145024 Hits=214
+Fitness: Standardized=1.9975613466595914 Adjusted=0.3336045152551675 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-         (log (log (cos x)))) (cos (sin (/ x (log
-         C[23.589963124678615])))))) (+ (/ (* (cos
-         C[18.95776202749181]) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x (cos (- (cos
-         C[17.7952091566157]) (sin (log (log (cos
-         x)))))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.1266921213367 Adjusted=0.04519428365145024 Hits=214
+Fitness: Standardized=1.9903256803639566 Adjusted=0.33441173533923857 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-         (log (log (cos x)))) (cos (sin (/ x (log
-         C[23.589963124678615])))))) (+ (/ (* (cos
-         C[18.95776202749181]) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x (cos (- (cos
-         C[17.7952091566157]) (sin (log (log (cos
-         x)))))))))))) (cos C[0.15218190598764947]))))
-     (cos (/ (/ (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (cos C[0.15218190598764947])
-             C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-         (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.126549412049048 Adjusted=0.04519457514037179 Hits=214
+Fitness: Standardized=1.9773880773843404 Adjusted=0.3358648499991671 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (/ x (log C[23.589963124678615])))) (+ (/
-         (* (cos (+ C[29.718484516261217] x)) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x x)))))) (cos
-     C[0.15218190598764947])))) (cos (/ (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ C[0.15218190598764947] (cos
-             (+ x x)))) C[18.95776202749181]) x)) (* (cos
-         (cos C[18.498730888123642])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-             (log (log (cos x)))) (cos (sin (/ x (log
-             C[23.589963124678615])))))) (sin (sin (*
-             (/ (cos (cos C[18.95776202749181])) (+ x
-                 x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.126549412049048 Adjusted=0.04519457514037179 Hits=214
+Fitness: Standardized=2.0027614209986138 Adjusted=0.3330267909421305 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (/ x (log C[23.589963124678615])))) (+ (/
-         (* (cos (+ C[29.718484516261217] x)) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x x)))))) (cos
-     C[0.15218190598764947])))) (cos (/ (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ C[0.15218190598764947] (cos
-             (+ x x)))) C[18.95776202749181]) x)) (* (cos
-         (cos C[18.498730888123642])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-             (log (log (cos x)))) (cos (sin (/ x (log
-             C[23.589963124678615])))))) (sin (sin (*
-             (/ (cos (cos C[18.95776202749181])) (+ x
-                 x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.126549412049048 Adjusted=0.04519457514037179 Hits=214
+Fitness: Standardized=1.9982778392295304 Adjusted=0.3335247944389873 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (/ x (log C[23.589963124678615])))) (+ (/
-         (* (cos (+ C[29.718484516261217] x)) C[13.54269229297171])
-         C[18.95776202749181]) x)) (+ x x)))))) (cos
-     C[0.15218190598764947])))) (cos (/ (/ (sin
-     (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ C[0.15218190598764947] (cos
-             (+ x x)))) C[18.95776202749181]) x)) (* (cos
-         (cos C[18.498730888123642])) C[13.54269229297171])))
-         (cos (sin (/ (/ (cos (/ (/ (sin C[18.95776202749181])
-             (log (log (cos x)))) (cos (sin (/ x (log
-             C[23.589963124678615])))))) (sin (sin (*
-             (/ (cos (cos C[18.95776202749181])) (+ x
-                 x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-             (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.125555909183465 Adjusted=0.04519660451039508 Hits=214
+Fitness: Standardized=1.9925477892988215 Adjusted=0.33416341873501315 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (/ x (log C[23.589963124678615])))))))))
-     (cos C[0.15218190598764947])))) (cos (/ (/
-     (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (/ C[0.15218190598764947] (cos
-             x)) C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.125555909183465 Adjusted=0.04519660451039508 Hits=214
+Fitness: Standardized=1.9923488679173702 Adjusted=0.3341856328055709 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.95776202749181])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (/ x (log C[23.589963124678615])))))))))
-     (cos C[0.15218190598764947])))) (cos (/ (/
-     (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (/ C[0.15218190598764947] (cos
-             x)) C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.125542728334576 Adjusted=0.045196631435366896 Hits=214
+Fitness: Standardized=2.000976818072248 Adjusted=0.33322483332023034 Hits=232
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (/ x (log C[23.589963124678615])))))))))
-     (cos C[0.15218190598764947])))) (cos (/ (/
-     (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (/ C[0.15218190598764947] (cos
-             x)) C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.125542728334576 Adjusted=0.045196631435366896 Hits=214
+Fitness: Standardized=1.959584527068543 Adjusted=0.337885264250417 Hits=233
 Tree 0:
- (/ (/ (sin (/ (cos C[0.15218190598764947])
-     C[9.199432371955945])) (cos (/ (sin (/ (log
-     (* (/ (sin (* (/ (cos (/ C[0.15218190598764947]
-         (cos (+ x x)))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (* (cos (cos C[0.15218190598764947]))
-         C[13.54269229297171]))) (+ x x)) (* (cos
-         C[18.498730888123642]) C[13.54269229297171])))
-     (cos (cos (/ (/ (cos (/ C[0.15218190598764947]
-         (cos x))) (+ (/ (* (cos C[18.498730888123642])
-         C[13.54269229297171]) C[18.95776202749181])
-         x)) (+ x (cos (/ x (log C[23.589963124678615])))))))))
-     (cos C[0.15218190598764947])))) (cos (/ (/
-     (sin (/ (log (* (/ (cos C[0.15218190598764947])
-         (+ (/ (cos (/ (/ C[0.15218190598764947] (cos
-             x)) C[9.199432371955945])) C[18.95776202749181])
-             x)) (* (cos (cos C[18.498730888123642]))
-         C[13.54269229297171]))) (cos (sin (/ (/ (cos
-         (/ (/ (sin C[18.95776202749181]) (log (log
-             (cos x)))) (cos (sin (/ x (log C[23.589963124678615]))))))
-         (sin (sin (* (/ (cos (cos C[18.95776202749181]))
-             (+ x x)) (/ C[18.95776202749181] (cos C[0.15218190598764947]))))))
-         (cos C[0.15218190598764947])))))) (cos C[0.15218190598764947]))
-     (cos C[0.15218190598764947]))))
+ x_t
