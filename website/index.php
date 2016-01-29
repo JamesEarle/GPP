@@ -69,7 +69,7 @@
 			orange is intentionally weak to show some variation, while the grey was given strong parameters.
 		<p>
 		<div class="container text-center">
-			<img style="margin:15px" src="img/target_best_weak.png" alt="">
+			<img style="margin:15px" src="img/lag-with-avg.PNG" alt="">
 		</div>
 		<p class="lead">
 			<a href="papers/Lit_Review.pdf">Here</a> is a link to the literature review I wrote recently, covering 
