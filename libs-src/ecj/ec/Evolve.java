@@ -7,15 +7,14 @@ package ec;
 
 import ec.util.*;
 import java.io.File;
-import java.util.Date;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
 import ec.app.filereader.IOManager;
+import ec.app.filereader.PythonDelegate;
 
 
 //import de.progra.charting.*;
@@ -837,147 +836,16 @@ public class Evolve {
             System.exit(0);
         }
         
-        // Process output using read.py
-        Runtime r = Runtime.getRuntime();
-        
-        try {    
-            Process p;
-            StringBuilder str = new StringBuilder();
-            String[] userDir = System.getProperty("user.dir").split("\\\\");
-            
-            if(userDir.length == 1) { //UNIX system
-                p = r.exec("python " + System.getProperty("user.dir") + "/py/read.py " + NUM_RUNS + " --linux");
-                p.waitFor();
-            } else { // Window System
-                for(int i = 0;i<userDir.length - 1;i++) {
-                    str.append(userDir[i]).append("\\");
-                }
-
-                p = r.exec("py " + str.toString() + "py/read.py " + NUM_RUNS);
-                p.waitFor();
-            }
-            
-            BufferedReader stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            BufferedReader stderr = new BufferedReader(new InputStreamReader(p.getErrorStream()));
-            
-            String s;
-            System.out.println("Output: ");
-            while((s = stdin.readLine()) != null) {
-                System.out.println(s);
-            }
-            
-            System.out.println("Errors: ");
-            System.out.println("There should be nothing between these stars.");
-            System.out.println("********************************************");
-            while((s = stderr.readLine()) != null) {
-                System.out.println(s);
-            }
-            System.out.println("********************************************");
-            
-            textMe(p, r, str, userDir);
-            
-            System.out.println("Graphing...");
-            
-            p = userDir.length == 1 ? 
-                r.exec("python " + System.getProperty("user.dir") + "/py/graphs.py") 
-              : r.exec("py " + str.toString() + "py\\graphs.py ");
-            p.waitFor();
-            
-            stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            stderr = new BufferedReader(new InputStreamReader(p.getErrorStream()));
-            
-            System.out.println("Output: ");
-            while((s = stdin.readLine()) != null) {
-                System.out.println(s);
-            }
-            
-            System.out.println("Errors: ");
-            System.out.println("There should be nothing between these stars.");
-            System.out.println("********************************************");
-            while((s = stderr.readLine()) != null) {
-                System.out.println(s);
-            }
-            System.out.println("********************************************");
-            
-            System.out.println("Done!");
-            
-        } catch (IOException | InterruptedException ex) {
-            Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, ex);
+       
+        try {
+            PythonDelegate pd = new PythonDelegate(System.getProperty("user.dir"));
+            pd.run("read.py", "20");
+            pd.run("graphs.py");
+            pd.run("sort_runs.py");
+            pd.run("text.py");
+        } catch (InterruptedException e) {
+            Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, e);
         }
         System.exit(0);
     }
-    
-    /**
-     * 
-     * @param p
-     * @param r
-     * @param str
-     * @param userDir
-     * @throws IOException
-     * @throws InterruptedException 
-     */
-    private static void textMe(Process p, Runtime r, StringBuilder str, String[] userDir) throws IOException, InterruptedException {
-        // First option is for UNIX systems. Alias won't stay for some reason, plus uses /
-        p = userDir.length == 1 ? 
-                r.exec("python " + System.getProperty("user.dir") + "/py/text.py") 
-              : r.exec("py " + str.toString() + "py\\text.py ");
-        p.waitFor();
-
-        BufferedReader stdin = new BufferedReader(new InputStreamReader(p.getInputStream()));
-        String s;
-        while((s = stdin.readLine()) != null) {
-            System.out.println(s);
-        }
-    }
-    
-//    private static void produceGraph(BufferedReader r, String graphTitle, String fileName) throws IOException {
-//        String s = "";
-//        ArrayList<Double> modelList = new ArrayList<>();
-//        while((s = r.readLine()) != null) {
-//            modelList.add(Double.valueOf(s));
-//        }
-//        
-//        double[][] model = { 
-//                convertIntegers(modelList)
-//        };
-//        
-//        double[] columns = columnsBySize(modelList);
-//        
-//        String[] rows = {"A"};
-//
-//        int width = 800;
-//        int height = 480;
-//        
-//        DefaultChartDataModel data = new DefaultChartDataModel(model, columns, rows);
-//        DefaultChart c = new DefaultChart(data, graphTitle, DefaultChart.LINEAR_X_LINEAR_Y);
-//        c.addChartRenderer(new LineChartRenderer(c.getCoordSystem(), data), 1);
-//        c.setBounds(new Rectangle(0, 0, width, height));
-//
-//         try {
-//             ChartEncoder.createEncodedImage(new FileOutputStream(System.getProperty("user.dir") + "/" + fileName), c, "png");
-//        } catch(FileNotFoundException | EncodingException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
-//    
-//    private static double[] columnsBySize(ArrayList<Double> model) {
-//        double[] result = new double[model.size()];
-//        
-//        for(int i=0;i<result.length;i++) {
-//            result[i] = i;
-//        }
-//        
-//        return result;
-//    }
-//
-//    private static double[] convertIntegers(ArrayList<Double> model) {
-//        double[] result = new double[model.size()];
-//        
-//        for(int i=0;i<model.size();i++) {
-//            result[i] = model.get(i);
-//        }
-//        
-//        return result;
-//    }
 }

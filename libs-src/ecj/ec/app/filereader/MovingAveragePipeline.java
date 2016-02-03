@@ -13,6 +13,8 @@ public class MovingAveragePipeline {
     private ArrayList<Double> values;
     private ArrayList<Double> input;
     
+    //TODO name this consistently with the LagSurrogate
+    
     /**
      * 
      * @param input 
