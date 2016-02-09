@@ -1,5 +1,6 @@
 import os
 import sys
+import active
 import operator
 from os import listdir
 
@@ -11,23 +12,21 @@ from os import listdir
 ## We don't want to graph all of them, so we will not automate that 
 ## process. Rather, we'd like to hand pick the best, and then 1-2 
 ## that are average.
-##
-
 
 # Init an empty dictionary
-best_of_run_inds = {};
+best_of_run_inds = {}
 
-outPath = 'docs-img'
-outFolders = listdir(outPath)
-outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
-outDayFolders = listdir(outDayDir)
-outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
+# outPath = 'docs-img'
+# outFolders = listdir(outPath)
+# outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
+# outDayFolders = listdir(outDayDir)
+# outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
 
 # Append run number to the beginning of this pattern
 pattern = "_best_ind_tree.txt"
 
 # List and search through all the files.
-allRunFiles = listdir(outHourDir)
+allRunFiles = listdir(active.listActiveDirectory())
 
 # Iterate the 20 necessary files  
 for x in range(0, 20):

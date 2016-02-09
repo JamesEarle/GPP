@@ -809,7 +809,7 @@ public class Evolve {
     // These need to be accessed in FileInputRegression, but cannot be passed 
     // in regular execution, so we declare them publicly.
     private static final int NUM_RUNS = 21;
-    private static boolean isItLong = false;
+    private static boolean itIsLong = false;
     
     public static IOManager io;
     public static int runNumber = 0;
@@ -818,13 +818,13 @@ public class Evolve {
      * @param args */
     public static void main(String[] args) {
         // Also assessed at the end of every run in implementation file.
-        isItLong = checkFullExecution(args);
+        itIsLong = checkFullExecution(args);
         
         // Create timestamped directory
         io = new IOManager("docs-img/", true);
         io.makeDirectory(io.getPath());
         
-        if(isItLong) {
+        if(itIsLong) {
             // Executes 20 runs. This will allow us to do statistical analysis.
             for(int i=0;i<NUM_RUNS;i++) {
                 mainExecute(args);
@@ -843,6 +843,7 @@ public class Evolve {
             pd.run("graphs.py");
             pd.run("sort_runs.py");
             pd.run("text.py");
+            pd.run("ensemble.py");
         } catch (InterruptedException e) {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, e);
         }
