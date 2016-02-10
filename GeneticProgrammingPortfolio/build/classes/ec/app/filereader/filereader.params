@@ -41,6 +41,7 @@ gp.fs.0.func.9 = ec.app.filereader.IFLT
 gp.fs.0.func.9.nc = nc4
 gp.fs.0.func.10 = ec.app.filereader.MovingAverage
 gp.fs.0.func.10.nc = nc0
+
 #gp.fs.0.func.11 = ec.app.filereader.XLag
 #gp.fs.0.func.11.nc = nc0
 

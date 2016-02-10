@@ -1,0 +1,11 @@
+STD: 17.233892482841252
+
+
+ADJ: 1.0
+HIT: 0
+
+
+Evaluated: F
+Fitness: d0|0.0|i0|
+Tree 0:
+ (log avg)

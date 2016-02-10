@@ -22,6 +22,8 @@ best_of_run_inds = {}
 # outDayFolders = listdir(outDayDir)
 # outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
 
+outHourDir = active.listActiveDirectory()
+
 # Append run number to the beginning of this pattern
 pattern = "_best_ind_tree.txt"
 

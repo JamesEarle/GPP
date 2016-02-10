@@ -1,0 +1,11 @@
+STD: 26.100061127999997
+
+
+ADJ: 1.0
+HIT: 0
+
+
+Evaluated: F
+Fitness: d0|0.0|i0|
+Tree 0:
+ (/ (- avg avg) (* (IFLT (log avg) (log x) (+ C[16.777232027977014] x) (IFLT x x avg C[26.834860883447163])) (log (cos avg))))

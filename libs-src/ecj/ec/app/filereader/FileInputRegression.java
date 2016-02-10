@@ -43,7 +43,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         super.setup(state, base);
         
         // Define the input data and time lag preferences.
-        in = InputFileEnum.DJ_NORM_1;
+        in = InputFileEnum.MSFT_CLOSE_1;
+//        in = InputFileEnum.DJ_NORM_1;
         surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
 //        evalDataHistory = new ArrayList<>();
@@ -102,15 +103,17 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 
                 // Pass values to time-dependent terminals.
                 pipeline.setValue(pipeline.getValueAt(i - start));
-                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+                
+                // The below line breaks code
+//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
                 result = Math.abs(expectedResult - input.x);
 
                 // Sum of Squared Residuals
-                if(surrogate.dataIsDowJones(in)) {
+//                if(surrogate.dataIsDowJones(in)) {
                     result = Math.pow(result, 2);
-                }
+//                }
 
                 // Hit radius as 2.5% of the max value
                 if (result <= 0.025*MAX_VALUE) hits++;
@@ -159,7 +162,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 
                 // Pass values to time-dependent terminals.
                 pipeline.setValue(pipeline.getValueAt(i - start));
-                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
+                
+//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
                 
                 ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
@@ -176,9 +180,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                     double result = Math.abs(expectedResult - input.x);
                     
                     // Sum of Squared Residuals
-                    if(surrogate.dataIsDowJones(in)) {
+//                    if(surrogate.dataIsDowJones(in)) {
                         result = Math.pow(result, 2);
-                    }
+//                    }
                     
                     sum += result;
                 }
@@ -186,6 +190,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
             // Print individual statistics and the actual GP tree.
             KozaFitness f = ((KozaFitness)bestIndividual.fitness);
+            f.writer = pw;
+//            f.setStandardizedFitness(state, sum);
+            bestIndividual.evaluated = true;
             
             factory.getPrinter(2).println("STD: " + sum + "\n\n");
             factory.getPrinter(2).println("ADJ: " + f.adjustedFitness());

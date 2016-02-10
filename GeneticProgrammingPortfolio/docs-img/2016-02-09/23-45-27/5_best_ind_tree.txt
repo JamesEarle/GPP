@@ -1,0 +1,11 @@
+STD: 95.26606611263031
+
+
+ADJ: 1.0
+HIT: 0
+
+
+Evaluated: F
+Fitness: d0|0.0|i0|
+Tree 0:
+ (* (+ (cos x) (sin avg)) (log (/ x C[20.87816816987462])))

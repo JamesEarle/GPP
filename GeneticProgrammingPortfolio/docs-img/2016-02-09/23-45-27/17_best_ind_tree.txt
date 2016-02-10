@@ -1,0 +1,11 @@
+STD: 24.886362373830696
+
+
+ADJ: 1.0
+HIT: 0
+
+
+Evaluated: F
+Fitness: d0|0.0|i0|
+Tree 0:
+ (- (- x x) (sin x))

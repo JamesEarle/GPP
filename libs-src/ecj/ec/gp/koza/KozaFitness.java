@@ -156,6 +156,7 @@ public class KozaFitness extends Fitness
             if(printSwitch) {
                 String stdFitness = String.valueOf(standardizedFitness);
                 String str = stdFitness.length() <= 15 ? appendSpaces(stdFitness) : stdFitness;
+                //if(writer != null) 
                 writer.println(str + "\t" + adjustedFitness() + "\t" + hits);
                 printSwitch = !printSwitch;
             } else {
