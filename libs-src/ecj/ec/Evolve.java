@@ -839,7 +839,7 @@ public class Evolve {
        
         try {
             PythonDelegate pd = new PythonDelegate(System.getProperty("user.dir"));
-            pd.run("read.py", "20");
+            pd.run("read.py", Integer.toString(NUM_RUNS - 1));
             pd.run("graphs.py");
             pd.run("sort_runs.py");
             pd.run("text.py");

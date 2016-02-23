@@ -8,15 +8,16 @@ import java.util.ArrayList;
  */
 public abstract class AbstractPipeline {
     
-    int time;
+    int lag;
     double value;
+    
     ArrayList<Double> output;
     ArrayList<Double> input;
     
-    abstract void setTime(int time);
+    abstract void setLag(int lag);
     abstract void setValue(double value);
 
-    abstract void getTime();
-    abstract void getValue();
+    abstract int getLag();
+    abstract double getValue();
     
 }

@@ -6,77 +6,34 @@ import java.util.ArrayList;
  *
  * @author James Earle
  */
-public class MovingAveragePipeline {
+public class MovingAveragePipeline extends Pipeline {
     
-    private final int duration;
-    private double value;
-    private ArrayList<Double> values;
-    private ArrayList<Double> input;
+    private final ArrayList<Double> values;
     
-    //TODO name this consistently with the LagSurrogate
-    
-    /**
-     * 
-     * @param input 
-     */
     public MovingAveragePipeline(ArrayList<Double> input) {
-        this.duration = 5;
-        this.value = 0;
+        super();
         this.values = new ArrayList<>();
         this.input = input;
     }
     
-    /**
-     * 
-     */
     public void calculateMovingAverages() {
         for(int i=0;i<input.size();i++) {
             double sum = 0.0;
             
-            for(int j=0;j<duration;j++) {
+            for(int j=0;j<lag;j++) {
                 if(i+j < input.size()) {
                     sum += input.get(i+j);
                 }
             }
-            
             values.add(sum);
         }
     }
     
-    /**
-     * 
-     * @return 
-     */
     public ArrayList<Double> getValues() {
         return values;
     }
     
-    /**
-     * 
-     * @param index
-     * @return 
-     */
     public double getValueAt(int index) {
         return values.get(index);
-    }
-    
-    /**
-     * 
-     * @param value 
-     */
-    public void setValue(double value) {
-        this.value = value;
-    }
-    
-    /**
-     * 
-     * @return 
-     */
-    public int getDuration() {
-        return duration;
-    }
-    
-    public double getValue() {
-        return value;
     }
 }

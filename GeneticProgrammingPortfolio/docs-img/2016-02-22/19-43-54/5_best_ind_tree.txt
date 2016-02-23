@@ -1,0 +1,11 @@
+STD: 0.18155152939106495
+
+
+ADJ: 0.5078034897269574
+HIT: 246
+
+
+Evaluated: T
+Fitness: d4606905588930688139|0.9692657105166672|i246|
+Tree 0:
+ (* (/ avg C[4.117339298087569]) (cos (sin (sin (IFLT (/ (IFLT (- avg avg) x (log avg) (cos (IFLT (sin C[3.973476694004918]) (/ avg C[4.117339298087569]) (/ (log (sin (/ avg C[4.117339298087569]))) C[4.117339298087569]) (sin C[3.973476694004918])))) (* avg (sin C[25.35637507271914]))) (sin x) (log (sin (sin (/ avg C[4.117339298087569])))) (sin (cos (IFLT (sin (cos x)) (sin (IFLT (- avg avg) (sin x) (log avg) (sin x))) (log (sin (/ (+ (sin x) x) C[4.117339298087569]))) (/ avg C[4.117339298087569])))))))))

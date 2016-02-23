@@ -8,23 +8,35 @@ import java.util.ArrayList;
  */
 public class Pipeline extends AbstractPipeline {
     
-    int time;
+    int lag;
     double value;
+    
     ArrayList<Double> output;
     ArrayList<Double> input;
     
-    @Override
-    void setTime(int time) {
-        this.time = time;
+    public Pipeline() {
+        this.lag = 5;
+        this.value = 0;
     }
     
     @Override
-    void getTime(){}
+    public void setLag(int lag) {
+        this.lag = lag;
+    }
     
     @Override
-    void setValue(double value){}
+    public int getLag() {
+        return this.lag;
+    }
     
     @Override
-    void getValue(){}
+    public void setValue(double value) {
+        this.value = value;
+    }
+    
+    @Override
+    public double getValue() {
+        return this.value;
+    }
     
 }

@@ -30,10 +30,12 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public double currentY;
     
     public InputFileEnum in;
-    public LagSurrogate surrogate;
+//    public LagSurrogate surrogate;
     public VerificationManager vm;
     
+    // Have a PipelinePool initiate all the values instead
     public MovingAveragePipeline pipeline;
+    public PipelinePool pool;
     
     public ArrayList<Double> inputData;
 //    public ArrayList<Double> evalDataHistory;
@@ -43,9 +45,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         super.setup(state, base);
         
         // Define the input data and time lag preferences.
-        in = InputFileEnum.MSFT_CLOSE_1;
-//        in = InputFileEnum.DJ_NORM_1;
-        surrogate = new LagSurrogate(in);
+//        in = InputFileEnum.MSFT_CLOSE_1;
+        in = InputFileEnum.DJ_NORM_1;
+//        surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
 //        evalDataHistory = new ArrayList<>();
         
@@ -68,6 +70,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             // The chosen boundary for verification will be a percentage of the given data set.
             vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
             
+            // replace with PipeLinePool . calculateNecessaryValues
             pipeline = new MovingAveragePipeline(inputData);
             pipeline.calculateMovingAverages();
                         
@@ -93,7 +96,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX. 
-            int start = pipeline.getDuration() + 1;
+            int start = pipeline.getLag() + 1;
             int finish = vm.getRange();
             
             for (int i=start;i<=finish;i++) {
@@ -101,6 +104,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 currentX = i;
                 expectedResult = inputData.get(i - 1);
                 
+                // replace this with PipelinePool.update(i - start)
                 // Pass values to time-dependent terminals.
                 pipeline.setValue(pipeline.getValueAt(i - start));
                 
@@ -112,7 +116,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
                 // Sum of Squared Residuals
 //                if(surrogate.dataIsDowJones(in)) {
-                    result = Math.pow(result, 2);
+                result = Math.pow(result, 2);
 //                }
 
                 // Hit radius as 2.5% of the max value
@@ -154,7 +158,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_verification.txt");  // 1
             factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_tree.txt");          // 2
             
-            int start = pipeline.getDuration() + 1;
+            int start = pipeline.getLag() + 1;
             for(int i=start;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
@@ -179,11 +183,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                     double expectedResult = inputData.get(i-1);
                     double result = Math.abs(expectedResult - input.x);
                     
-                    // Sum of Squared Residuals
-//                    if(surrogate.dataIsDowJones(in)) {
-                        result = Math.pow(result, 2);
-//                    }
-                    
+                    result = Math.pow(result, 2);
                     sum += result;
                 }
             }
