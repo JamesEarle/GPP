@@ -26,6 +26,7 @@ for x in range(0, 20):
                 current_ind.append(line)
             inds.append(current_ind)
 
+std_dev_values = []
 avg_values = []
 min_values = []
 max_values = []
@@ -34,17 +35,64 @@ for x in range(0, len(inds[0])):
     average = 0
     max = -sys.maxsize - 1
     min = sys.maxsize
+    
+    # Don't need min or max, instead we create a list of the 20 entries.
+    # values_at_index = []
+    
+    # Iterate 20 individuals at a single index (Column Major Order)
     for y in range(0, 20):
         val = float(inds[y][x])
         average += val
         max = (val if val > max else max)
         min = (val if val < min else min)
-    avg_values.append(average / 20)
+        # values_at_index.append(val)
+        
+    # Average is currently a sum, divide by number of runs
+    average /= 20
+    
+    # We have to reiterate the list. Can't calculate Std Dev without average
+    sum = 0
+    for y in range(0, 20):
+        value = float(inds[y][x])
+        sum += (value - average)**2
+    
+    # Std. Dev. is the sum divided out by 20 runs
+    sum /= 20
+    
+    # print(values_at_index)
+    # values_at_index = sorted(values_at_index)
+    # print(values_at_index)
+    
+    # i = 0
+    # min = values_at_index[i]
+    # while(abs(min - average) > (2 * sum)):
+    #     i += 1
+    #     print(i)
+    #     min = values_at_index[i]
+    
+    # i = len(values_at_index) - 1
+    # max = values_at_index[i]
+    # while(abs(max - average) > (2 * sum)):
+    #     print(str(max) + " - " + str(average) + " > " + str(2 * sum))
+    #     i -= 1
+    #     max = values_at_index[i]
+    
+    # print("-" + str(min))
+    # print("+" + str(max))
+    # print(values_at_index)
+    
+    std_dev_values.append(sum)
+    avg_values.append(average)
     min_values.append(min)
     max_values.append(max)
         
-with open(activeDirectory + "/ensemble-avg.txt", 'w') as avg, open(activeDirectory + "/ensemble-min.txt", 'w') as min, open(activeDirectory + "/ensemble-max.txt", 'w') as max:
+with \
+open(activeDirectory + "/ensemble-avg.txt", 'w') as avg, \
+open(activeDirectory + "/ensemble-min.txt", 'w') as min, \
+open(activeDirectory + "/ensemble-max.txt", 'w') as max, \
+open(activeDirectory + "/ensemble-std-dev.txt", "w") as std_dev:
     for x in range(0, len(avg_values)):
+        std_dev.write(str(std_dev_values[x]) + "\n")
         avg.write(str(avg_values[x]) + "\n")
         min.write(str(min_values[x]) + "\n")
         max.write(str(max_values[x]) + "\n")

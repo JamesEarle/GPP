@@ -16,12 +16,6 @@ from os import listdir
 # Init an empty dictionary
 best_of_run_inds = {}
 
-# outPath = 'docs-img'
-# outFolders = listdir(outPath)
-# outDayDir = outPath + "/" + outFolders[len(outFolders) - 1]
-# outDayFolders = listdir(outDayDir)
-# outHourDir = outDayDir + "/" + outDayFolders[len(outDayFolders) - 1]
-
 outHourDir = active.listActiveDirectory()
 
 # Append run number to the beginning of this pattern
