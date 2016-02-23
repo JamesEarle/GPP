@@ -3,821 +3,805 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6369277780883793 Adjusted=0.3792291955470022 Hits=78
+Fitness: Standardized=1.5622515547107305 Adjusted=0.39028174191620174 Hits=92
 Tree 0:
- (* C[0.21578523729154409] avg)
+ (sin max)
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3237896531499274 Adjusted=0.43033154857389383 Hits=79
+Fitness: Standardized=1.5939268435919742 Adjusted=0.3855158839465329 Hits=93
 Tree 0:
- (* C[0.21578523729154409] avg)
+ max
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3198834645426956 Adjusted=0.43105613505337165 Hits=79
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (* C[0.21578523729154409] avg)
+ max
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3086267194159458 Adjusted=0.43315794259410967 Hits=72
+Fitness: Standardized=1.5622515547107305 Adjusted=0.39028174191620174 Hits=92
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ (sin max)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1642071380363832 Adjusted=0.4620629802133055 Hits=77
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.4198432419023084])))
+ max
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ max
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1357450810367211 Adjusted=0.4682206733748326 Hits=82
+Fitness: Standardized=1.9011325903659089 Adjusted=0.3446929669194726 Hits=90
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ max
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.152281541707111 Adjusted=0.31723054770623443 Hits=74
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.103514916809406 Adjusted=0.3222153032304605 Hits=76
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.136109138934404 Adjusted=0.4681408743463591 Hits=82
+Fitness: Standardized=2.174060134391297 Adjusted=0.31505389238372894 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.1398757660055208 Adjusted=0.3184839383859373 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.175553698458685 Adjusted=0.3149057125015297 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.1446401843561524 Adjusted=0.3180014060033849 Hits=74
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1358480688646486 Adjusted=0.46819809638031484 Hits=81
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.134058043744729 Adjusted=0.31907513710408186 Hits=74
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1370990434892356 Adjusted=0.4679240314324894 Hits=81
+Fitness: Standardized=2.32602348244556 Adjusted=0.3006593324665043 Hits=71
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1438636776938598 Adjusted=0.4664475686605659 Hits=79
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ min
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2417218095800933 Adjusted=0.4460856809825633 Hits=72
+Fitness: Standardized=2.131111111981053 Adjusted=0.3193754434882703 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2396574365752775 Adjusted=0.44649685423728364 Hits=72
+Fitness: Standardized=2.0960963610531054 Adjusted=0.3229873632420989 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2237942881870691 Adjusted=0.4496818816884552 Hits=73
+Fitness: Standardized=2.1325546669751807 Adjusted=0.3192282677593645 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2429592158482996 Adjusted=0.44583958234024085 Hits=72
+Fitness: Standardized=1.5622515547107305 Adjusted=0.39028174191620174 Hits=92
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ (sin max)
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2305479858196446 Adjusted=0.44832032592768306 Hits=72
+Fitness: Standardized=2.1516601955518606 Adjusted=0.317293089341092 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2238185450523695 Adjusted=0.4496769766691781 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2387115019664066 Adjusted=0.4466855149141078 Hits=73
+Fitness: Standardized=2.2240410832592943 Adjusted=0.310169744794029 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2285631752681012 Adjusted=0.4487196105085501 Hits=73
+Fitness: Standardized=2.129576296659216 Adjusted=0.3195320724621693 Hits=77
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2507271825609405 Adjusted=0.44430084985341134 Hits=73
+Fitness: Standardized=2.1593933414291535 Adjusted=0.31651646121012883 Hits=75
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2578844782472105 Adjusted=0.44289245514292086 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2249372592531462 Adjusted=0.44945087590275423 Hits=72
+Fitness: Standardized=2.1160099177120104 Adjusted=0.3209232404286662 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2397744619222744 Adjusted=0.44647352534851004 Hits=70
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2489200867995631 Adjusted=0.4446578630648897 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.249257652140495 Adjusted=0.4445911294548025 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2333208528364463 Adjusted=0.4477636962597391 Hits=72
+Fitness: Standardized=2.0264648799209977 Adjusted=0.3304185046502518 Hits=77
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.225402025600983 Adjusted=0.4493570098777744 Hits=73
+Fitness: Standardized=2.1712768394235993 Adjusted=0.3153304018017414 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2424967021744653 Adjusted=0.44593153650140815 Hits=72
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2437330525463444 Adjusted=0.44568581759988357 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2391624787528106 Adjusted=0.44659555056361483 Hits=73
+Fitness: Standardized=2.131894914609478 Adjusted=0.3192955151002223 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2445186772077048 Adjusted=0.4455298190006825 Hits=72
+Fitness: Standardized=2.1569714466082943 Adjusted=0.3167592792371797 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2468145178425463 Adjusted=0.4450745675972522 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2241527442799711 Adjusted=0.4496094086036936 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2589882934014884 Adjusted=0.4426760434841575 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.22383692847289 Adjusted=0.44967325939978003 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2277068571939989 Adjusted=0.44889209582071843 Hits=74
+Fitness: Standardized=2.132924071356554 Adjusted=0.3191906274214302 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2491916096349849 Adjusted=0.4446041838837765 Hits=73
+Fitness: Standardized=2.1730850811297326 Adjusted=0.31515070489189784 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.22373774602959 Adjusted=0.44969331558339865 Hits=73
+Fitness: Standardized=2.175450495636635 Adjusted=0.3149159470047142 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2224097211962617 Adjusted=0.44996203466106494 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2264664771701028 Adjusted=0.44914217674232676 Hits=72
+Fitness: Standardized=2.1714793414560685 Adjusted=0.3153102676496977 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2401203967967152 Adjusted=0.446404577820889 Hits=72
+Fitness: Standardized=2.06581158887596 Adjusted=0.3261779046137134 Hits=91
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2434491642084593 Adjusted=0.44574221513631807 Hits=72
+Fitness: Standardized=2.1629898236716927 Adjusted=0.3161565657012359 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2232791990269023 Adjusted=0.44978606395349974 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2305479858196446 Adjusted=0.44832032592768306 Hits=72
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2585244660096686 Adjusted=0.44276695473075256 Hits=71
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2189332247339197 Adjusted=0.45066700919759023 Hits=74
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2349470193706007 Adjusted=0.4474378995711572 Hits=72
+Fitness: Standardized=1.9994222902786702 Adjusted=0.33339753566580715 Hits=88
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2513459648288108 Adjusted=0.44417873379848954 Hits=73
+Fitness: Standardized=2.1582251454141073 Adjusted=0.31663353749559225 Hits=76
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2460383718210162 Adjusted=0.4452283685559797 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2482295983740368 Adjusted=0.4447944287910894 Hits=71
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2261212283523526 Adjusted=0.4492118341372373 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2477069540726964 Adjusted=0.44489785387194986 Hits=72
+Fitness: Standardized=1.5964232916207315 Adjusted=0.385145212349325 Hits=94
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.242951855661563 Adjusted=0.44584104535094804 Hits=71
+Fitness: Standardized=2.16038860140655 Adjusted=0.3164167848077113 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2389803813442537 Adjusted=0.4466318724059625 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.211359046106081 Adjusted=0.45221059952289133 Hits=74
+Fitness: Standardized=2.173357708025512 Adjusted=0.3151236299239041 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.24362924641405 Adjusted=0.44570643817300964 Hits=73
+Fitness: Standardized=2.168644045529576 Adjusted=0.3155924066039642 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2185633617050904 Adjusted=0.4507421411806981 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2341672778429342 Adjusted=0.44759405883228665 Hits=72
+Fitness: Standardized=2.1706008048941854 Adjusted=0.3153976364531244 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1900762821368032 Adjusted=0.4566051000855207 Hits=73
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2345188849591766 Adjusted=0.44752362879147 Hits=73
+Fitness: Standardized=1.6026160254198791 Adjusted=0.3842287875863941 Hits=94
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2401451571921411 Adjusted=0.44639964369694113 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2476768705285162 Adjusted=0.44490380851090094 Hits=74
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.256904121811357 Adjusted=0.44308483924315545 Hits=72
+Fitness: Standardized=2.145472396731018 Adjusted=0.31791727088092264 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2311445927205034 Adjusted=0.4482004453062673 Hits=72
+Fitness: Standardized=2.1704587157424107 Adjusted=0.3154117715000225 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2292004111716088 Adjusted=0.4485913401901924 Hits=73
+Fitness: Standardized=2.1449880139570974 Adjusted=0.3179662356619848 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.217101724723157 Adjusted=0.45103929551309474 Hits=74
+Fitness: Standardized=2.154018385361857 Adjusted=0.31705585631368194 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.244435526729942 Adjusted=0.44554632471753924 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.219951660015591 Adjusted=0.45046025911797416 Hits=73
+Fitness: Standardized=2.1339989641267105 Adjusted=0.3190811520509389 Hits=75
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2331863694527794 Adjusted=0.4477906607700818 Hits=72
+Fitness: Standardized=2.145415511606165 Adjusted=0.3179230204436053 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2606171442804577 Adjusted=0.4423570804680837 Hits=73
+Fitness: Standardized=2.1148901969868024 Adjusted=0.3210386038542716 Hits=76
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2339200665231513 Adjusted=0.44764359073795734 Hits=72
+Fitness: Standardized=2.164702246134938 Adjusted=0.3159854931759547 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2316774380034055 Adjusted=0.4480934309640469 Hits=73
+Fitness: Standardized=2.1712054566776993 Adjusted=0.31533749978080766 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2385221122095604 Adjusted=0.44672330666099064 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2380486777821282 Adjusted=0.4468178060322551 Hits=73
+Fitness: Standardized=2.123669036633387 Adjusted=0.32013634872078994 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2246989968358473 Adjusted=0.4494990115167416 Hits=72
+Fitness: Standardized=2.172277409302097 Adjusted=0.3152309432547391 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.239982465279582 Adjusted=0.44643206609886815 Hits=72
+Fitness: Standardized=1.890079200475019 Adjusted=0.3460112788035837 Hits=91
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ max
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.226630750551211 Adjusted=0.4491090405324036 Hits=72
+Fitness: Standardized=2.1848572954969265 Adjusted=0.3139858107344091 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2363720914625236 Adjusted=0.4471527809784232 Hits=72
+Fitness: Standardized=2.1446597430289525 Adjusted=0.3179994281469686 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.233370617047556 Adjusted=0.4477537191395344 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2579150139981201 Adjusted=0.4428864655225826 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2399427863010541 Adjusted=0.44643997432245014 Hits=72
+Fitness: Standardized=2.1679765341294788 Adjusted=0.31565890379134004 Hits=74
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2331863694527794 Adjusted=0.4477906607700818 Hits=72
+Fitness: Standardized=2.1391208099473604 Adjusted=0.3185605335198198 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2324385029787353 Adjusted=0.44794067055630127 Hits=72
+Fitness: Standardized=2.1259740550819104 Adjusted=0.3199002878396561 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2394546856758497 Adjusted=0.4465372782027103 Hits=72
+Fitness: Standardized=2.1611666834993977 Adjusted=0.31633890272847126 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2401729131740198 Adjusted=0.44639411275763363 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2316907100379826 Adjusted=0.4480907661182944 Hits=73
+Fitness: Standardized=2.158727097910603 Adjusted=0.31658322134301126 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2316907100379826 Adjusted=0.4480907661182944 Hits=73
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2378373061907082 Adjusted=0.4468600095429726 Hits=72
+Fitness: Standardized=2.0958370704782547 Adjusted=0.32301441491735766 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2279417324828916 Adjusted=0.4488447724732761 Hits=72
+Fitness: Standardized=2.146556037335149 Adjusted=0.3178077835368571 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2576620634795006 Adjusted=0.4429360869264923 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2277200627938294 Adjusted=0.4488894348538027 Hits=72
+Fitness: Standardized=2.1757259364372725 Adjusted=0.31488863334405437 Hits=73
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.2400289601507528 Adjusted=0.4464227997894726 Hits=72
+Fitness: Standardized=2.1167649310989867 Adjusted=0.320845499133422 Hits=72
 Tree 0:
- (sin (* C[0.21578523729154409] avg))
+ min
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1357450810367211 Adjusted=0.4682206733748326 Hits=82
+Fitness: Standardized=1.5622515547107305 Adjusted=0.39028174191620174 Hits=92
 Tree 0:
- (* (* C[0.21578523729154409] avg) (cos (sin
-     C[0.37798455978611545])))
+ (sin max)

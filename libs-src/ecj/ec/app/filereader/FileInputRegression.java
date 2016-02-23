@@ -28,15 +28,12 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
     public PrintWriter pw;
     public double currentX;
-//    public double currentY;
     
     public InputFileEnum in;
     public VerificationManager vm;
     public ArrayList<Double> inputData;
     
-    // Declare our Pipelines to time dependent terminals.
-//    public MovingAveragePipeline movingAverage;
-    
+    // Declare our Pipelines to time dependent terminals.    
     public Pipeline generalPipeline;
     public PipelinePool pool;
     
@@ -70,16 +67,11 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             // The chosen boundary for verification will be a percentage of the given data set.
             vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
             
-            // replace with PipeLinePool . calculateNecessaryValues
-//            movingAverage = new MovingAveragePipeline(inputData);
-//            movingAverage.calculateMovingAverages();
-            
-//            pool.pipelines[0] = new MovingAveragePipeline(inputData);
-//            pool.pipelines2.add(new MovingAveragePipeline(inputData));
-
-//            pool.getPipelines().put("MovingAveragePipeline", new MovingAveragePipeline(inputData));
+            // Add all Pipelines for terminal values to the PipelinePool
             pool.add("MovingAveragePipeline", new MovingAveragePipeline(inputData));
             pool.add("StandardDeviationPipeline", new StandardDeviationPipeline(inputData));
+            pool.add("MinimumValuePipeline", new MinimumValuePipeline(inputData));
+            pool.add("MaximumValuePipeline", new MaximumValuePipeline(inputData));
             
             br.close();
         } catch (IOException ex) {

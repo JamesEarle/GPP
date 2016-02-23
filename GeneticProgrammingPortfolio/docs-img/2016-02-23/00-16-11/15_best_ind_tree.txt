@@ -1,0 +1,11 @@
+STD: 0.06733298471778744
+
+
+ADJ: 0.4440981893974363
+HIT: 82
+
+
+Evaluated: T
+Fitness: d4608316219294636111|1.251754282891415|i82|
+Tree 0:
+ (+ min (IFLT min x (IFLT min x C[0.04346369943951467] (- min C[0.3756901302780755])) (+ (IFLT (/ (+ (sin avg) (IFLT min x (sin (sin C[0.04346369943951467])) (- (IFLT min min (sin (/ (IFLT (- min C[0.3756901302780755]) (IFLT min x (sin C[0.04346369943951467]) min) avg (- min max)) (sin C[0.04346369943951467]))) min) min))) (sin (sin stdev))) (IFLT (- min C[0.3756901302780755]) (IFLT (IFLT (+ min (IFLT min x (IFLT min x (- min max) (log max)) (sin C[0.04346369943951467]))) x (IFLT min x (IFLT max x stdev (IFLT min x (sin (sin C[0.04346369943951467])) (IFLT (/ (log max) (IFLT (* C[0.6558275171430205] min) (+ min (IFLT (sin C[0.04346369943951467]) x (sin C[0.04346369943951467]) min)) C[0.4328079116728758] (* max min))) (IFLT (log max) (+ min (sin (IFLT min x (sin C[0.04346369943951467]) (log max)))) (sin C[0.04346369943951467]) (- (cos max) max)) C[0.7303663310173764] x))) min) (sin min)) (IFLT (* C[0.6558275171430205] min) (+ min (IFLT min x (sin C[0.04346369943951467]) min)) C[0.4328079116728758] (* max min)) C[0.4328079116728758] (* max min)) avg (- min max)) C[0.7303663310173764] x) (IFLT (+ min (IFLT (+ min (IFLT min x (sin (sin C[0.04346369943951467])) (sin C[0.04346369943951467]))) x (IFLT (* C[0.6558275171430205] min) (sin (sin C[0.04346369943951467])) C[0.4328079116728758] (* max min)) min)) x x min))))
