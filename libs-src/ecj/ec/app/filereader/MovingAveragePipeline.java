@@ -23,6 +23,7 @@ public class MovingAveragePipeline extends Pipeline {
                     sum += input.get(i+j);
                 }
             }
+            // using values.add(sum/lag) makes the system too dependent on the avg
             values.add(sum);
         }
     }

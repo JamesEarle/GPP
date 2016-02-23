@@ -21,7 +21,8 @@ public class MovingAverage extends GPNode {
         PipelinePool pool = ((FileInputRegression)problem).pool;
 //        MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines[0];
 //          MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines2.get(0);
-        MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines.get("MovingAveragePipeline");
+        
+        MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.get("MovingAveragePipeline");
 
         
 //        MovingAveragePipeline pipeline = ((FileInputRegression)problem).movingAverage;

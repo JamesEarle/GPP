@@ -20,7 +20,6 @@ public class Pipeline extends AbstractPipeline {
         this.value = 0;
         
         this.values = new ArrayList<>();
-        this.output = new ArrayList<>();
         this.input = new ArrayList<>();
     }
     

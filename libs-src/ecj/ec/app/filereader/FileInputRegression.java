@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.FileNotFoundException;
 import static ec.gp.GPProblem.P_DATA;
+import java.util.HashMap;
 
 /**
  *  -p gp.tree.print-style=dot, latex, c
@@ -48,7 +49,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
         
         // Create a PipelinePool, expecting the number of Pipelines it will manage.
         generalPipeline = new Pipeline();
-        pool = new PipelinePool(1);
+        pool = new PipelinePool();
         
         try {
             // Set up the IOManager to keep track of output data
@@ -75,8 +76,11 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
 //            pool.pipelines[0] = new MovingAveragePipeline(inputData);
 //            pool.pipelines2.add(new MovingAveragePipeline(inputData));
-            pool.pipelines.put("MovingAveragePipeline", new MovingAveragePipeline(inputData));
-                                    
+
+//            pool.getPipelines().put("MovingAveragePipeline", new MovingAveragePipeline(inputData));
+            pool.add("MovingAveragePipeline", new MovingAveragePipeline(inputData));
+            pool.add("StandardDeviationPipeline", new StandardDeviationPipeline(inputData));
+            
             br.close();
         } catch (IOException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
@@ -102,35 +106,28 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             int start = generalPipeline.getLag() + 1;
             int finish = vm.getRange();
             
+//            System.out.println(finish);
             for (int i=start;i<=finish;i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i - 1);
-
                 
                 // Pass values to time-dependent terminals.
-//                movingAverage.setValue(movingAverage.getValueAt(i - start));
                 pool.setValue(i - start);
-                // The below line breaks code
-//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
                 ((GPIndividual)ind).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)ind),this);
                 result = Math.abs(expectedResult - input.x);
 
                 // Sum of Squared Residuals
-//                if(surrogate.dataIsDowJones(in)) {
                 result = Math.pow(result, 2);
-//                }
 
                 // Hit radius as 2.5% of the max value
-                if (result <= 0.025*MAX_VALUE) hits++;
+                if (result <= 0.001*MAX_VALUE) hits++;
                 sum += result;  
             }
             
-            
             // the fitness better be KozaFitness!
             KozaFitness f = ((KozaFitness)ind.fitness);
-//            if(pw == null) System.out.println("pw is null!!!");
             f.writer = pw;
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
@@ -167,13 +164,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 // Sample all data points for currentX
                 currentX = i;                
                 
-                // Pass values to time-dependent terminals.
-//                movingAverage.setValue(movingAverage.getValueAt(i - start));
+                // Update all pipelines in the PipelinePool
                 pool.setValue(i - start);
-
-                
-//                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
-
                 
                 ((GPIndividual)bestIndividual).trees[0].child.eval(state,threadnum,input,stack,((GPIndividual)bestIndividual),this);
                 
