@@ -18,7 +18,13 @@ public class MovingAverage extends GPNode {
     public void eval(final EvolutionState state, final int thread, final GPData input,
         final ADFStack stack, final GPIndividual individual, final Problem problem) {
         
-        MovingAveragePipeline pipeline = ((FileInputRegression)problem).pipeline;
+        PipelinePool pool = ((FileInputRegression)problem).pool;
+//        MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines[0];
+//          MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines2.get(0);
+        MovingAveragePipeline pipeline = (MovingAveragePipeline)pool.pipelines.get("MovingAveragePipeline");
+
+        
+//        MovingAveragePipeline pipeline = ((FileInputRegression)problem).movingAverage;
         DoubleData rd = ((DoubleData)input);
         
         rd.x = pipeline.getValue();

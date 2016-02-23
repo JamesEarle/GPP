@@ -27,29 +27,28 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
     public PrintWriter pw;
     public double currentX;
-    public double currentY;
+//    public double currentY;
     
     public InputFileEnum in;
-//    public LagSurrogate surrogate;
     public VerificationManager vm;
-    
-    // Have a PipelinePool initiate all the values instead
-    public MovingAveragePipeline pipeline;
-    public PipelinePool pool;
-    
     public ArrayList<Double> inputData;
-//    public ArrayList<Double> evalDataHistory;
+    
+    // Declare our Pipelines to time dependent terminals.
+//    public MovingAveragePipeline movingAverage;
+    
+    public Pipeline generalPipeline;
+    public PipelinePool pool;
     
     @Override
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
-        // Define the input data and time lag preferences.
-//        in = InputFileEnum.MSFT_CLOSE_1;
         in = InputFileEnum.DJ_NORM_1;
-//        surrogate = new LagSurrogate(in);
         inputData = new ArrayList<>();
-//        evalDataHistory = new ArrayList<>();
+        
+        // Create a PipelinePool, expecting the number of Pipelines it will manage.
+        generalPipeline = new Pipeline();
+        pool = new PipelinePool(1);
         
         try {
             // Set up the IOManager to keep track of output data
@@ -71,9 +70,13 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
             
             // replace with PipeLinePool . calculateNecessaryValues
-            pipeline = new MovingAveragePipeline(inputData);
-            pipeline.calculateMovingAverages();
-                        
+//            movingAverage = new MovingAveragePipeline(inputData);
+//            movingAverage.calculateMovingAverages();
+            
+//            pool.pipelines[0] = new MovingAveragePipeline(inputData);
+//            pool.pipelines2.add(new MovingAveragePipeline(inputData));
+            pool.pipelines.put("MovingAveragePipeline", new MovingAveragePipeline(inputData));
+                                    
             br.close();
         } catch (IOException ex) {
             Logger.getLogger(FileInputRegression.class.getName()).log(Level.SEVERE, null, ex);
@@ -96,18 +99,18 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double result;
             
             // Sample all data points for currentX. 
-            int start = pipeline.getLag() + 1;
+            int start = generalPipeline.getLag() + 1;
             int finish = vm.getRange();
             
             for (int i=start;i<=finish;i++) {
                 
                 currentX = i;
                 expectedResult = inputData.get(i - 1);
+
                 
-                // replace this with PipelinePool.update(i - start)
                 // Pass values to time-dependent terminals.
-                pipeline.setValue(pipeline.getValueAt(i - start));
-                
+//                movingAverage.setValue(movingAverage.getValueAt(i - start));
+                pool.setValue(i - start);
                 // The below line breaks code
 //                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 
@@ -158,14 +161,16 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_verification.txt");  // 1
             factory.makePrintWriter("/" + ec.Evolve.runNumber + "_best_ind_tree.txt");          // 2
             
-            int start = pipeline.getLag() + 1;
+            int start = generalPipeline.getLag() + 1;
             for(int i=start;i<=inputData.size();i++) {
 
                 // Sample all data points for currentX
                 currentX = i;                
                 
                 // Pass values to time-dependent terminals.
-                pipeline.setValue(pipeline.getValueAt(i - start));
+//                movingAverage.setValue(movingAverage.getValueAt(i - start));
+                pool.setValue(i - start);
+
                 
 //                surrogate.setLagResult(inputData.get(i - surrogate.getLag()));
 

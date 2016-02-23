@@ -11,6 +11,7 @@ public abstract class AbstractPipeline {
     int lag;
     double value;
     
+    ArrayList<Double> values;
     ArrayList<Double> output;
     ArrayList<Double> input;
     
@@ -19,5 +20,8 @@ public abstract class AbstractPipeline {
 
     abstract int getLag();
     abstract double getValue();
+    
+    abstract ArrayList<Double> getValuesList();
+    abstract double getValueAt(int index);
     
 }

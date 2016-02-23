@@ -8,15 +8,13 @@ import java.util.ArrayList;
  */
 public class MovingAveragePipeline extends Pipeline {
     
-    private final ArrayList<Double> values;
-    
     public MovingAveragePipeline(ArrayList<Double> input) {
         super();
-        this.values = new ArrayList<>();
         this.input = input;
+        calculateMovingAverages();
     }
     
-    public void calculateMovingAverages() {
+    public final void calculateMovingAverages() {
         for(int i=0;i<input.size();i++) {
             double sum = 0.0;
             
@@ -27,13 +25,5 @@ public class MovingAveragePipeline extends Pipeline {
             }
             values.add(sum);
         }
-    }
-    
-    public ArrayList<Double> getValues() {
-        return values;
-    }
-    
-    public double getValueAt(int index) {
-        return values.get(index);
     }
 }
