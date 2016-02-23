@@ -18,10 +18,10 @@ public class XLag extends GPNode {
     public void eval(final EvolutionState state, final int thread, final GPData input,
         final ADFStack stack, final GPIndividual individual, final Problem problem) {
         
-        LagSurrogate surrogate = ((FileInputRegression)problem).surrogate;
+//        LagSurrogate surrogate = ((FileInputRegression)problem).surrogate;
         DoubleData rd = ((DoubleData)input);
         
-        rd.x = surrogate.getLagResult();
+//        rd.x = surrogate.getLagResult();
     }
     
 }

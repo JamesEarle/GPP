@@ -3,1715 +3,2116 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.091039120658707 Adjusted=0.323515801956883 Hits=227
+Fitness: Standardized=12.29992630282262 Adjusted=0.07518838655427525 Hits=107
 Tree 0:
- (/ avg C[5.6845980236996505])
+ (+ (sin (log (- C[26.069051098323307] avg)))
+     (cos (cos (log C[22.98176390199159]))))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.091039120658707 Adjusted=0.323515801956883 Hits=227
+Fitness: Standardized=9.116853743088804 Adjusted=0.09884495964796733 Hits=116
 Tree 0:
- (/ avg C[5.6845980236996505])
+ (/ avg (- C[11.009118651916065] avg))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.0853747608595485 Adjusted=0.32410973625823397 Hits=227
+Fitness: Standardized=3.780437193658562 Adjusted=0.20918588812892247 Hits=232
 Tree 0:
- (/ avg C[5.6845980236996505])
+ (/ (IFLT avg x avg avg) (log x))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.400718301184734 Adjusted=0.4165419989119542 Hits=242
+Fitness: Standardized=8.677547514023177 Adjusted=0.10333196489616378 Hits=156
 Tree 0:
- (/ (* avg (- (log (IFLT avg C[27.65333081195681]
-     x x)) (log (/ avg C[8.262834360542003]))))
-     C[24.364424991434642])
+ (sin (* (sin (log avg)) (sin C[7.39781615505896])))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4795695234754203 Adjusted=0.40329581023337374 Hits=239
+Fitness: Standardized=3.9832609470725693 Adjusted=0.2006718112137902 Hits=198
 Tree 0:
- (/ (* avg (- (log (IFLT avg C[27.65333081195681]
-     x avg)) (log (/ avg C[7.630571809143864]))))
-     C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (log (/ avg
+     avg)) x (cos (/ x x)) (cos C[14.011477482350012])))))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4510813136939091 Adjusted=0.40798320088897705 Hits=240
+Fitness: Standardized=3.9832609470725693 Adjusted=0.2006718112137902 Hits=198
 Tree 0:
- (/ (* avg (- (log (IFLT avg C[27.65333081195681]
-     x x)) (log (/ avg C[5.6845980236996505]))))
-     C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (log (/ avg
+     avg)) x (cos (/ x x)) (cos C[21.55128949597798])))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3779521594762725 Adjusted=0.4205299068002457 Hits=239
+Fitness: Standardized=3.9832609470725693 Adjusted=0.2006718112137902 Hits=198
 Tree 0:
- (/ (* avg (- (log (IFLT (/ avg C[5.6845980236996505])
-     C[27.65333081195681] x x)) (log (/ avg C[7.630571809143864]))))
-     C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (log (/ avg
+     avg)) x (cos (/ x x)) (cos C[21.55128949597798])))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3987955078046888 Adjusted=0.4168758848957377 Hits=243
+Fitness: Standardized=3.9832609470725693 Adjusted=0.2006718112137902 Hits=198
 Tree 0:
- (/ (* avg (- (log (IFLT avg C[27.65333081195681]
-     x (sin (/ avg C[5.6845980236996505])))) (log
-     (sin (/ (* avg avg) C[24.364424991434642])))))
-     C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (log (/ (- x
+     (IFLT avg (+ (IFLT (log avg) (+ (+ C[25.04761101717403]
+         (+ avg (+ C[22.29155118178117] (* x avg))))
+         avg) x (sin avg)) (cos (cos avg))) C[0.8687387253955026]
+         avg)) (+ avg x))) x (cos (/ x x)) (cos C[14.011477482350012])))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.230511555297834 Adjusted=0.4483276482584609 Hits=242
+Fitness: Standardized=3.9788696441066476 Adjusted=0.20084880133057365 Hits=198
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (/ avg C[5.6845980236996505]))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (* (log avg) (cos (/ x x)))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.17894579578657 Adjusted=0.45893752930141773 Hits=243
+Fitness: Standardized=3.322620755542077 Adjusted=0.23134113690586655 Hits=207
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (/ avg C[5.6845980236996505])) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (cos avg))) (+ avg x))) (sin (cos (*
+     (log avg) (* (/ (- x (IFLT (+ (+ C[25.04761101717403]
+     (+ avg (+ C[22.29155118178117] (* x avg))))
+     avg) (+ (IFLT (sin C[21.55128949597798])
+     (IFLT x x x C[14.173296378537277]) x C[0.39009477998326214])
+     (cos (cos avg))) C[0.8687387253955026] avg))
+     (+ avg x)) (log (log C[0.39009477998326214])))))))))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1655665028228566 Adjusted=0.4617729350248452 Hits=242
+Fitness: Standardized=3.61899308795828 Adjusted=0.21649740126414152 Hits=198
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (- (log (IFLT avg (/ avg C[5.6845980236996505])
-         x x)) (log (/ avg C[5.6845980236996505])))))
-     C[5.6845980236996505]))) C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (cos C[11.336453971805264])
+     x (cos (/ (+ avg x) x)) (IFLT (IFLT avg (sin
+     avg) (+ (+ C[21.550401474014055] avg) (sin
+     (* C[6.943004623907742] (cos (/ (- (- (*
+         (log avg) (cos (/ x x))) x) avg) (+ avg (-
+         (- x C[21.36529695740193]) (IFLT x x x avg))))))))
+     avg) (+ (IFLT (+ avg x) (+ x avg) x (sin
+     (sin (cos (/ x x))))) (cos (sin (log avg))))
+     C[0.8687387253955026] avg)))))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1584878082082877 Adjusted=0.4632873052130313 Hits=244
+Fitness: Standardized=3.4911868119419998 Adjusted=0.22265829542895313 Hits=199
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (log (log (IFLT avg C[27.65333081195681]
-         x (sin (IFLT avg C[27.65333081195681] x (-
-         (log (IFLT avg C[27.65333081195681] x x))
-         (/ avg C[5.6845980236996505]))))))) (sin
-         (sin (* C[12.650550229880327] avg)))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (log (* (log avg) (log (IFLT (cos C[11.336453971805264])
+     x (cos (/ (+ avg x) x)) (IFLT (IFLT avg (sin
+     avg) (+ (+ C[21.550401474014055] avg) (sin
+     (* C[6.943004623907742] (cos (/ (- (- (*
+         (log avg) (cos (/ x x))) x) avg) (+ avg (-
+         (- x C[21.36529695740193]) (IFLT x x x avg))))))))
+     avg) (+ (IFLT (log (- x x)) C[26.534141903672584]
+     (/ (+ C[17.813965509491485] x) (sin x)) avg)
+     (cos (sin (log avg)))) C[0.8687387253955026]
+     avg)))))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1311925492676278 Adjusted=0.4692208596279319 Hits=244
+Fitness: Standardized=3.421126459722119 Adjusted=0.22618669904838076 Hits=199
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (sin C[8.59663561247741])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x C[13.867743959226152])
+     (+ avg x))) (sin (cos C[0.8687387253955026])))))
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1311925492676278 Adjusted=0.4692208596279319 Hits=244
+Fitness: Standardized=3.0210878879110963 Adjusted=0.2486889189879128 Hits=213
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (sin C[8.59663561247741])))
-     C[24.364424991434642])
+ (log (* (log avg) (* (log (/ (- x C[13.867743959226152])
+     (+ avg x))) (sin (cos C[0.8687387253955026])))))
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1112371645249883 Adjusted=0.4736559287620309 Hits=244
+Fitness: Standardized=2.9281558909595997 Adjusted=0.25457238148349365 Hits=211
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (cos (sin (/ avg C[5.6845980236996505]))))
-     C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (cos avg))) (+ avg x))) (sin (cos (*
+     (log avg) (* (/ (- x (IFLT (+ (log (cos C[8.624524286937287]))
+     avg) (+ (IFLT (sin C[21.55128949597798])
+     avg x C[0.39009477998326214]) (cos (cos avg)))
+     C[0.8687387253955026] avg)) (+ avg x)) (log
+     (log (IFLT (+ C[21.550401474014055] avg)
+         x (cos (/ x x)) (+ avg (- (- x C[21.36529695740193])
+         (IFLT x x x avg)))))))))))))
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1255896870412339 Adjusted=0.47045768338854443 Hits=243
+Fitness: Standardized=2.9281558909595997 Adjusted=0.25457238148349365 Hits=211
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- (log (IFLT avg C[27.65333081195681] x
-         x)) (/ avg avg)) (/ (* avg (- (log (IFLT
-     (log (log (sin avg))) C[27.65333081195681]
-     x x)) (log (IFLT avg C[27.65333081195681]
-     x (log (IFLT avg C[27.65333081195681] x x))))))
-     C[24.364424991434642])) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (cos avg))) (+ avg x))) (sin (cos (*
+     (log avg) (* (/ (- x (IFLT (+ (log (cos C[8.624524286937287]))
+     avg) (+ (IFLT (sin C[21.55128949597798])
+     avg x C[0.39009477998326214]) (cos (cos avg)))
+     C[0.8687387253955026] avg)) (+ avg x)) (log
+     (log (IFLT (+ C[21.550401474014055] avg)
+         x (cos (/ x x)) (+ avg (- (- x C[21.36529695740193])
+         (IFLT x x x avg)))))))))))))
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.114733679608509 Adjusted=0.4728727828201636 Hits=245
+Fitness: Standardized=2.9281558909595997 Adjusted=0.25457238148349365 Hits=211
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (- (log
-         (IFLT avg (/ (IFLT avg C[27.65333081195681]
-             x x) C[5.6845980236996505]) x x)) (log (/
-         (IFLT avg C[27.65333081195681] x (log (cos
-             (log x)))) C[5.6845980236996505])))) (log
-         (log (log (log C[0.27189557043533763])))))
-         C[5.6845980236996505])) (log (log (IFLT avg
-     C[27.65333081195681] x x)))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (cos avg))) (+ avg x))) (sin (cos (*
+     (log avg) (* (/ (- x (IFLT (+ (log (cos C[8.624524286937287]))
+     avg) (+ (IFLT (sin C[21.55128949597798])
+     avg x C[0.39009477998326214]) (cos (cos avg)))
+     C[0.8687387253955026] avg)) (+ avg x)) (log
+     (log (IFLT (+ C[21.550401474014055] avg)
+         x (cos (/ x x)) (+ avg (- (- x C[21.36529695740193])
+         (IFLT x x x avg)))))))))))))
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0878784257002958 Adjusted=0.4789550903398936 Hits=242
+Fitness: Standardized=2.7129286389591267 Adjusted=0.269329173070328 Hits=216
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- (log (IFLT (IFLT avg C[27.65333081195681]
-         x (/ (* avg (log C[28.722758207807473]))
-         C[24.364424991434642])) C[27.65333081195681]
-         x x)) (log (log (log (IFLT (log (IFLT avg
-         C[27.65333081195681] x (/ avg C[5.6845980236996505])))
-         C[27.65333081195681] x x))))) (log (sin avg)))
-     C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (cos avg))) (+ avg x))) (sin (cos (*
+     (log avg) (* (/ (- x (IFLT (+ (log (cos C[8.624524286937287]))
+     avg) (+ (cos (/ (+ avg x) x)) (cos (cos avg)))
+     C[0.8687387253955026] avg)) (+ avg x)) (log
+     (log (IFLT (+ C[21.550401474014055] avg)
+         x (cos (/ x x)) (+ avg (- (- x C[21.36529695740193])
+         (IFLT x x x avg)))))))))))))
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0950456725433086 Adjusted=0.47731656312104953 Hits=245
+Fitness: Standardized=2.675207113820077 Adjusted=0.272093509026919 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         x C[27.65333081195681] x x)) (log (log (IFLT
-         avg C[27.65333081195681] x (IFLT avg C[27.65333081195681]
-         x (sin (log C[5.6845980236996505])))))))
-         C[5.6845980236996505])) (log (log (log C[10.134748825418555]))))
-     C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (sin (log avg)))) (+ avg x))) (sin (cos
+     (* (log avg) (* (/ (- x (IFLT (+ (log (cos
+         C[8.624524286937287])) avg) (+ (IFLT (sin
+         C[21.55128949597798]) avg x C[0.39009477998326214])
+         (cos (cos avg))) C[0.8687387253955026] avg))
+         (+ avg x)) (log (log (IFLT (+ (+ C[21.550401474014055]
+         avg) (cos avg)) x (cos (/ x x)) (+ avg (-
+         (- x C[21.36529695740193]) (IFLT x x x avg)))))))))))))
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0911334422249908 Adjusted=0.47820955841822704 Hits=246
+Fitness: Standardized=2.4066136506673486 Adjusted=0.29354664266201774 Hits=219
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         x C[27.65333081195681] x x)) (log (log (sin
-         avg)))) C[5.6845980236996505])) (log (log
-     C[10.134748825418555]))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x C[13.487953207000569])
+     (+ (+ C[21.550401474014055] avg) x))) (sin
+     C[13.487953207000569]))))
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0911334422249908 Adjusted=0.47820955841822704 Hits=246
+Fitness: Standardized=2.427944799935497 Adjusted=0.2917199833611139 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         x C[27.65333081195681] x x)) (log (log (sin
-         avg)))) C[5.6845980236996505])) (log (log
-     C[10.134748825418555]))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x C[11.336453971805264])
+     (+ (+ C[21.550401474014055] avg) x))) (sin
+     C[13.487953207000569]))))
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0911334422249908 Adjusted=0.47820955841822704 Hits=246
+Fitness: Standardized=2.3566986398479153 Adjusted=0.29791176012312737 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         x C[27.65333081195681] x x)) (log (log (sin
-         avg)))) C[5.6845980236996505])) (log (log
-     C[10.134748825418555]))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[11.28720026899598]
+     C[4.422833965947822]) (cos avg))) (+ (+ C[21.550401474014055]
+     avg) x))) (sin (cos (* (log avg) (log (IFLT
+     (cos C[11.336453971805264]) x (cos (/ (+
+     avg x) x)) (IFLT (IFLT avg (sin avg) (+ (+
+     C[21.550401474014055] avg) (sin (* x (cos
+     (cos x))))) avg) (+ (+ C[21.550401474014055]
+     avg) x) C[0.8687387253955026] avg)))))))))
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0909240236938358 Adjusted=0.47825745396209834 Hits=244
+Fitness: Standardized=2.391935755693581 Adjusted=0.2948169045718027 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         avg C[27.65333081195681] x x)) (/ avg C[7.44595808975699]))
-         C[5.6845980236996505])) (/ (* (log (IFLT
-     (sin (- x (+ (log C[10.134748825418555])
-         avg))) C[27.65333081195681] x (log avg)))
-     (- (log (IFLT (/ avg avg) C[27.65333081195681]
-         x x)) avg)) C[24.364424991434642])) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (+ (+ C[21.550401474014055]
+     avg) (sin (log avg)))) (+ avg x))) (sin (cos
+     (log (IFLT (+ (+ C[21.550401474014055] avg)
+         (cos avg)) x (cos (/ x x)) (+ avg (- (+ avg
+         x) (IFLT x x x avg))))))))))
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0773612983486427 Adjusted=0.4813799124855798 Hits=245
+Fitness: Standardized=2.3931062075193297 Adjusted=0.29471520749451907 Hits=219
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (- (log
-         (IFLT avg (/ (IFLT avg C[27.65333081195681]
-             x x) C[5.6845980236996505]) x x)) (log (/
-         (IFLT avg C[27.65333081195681] x (log (cos
-             (/ avg C[7.44595808975699])))) C[5.6845980236996505]))))
-         (log (log (log (log C[0.27189557043533763])))))
-         C[5.6845980236996505])) (log (log (IFLT avg
-     C[27.65333081195681] x x)))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (log (/ (- x C[13.487953207000569])
+     (+ (+ C[21.550401474014055] (sin (log avg)))
+         x)))) (sin C[13.487953207000569]))))
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.297756009717889 Adjusted=0.30323650295934 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ avg
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.297756009717889 Adjusted=0.30323650295934 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ avg
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.3468547486482474 Adjusted=0.29878798905267323 Hits=217
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ avg
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (+ avg (- (+ avg x) (log (cos
+             C[11.336453971805264])))) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2540096893311485 Adjusted=0.30731315990812147 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ x
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (log (log avg))
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0725580922661415 Adjusted=0.48249552267391305 Hits=246
+Fitness: Standardized=2.2540096893311485 Adjusted=0.30731315990812147 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (IFLT
-         (log (/ (sin (sin (/ (IFLT avg C[27.65333081195681]
-             x x) (IFLT x avg avg avg)))) C[5.6845980236996505]))
-         C[27.65333081195681] x x)) (log (log (- (log
-         (IFLT (log (/ avg C[5.6845980236996505]))
-             (log (IFLT avg C[27.65333081195681] x x))
-             x C[5.6845980236996505])) (log (log (log
-         (log C[0.27189557043533763])))))))) C[5.6845980236996505]))
-     (log (log C[10.134748825418555]))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ x
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (log (log avg))
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2540096893311485 Adjusted=0.30731315990812147 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x (+ C[21.550401474014055] avg)) (+ x
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (log (log avg))
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.282089495159164 Adjusted=0.3046839525475844 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log C[11.336453971805264])) (+
+     (cos C[11.336453971805264]) (* (log (/ (-
+     x (- (- x C[21.36529695740193]) (IFLT x x
+     x avg))) (+ avg x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (+ avg (- (+ avg x) (log (cos
+             C[11.336453971805264])))) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0731216298171216 Adjusted=0.48236436570690455 Hits=245
+Fitness: Standardized=2.282089495159164 Adjusted=0.3046839525475844 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (log
-         C[0.27189557043533763])) (log (log (log (log
-         C[0.27189557043533763]))))) C[5.6845980236996505]))
-     (log (log (IFLT avg C[27.65333081195681]
-         x x)))) C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log avg) (log C[11.336453971805264])) (+
+     (cos C[11.336453971805264]) (* (log (/ (-
+     x (- (- x C[21.36529695740193]) (IFLT x x
+     x avg))) (+ avg x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (+ (+ C[21.550401474014055]
+         avg) x) (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (+ avg (- (+ avg x) (log (cos
+             C[11.336453971805264])))) (/ (+ avg x) x)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0731216298171216 Adjusted=0.48236436570690455 Hits=245
+Fitness: Standardized=2.267959994494147 Adjusted=0.30600129796105163 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (log
-         C[0.27189557043533763])) (log (log (log (log
-         C[0.27189557043533763]))))) C[5.6845980236996505]))
-     (log (log (IFLT avg C[27.65333081195681]
-         x x)))) C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (/
+     (- x (IFLT (* (log avg) (log (cos C[11.336453971805264])))
+         (+ (cos C[11.336453971805264]) (* (log (/
+             (- x (+ C[21.550401474014055] avg)) (+ avg
+             x))) (sin (IFLT x x x avg)))) C[0.8687387253955026]
+         avg)) (+ (+ C[21.550401474014055] avg) x))
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (- x C[13.867743959226152]) (+ (* (log avg)
+         (sin (cos (/ x x)))) x))) (- (- x C[21.36529695740193])
+         (IFLT x x x avg)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (- (sin (sin (* avg avg))) (log avg)))
+             (sin (/ x x)))) C[0.8687387253955026] avg))
+         (+ (+ C[21.550401474014055] avg) x))) (sin
+         (/ x x))))))
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0731216298171216 Adjusted=0.48236436570690455 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (log
-         C[0.27189557043533763])) (log (log (log (log
-         C[0.27189557043533763]))))) C[5.6845980236996505]))
-     (log (log (IFLT avg C[27.65333081195681]
-         x x)))) C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0731216298171216 Adjusted=0.48236436570690455 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (log
-         C[0.27189557043533763])) (log (log (log (log
-         C[0.27189557043533763]))))) C[5.6845980236996505]))
-     (log (log (IFLT avg C[27.65333081195681]
-         x x)))) C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0731216298171216 Adjusted=0.48236436570690455 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (- C[5.6845980236996505] (/ (- (log (log
-         C[0.27189557043533763])) (log (log (log (log
-         C[0.27189557043533763]))))) C[5.6845980236996505]))
-     (log (log (IFLT avg C[27.65333081195681]
-         x x)))) C[5.6845980236996505]))) C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.190263370613049 Adjusted=0.3134537446693116 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (*
+     (log (log (/ (- x C[13.867743959226152])
+         (+ avg x)))) (log (cos C[11.336453971805264])))
+     (+ (cos C[11.336453971805264]) (* (log (log
+         (cos (IFLT (IFLT avg C[11.760581086494206]
+             C[26.169490234451263] avg) avg avg (* (+
+             (+ C[21.550401474014055] avg) x) (cos (/
+             x x))))))) (sin (IFLT x x x avg)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (- (sin C[13.487953207000569])
+             C[13.867743959226152]) (/ (+ avg x) x)))
+             (/ (- (sin C[13.487953207000569]) C[13.867743959226152])
+                 (/ (+ avg x) x)))) C[0.8687387253955026]
+         avg)) (+ (+ C[21.550401474014055] avg) x)))
+         (sin (/ x x))))))
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.2534939216764736 Adjusted=0.30736187743812227 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.204348688958529 Adjusted=0.31207589968151 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* avg (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (/ x x)
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (* (log avg) (log (cos C[11.336453971805264])))
+         (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.204348688958529 Adjusted=0.31207589968151 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* avg (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (/ x x)
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (* (log avg) (log (cos C[11.336453971805264])))
+         (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0742797798965307 Adjusted=0.48209504315270435 Hits=245
+Fitness: Standardized=2.204348688958529 Adjusted=0.31207589968151 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (/ avg C[5.6845980236996505]))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* avg (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (/ x x)
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (* (log avg) (log (cos C[11.336453971805264])))
+         (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.204348688958529 Adjusted=0.31207589968151 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* avg (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (/ x x)
+     (+ (cos C[11.336453971805264]) (* (log (/
+         (* (log avg) (log (cos C[11.336453971805264])))
+         (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.240892621646289 Adjusted=0.30855696770725655 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (+ avg x)) C[0.8687387253955026] avg)) (+
+     (+ C[21.550401474014055] (cos (/ x x))) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (* (log avg) (log (cos C[11.336453971805264])))
+             (/ (+ avg x) x))) (cos C[11.336453971805264])))
+         C[0.8687387253955026] avg)) (+ (+ C[21.550401474014055]
+         avg) x))) (sin (/ x x))))))
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.240892621646289 Adjusted=0.30855696770725655 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (+ avg x)) C[0.8687387253955026] avg)) (+
+     (+ C[21.550401474014055] (cos (/ x x))) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (* (log avg) (log (cos C[11.336453971805264])))
+             (/ (+ avg x) x))) (cos C[11.336453971805264])))
+         C[0.8687387253955026] avg)) (+ (+ C[21.550401474014055]
+         avg) x))) (sin (/ x x))))))
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.240892621646289 Adjusted=0.30855696770725655 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (+ avg x)) C[0.8687387253955026] avg)) (+
+     (+ C[21.550401474014055] (cos (/ x x))) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (* (log avg) (log (cos C[11.336453971805264])))
+             (/ (+ avg x) x))) (cos C[11.336453971805264])))
+         C[0.8687387253955026] avg)) (+ (+ C[21.550401474014055]
+         avg) x))) (sin (/ x x))))))
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.240892621646289 Adjusted=0.30855696770725655 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (+ avg x)) C[0.8687387253955026] avg)) (+
+     (+ C[21.550401474014055] (cos (/ x x))) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (* (log avg) (log (cos C[11.336453971805264])))
+             (/ (+ avg x) x))) (cos C[11.336453971805264])))
+         C[0.8687387253955026] avg)) (+ (+ C[21.550401474014055]
+         avg) x))) (sin (/ x x))))))
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.240892621646289 Adjusted=0.30855696770725655 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (+ avg x)) C[0.8687387253955026] avg)) (+
+     (+ C[21.550401474014055] (cos (/ x x))) x)))
+     (* (log (/ (- x (IFLT (* (cos C[11.336453971805264])
+         (cos (/ x x))) (+ (cos C[11.336453971805264])
+         (* (log (/ (* (log avg) (log (cos C[11.336453971805264])))
+             (/ (+ avg x) x))) (cos C[11.336453971805264])))
+         C[0.8687387253955026] avg)) (+ (+ C[21.550401474014055]
+         avg) x))) (sin (/ x x))))))
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2122636889035463 Adjusted=0.311306946392478 Hits=222
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.207287818896862 Adjusted=0.31178991611172185 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (/ x x) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.2098346946656675 Adjusted=0.3115425232526371 Hits=220
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (cos (/ x x)))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.070683842269186 Adjusted=0.48293224662637874 Hits=245
+Fitness: Standardized=2.1886336823005483 Adjusted=0.3136139486798985 Hits=221
 Tree 0:
- (/ (* avg (- C[5.6845980236996505] (/ (-
-     (log (IFLT avg C[27.65333081195681] x x))
-     (log (+ (- (log (IFLT avg (- (log (log (IFLT
-         avg C[27.65333081195681] x (log (IFLT avg
-         C[27.65333081195681] x x))))) (log (sin avg)))
-         x x)) (log (log (IFLT (sin (- C[17.574076954746293]
-         (log x))) C[27.65333081195681] x (log avg)))))
-         (sin (sin (* avg (- (log (IFLT (log (log
-             (sin avg))) C[27.65333081195681] x x)) (log
-             (IFLT avg C[27.65333081195681] x (log (IFLT
-                 avg C[27.65333081195681] x x))))))))))) C[5.6845980236996505])))
-     C[24.364424991434642])
+ (sin (* (log avg) (* (log (/ (- x (IFLT (-
+     x (IFLT (* (cos C[11.336453971805264]) (cos
+     (/ x x))) (+ (cos C[11.336453971805264])
+     (* (log avg) (log (cos C[11.336453971805264]))))
+     C[0.8687387253955026] avg)) (+ (cos C[11.336453971805264])
+     (* (log (/ (+ (cos C[11.336453971805264])
+         (* (log (/ (- x C[13.867743959226152]) (+
+             avg x))) (- (- x C[21.36529695740193]) (cos
+             (/ x x))))) (+ (* (log avg) (log (cos C[11.336453971805264])))
+         x))) (sin (/ x x)))) (cos C[11.336453971805264])
+     avg)) (+ (+ C[21.550401474014055] (cos (/
+     x x))) x))) (* (log (/ (- x (IFLT (* (cos
+     C[11.336453971805264]) (cos (/ x x))) (+
+     (cos C[11.336453971805264]) (* (log (/ (*
+     (log avg) (log (cos C[11.336453971805264])))
+     (/ (+ avg x) x))) (sin (/ x x)))) C[0.8687387253955026]
+     avg)) (+ (+ C[21.550401474014055] avg) x)))
+     (sin (/ x x))))))
