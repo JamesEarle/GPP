@@ -1,0 +1,11 @@
+STD: 2.9222599857535476
+
+
+ADJ: 0.16405295875193338
+HIT: 53
+
+
+Evaluated: T
+Fitness: d4617423145651589664|5.095592591610085|i53|
+Tree 0:
+ (* (cos (/ (- (+ (* (log (sin (* (log (log (log x))) (/ (log (log (+ x (+ x x)))) C[0.08019767504603692])))) (/ (log x) C[0.08019767504603692])) (* (log (sin (log (+ x (log x))))) (/ (log (log (+ x (log x)))) C[0.08019767504603692]))) (log x)) x)) (log (log (+ (log (log (log (log (log (+ x (log x))))))) (log (+ x (log (+ (+ (log (sin (log (+ x (log x))))) (+ (* (log (sin (log (+ x (log x))))) (/ (log (log x)) C[0.08019767504603692])) (sin (log x)))) (+ (* (log (sin (log (+ x (log x))))) (/ (log (log (+ x (log x)))) C[0.08019767504603692])) (sin (log (log (+ x (log x))))))))))))))
