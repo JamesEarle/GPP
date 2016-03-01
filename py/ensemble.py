@@ -11,6 +11,17 @@ from os import listdir
 ## "opinions" as to the solution of a problem. In this sense, we 
 ## save 20 best-of-run individuals and average their predictions
 ## regarding the future. This provides us with a range of interpretation.
+
+def outlierDetection(values, temp):
+    ind = 0
+    while True:
+        val = temp[ind]
+        if(abs(val - stat.mean(temp)) > (2*stat.stdev(temp))):
+            del temp[ind]
+            ind += 1
+        else:
+            values.append(temp[ind])
+            break
     
 activeDirectory = active.listActiveDirectory()
 files = listdir(activeDirectory)
@@ -58,6 +69,7 @@ for x in range(0, len(inds[0])):
     ind = 0
     temp = sorted(temp)
     
+    # replace this with call to outlierDetection(min_values, temp)
     # Find the min that is within 2-sigma
     while True:
         val = temp[ind]
@@ -71,6 +83,7 @@ for x in range(0, len(inds[0])):
     ind = 0
     temp = sorted(temp, reverse=True) # Reverse
     
+    # replace this with call to outlierDetection(max_values, temp)
     # Find the max that is within 2-sigma
     while True:
         val = temp[ind]
