@@ -146,7 +146,9 @@ for x in range(0, len(inds[0])):
     # avg_values.append(average)
     # min_values.append(min)
     # max_values.append(max)
-        
+
+print(str(num_inds_deleted) + " individuals removed")
+     
 with \
 open(activeDirectory + "/ensemble-avg.txt", 'w') as avg, \
 open(activeDirectory + "/ensemble-min.txt", 'w') as min, \
