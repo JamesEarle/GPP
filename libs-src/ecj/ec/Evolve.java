@@ -7,12 +7,9 @@ package ec;
 
 import ec.util.*;
 import java.io.File;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.BufferedReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.io.InputStreamReader;
 import ec.app.filereader.IOManager;
 import ec.app.filereader.PythonDelegate;
 

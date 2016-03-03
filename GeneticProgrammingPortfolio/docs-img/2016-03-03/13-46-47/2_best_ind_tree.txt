@@ -1,0 +1,11 @@
+STD: 0.28798541915047154
+
+
+ADJ: 0.31764367084516587
+HIT: 69
+
+
+Evaluated: T
+Fitness: d4612019694010851942|2.1481817262068033|i69|
+Tree 0:
+ (+ (/ (+ (+ (log x) (log (log (+ (log (log (log x))) (log (log (log (* C[0.8708546099819603] (log (log (log x))))))))))) (log (log (+ (log (log (log (log (log (log (* C[0.8708546099819603] x))))))) (log (log (log (log (log (log (* C[0.8708546099819603] x))))))))))) (- (log (log (log (+ (/ (- C[0.7367163015401901] (log (* x x))) x) (log (log (log (log x)))))))) x)) (log (/ (log (log x)) (log (/ (+ (+ (+ (+ (log (+ (log (log (log (log (* C[0.8708546099819603] x))))) (log (log (log (log (* C[0.8708546099819603] x))))))) (+ (log (log (log (log x)))) (cos C[0.3672909326298175]))) (log (log (+ (log (log (log (log (* C[0.8708546099819603] x))))) (log (log (log (* C[0.8708546099819603] x)))))))) (log (log (+ (log (log (log (log (* C[0.8708546099819603] x))))) (log (log (log (* C[0.8708546099819603] x)))))))) (log (log (+ (log (log (log (log (log (log (* C[0.8708546099819603] x))))))) (+ (log (log (log (log (log x))))) (log (log x))))))) (* (log (log (log x))) (log (+ (log (log (log (log x)))) (cos C[0.3672909326298175])))))))))

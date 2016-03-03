@@ -1,0 +1,1 @@
+# Run on all input data to determine if it is normally distributed

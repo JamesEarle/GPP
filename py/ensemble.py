@@ -45,6 +45,10 @@ med_values = []
 min_values = []
 max_values = []
 
+# Keep track of individuals removed from the ensemble as outliers
+del_inds = []
+num_inds_deleted = 0;
+
 # Do aggregation for however many data points we have.
 for x in range(0, len(inds[0])):
     # average = 0
@@ -74,8 +78,10 @@ for x in range(0, len(inds[0])):
     while True:
         val = temp[ind]
         if(abs(val - stat.mean(temp)) > (2*stat.stdev(temp))):
+            del_inds.append(temp[ind])
             del temp[ind]
             ind += 1
+            num_inds_deleted += 1
         else:
             min_values.append(temp[ind])
             break
@@ -88,8 +94,10 @@ for x in range(0, len(inds[0])):
     while True:
         val = temp[ind]
         if(abs(val - stat.mean(temp)) > (2*stat.stdev(temp))):
+            del_inds.append(temp[ind])
             del temp[ind]
             ind += 1
+            num_inds_deleted += 1
         else:
             max_values.append(temp[ind])
             break
@@ -143,10 +151,20 @@ with \
 open(activeDirectory + "/ensemble-avg.txt", 'w') as avg, \
 open(activeDirectory + "/ensemble-min.txt", 'w') as min, \
 open(activeDirectory + "/ensemble-max.txt", 'w') as max, \
-open(activeDirectory + "/ensemble-std-dev.txt", "w") as std_dev:
+open(activeDirectory + "/ensemble-med.txt", "w") as med, \
+open(activeDirectory + "/ensemble-std-dev.txt", "w") as std_dev, \
+open(activeDirectory + "/ensemble-deleted.txt", "w") as deleted:
+
+    # Write the number of deleted inds and their details first
+    deleted.write("# Inds deleted: " + str(num_inds_deleted))
+    for x in range(0, len(del_inds)):
+        deleted.write(str(del_inds[x]) + "\n")
+    
+    # Write all other ensemble stats
     for x in range(0, len(avg_values)):
-        std_dev.write(str(std_dev_values[x]) + "\n")
         avg.write(str(avg_values[x]) + "\n")
         min.write(str(min_values[x]) + "\n")
         max.write(str(max_values[x]) + "\n")
+        med.write(str(med_values[x]) + "\n")
+        std_dev.write(str(std_dev_values[x]) + "\n")
         
