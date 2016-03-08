@@ -33,8 +33,6 @@ public class StandardDeviationPipeline extends Pipeline {
                 }
             }
             
-            // Will this behave the same as Mov.Avg where sum/lag prematurely converges?
-            // maybe instead, again, just use sum?
             values.add(sum / lag);
         }
     }

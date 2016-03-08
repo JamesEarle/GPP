@@ -158,7 +158,7 @@ open(activeDirectory + "/ensemble-std-dev.txt", "w") as std_dev, \
 open(activeDirectory + "/ensemble-deleted.txt", "w") as deleted:
 
     # Write the number of deleted inds and their details first
-    deleted.write("# Inds deleted: " + str(num_inds_deleted))
+    deleted.write("# Inds deleted: " + str(num_inds_deleted) + "\n")
     for x in range(0, len(del_inds)):
         deleted.write(str(del_inds[x]) + "\n")
     
