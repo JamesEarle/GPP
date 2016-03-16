@@ -29,6 +29,11 @@ public class Pipeline extends AbstractPipeline {
     }
     
     @Override
+    public double getValue() {
+        return this.value;
+    }
+    
+    @Override
     public double getValueAt(int index) {
         return values.get(index);
     }
@@ -46,11 +51,6 @@ public class Pipeline extends AbstractPipeline {
     @Override
     public void setValue(double value) {
         this.value = value;
-    }
-    
-    @Override
-    public double getValue() {
-        return this.value;
     }
     
 }

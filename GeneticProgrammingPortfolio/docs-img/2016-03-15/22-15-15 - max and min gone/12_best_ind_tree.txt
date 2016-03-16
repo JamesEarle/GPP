@@ -1,0 +1,11 @@
+STD: 0.689548924335604
+
+
+ADJ: 0.03554236030327657
+HIT: 11
+
+
+Evaluated: T
+Fitness: d4628331165453622935|27.135441525750675|i11|
+Tree 0:
+ (+ stdev (+ stdev (+ stdev (+ stdev (+ stdev (* (log avg) (sin (sin (sin C[0.5840638948202266])))))))))

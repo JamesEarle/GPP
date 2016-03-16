@@ -1,0 +1,11 @@
+STD: 0.4279337925131338
+
+
+ADJ: 0.05651939125054846
+HIT: 15
+
+
+Evaluated: T
+Fitness: d4625391891473526647|16.6930426509202|i15|
+Tree 0:
+ (/ avg (log (- x (- (- (- (log (log (log (/ (/ avg (/ avg (log x))) (- stdev avg))))) (log x)) (log x)) (log x)))))

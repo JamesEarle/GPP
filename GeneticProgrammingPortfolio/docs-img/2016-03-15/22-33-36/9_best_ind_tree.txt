@@ -1,0 +1,11 @@
+STD: 4.880200128021156
+
+
+ADJ: 0.0338124479566429
+HIT: 22
+
+
+Evaluated: T
+Fitness: d4628736338933162127|28.574906888796757|i22|
+Tree 0:
+ (- (- C[0.38488637414416493] (/ (- (log (/ (cos (log (- stdev avg))) (IFLT (+ (- vol vol) x) vol (cos (cos vol)) vol))) (- (/ (log (- (log (log x)) (+ (- (- (- (- C[0.36978278612540116] stdev) stdev) (cos stdev)) stdev) (sin (IFLT (/ vol x) stdev (log x) (IFLT C[0.4768890150700573] C[0.013356188453090612] x (log (- (log x) stdev)))))))) x) stdev)) x)) (/ (- (- (- (log (- (log (log (log (- (log (- (log x) stdev)) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))))) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))) (- (/ (- (IFLT (+ stdev stdev) vol (cos (- (- (- C[0.36978278612540116] stdev) stdev) (- (- (- (- (- C[0.36978278612540116] stdev) stdev) (cos stdev)) stdev) (- (log (cos stdev)) (- (- C[0.36978278612540116] stdev) stdev))))) (- (- C[0.36978278612540116] stdev) stdev)) (- x (log (log (cos stdev))))) x) (* (- (IFLT (* C[0.14100049264814174] C[0.401883371525422]) (* avg vol) vol C[0.4893920800139945]) avg) (* C[0.02318752619428388] (+ x C[0.9447586416019418]))))) (- (- (- (- (- (- (- stdev stdev) stdev) (log (log (- (log (- (log x) (- (- C[0.36978278612540116] stdev) stdev))) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))))) (- (log (- (log (- (log x) (- (- C[0.36978278612540116] stdev) stdev))) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))) stdev)) stdev) (log (log (- (log (- (log x) stdev)) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))))) stdev)) (- (- (- (- stdev stdev) stdev) (log (log (- (log (- (log x) stdev)) (- (- (- C[0.36978278612540116] stdev) stdev) stdev))))) stdev)) x))

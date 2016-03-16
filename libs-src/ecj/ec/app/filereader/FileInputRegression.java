@@ -41,8 +41,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
-        in = InputFileEnum.DJIA_CLOSE;
-        //in = InputFileEnum.DJ_NORM_1;
+//        in = InputFileEnum.DJIA_CLOSE;
+        in = InputFileEnum.DJ_NORM_1;
         inputData = new ArrayList<>();
         
         // Create a PipelinePool, expecting the number of Pipelines it will manage.
@@ -55,6 +55,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             io.executionSetup();
             pw = io.makePrintWriter("_out.txt");
             
+            // Find the file specified by the enumerator above.
             BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") + in.v()));
             
             String next;
@@ -65,6 +66,15 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 inputData.add(Double.valueOf(next));
             }
             
+            /*******/
+            InputFileEnum vol = InputFileEnum.DJIA_VOL;
+            BufferedReader volReader = new BufferedReader(new FileReader(System.getProperty("user.dir") + vol.v()));
+            ArrayList<Double> volumeData = new ArrayList<>();
+            while((next = volReader.readLine()) != null) {
+                volumeData.add(Double.valueOf(next));
+            }
+            /*******/
+            
             // The chosen boundary for verification will be a percentage of the given data set.
             vm = new VerificationManager(PERCENT_VERIFY, inputData.size());
             
@@ -73,6 +83,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             pool.add("StandardDeviationPipeline", new StandardDeviationPipeline(inputData));
             pool.add("MinimumValuePipeline", new MinimumValuePipeline(inputData));
             pool.add("MaximumValuePipeline", new MaximumValuePipeline(inputData));
+            
+            // Add all Pipelines for financial functions that read from special files.
+            pool.add("VolumeTradedPipeline", new VolumeTradedPipeline(volumeData));
             
             br.close();
         } catch (IOException ex) {
@@ -112,10 +125,10 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 result = Math.abs(expectedResult - input.x);
 
                 // Sum of Squared Residuals
-                result = Math.pow(result, 2);
+                //result = Math.pow(result, 2);
 
                 // Hit radius as 2.5% of the max value
-                if (result <= 0.001*MAX_VALUE) hits++;
+                if (result <= 0.01*MAX_VALUE) hits++;
                 sum += result;  
             }
             
