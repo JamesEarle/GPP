@@ -3,805 +3,971 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=20.648716032731304 Adjusted=0.04619211589676135 Hits=29
+Fitness: Standardized=4.9355996735274115 Adjusted=0.16847497388679508 Hits=595
 Tree 0:
- (log (* C[0.1830570127036829] avg))
+ (cos (sin (cos avg)))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.69860535850299 Adjusted=0.05650162709117457 Hits=25
+Fitness: Standardized=3.502666617984937 Adjusted=0.22209061537128114 Hits=597
 Tree 0:
- (sin (* avg C[0.22365694398950742]))
+ (cos (cos avg))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=5.251932054760325 Adjusted=0.15995055468310526 Hits=578
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos avg))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=17.822515412388444 Adjusted=0.05312786192975188 Hits=24
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.493383346220266 Adjusted=0.057164470714926995 Hits=27
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.885303008083437 Adjusted=0.05922310067644471 Hits=27
+Fitness: Standardized=2.056719373571733 Adjusted=0.32714812116740516 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=19.07176631878153 Adjusted=0.04982122570171022 Hits=25
+Fitness: Standardized=1.7011759066680232 Adjusted=0.37020913652140786 Hits=663
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=2.6990350951577176 Adjusted=0.2703407711132739 Hits=644
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=1.7695467993159872 Adjusted=0.3610699051003494 Hits=661
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=14.467684770660275 Adjusted=0.06465091672263971 Hits=25
+Fitness: Standardized=2.5552878869633444 Adjusted=0.28127117459793777 Hits=644
 Tree 0:
- (sin (* avg C[0.22365694398950742]))
+ (cos (sin (cos avg)))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.701502874525907 Adjusted=0.37016432942922267 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=21.246273765292777 Adjusted=0.04495134828198224 Hits=21
+Fitness: Standardized=1.68243347529509 Adjusted=0.3727958248396045 Hits=664
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.861828765338132 Adjusted=0.05930554828404148 Hits=27
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.8241677613823717 Adjusted=0.3540866140014716 Hits=655
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.773880255759519 Adjusted=0.0596164980763254 Hits=32
+Fitness: Standardized=1.972802489286347 Adjusted=0.3363829260786379 Hits=652
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.521699867135379 Adjusted=0.060526459628356954 Hits=27
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.6991174297474623 Adjusted=0.37049147583533004 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.353528224504831 Adjusted=0.06114888397609251 Hits=30
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=2.217953816553586 Adjusted=0.3107564797405935 Hits=650
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=2.137137894247744 Adjusted=0.31876188860986954 Hits=658
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7462017230672773 Adjusted=0.36413930979661746 Hits=658
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=1.6755702078630705 Adjusted=0.3737521060225446 Hits=664
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=2.0398287590332433 Adjusted=0.3289658988284689 Hits=651
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=1.9075462420448848 Adjusted=0.34393262110139217 Hits=654
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.882485790728776 Adjusted=0.05923298336487642 Hits=25
+Fitness: Standardized=1.801867334311441 Adjusted=0.3569048354838506 Hits=658
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.17637099857084 Adjusted=0.058219515640597484 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.8533883453939806 Adjusted=0.3504605328658568 Hits=660
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=2.0544543588190374 Adjusted=0.32739071615613735 Hits=646
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7064726245590116 Adjusted=0.3694846165912868 Hits=662
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.885192462129199 Adjusted=0.34659732864476755 Hits=661
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.6953180696092864 Adjusted=0.37101372608872096 Hits=662
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.9895591279243192 Adjusted=0.33449748180572364 Hits=649
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=1.7787228563999649 Adjusted=0.35987755946829897 Hits=661
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (sin (cos avg)))
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=2.006497256756849 Adjusted=0.33261297603135487 Hits=656
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.8844529510151227 Adjusted=0.346686188675073 Hits=654
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=2.103113982683866 Adjusted=0.3222569346727978 Hits=653
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7027775344265985 Adjusted=0.36998975582063687 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.950725552481414 Adjusted=0.33889969846875445 Hits=660
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.8259644591385087 Adjusted=0.3538614920531763 Hits=658
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=1.7099558341499168 Adjusted=0.3690097039214991 Hits=663
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (sin (cos avg)))
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=1.3154406759372654 Adjusted=0.4318832308649889 Hits=676
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (cos (cos avg))) avg))) (log (log
+     x))))) (log (log x)))))
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.9943421701918009 Adjusted=0.5014184701834928 Hits=676
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (cos avg)))) avg))) (log
+     (log x))))) (log (log x)))))
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.325155575184034 Adjusted=0.061255158971967524 Hits=29
+Fitness: Standardized=0.7231897758962971 Adjusted=0.5803191348903296 Hits=685
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos avg) avg))) (log (log x))))) (log
+     (log x)))))
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.27635382638845 Adjusted=0.057882583909144546 Hits=23
+Fitness: Standardized=0.9943421701918009 Adjusted=0.5014184701834928 Hits=676
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (cos avg)))) avg))) (log
+     (log x))))) (log (log x)))))
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.8190875815016216 Adjusted=0.549726143023042 Hits=683
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos avg))))) avg)))
+     (log (log x))))) (log (log x)))))
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7991797941458165 Adjusted=0.5558088209159567 Hits=681
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x (cos (sin (cos (cos (cos avg))))) (cos
+     (sin (sin (cos avg)))) avg))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.789751880595999 Adjusted=0.5587366667087917 Hits=679
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (cos (cos (cos (log (cos avg))))))
+     avg))) (log (log x))))) (log (log x)))))
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.663081418208695 Adjusted=0.6012934718957416 Hits=683
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x (cos (IFLT (sin (IFLT C[0.9944161170366869]
+     x avg avg)) (* stdev x) (- (cos avg) (/ C[0.3847516049476446]
+     x)) avg)) (cos (cos (log x))) avg))) (log
+     (log x))))) (log (log x)))))
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.7231529221906389 Adjusted=0.5803315463892219 Hits=685
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (log x))))) (+ (log
+     (+ avg (IFLT x avg (cos (sin x)) avg))) (log
+     (log x)))))) (log (log x))))) (log (log x)))))
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.114631445396274 Adjusted=0.058429537509497094 Hits=25
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.22365694398950742])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.210359294212317 Adjusted=0.05810453941750598 Hits=28
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7051299382840946 Adjusted=0.5864655693080607 Hits=688
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (sin (log stdev)))
+         avg))) (log (log x)))))) (log (log x)))))
+     (log (log x)))))
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.186427934667545 Adjusted=0.058185447482245765 Hits=31
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.19111632663812 Adjusted=0.05816957904301257 Hits=31
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.279090831844716 Adjusted=0.05787341531633351 Hits=28
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.38767144907909 Adjusted=0.061021482100569895 Hits=28
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* C[0.1830570127036829] avg)
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.264585181432324 Adjusted=0.06148327724592703 Hits=35
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.435322878414425 Adjusted=0.057354831165073346 Hits=28
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=16.448586821747394 Adjusted=0.057311231575134215 Hits=27
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=15.910500927549265 Adjusted=0.05913485379790721 Hits=33
+Fitness: Standardized=0.7028323137212887 Adjusted=0.587256884862989 Hits=683
 Tree 0:
- (* avg C[0.1830570127036829])
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x x (cos (sin (sin (sin (cos (cos (cos avg)))))))
+     (+ (log (+ avg (IFLT x x (cos (log x)) avg)))
+         (log (log x)))))) (log (log x))))) (log (log
+     x)))))
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=14.467684770660275 Adjusted=0.06465091672263971 Hits=25
+Fitness: Standardized=0.663081418208695 Adjusted=0.6012934718957416 Hits=683
 Tree 0:
- (sin (* avg C[0.22365694398950742]))
+ (cos (cos (+ (log (cos (+ (log (+ avg (IFLT
+     x (cos (IFLT (sin (IFLT C[0.9944161170366869]
+     x avg avg)) (* stdev x) (- (cos avg) (/ C[0.3847516049476446]
+     x)) avg)) (cos (cos (log x))) avg))) (log
+     (log x))))) (log (log x)))))

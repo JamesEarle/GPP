@@ -1,0 +1,11 @@
+STD: 0.12762080120065583
+
+
+ADJ: 0.47386302354178644
+HIT: 683
+
+
+Evaluated: T
+Fitness: d4607679231049928787|1.110314479753488|i683|
+Tree 0:
+ (sin (* (* C[0.2483860622209758] avg) (IFLT x (log x) (IFLT C[0.34516994356752884] (log x) stdev (sin (+ vol (* (* stdev vol) (* (* C[0.2483860622209758] avg) (IFLT (+ (IFLT (+ vol (log (cos stdev))) (log x) (log x) (log (cos (/ vol x)))) (IFLT (IFLT C[0.34516994356752884] (log x) stdev (cos vol)) (log x) (IFLT C[0.34516994356752884] (log x) stdev (sin (* (log x) (IFLT vol C[0.31502878846675775] vol vol)))) (cos stdev))) (log x) (cos stdev) (log (cos (/ vol x))))))))) (* C[0.2483860622209758] avg))))

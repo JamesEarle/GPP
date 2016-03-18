@@ -41,8 +41,8 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     public void setup(final EvolutionState state, final Parameter base) {
         super.setup(state, base);
         
-//        in = InputFileEnum.DJIA_CLOSE;
-        in = InputFileEnum.DJ_NORM_1;
+        in = InputFileEnum.DJIA_CLOSE;
+//        in = InputFileEnum.DJ_NORM_1;
         inputData = new ArrayList<>();
         
         // Create a PipelinePool, expecting the number of Pipelines it will manage.
@@ -125,7 +125,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
                 result = Math.abs(expectedResult - input.x);
 
                 // Sum of Squared Residuals
-                //result = Math.pow(result, 2);
+                result = Math.pow(result, 2);
 
                 // Hit radius as 2.5% of the max value
                 if (result <= 0.01*MAX_VALUE) hits++;
