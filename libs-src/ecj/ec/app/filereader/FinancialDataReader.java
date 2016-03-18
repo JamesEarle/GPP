@@ -19,6 +19,12 @@ public class FinancialDataReader {
         path = System.getProperty("user.dir");
     }
     
+    /**
+     * 
+     * @param in
+     * @return data
+     * @throws IOException 
+     */
     public ArrayList<Double> read(InputFileEnum in) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(path + in.v()));
         ArrayList<Double> data = new ArrayList<>();
@@ -29,6 +35,5 @@ public class FinancialDataReader {
         }
         
         return data;
-        
     }
 }

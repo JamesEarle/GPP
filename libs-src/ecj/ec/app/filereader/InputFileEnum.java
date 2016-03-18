@@ -33,11 +33,11 @@ public enum InputFileEnum {
     MSFT_LOW_2("/input/msft_low_14-16_2.txt"),
     MSFT_CLOSE_2("/input/msft_close_14-16_2.txt"),
     MSFT_VOLUME_2("/input/msft_volume_14-16_2.txt"),
-    DJIA_CLOSE("/input/DJIA/djia_close_00-16.txt"),
-    DJIA_OPEN("/input/DJIA/djia_open_00-16.txt"),
-    DJIA_HIGH("/input/DJIA/djia_high_00-16.txt"),
-    DJIA_LOW("/input/DJIA/djia_low_00-16.txt"),
-    DJIA_VOL("/input/DJIA/djia_vol_00-16.txt");
+    DJIA_CLOSE("/input/DJIA/djia_close_12-16.txt"),
+    DJIA_OPEN("/input/DJIA/djia_open_12-16.txt"),
+    DJIA_HIGH("/input/DJIA/djia_high_12-16.txt"),
+    DJIA_LOW("/input/DJIA/djia_low_12-16.txt"),
+    DJIA_VOL("/input/DJIA/djia_vol_12-16.txt");
 
     
     /* Class attributes */

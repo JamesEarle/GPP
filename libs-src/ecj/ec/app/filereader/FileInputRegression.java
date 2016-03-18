@@ -67,12 +67,6 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             }
             
             /*******/
-            InputFileEnum vol = InputFileEnum.DJIA_VOL;
-            BufferedReader volReader = new BufferedReader(new FileReader(System.getProperty("user.dir") + vol.v()));
-            ArrayList<Double> volumeData = new ArrayList<>();
-            while((next = volReader.readLine()) != null) {
-                volumeData.add(Double.valueOf(next));
-            }
             /*******/
             
             // The chosen boundary for verification will be a percentage of the given data set.
@@ -85,7 +79,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             pool.add("MaximumValuePipeline", new MaximumValuePipeline(inputData));
             
             // Add all Pipelines for financial functions that read from special files.
-            pool.add("VolumeTradedPipeline", new VolumeTradedPipeline(volumeData));
+            FinancialDataReader fdr = new FinancialDataReader();
+            pool.add("VolumeTradedPipeline", new VolumeTradedPipeline(fdr.read(InputFileEnum.DJIA_VOL)));
+            pool.add("HighPipeline", new HighPipeline(fdr.read(InputFileEnum.DJIA_HIGH)));
             
             br.close();
         } catch (IOException ex) {

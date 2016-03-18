@@ -1,0 +1,11 @@
+STD: 0.06893023717309048
+
+
+ADJ: 0.7054429637848176
+HIT: 688
+
+
+Evaluated: T
+Fitness: d4601193514821617499|0.417549045545561|i688|
+Tree 0:
+ (IFLT x x (IFLT (log (sin (- high stdev))) (IFLT x x (IFLT (log (IFLT (/ (cos (/ (log vol) avg)) stdev) (cos vol) (cos stdev) avg)) (log (IFLT stdev (cos C[0.3625980383695081]) (cos (- high stdev)) (- high stdev))) (IFLT x x (- (- high stdev) stdev) high) vol) high) (log (- high (/ stdev stdev))) vol) high)
