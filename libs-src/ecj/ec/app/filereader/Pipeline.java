@@ -12,7 +12,6 @@ public class Pipeline extends AbstractPipeline {
     double value;
     
     ArrayList<Double> values;
-    ArrayList<Double> output;
     ArrayList<Double> input;
     
     public Pipeline() {
