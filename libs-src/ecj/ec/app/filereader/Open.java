@@ -9,7 +9,7 @@ import ec.*;
 public class Open extends GPNode {
     
     @Override
-    public String toString() { return "high"; }
+    public String toString() { return "open"; }
     
     @Override
     public int expectedChildren() { return 0; }
