@@ -835,12 +835,14 @@ public class Evolve {
         
        
         try {
+            // Run all associated python modules for tasks like auto data processing.
             PythonDelegate pd = new PythonDelegate(System.getProperty("user.dir"));
             pd.run("read.py", Integer.toString(NUM_RUNS - 1));
             pd.run("graphs.py");
             pd.run("sort_runs.py");
             pd.run("text.py");
             pd.run("ensemble.py");
+            pd.run("sheets.py");
         } catch (InterruptedException e) {
             Logger.getLogger(Evolve.class.getName()).log(Level.SEVERE, null, e);
         }

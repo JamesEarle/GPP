@@ -15,7 +15,7 @@ public class Pipeline extends AbstractPipeline {
     ArrayList<Double> input;
     
     public Pipeline() {
-        this.lag = 15;
+        this.lag = 5;
         this.value = 0;
         
         this.values = new ArrayList<>();

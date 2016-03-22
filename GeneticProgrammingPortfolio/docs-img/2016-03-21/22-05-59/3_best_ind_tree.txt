@@ -1,0 +1,11 @@
+STD: 0.08694405664631999
+
+
+ADJ: 0.6888503696598404
+HIT: 688
+
+
+Evaluated: T
+Fitness: d4601808616984182475|0.4516940747143791|i688|
+Tree 0:
+ (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] stdev (IFLT x C[0.23275893679428117] (IFLT x (IFLT (+ (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] avg low) low) (IFLT x (IFLT (- low stdev) (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] stdev (- low stdev)) low) (sin (IFLT (* C[0.08389210234223365] (IFLT (- low stdev) stdev open (+ (+ low stdev) stdev))) avg (IFLT x C[0.23275893679428117] (+ low (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] low low) low) low)) low) (IFLT x C[0.23275893679428117] stdev low))) stdev) (log (- low stdev)) low)) (/ (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] (IFLT (* C[0.08389210234223365] (IFLT low stdev open (/ open low))) C[0.23275893679428117] (- (IFLT x (IFLT x C[0.23275893679428117] (IFLT x C[0.23275893679428117] (IFLT (+ low stdev) C[0.23275893679428117] (IFLT x C[0.23275893679428117] (+ x stdev) low) low) low) low) (IFLT x C[0.23275893679428117] low low) low) stdev) low) low) low) (sin low)) (/ (- x low) (cos (- low stdev))) open) stdev low) low)) low)
