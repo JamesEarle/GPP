@@ -18,7 +18,7 @@ gp.fs.0.name = f0
 # Defining the Function Set and Terminal Set.
 # nc0 defines a Function or Terminal with 0 children. 
 # Likewise, nc2 means two children.
-gp.fs.0.size = 16
+gp.fs.0.size = 12
 gp.fs.0.func.0 = ec.app.filereader.X
 gp.fs.0.func.0.nc = nc0
 gp.fs.0.func.1 = ec.app.filereader.ERCDouble
@@ -43,19 +43,18 @@ gp.fs.0.func.10 = ec.app.filereader.MovingAverage
 gp.fs.0.func.10.nc = nc0
 gp.fs.0.func.11 = ec.app.filereader.StandardDeviation
 gp.fs.0.func.11.nc = nc0
-gp.fs.0.func.12 = ec.app.filereader.VolumeTraded
-gp.fs.0.func.12.nc = nc0
-gp.fs.0.func.13 = ec.app.filereader.High
-gp.fs.0.func.13.nc = nc0
-gp.fs.0.func.14 = ec.app.filereader.Low
-gp.fs.0.func.14.nc = nc0
-gp.fs.0.func.15 = ec.app.filereader.Open
-gp.fs.0.func.15.nc = nc0
-
-#gp.fs.0.func.13 = ec.app.filereader.MinimumValue
+#gp.fs.0.func.12 = ec.app.filereader.MinimumValue
+#gp.fs.0.func.12.nc = nc0
+#gp.fs.0.func.13 = ec.app.filereader.MaximumValue
 #gp.fs.0.func.13.nc = nc0
-#gp.fs.0.func.14 = ec.app.filereader.MaximumValue
+#gp.fs.0.func.12 = ec.app.filereader.VolumeTraded
+#gp.fs.0.func.12.nc = nc0
+#gp.fs.0.func.13 = ec.app.filereader.High
+#gp.fs.0.func.13.nc = nc0
+#gp.fs.0.func.14 = ec.app.filereader.Low
 #gp.fs.0.func.14.nc = nc0
+#gp.fs.0.func.15 = ec.app.filereader.Open
+#gp.fs.0.func.15.nc = nc0
 
 #gp.fs.0.func.11 = ec.app.filereader.XLag
 #gp.fs.0.func.11.nc = nc0

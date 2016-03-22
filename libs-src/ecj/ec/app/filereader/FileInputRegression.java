@@ -14,7 +14,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.FileNotFoundException;
 import static ec.gp.GPProblem.P_DATA;
-import java.util.HashMap;
 
 /**
  *  -p gp.tree.print-style=dot, latex, c

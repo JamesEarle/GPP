@@ -11,6 +11,7 @@ public class MinimumValuePipeline extends Pipeline {
     public MinimumValuePipeline(ArrayList<Double> input) {
         super();
         this.input = input;
+        values.add(0.0);
         calculateMaxValue();
     }
     
