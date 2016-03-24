@@ -25,7 +25,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
     private static final long serialVersionUID = 1;
     
     // Should pass parameter to python sheets file based on this value.
-    private static final double PERCENT_VERIFY = 0.50;
+    private static final double PERCENT_VERIFY = 0.90;
 
     public PrintWriter pw;
     public double currentX;
@@ -76,10 +76,11 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             
             // Add all Pipelines for terminal values to the PipelinePool
             pool.add("MovingAveragePipeline", new MovingAveragePipeline(inputData));
+            pool.add("MovingSumPipeline", new MovingSumPipeline(inputData));
             pool.add("StandardDeviationPipeline", new StandardDeviationPipeline(inputData));
             pool.add("SkewPipeline", new SkewPipeline(inputData));
             
-            // Min and Max exhibit really weird convergence behaviour...
+            // Min and Max exhibit really weird convergence behaviour, may remove them...
             pool.add("MinimumValuePipeline", new MinimumValuePipeline(inputData));
             pool.add("MaximumValuePipeline", new MaximumValuePipeline(inputData));
             

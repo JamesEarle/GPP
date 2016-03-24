@@ -47,6 +47,8 @@ gp.fs.0.func.11 = ec.app.filereader.StandardDeviation
 gp.fs.0.func.11.nc = nc0
 gp.fs.0.func.12 = ec.app.filereader.Skew
 gp.fs.0.func.12.nc = nc0
+gp.fs.0.func.13 = ec.app.filereader.MovingSum
+gp.fs.0.func.13.nc = nc0
 
 # Financial functions
 #gp.fs.0.func.12 = ec.app.filereader.VolumeTraded

@@ -3,1935 +3,805 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.5751009100215656 Adjusted=0.2797123843964359 Hits=270
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos C[0.7384897408679181])
+ avg
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.55958192037637 Adjusted=0.2809318685083853 Hits=306
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (sin (log C[0.8581834837680575]))
+ avg
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.3252010342549667 Adjusted=0.3007336969098642 Hits=292
+Fitness: Standardized=0.16495220164708985 Adjusted=0.8584043178648282 Hits=690
 Tree 0:
- (cos (cos (sin avg)))
+ (- avg stdev)
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=2.539059922248062 Adjusted=0.2825609122110556 Hits=298
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (sin (log (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]))))
+ (IFLT skew skew avg avg)
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.563785225046595 Adjusted=0.39004827324481744 Hits=343
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]) (/ (IFLT stdev x avg
-     x) (+ x C[0.5277459993627668])))))
+ (log avg)
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5726553766232703 Adjusted=0.3887034420103894 Hits=340
+Fitness: Standardized=0.6250965839824281 Adjusted=0.6153480413757444 Hits=667
 Tree 0:
- (cos (cos (- (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]) (/ (IFLT stdev x avg
-     x) (+ x C[0.5277459993627668])))))
+ (log avg)
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5691877439060589 Adjusted=0.38922807504898504 Hits=344
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (- (sin C[0.8618829951174191]) (/ (IFLT stdev
-     x avg x) (+ x C[0.5277459993627668])))
+ avg
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6925987393540893 Adjusted=0.37138842315579623 Hits=337
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (- (sin C[0.8618829951174191]) (/ (IFLT stdev
-     (sin C[0.8618829951174191]) avg x) (+ x C[0.5277459993627668])))
+ avg
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.60345215975816 Adjusted=0.38410538724586824 Hits=339
+Fitness: Standardized=0.3337415721214522 Adjusted=0.7497704359693893 Hits=684
 Tree 0:
- (- (sin C[0.8618829951174191]) (/ (IFLT (sin
-     C[0.8618829951174191]) x avg x) (+ x C[0.5277459993627668])))
+ avg
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4864931643187678 Adjusted=0.4021728329480339 Hits=374
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (- (- (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]) (/ (sin (cos (sin
-     (* (cos (sin (sin (sin C[0.8618829951174191]))))
-         C[0.05306832238975623])))) (+ x C[0.5277459993627668])))
-     (/ (IFLT (sin C[0.8618829951174191]) x avg
-         x) (+ x C[0.5277459993627668])))
+ avg
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.439892222111072 Adjusted=0.40985416935128727 Hits=360
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (- (- (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]) (/ (sin (IFLT stdev
-     x avg x)) (+ x C[0.5277459993627668]))) (/
-     (IFLT (sin C[0.8618829951174191]) x avg x)
-     (+ x C[0.5277459993627668])))
+ avg
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1866398252528385 Adjusted=0.45732268682354726 Hits=354
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (cos C[0.753520009581786]))) (/ (IFLT
-     stdev x avg x) (+ x (cos (sin (cos (IFLT
-     (- (* stdev C[0.8556568744901447]) (log (*
-         C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-     (/ (IFLT C[0.740001304836467] x stdev avg)
-         (+ avg (/ (cos (cos (cos C[0.753520009581786])))
-             avg))) (cos (sin C[0.8618829951174191]))
-     (* C[0.753520009581786] (sin avg)))))))))))
+ avg
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0017053987430566 Adjusted=0.49957401355261183 Hits=352
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (cos C[0.753520009581786]))) (/ (IFLT
-     stdev x avg x) (+ x (cos (sin (cos (IFLT
-     (- (* stdev C[0.8556568744901447]) (log (*
-         C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-     (/ (IFLT C[0.740001304836467] x stdev avg)
-         (cos C[0.6904983641454251])) (cos (sin C[0.8618829951174191]))
-     (* C[0.753520009581786] (sin avg)))))))))))
+ avg
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0017053987430566 Adjusted=0.49957401355261183 Hits=352
+Fitness: Standardized=0.31837475684317923 Adjusted=0.7585096686730252 Hits=683
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (cos C[0.753520009581786]))) (/ (IFLT
-     stdev x avg x) (+ x (cos (sin (cos (IFLT
-     (- (* stdev C[0.8556568744901447]) (log (*
-         C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-     (/ (IFLT C[0.740001304836467] x stdev avg)
-         (cos C[0.6904983641454251])) (cos (sin C[0.8618829951174191]))
-     (* C[0.753520009581786] (sin avg)))))))))))
+ avg
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7267746471700134 Adjusted=0.5791143630924197 Hits=364
+Fitness: Standardized=0.19782886648928766 Adjusted=0.8348437977879898 Hits=689
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (cos C[0.753520009581786]))) (/ (IFLT
-     stdev x avg x) (+ x (cos (sin (cos (IFLT
-     (sin C[0.8618829951174191]) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (+ avg (/ (* stdev C[0.8556568744901447])
-     avg))) (cos (sin C[0.8618829951174191]))
-     (* C[0.753520009581786] (sin avg)))))))))))
+ avg
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.5457536610725553 Adjusted=0.6469336125046781 Hits=373
+Fitness: Standardized=0.20659883225782025 Adjusted=0.8287758725315298 Hits=688
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]))) (/ (IFLT stdev x
-     avg x) (+ x (cos (sin (cos (IFLT (- (* stdev
-     C[0.8556568744901447]) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (+ avg (/ (cos (cos (cos C[0.753520009581786])))
-     avg))) stdev (* C[0.753520009581786] (sin
-     avg)))))))))))
+ avg
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.5457536610725553 Adjusted=0.6469336125046781 Hits=373
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (cos (* (cos (IFLT stdev x avg
-     x)) (IFLT avg stdev C[0.9908482355738719]
-     C[0.8071222021401129]))) (/ (IFLT stdev x
-     avg x) (+ x (cos (sin (cos (IFLT (- (* stdev
-     C[0.8556568744901447]) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (+ avg (/ (cos (cos (cos C[0.753520009581786])))
-     avg))) stdev (* C[0.753520009581786] (sin
-     avg)))))))))))
+ avg
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4303472493429049 Adjusted=0.6991309281430754 Hits=382
+Fitness: Standardized=0.2246478011356983 Adjusted=0.8165612995610924 Hits=687
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     (IFLT (- (* stdev C[0.8556568744901447])
-         (log (* C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-         (/ x (+ avg (cos avg))) avg (* C[0.753520009581786]
-         (sin avg))))))))) (/ (IFLT stdev x avg x)
-     (+ x (cos (sin (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         (* stdev C[0.8556568744901447])) (+ x C[0.5277459993627668]))))))))))
+ avg
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3346024430621753 Adjusted=0.749286804619923 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     (IFLT (- (* stdev C[0.8556568744901447])
-         (log (* C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-         (/ x (+ avg (cos avg))) avg (* C[0.753520009581786]
-         (sin avg))))))))) (/ (IFLT stdev x avg x)
-     (+ x (cos (sin (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         (* stdev C[0.8556568744901447])) (cos (sin
-         (cos (IFLT (log skew) (/ (IFLT C[0.740001304836467]
-             x stdev avg) (cos C[0.6904983641454251]))
-             (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-             (sin avg)))))))))))))))
+ avg
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.3346024430621753 Adjusted=0.749286804619923 Hits=382
+Fitness: Standardized=0.6703171983794695 Adjusted=0.5986886807908062 Hits=685
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     (IFLT (- (* stdev C[0.8556568744901447])
-         (log (* C[0.035612788016266106] (+ x C[0.5277459993627668]))))
-         (/ x (+ avg (cos avg))) avg (* C[0.753520009581786]
-         (sin avg))))))))) (/ (IFLT stdev x avg x)
-     (+ x (cos (sin (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         (* stdev C[0.8556568744901447])) (cos (sin
-         (cos (IFLT (log skew) (/ (IFLT C[0.740001304836467]
-             x stdev avg) (cos C[0.6904983641454251]))
-             (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-             (sin avg)))))))))))))))
+ avg
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.31434365868170006 Adjusted=0.7608360213819649 Hits=380
+Fitness: Standardized=0.36696168981437427 Adjusted=0.7315493970689071 Hits=681
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (IFLT x avg skew (/ (IFLT
-         stdev x avg x) (+ x (cos x)))))))))))
+ (log avg)
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20971077770139537 Adjusted=0.8266438709425467 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     C[0.753520009581786])))))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (cos (IFLT (- (*
-     C[0.753520009581786] (IFLT C[0.740001304836467]
-     x stdev avg)) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (cos C[0.6904983641454251]))
-     (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-     (sin avg))))))))) (/ (IFLT (cos C[0.753520009581786])
-     x avg x) (+ x (cos (sin (IFLT x avg skew
-     (/ (IFLT stdev x avg x) (* C[0.035612788016266106]
-         (+ x C[0.5277459993627668])))))))))))
+ avg
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20971077770139537 Adjusted=0.8266438709425467 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     C[0.753520009581786])))))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (cos (IFLT (- (*
-     C[0.753520009581786] (IFLT C[0.740001304836467]
-     x stdev avg)) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (cos C[0.6904983641454251]))
-     (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-     (sin avg))))))))) (/ (IFLT (cos C[0.753520009581786])
-     x avg x) (+ x (cos (sin (IFLT x avg skew
-     (/ (IFLT stdev x avg x) (* C[0.035612788016266106]
-         (+ x C[0.5277459993627668])))))))))))
+ avg
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20971077770139537 Adjusted=0.8266438709425467 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     C[0.753520009581786])))))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (cos (IFLT (- (*
-     C[0.753520009581786] (IFLT C[0.740001304836467]
-     x stdev avg)) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (cos C[0.6904983641454251]))
-     (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-     (sin avg))))))))) (/ (IFLT (cos C[0.753520009581786])
-     x avg x) (+ x (cos (sin (IFLT x avg skew
-     (/ (IFLT stdev x avg x) (* C[0.035612788016266106]
-         (+ x C[0.5277459993627668])))))))))))
+ avg
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.20971077770139537 Adjusted=0.8266438709425467 Hits=382
+Fitness: Standardized=0.16037601637092133 Adjusted=0.861789614652242 Hits=690
 Tree 0:
- (cos (cos (- (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (cos (sin (cos
-     C[0.753520009581786])))))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (cos (IFLT (- (*
-     C[0.753520009581786] (IFLT C[0.740001304836467]
-     x stdev avg)) (log (* C[0.035612788016266106]
-     (+ x C[0.5277459993627668])))) (/ (IFLT C[0.740001304836467]
-     x stdev avg) (cos C[0.6904983641454251]))
-     (cos (sin C[0.8618829951174191])) (* C[0.753520009581786]
-     (sin avg))))))))) (/ (IFLT (cos C[0.753520009581786])
-     x avg x) (+ x (cos (sin (IFLT x avg skew
-     (/ (IFLT stdev x avg x) (* C[0.035612788016266106]
-         (+ x C[0.5277459993627668])))))))))))
+ avg
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.19543194073713033 Adjusted=0.8365177187614524 Hits=381
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (IFLT x avg skew (/ (IFLT
-         stdev x avg x) (cos C[0.753520009581786]))))))))))
+ avg
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.19543194073713033 Adjusted=0.8365177187614524 Hits=381
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (IFLT x avg skew (/ (IFLT
-         stdev x avg x) (cos C[0.753520009581786]))))))))))
+ avg
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1698776117184033 Adjusted=0.8547902703524051 Hits=382
+Fitness: Standardized=0.4233381120363838 Adjusted=0.7025737535892229 Hits=683
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1698776117184033 Adjusted=0.8547902703524051 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1698776117184033 Adjusted=0.8547902703524051 Hits=382
+Fitness: Standardized=0.22249665267056287 Adjusted=0.8179981497826472 Hits=688
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1698776117184033 Adjusted=0.8547902703524051 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1698776117184033 Adjusted=0.8547902703524051 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.1692517721562298 Adjusted=0.8552477950543441 Hits=382
+Fitness: Standardized=0.3155180173306215 Adjusted=0.7601568255440136 Hits=682
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) (+ x (IFLT stdev x avg
-     x)))) (/ (IFLT stdev x avg x) (+ x (cos (sin
-     (cos (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668])))))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (- (IFLT (log x) (cos (sin stdev)) avg
-         (sin C[0.9082707940246979])) C[0.226314116232313]))))))
+ avg
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16697084106563864 Adjusted=0.856919440323662 Hits=382
+Fitness: Standardized=1.1145559915167822 Adjusted=0.4729125187565711 Hits=681
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev x avg x) x)) (/ (IFLT stdev x
-     avg x) (+ x (/ (IFLT stdev x avg x) avg)))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (IFLT stdev x avg x) x avg x) x))))
+ avg
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.14501617215490606 Adjusted=0.8733501100844825 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos avg))) (/ (IFLT stdev x avg
-     x) (+ x (IFLT stdev x avg x)))) (/ (IFLT
-     stdev x avg x) (+ x (cos (sin (cos (/ (IFLT
-     avg stdev C[0.9908482355738719] C[0.8071222021401129])
-     (+ x C[0.5277459993627668]))))))))))) (/
-     (IFLT stdev x avg x) (+ x stdev))) (/ (IFLT
-     (cos C[0.753520009581786]) x avg x) (+ x
-     (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.12852391195781437 Adjusted=0.886113257684682 Hits=382
+Fitness: Standardized=0.7361741552803608 Adjusted=0.5759790842172271 Hits=674
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (IFLT C[0.740001304836467]
-     x stdev avg)))) (/ (IFLT stdev x avg x) (+
-     x (IFLT stdev x avg x)))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (sin avg)))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ (+ x (cos (* stdev C[0.8556568744901447])))
-         (cos (sin (IFLT x avg skew (/ (IFLT (/ (cos
-             (* (sin C[0.8618829951174191]) (- (sin C[0.8618829951174191])
-                 (log (/ stdev avg))))) (cos C[0.6904983641454251]))
-             x avg x) (+ x (cos x)))))))))))
+ avg
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.12852391195781437 Adjusted=0.886113257684682 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (IFLT C[0.740001304836467]
-     x stdev avg)))) (/ (IFLT stdev x avg x) (+
-     x (IFLT stdev x avg x)))) (/ (IFLT stdev
-     x avg x) (+ x (cos (sin (sin avg)))))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ (+ x (cos (* stdev C[0.8556568744901447])))
-         (cos (sin (IFLT x avg skew (/ (IFLT (/ (cos
-             (* (sin C[0.8618829951174191]) (- (sin C[0.8618829951174191])
-                 (log (/ stdev avg))))) (cos C[0.6904983641454251]))
-             x avg x) (+ x (cos x)))))))))))
+ avg
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16779145445645607 Adjusted=0.8563172783837899 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev (/ (IFLT (cos C[0.753520009581786])
-         x avg x) (+ x (cos (sin x)))) avg x) x))
-     (/ (IFLT stdev x avg x) (+ x (/ (IFLT stdev
-         x avg x) avg))))))) (/ (IFLT stdev x avg
-     x) (+ x stdev))) (/ (IFLT (IFLT stdev x avg
-     x) x avg x) x))))
+ avg
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.12065538357480425 Adjusted=0.8923349806343472 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (sin (cos (IFLT stdev x avg x)))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16779145445645607 Adjusted=0.8563172783837899 Hits=382
+Fitness: Standardized=0.47337960515648164 Adjusted=0.6787117159082666 Hits=685
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev (/ (IFLT (cos C[0.753520009581786])
-         x avg x) (+ x (cos (sin x)))) avg x) x))
-     (/ (IFLT stdev x avg x) (+ x (/ (IFLT stdev
-         x avg x) avg))))))) (/ (IFLT stdev x avg
-     x) (+ x stdev))) (/ (IFLT (IFLT stdev x avg
-     x) x avg x) x))))
+ avg
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16665292257803171 Adjusted=0.8571529549595885 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev (/ (IFLT (cos C[0.753520009581786])
-         x avg x) (+ x (cos (sin x)))) avg x) x))
-     (/ (IFLT stdev x avg x) (+ x (/ (IFLT stdev
-         x avg x) avg))))))) (/ (IFLT stdev x avg
-     x) (+ x (cos (sin (+ avg (cos avg)))))))
-     (/ (IFLT (IFLT stdev x avg x) x avg x) x))))
+ avg
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.16779145445645607 Adjusted=0.8563172783837899 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos C[0.753520009581786]))) (/
-     (IFLT stdev (/ (IFLT (cos C[0.753520009581786])
-         x avg x) (+ x (cos (sin x)))) avg x) x))
-     (/ (IFLT stdev x avg x) (+ x (/ (IFLT stdev
-         x avg x) avg))))))) (/ (IFLT stdev x avg
-     x) (+ x stdev))) (/ (IFLT (IFLT stdev x avg
-     x) x avg x) x))))
+ avg
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.12723120706859417 Adjusted=0.8871294493350095 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (cos (IFLT (cos
-     C[0.753520009581786]) x avg x))) (/ (IFLT
-     stdev x avg x) (+ x (+ x (/ (IFLT (cos C[0.753520009581786])
-     x avg x) (+ x (cos (sin avg)))))))) (/ (IFLT
-     stdev x avg x) (+ x (IFLT stdev x avg x)))))))
-     (/ (IFLT stdev x avg x) (+ x stdev))) (/
-     (IFLT (cos C[0.753520009581786]) x avg x)
-     (+ x (cos (sin (cos C[0.753520009581786]))))))))
+ avg
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11690659325552716 Adjusted=0.8953300177817277 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin (IFLT x avg skew (/ (IFLT stdev
-         x avg x) x)))))))))
+ avg
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11690659325552716 Adjusted=0.8953300177817277 Hits=382
+Fitness: Standardized=0.24175716100950054 Adjusted=0.8053104354051308 Hits=689
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin (IFLT x avg skew (/ (IFLT stdev
-         x avg x) x)))))))))
+ avg
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11690659325552716 Adjusted=0.8953300177817277 Hits=382
+Fitness: Standardized=0.1627870386884273 Adjusted=0.8600027061945548 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin (IFLT x avg skew (/ (IFLT stdev
-         x avg x) x)))))))))
+ avg
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11690659325552716 Adjusted=0.8953300177817277 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin (IFLT x avg skew (/ (IFLT stdev
-         x avg x) x)))))))))
+ avg
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11690659325552716 Adjusted=0.8953300177817277 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin (IFLT x avg skew (/ (IFLT stdev
-         x avg x) x)))))))))
+ avg
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11528098525286148 Adjusted=0.8966350302953255 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (log (IFLT x
-     avg skew (/ (IFLT stdev x avg (IFLT stdev
-     x avg x)) (+ x (cos x))))))))
+ avg
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11528098525286148 Adjusted=0.8966350302953255 Hits=382
+Fitness: Standardized=0.27006250096607964 Adjusted=0.787362826033636 Hits=687
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (log (IFLT x
-     avg skew (/ (IFLT stdev x avg (IFLT stdev
-     x avg x)) (+ x (cos x))))))))
+ avg
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11528098525286148 Adjusted=0.8966350302953255 Hits=382
+Fitness: Standardized=1.0892910563695304 Adjusted=0.4786312548227034 Hits=667
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (log (IFLT (IFLT
-     stdev x avg x) avg skew (/ (IFLT stdev x
-     avg (IFLT stdev x avg x)) (+ x (cos x))))))))
+ avg
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.11528098525286148 Adjusted=0.8966350302953255 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (log (IFLT (IFLT
-     stdev x avg x) avg skew (/ (IFLT stdev x
-     avg (IFLT stdev x avg x)) (+ x (cos x))))))))
+ avg
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.5619588544231156 Adjusted=0.39032633107028303 Hits=658
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.220157190007824 Adjusted=0.45041855797448105 Hits=669
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.3724906953761475 Adjusted=0.42149796496523434 Hits=665
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.2678333876850376 Adjusted=0.44094950071300504 Hits=679
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.7445928601435766 Adjusted=0.5731996403548859 Hits=670
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=2.8935981088891682 Adjusted=0.2568318485970543 Hits=659
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=2.0712697902421997 Adjusted=0.32559822753999745 Hits=667
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.329129342490666 Adjusted=0.752372224456419 Hits=689
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.4186744482750443 Adjusted=0.7048833516497689 Hits=683
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.4234148378452568 Adjusted=0.7025358830134049 Hits=680
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.3215769100690389 Adjusted=0.756671815602287 Hits=684
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.4486284205330649 Adjusted=0.6903081465376891 Hits=681
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.8422519300006344 Adjusted=0.3518336954739184 Hits=657
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.25015963088063603 Adjusted=0.7998978492815203 Hits=687
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.3352581555134745 Adjusted=0.7489188482922609 Hits=686
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.539009404546302 Adjusted=0.393854389908686 Hits=671
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=1.5264189463993798 Adjusted=0.3958171709506799 Hits=671
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.1654997240624784 Adjusted=0.8580010611365819 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.10837430883455862 Adjusted=0.902222283599741 Hits=382
+Fitness: Standardized=0.16037601637092133 Adjusted=0.861789614652242 Hits=690
 Tree 0:
- (cos (cos (- (- (cos (* (cos (IFLT stdev
-     x avg x)) (cos (- (- (cos (sin (IFLT x avg
-     (cos (IFLT (- x (cos C[0.753520009581786]))
-         (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719]
-         C[0.8071222021401129]) (+ x C[0.5277459993627668]))
-         (* C[0.753520009581786] (sin avg)))) (cos
-     (IFLT stdev x avg x))))) (/ (IFLT (sin (cos
-     (cos C[0.6904983641454251]))) x avg x) (+
-     x (cos (sin (IFLT x avg skew (/ (IFLT stdev
-     x avg x) (cos C[0.753520009581786]))))))))
-     (/ (IFLT stdev x avg x) (+ x (cos (sin (cos
-         (cos C[0.6904983641454251])))))))))) (/ (IFLT
-     stdev x avg x) (+ x stdev))) (/ (IFLT (cos
-     (cos (IFLT stdev x avg x))) x avg x) (+ x
-     (cos (sin x)))))))
+ avg
