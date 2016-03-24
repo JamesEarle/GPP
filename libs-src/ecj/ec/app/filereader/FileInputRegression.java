@@ -23,7 +23,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
     private static double MAX_VALUE = 0;
     private static final long serialVersionUID = 1;
-    private static final double PERCENT_VERIFY = 0.95;
+    
+    // Should pass parameter to python sheets file based on this value.
+    private static final double PERCENT_VERIFY = 0.50;
 
     public PrintWriter pw;
     public double currentX;

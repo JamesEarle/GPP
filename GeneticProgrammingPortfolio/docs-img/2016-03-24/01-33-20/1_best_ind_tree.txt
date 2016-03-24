@@ -1,0 +1,11 @@
+STD: 2.1828630584687603
+
+
+ADJ: 0.4572903688883279
+HIT: 344
+
+
+Evaluated: T
+Fitness: d4608023665814369594|1.1867943609461933|i344|
+Tree 0:
+ (cos (sin (+ (* (- stdev stdev) (+ skew x)) (cos (cos (- (* (log stdev) stdev) (cos avg)))))))

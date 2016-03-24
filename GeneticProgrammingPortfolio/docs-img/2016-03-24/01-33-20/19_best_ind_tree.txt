@@ -1,0 +1,11 @@
+STD: 3.1437001468790498
+
+
+ADJ: 0.902222283599741
+HIT: 382
+
+
+Evaluated: T
+Fitness: d4592473612613306580|0.10837430883455862|i382|
+Tree 0:
+ (cos (cos (- (- (cos (* (cos (IFLT stdev x avg x)) (cos (- (- (cos (sin (IFLT x avg (cos (IFLT (- x (cos C[0.753520009581786])) (IFLT stdev x avg x) (/ (IFLT avg stdev C[0.9908482355738719] C[0.8071222021401129]) (+ x C[0.5277459993627668])) (* C[0.753520009581786] (sin avg)))) (cos (IFLT stdev x avg x))))) (/ (IFLT (sin (cos (cos C[0.6904983641454251]))) x avg x) (+ x (cos (sin (IFLT x avg skew (/ (IFLT stdev x avg x) (cos C[0.753520009581786])))))))) (/ (IFLT stdev x avg x) (+ x (cos (sin (cos (cos C[0.6904983641454251])))))))))) (/ (IFLT stdev x avg x) (+ x stdev))) (/ (IFLT (cos (cos (IFLT stdev x avg x))) x avg x) (+ x (cos (sin x)))))))
