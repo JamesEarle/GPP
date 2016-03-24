@@ -15,6 +15,8 @@ def ensembleToSpreadsheet(filename, col, ws):
 wb = Workbook()
 ws = wb.active
 
+ws.title = "Data"
+
 # Create labels for each column
 ws['A1'] = "DJIA"
 ws['B1'] = "ENS_AVG"
@@ -38,7 +40,7 @@ ws['I2'] = "=SUM(G2:G79)" # Median
 activeDirectory = active.listActiveDirectory()
 files = listdir(activeDirectory)
 
-input = "D:/Development/GitHub/GPP/GeneticProgrammingPortfolio/input/DJIA/djia_close_12-16_testing.txt"
+input = "D:/Development/GitHub/GPP/GeneticProgrammingPortfolio/input/DJIA/djia_close_12-16_testing_90.txt"
 input_arr = []
 
 # Read and write Dow Jones Index

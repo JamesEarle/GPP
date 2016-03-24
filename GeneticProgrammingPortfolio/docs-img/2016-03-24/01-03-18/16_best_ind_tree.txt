@@ -1,0 +1,11 @@
+STD: 0.01875817068852699
+
+
+ADJ: 0.560074565400316
+HIT: 722
+
+
+Evaluated: T
+Fitness: d4605250163296445811|0.7854765450476137|i722|
+Tree 0:
+ (cos (sin (/ (log (log x)) (IFLT (cos (sin (/ (log (log x)) (IFLT (+ C[0.9594560208244666] (cos (/ (cos C[0.587518044059072]) (log x)))) (IFLT x (log x) (- stdev avg) (+ (cos (IFLT C[0.2664517268875737] x (log x) (log (cos C[0.587518044059072])))) (cos (log x)))) (/ (cos C[0.587518044059072]) (IFLT x (IFLT (IFLT stdev C[0.9303847881359006] x C[0.23732921539326157]) (/ avg avg) (log x) (IFLT C[0.2664517268875737] x C[0.6886596995100405] (log x))) (- stdev avg) (+ (cos stdev) (cos (- stdev (* (IFLT x (/ stdev x) (/ avg skew) C[0.004761310117445405]) (log x))))))) (IFLT C[0.2664517268875737] x (log x) (log (log x))))))) C[0.587518044059072] (log x) (IFLT (cos (sin (/ (log (log x)) (IFLT (log (log x)) (IFLT x (sin (cos C[0.587518044059072])) (cos (cos (log (log x)))) (/ avg avg)) (/ (cos C[0.587518044059072]) (IFLT C[0.2664517268875737] x (+ C[0.9594560208244666] (cos (/ (cos C[0.587518044059072]) (log x)))) (log (log x)))) (IFLT C[0.2664517268875737] x (IFLT (IFLT stdev C[0.9303847881359006] x C[0.23732921539326157]) (- stdev C[0.2664517268875737]) (log x) (IFLT C[0.2664517268875737] x C[0.6886596995100405] (- stdev (log x)))) (log (- (+ (- (/ x C[0.711490815968601]) C[0.6934836759057922]) (+ (* stdev C[0.1938147574057908]) x)) avg))))))) C[0.587518044059072] (cos C[0.9225241760175821]) (IFLT C[0.2664517268875737] x C[0.6886596995100405] skew))))))

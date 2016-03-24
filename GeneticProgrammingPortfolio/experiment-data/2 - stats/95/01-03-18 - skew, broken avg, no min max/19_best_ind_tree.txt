@@ -1,0 +1,11 @@
+STD: 0.038172921500969646
+
+
+ADJ: 0.6260735763725703
+HIT: 730
+
+
+Evaluated: T
+Fitness: d4603554826561657934|0.5972563573021803|i730|
+Tree 0:
+ (sin (log (- avg (log (- avg (sin (sin (log (- avg avg)))))))))

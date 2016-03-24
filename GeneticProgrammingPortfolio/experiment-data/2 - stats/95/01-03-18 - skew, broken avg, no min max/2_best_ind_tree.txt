@@ -1,0 +1,11 @@
+STD: 0.11952537038411261
+
+
+ADJ: 0.49766336191282395
+HIT: 723
+
+
+Evaluated: T
+Fitness: d4607224709566121862|1.0093904364516404|i723|
+Tree 0:
+ (IFLT (/ stdev (IFLT (cos stdev) (/ C[0.6402782500139594] C[0.5653390919483694]) (cos (log x)) (log x))) (IFLT (cos stdev) (/ C[0.6402782500139594] C[0.5653390919483694]) (cos (log x)) (log x)) (sin (/ C[0.6402782500139594] (IFLT C[0.7569164352439441] (IFLT (/ C[0.6402782500139594] x) (/ x (cos (sin (cos (IFLT (cos stdev) (/ C[0.6402782500139594] C[0.5653390919483694]) (cos (log x)) (IFLT (/ (cos stdev) stdev) (cos (log x)) (- skew x) (IFLT C[0.7569164352439441] (cos stdev) (log x) C[0.795354834950864]))))))) (cos (sin (cos (IFLT (cos stdev) (/ C[0.6402782500139594] C[0.5653390919483694]) (cos (log x)) (log x))))) (+ (IFLT C[0.7569164352439441] C[0.5653390919483694] (IFLT (cos stdev) (/ C[0.6402782500139594] (cos stdev)) (IFLT (cos stdev) (/ (cos stdev) C[0.5653390919483694]) (cos (log x)) (IFLT (/ (cos stdev) stdev) (- (cos C[0.7569164352439441]) x) (- skew x) (IFLT C[0.7569164352439441] (cos stdev) (log x) C[0.795354834950864]))) (- (IFLT (* skew (sin skew)) (+ (cos skew) stdev) C[0.08942237340795578] (log avg)) (IFLT skew (/ avg (log x)) (- skew (cos x)) stdev))) C[0.795354834950864]) (+ stdev stdev))) (cos (IFLT (cos stdev) (/ C[0.6402782500139594] C[0.5653390919483694]) (cos (IFLT C[0.7569164352439441] (IFLT (cos (log x)) (- (IFLT (* skew (sin (cos (log x)))) (+ (cos skew) stdev) C[0.08942237340795578] (log avg)) (IFLT skew (/ avg (log x)) (- skew (cos x)) stdev)) (IFLT C[0.7569164352439441] (log x) (log x) C[0.795354834950864]) (+ C[0.7569164352439441] (+ stdev stdev))) (sin (log x)) (+ C[0.7569164352439441] (cos (cos skew))))) (IFLT (/ (cos stdev) stdev) (- (cos stdev) x) (- skew x) (IFLT C[0.7569164352439441] (cos stdev) (log x) C[0.795354834950864])))) (+ C[0.7569164352439441] stdev)))) (IFLT C[0.7569164352439441] (cos stdev) (sin (sin (cos (sin (cos (IFLT C[0.7569164352439441] (IFLT (cos (log x)) (- (IFLT (* skew (sin (cos (log x)))) (+ (cos skew) stdev) C[0.08942237340795578] (log avg)) (IFLT skew (/ avg (log x)) (- skew (cos x)) stdev)) (IFLT C[0.7569164352439441] (log x) (log x) C[0.795354834950864]) (+ C[0.7569164352439441] (+ stdev stdev))) (sin (log x)) (+ C[0.7569164352439441] (cos (cos skew))))))))) C[0.795354834950864]))

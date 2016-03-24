@@ -23,7 +23,7 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
 
     private static double MAX_VALUE = 0;
     private static final long serialVersionUID = 1;
-    private static final double PERCENT_VERIFY = 0.90;
+    private static final double PERCENT_VERIFY = 0.95;
 
     public PrintWriter pw;
     public double currentX;
@@ -75,6 +75,9 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             // Add all Pipelines for terminal values to the PipelinePool
             pool.add("MovingAveragePipeline", new MovingAveragePipeline(inputData));
             pool.add("StandardDeviationPipeline", new StandardDeviationPipeline(inputData));
+            pool.add("SkewPipeline", new SkewPipeline(inputData));
+            
+            // Min and Max exhibit really weird convergence behaviour...
             pool.add("MinimumValuePipeline", new MinimumValuePipeline(inputData));
             pool.add("MaximumValuePipeline", new MaximumValuePipeline(inputData));
             
