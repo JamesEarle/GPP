@@ -41,14 +41,18 @@ gp.fs.0.func.9 = ec.app.filereader.IFLT
 gp.fs.0.func.9.nc = nc4
 
 # Additional statistics operators
-gp.fs.0.func.10 = ec.app.filereader.MovingAverage
+gp.fs.0.func.10 = ec.app.filereader.StandardDeviation
 gp.fs.0.func.10.nc = nc0
-gp.fs.0.func.11 = ec.app.filereader.StandardDeviation
+gp.fs.0.func.11 = ec.app.filereader.Skew
 gp.fs.0.func.11.nc = nc0
-gp.fs.0.func.12 = ec.app.filereader.Skew
+gp.fs.0.func.12 = ec.app.filereader.MovingSum
 gp.fs.0.func.12.nc = nc0
-gp.fs.0.func.13 = ec.app.filereader.MovingSum
-gp.fs.0.func.13.nc = nc0
+#gp.fs.0.func.13 = ec.app.filereader.MovingAverage
+#gp.fs.0.func.13.nc = nc0
+#gp.fs.0.func.14 = ec.app.filereader.MinimumValue
+#gp.fs.0.func.14.nc = nc0
+#gp.fs.0.func.15 = ec.app.filereader.MaximumValue
+#gp.fs.0.func.15.nc = nc0
 
 # Financial functions
 #gp.fs.0.func.12 = ec.app.filereader.VolumeTraded
@@ -61,10 +65,6 @@ gp.fs.0.func.13.nc = nc0
 #gp.fs.0.func.15.nc = nc0
 
 # Kind of broken functions...
-#gp.fs.0.func.12 = ec.app.filereader.MinimumValue
-#gp.fs.0.func.12.nc = nc0
-#gp.fs.0.func.13 = ec.app.filereader.MaximumValue
-#gp.fs.0.func.13.nc = nc0
 #gp.fs.0.func.11 = ec.app.filereader.XLag
 #gp.fs.0.func.11.nc = nc0
 

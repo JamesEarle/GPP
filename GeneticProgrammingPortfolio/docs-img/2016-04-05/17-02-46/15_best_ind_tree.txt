@@ -1,0 +1,11 @@
+STD: 0.5670534196801083
+
+
+ADJ: 0.5257317386940061
+HIT: 681
+
+
+Evaluated: T
+Fitness: d4606300710961097146|0.9021107656238236|i681|
+Tree 0:
+ (cos (sin (cos (IFLT (IFLT (- (cos (cos (* (/ C[0.6795829126377744] (log (IFLT (cos stdev) (* x C[0.4928755045660498]) (sin (* (sin C[0.7761378673402091]) (log x))) (+ sum stdev)))) (log x)))) C[0.2901229035310583]) (* (cos (IFLT C[0.9737001150030822] (* x C[0.4928755045660498]) (* (sin C[0.7761378673402091]) (log x)) (IFLT (log (sin skew)) (cos stdev) (* (IFLT (cos stdev) (* x C[0.4928755045660498]) (sin (* (sin C[0.7761378673402091]) (log x))) (+ sum stdev)) C[0.4928755045660498]) (sin (* (/ (sin (sin C[0.978172126070671])) sum) (log x)))))) (* (/ C[0.6795829126377744] (log (IFLT (cos stdev) (* x C[0.4928755045660498]) (sin (* (sin C[0.7761378673402091]) (log x))) (cos (cos stdev))))) (log x))) (sin skew) (+ sum stdev)) (* (* (sin C[0.7761378673402091]) (log x)) C[0.4928755045660498]) (* (sin C[0.7761378673402091]) (log x)) (IFLT (cos stdev) (/ (sin C[0.9788157268700973]) (log (sin (* (/ (/ (sin (sin (* (sin C[0.7761378673402091]) (log x)))) sum) sum) (log x))))) (* (/ (/ (* x C[0.4928755045660498]) sum) sum) (* (/ (- (cos C[0.978172126070671]) C[0.2901229035310583]) sum) (log (/ C[0.6795829126377744] (log (IFLT (cos stdev) (* x C[0.4928755045660498]) (sin (* (sin C[0.7761378673402091]) (log x))) (+ sum stdev))))))) (cos (IFLT C[0.9737001150030822] (* (log (cos (* (+ sum x) C[0.17518702279823872]))) (+ sum stdev)) (* stdev (/ skew sum)) (IFLT (cos stdev) (* x C[0.4928755045660498]) (sin (sin (cos (IFLT C[0.9737001150030822] (sin C[0.9737001150030822]) (* (sin C[0.7761378673402091]) (log x)) (IFLT (cos stdev) (* x C[0.4928755045660498]) (cos stdev) (/ (sin C[0.9788157268700973]) sum)))))) (+ sum stdev)))))))))

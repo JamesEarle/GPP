@@ -1,0 +1,11 @@
+STD: 0.5657860130689917
+
+
+ADJ: 0.46170034165524565
+HIT: 521
+
+
+Evaluated: T
+Fitness: d4607929597484925766|1.1659069958988808|i521|
+Tree 0:
+ (cos (sin (cos (IFLT (* sum (+ x (IFLT (IFLT sum skew C[0.73360311425847] C[0.39985165501943054]) x (cos (cos (* (IFLT (sin (cos (IFLT (sin C[0.8157299364914776]) sum C[0.4136029790801613] skew))) x C[0.7899702874214972] sum) skew))) sum))) sum (cos (cos (IFLT (IFLT sum skew C[0.73360311425847] C[0.39985165501943054]) x (cos (cos (* (IFLT (sin (cos (IFLT (sin C[0.8157299364914776]) sum C[0.4136029790801613] skew))) x C[0.7899702874214972] sum) skew))) sum))) sum))))

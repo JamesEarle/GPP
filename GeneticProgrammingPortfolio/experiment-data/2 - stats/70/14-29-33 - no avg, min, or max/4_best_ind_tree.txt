@@ -1,0 +1,11 @@
+STD: 1.8875514592588918
+
+
+ADJ: 0.5938424965759581
+HIT: 529
+
+
+Evaluated: T
+Fitness: d4604335677214173735|0.6839481946238423|i529|
+Tree 0:
+ (cos (IFLT (log (+ x sum)) (+ C[0.695076157777422] (- sum (sin (cos sum)))) (cos (sin (IFLT (log (- x x)) (cos (log (+ x sum))) (cos (IFLT (IFLT (cos sum) x (sin (IFLT (IFLT (cos (IFLT sum sum sum sum)) (cos C[0.7932292862081154]) x C[0.8485249691914563]) (log (sin (cos sum))) (cos stdev) (cos (cos (sin (sin C[0.6562926195742143])))))) (sin x)) x (sin (sin C[0.695076157777422])) (sin x))) (sin (sin (log (sin (log (+ x sum))))))))) (IFLT (log (- x (IFLT sum stdev (+ (* skew x) (sin sum)) (cos x)))) (IFLT sum stdev (cos (IFLT (IFLT (IFLT sum sum sum sum) x (sin (IFLT (IFLT (cos (sin (cos sum))) (cos C[0.7932292862081154]) x C[0.8485249691914563]) (log (+ x (sin stdev))) (cos stdev) (cos (cos (cos x))))) (cos x)) x (sin (sin C[0.695076157777422])) (sin x))) (cos x)) (sin (sin (log (sin (sin (log (sin (log (+ x sum))))))))) (sin (IFLT (IFLT (IFLT (IFLT (cos (log C[0.3199493614718999])) x (cos (log (+ x sum))) (sin x)) x (sin (cos (sin C[0.695076157777422]))) (sin x)) (sin x) (log (IFLT sum sum sum sum)) (sin stdev)) (+ x sum) (cos (cos (log (+ x sum)))) (+ x sum))))))

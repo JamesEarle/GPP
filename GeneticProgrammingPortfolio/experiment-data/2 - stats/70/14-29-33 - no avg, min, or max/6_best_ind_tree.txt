@@ -1,0 +1,11 @@
+STD: 1.8976131788030977
+
+
+ADJ: 0.7375746651318802
+HIT: 536
+
+
+Evaluated: T
+Fitness: d4600081051782615226|0.35579494154832114|i536|
+Tree 0:
+ (+ (* stdev (* (sin (log x)) x)) (cos (sin (+ (+ (cos (log (+ (cos (+ (cos (log (sin (sin (log x))))) stdev)) (log (/ sum x))))) (log (log x))) stdev))))

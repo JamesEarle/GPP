@@ -1,0 +1,11 @@
+STD: 148.41815429651385
+
+
+ADJ: 0.45671576051835233
+HIT: 597
+
+
+Evaluated: T
+Fitness: d4608036056452369590|1.1895456352656715|i597|
+Tree 0:
+ (sin (- (- (- (log (cos stdev)) (/ (- (- (log (- x sum)) (/ (sin (log (- x sum))) (cos stdev))) (/ stdev (/ (- (/ (- (sin (+ C[0.5732476616316481] stdev)) (/ (sin C[0.961442058152329]) (- x sum))) (- x sum)) (- (- x sum) (/ (- (sin C[0.961442058152329]) (/ (sin C[0.961442058152329]) (- x sum))) (log (cos stdev))))) (- x sum)))) (- x (/ stdev (/ (- (log (cos stdev)) (- (- x sum) (/ (+ C[0.5732476616316481] stdev) (- x sum)))) (- x sum)))))) (/ (log (+ (- (log (log C[0.8059634350709551])) (/ stdev (/ (/ (- (- (+ C[0.5732476616316481] stdev) (/ (sin (log (- x sum))) (cos stdev))) (/ stdev (/ (- (+ C[0.5732476616316481] stdev) (- x sum)) (- x sum)))) (- x sum)) (- x sum)))) (+ stdev C[0.8181317737577886]))) (- x (- (log (cos stdev)) (log (- (log (cos stdev)) (/ (/ (- (- (+ C[0.5732476616316481] stdev) (/ (sin (log (- x sum))) (IFLT C[0.41779934718982836] skew C[0.8980202184476447] C[0.8785639813250946]))) (/ stdev (/ (- (+ C[0.5732476616316481] stdev) (- x sum)) (sin (log (- x sum)))))) (- x sum)) (- x C[0.8181317737577886])))))))) (/ (+ (- (log (- x sum)) (/ (/ stdev (/ (/ (- (- (+ C[0.5732476616316481] stdev) (/ (sin (log (- x sum))) (cos stdev))) (/ (sin (log (- x sum))) (cos (/ (sin C[0.961442058152329]) (- x (+ C[0.5732476616316481] stdev)))))) (- x sum)) (- x sum))) C[0.8980202184476447])) (+ (+ (/ (/ (+ C[0.5732476616316481] stdev) (- x sum)) (- x sum)) C[0.6197371921168627]) (+ stdev (- (- (log (- x sum)) (/ (sin (log (- x sum))) (+ stdev C[0.8181317737577886]))) (/ stdev (/ (/ (- (- (+ C[0.5732476616316481] stdev) (/ (sin (log (- x sum))) (cos stdev))) (/ (sin (log (- x sum))) (IFLT C[0.41779934718982836] skew C[0.8980202184476447] C[0.8785639813250946]))) (- x sum)) (- x (- (log (log sum)) (/ (log (+ stdev C[0.8181317737577886])) sum))))))))) (- x (cos (- x sum))))))

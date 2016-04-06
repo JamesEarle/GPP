@@ -1,0 +1,11 @@
+STD: 0.07406393702291482
+
+
+ADJ: 0.8946818327871925
+HIT: 614
+
+
+Evaluated: T
+Fitness: d4593146736342021687|0.11771577711007174|i614|
+Tree 0:
+ (IFLT (/ (IFLT (+ sum skew) (/ skew avg) (- C[0.9827064277420693] stdev) x) max) min (- min sum) (/ avg (cos stdev)))

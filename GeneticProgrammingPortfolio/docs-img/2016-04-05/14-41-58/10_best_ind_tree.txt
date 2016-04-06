@@ -1,0 +1,11 @@
+STD: 1.4923073943084577
+
+
+ADJ: 0.2704460010866719
+HIT: 504
+
+
+Evaluated: T
+Fitness: d4613256864538632253|2.6975958083385465|i504|
+Tree 0:
+ (sin (cos (IFLT (log skew) (+ x skew) (/ (cos sum) (log sum)) (cos (cos (IFLT (IFLT (/ skew sum) stdev (sin (cos (IFLT (/ skew sum) (+ (cos (IFLT (/ skew sum) (cos (sin C[0.9602346783326376])) stdev (log (sin C[0.9602346783326376])))) skew) (/ skew (cos (IFLT (/ (/ stdev stdev) sum) (sin C[0.9602346783326376]) stdev (cos C[0.3098361701685999])))) (sin C[0.9602346783326376])))) (cos sum)) (+ x skew) (IFLT (/ skew (cos (+ C[0.9602346783326376] skew))) (cos (sin C[0.9602346783326376])) stdev (IFLT sum (+ x (/ (sin C[0.9602346783326376]) (cos (sin C[0.9602346783326376])))) stdev (log (cos (sin (+ (cos (IFLT (/ skew sum) (cos (sin C[0.9602346783326376])) stdev (log (sin C[0.9602346783326376])))) skew)))))) (cos C[0.3098361701685999])))))))

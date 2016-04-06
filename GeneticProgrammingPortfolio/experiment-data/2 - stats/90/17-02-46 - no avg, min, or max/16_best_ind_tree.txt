@@ -1,0 +1,11 @@
+STD: 0.2502127926807587
+
+
+ADJ: 0.6013951523222992
+HIT: 688
+
+
+Evaluated: T
+Fitness: d4604145193318883779|0.6628002339867226|i688|
+Tree 0:
+ (cos (sin (- (IFLT (cos (sin (cos (- (cos (log (IFLT (cos (cos (log (IFLT (cos C[0.9378610688074337]) C[0.8264218192021549] x x)))) C[0.8264218192021549] x x))) (cos (cos (cos (cos (cos (cos (cos (cos C[0.9378610688074337])))))))))))) (cos (sin (cos (log (IFLT (cos (cos C[0.32799471641895506])) C[0.8264218192021549] x x))))) C[0.06927765393181295] (- (sin (cos (- (log (IFLT (cos (log (log sum))) C[0.8264218192021549] (log (IFLT (cos C[0.9378610688074337]) C[0.8264218192021549] x x)) x)) (cos C[0.9378610688074337])))) (cos (cos (/ (sin (- (log (IFLT (cos (log (cos C[0.9378610688074337]))) C[0.8264218192021549] x x)) C[0.6248313641896749])) (IFLT stdev (IFLT (sin stdev) (cos x) (- skew skew) (IFLT C[0.974343631725437] stdev stdev C[0.03965878765572928])) (log skew) skew)))))) (cos (cos (log (IFLT (log (sin (IFLT skew stdev x (cos C[0.9378610688074337])))) C[0.8264218192021549] x x)))))))

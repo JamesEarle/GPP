@@ -1,0 +1,11 @@
+STD: 2.7815820750823796
+
+
+ADJ: 0.48017063726599857
+HIT: 498
+
+
+Evaluated: T
+Fitness: d4607554384529235340|1.0825929833898469|i498|
+Tree 0:
+ (sin (sin (log (- (- (log x) (log (- (log x) (cos C[0.7202190380858355])))) (log (- (log (IFLT (sin (log x)) (IFLT (IFLT (IFLT (- (IFLT x x C[0.7940120636596621] x) (log x)) x (log x) (IFLT (sin (IFLT (- (log x) (cos C[0.7202190380858355])) (log (log x)) (log (IFLT sum x C[0.7940120636596621] x)) x)) x (log x) (log x))) x C[0.7940120636596621] x) x (IFLT (- (cos x) (log x)) (cos C[0.7202190380858355]) (log x) x) x) (log x) (log x))) (IFLT sum (- (log x) (cos C[0.7202190380858355])) (sin (IFLT sum x C[0.7940120636596621] C[0.7940120636596621])) C[0.7940120636596621])))))))
