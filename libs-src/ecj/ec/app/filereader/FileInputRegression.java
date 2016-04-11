@@ -111,14 +111,14 @@ public class FileInputRegression extends GPProblem implements SimpleProblemForm 
             double expectedResult;
             double result;
             
-            // Sample all data points for currentX. 
-            int start = generalPipeline.getLag() + 1;
+            // Start a day after the first lag period so we can calculate 1-5, estimate at 6
+            int start = generalPipeline.getLag() + 1; 
             int finish = vm.getRange();
             
             for (int i=start;i<=finish;i++) {
                 
                 currentX = i;
-                expectedResult = inputData.get(i - 1);
+                expectedResult = inputData.get(i);
                 
                 // Pass values to time-dependent terminals.
                 pool.setValue(i - start);

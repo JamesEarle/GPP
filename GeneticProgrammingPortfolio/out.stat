@@ -3,1390 +3,808 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.726049816661595 Adjusted=0.10281666440643872 Hits=372
+Fitness: Standardized=0.4105751843712177 Adjusted=0.7089306625266933 Hits=686
 Tree 0:
- (sin (log C[0.9836784008617657]))
+ max
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=4.050140586284496 Adjusted=0.19801428948648792 Hits=583
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (cos (cos (* stdev (/ sum stdev))))
+ high
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=6.066932294731643 Adjusted=0.14150411498147425 Hits=387
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (cos (cos (- (cos C[0.04384682253941308])
-     (- (sin (cos sum)) C[0.9708549070907425]))))
+ high
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.43488217360906223 Adjusted=0.6969213350004674 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4354054160020902 Adjusted=0.6966672891518084 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4332274347194964 Adjusted=0.697725968520631 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.72040409530154 Adjusted=0.10287638149563767 Hits=374
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (sin (cos C[0.224004777771325]))
+ high
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7172076206144892 Adjusted=0.5823407653188482 Hits=689
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5940122099660289] (log sum))
+ high
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.412321568493183 Adjusted=0.22663805991400168 Hits=626
+Fitness: Standardized=0.46102176165268816 Adjusted=0.6844525018359846 Hits=688
 Tree 0:
- (* C[0.5940122099660289] (log sum))
+ low
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=8.279401206818175 Adjusted=0.10776557427705954 Hits=413
+Fitness: Standardized=0.44459065903369094 Adjusted=0.6922376202189452 Hits=689
 Tree 0:
- (sin (* C[0.5940122099660289] (log sum)))
+ low
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum stdev x))))
+ high
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=5.395252615077815 Adjusted=0.1563659889903868 Hits=499
+Fitness: Standardized=0.4652836061117484 Adjusted=0.6824617403954876 Hits=688
 Tree 0:
- (* C[0.5940122099660289] (log sum))
+ low
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7172076206144892 Adjusted=0.5823407653188482 Hits=689
+Fitness: Standardized=0.4649964408740159 Adjusted=0.6825955149784533 Hits=688
 Tree 0:
- (* C[0.5940122099660289] (log sum))
+ low
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.4634764603080009 Adjusted=0.6833044651702438 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum stdev x))))
+ low
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.45167477844568193 Adjusted=0.6888595261472455 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum stdev x))))
+ low
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.45992246299463424 Adjusted=0.6849678838071794 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum stdev x))))
+ low
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.4494863936255785 Adjusted=0.6898995426226217 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum stdev x))))
+ low
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.4552872557813009 Adjusted=0.687149561729055 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x (cos C[0.224004777771325]) stdev x))))
+ low
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.46205264561833165 Adjusted=0.6839698987563336 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum (sin (sin (cos C[0.224004777771325])))
-     x))))
+ low
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=3.3764722528011806 Adjusted=0.2284945367493066 Hits=597
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     x sum (sin C[0.07691925616443629]) x))))
+ high
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.983641803255209 Adjusted=0.3351608758494338 Hits=666
+Fitness: Standardized=0.45673370875950525 Adjusted=0.6864672616463026 Hits=688
 Tree 0:
- (* (sin C[0.5136324147795244]) (log (log
-     (IFLT x sum (cos C[0.224004777771325]) x))))
+ low
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.983641803255209 Adjusted=0.3351608758494338 Hits=666
+Fitness: Standardized=0.46163852572873537 Adjusted=0.6841636850680477 Hits=688
 Tree 0:
- (* (sin C[0.5136324147795244]) (log (log
-     (IFLT x sum (- sum (cos sum)) x))))
+ low
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.983641803255209 Adjusted=0.3351608758494338 Hits=666
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* (sin C[0.5136324147795244]) (log (log
-     (IFLT x sum (- sum (cos C[0.224004777771325]))
-         x))))
+ high
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.7661602544215667 Adjusted=0.3615119544869285 Hits=670
+Fitness: Standardized=0.44861470838713297 Adjusted=0.6903146807845032 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (/ x C[0.8559442084325547])
-     (log (log (IFLT x sum (+ (* (- skew (cos
-         C[0.6064766848188482])) (/ stdev (cos x)))
-         (IFLT (cos (IFLT x sum (sin (cos (sin (cos
-             C[0.224004777771325])))) x)) (IFLT (* C[0.6772947816847066]
-             sum) (- x x) sum x) (* (- skew x) x) stdev))
-         x)))) x))))
+ (IFLT (IFLT (* (IFLT x high vol vol) (* x
+     vol)) (* (IFLT vol sum low sum) high) vol
+     (* (IFLT vol low sum sum) open)) (sin (-
+     (+ low low) (/ stdev skew))) low min)
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.7661602544215667 Adjusted=0.3615119544869285 Hits=670
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (/ x C[0.8559442084325547])
-     (log (log (IFLT x sum (+ (* (- skew (cos
-         C[0.6064766848188482])) (/ stdev (cos x)))
-         (IFLT (cos (IFLT x sum (sin (cos (sin (cos
-             C[0.224004777771325])))) x)) (IFLT (* C[0.6772947816847066]
-             sum) (- x x) sum x) (* (- skew x) x) stdev))
-         x)))) x))))
+ high
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6267301171909476 Adjusted=0.3807014635631506 Hits=679
+Fitness: Standardized=0.4641062908234902 Adjusted=0.6830105206620944 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (IFLT x
-     sum (sin (cos C[0.224004777771325])) x) (log
-     (log (IFLT x sum (+ (* (- skew (cos C[0.6064766848188482]))
-         (/ stdev (cos x))) (IFLT (cos (IFLT x sum
-         (sin (cos (sin (cos C[0.224004777771325]))))
-         x)) (IFLT (IFLT x sum (sin (log x)) x) (-
-         x x) sum x) (* (- skew x) x) stdev)) x))))
-     x))))
+ low
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6242909465676154 Adjusted=0.3810553099334997 Hits=679
+Fitness: Standardized=0.43844405773450934 Adjusted=0.6951956140546468 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (/ x (cos
-     C[0.224004777771325])) (log (log (IFLT x
-     sum (+ (* (- skew (cos C[0.6064766848188482]))
-     (/ stdev (cos x))) C[0.7736656803873188])
-     x)))) x))))
+ high
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6242909465676154 Adjusted=0.3810553099334997 Hits=679
+Fitness: Standardized=0.454605470955457 Adjusted=0.6874716340391257 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (/ x (cos
-     C[0.224004777771325])) (log (log (IFLT x
-     sum (+ (* (- skew (cos C[0.6064766848188482]))
-     x) C[0.7736656803873188]) x)))) x))))
+ low
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6242909465676154 Adjusted=0.3810553099334997 Hits=679
+Fitness: Standardized=0.4566569524407392 Adjusted=0.6865034339927628 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (/ x (cos
-     C[0.224004777771325])) (log (log (IFLT x
-     sum (+ (* (- skew (cos C[0.224004777771325]))
-     (/ stdev (cos x))) C[0.7736656803873188])
-     x)))) x))))
+ low
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6242909465676154 Adjusted=0.3810553099334997 Hits=679
+Fitness: Standardized=0.4351268335965172 Adjusted=0.6968025240625859 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos (sin (cos C[0.224004777771325]))) sum
-     (/ (/ x (cos C[0.224004777771325])) (log
-         (log (IFLT x sum (+ (* (- skew (* C[0.6772947816847066]
-             sum)) (/ stdev (cos x))) C[0.7736656803873188])
-             x)))) x))))
+ high
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6120058626140807 Adjusted=0.38284753273838584 Hits=679
+Fitness: Standardized=0.4469758755343126 Adjusted=0.6910965254557118 Hits=687
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ C[0.4458167351831206]
-     x) (log (log (IFLT x sum (log (log (IFLT
-     x sum (* (- skew x) x) x))) x)))) x))))
+ high
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6120058626140807 Adjusted=0.38284753273838584 Hits=679
+Fitness: Standardized=0.4494604014718197 Adjusted=0.6899119141058107 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ C[0.4458167351831206]
-     x) (log (log (IFLT x sum (log (log (IFLT
-     x sum (* (- skew x) x) x))) x)))) x))))
+ low
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6120058626140807 Adjusted=0.38284753273838584 Hits=679
+Fitness: Standardized=0.4357543953883453 Adjusted=0.6964979548117756 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ C[0.4458167351831206]
-     x) (log (log (IFLT x sum (log (log (IFLT
-     x sum (* (- skew x) x) x))) x)))) x))))
+ high
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6024006727029325 Adjusted=0.38426058311819045 Hits=683
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (cos
-     C[0.6064766848188482]) x) (log (log (IFLT
-     x sum (+ (* (- skew (cos (log (log (IFLT
-     x sum stdev x))))) (/ x (cos C[0.224004777771325])))
-     C[0.7736656803873188]) x)))) (* x stdev)))))
+ high
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.6024006727029325 Adjusted=0.38426058311819045 Hits=683
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (cos
-     C[0.6064766848188482]) x) (log (log (IFLT
-     x sum (+ (* (- skew (cos (log (log (IFLT
-     x sum stdev x))))) (/ x C[0.224004777771325]))
-     C[0.7736656803873188]) x)))) (* x stdev)))))
+ high
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5952544063613807 Adjusted=0.38531867918183327 Hits=679
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ C[0.4458167351831206]
-     x) (log (log x))) x))))
+ high
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5934011637081855 Adjusted=0.3855940276398063 Hits=679
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ C[0.4458167351831206]
-     x) (log (log (IFLT x sum (log (log (IFLT
-     x sum (* (- skew (cos C[0.6064766848188482]))
-     stdev) x))) x)))) x))))
+ high
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5907950167089564 Adjusted=0.38598190653858955 Hits=682
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ (cos
-     (log (log (IFLT x sum stdev x)))) x) (log
-     (log (IFLT x sum (log (+ (* (- skew (cos
-         C[0.6064766848188482])) C[0.5136324147795244])
-         (IFLT (* (- skew x) x) (- x x) (* (- skew
-             x) x) stdev))) x)))) x))))
+ high
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5811661835818467 Adjusted=0.38742178103864455 Hits=684
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos skew) sum (/ (+ sum x) (log (log (IFLT
-     x sum (log (log (IFLT sum x stdev sum)))
-     x)))) x))))
+ high
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5802742665320417 Adjusted=0.3875557001713724 Hits=684
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ sum
-     x) (log (log (IFLT x sum (log (IFLT x sum
-     (log (log (* (- sum C[0.768242801605387])
-         (cos skew)))) x)) x)))) (* x stdev)))))
+ high
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.571985964969439 Adjusted=0.3888046099862299 Hits=682
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ (cos
-     (log (log (IFLT x sum stdev x)))) x) (log
-     (log (IFLT x sum (log (+ (* (* C[0.6772947816847066]
-         sum) C[0.5136324147795244]) (IFLT (* (- skew
-         x) x) x (* (- skew x) x) stdev))) x)))) x))))
+ high
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5694490029171353 Adjusted=0.389188498726647 Hits=681
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* (cos (log (IFLT x sum (sin (cos C[0.224004777771325]))
-         x))) sum) sum (/ (+ (cos (log (log (IFLT
-     x sum (log (IFLT (cos (IFLT x sum (sin (cos
-     C[0.224004777771325])) x)) (IFLT (* C[0.6772947816847066]
-     sum) x sum x) (cos C[0.6064766848188482])
-     stdev)) x)))) x) (log (log (IFLT x sum (log
-     (+ (* sum C[0.5136324147795244]) (IFLT (cos
-         (IFLT x sum (sin (cos sum)) x)) (- x x) (*
-         (- skew x) x) stdev))) x)))) x))))
+ high
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5728216448080625 Adjusted=0.38867832211299747 Hits=682
+Fitness: Standardized=0.43559142122405037 Adjusted=0.6965770240862506 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ (cos
-     (log (log (IFLT x sum (log (IFLT (cos (IFLT
-         x sum (sin (cos C[0.224004777771325])) x))
-         (- skew x) (cos C[0.6064766848188482]) stdev))
-         x)))) x) (log (log (IFLT x sum (log (+ (*
-     sum C[0.5136324147795244]) (IFLT (cos (IFLT
-     x sum (sin (cos sum)) x)) (- x sum) (* (-
-     skew x) x) stdev))) x)))) x))))
+ high
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.572148850941901 Adjusted=0.38877998823194376 Hits=684
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ (*
-     C[0.6772947816847066] sum) x) (log (log (IFLT
-     x sum (log (+ (* (- skew (- skew (IFLT x
-     sum (sin (IFLT x sum stdev x)) x))) C[0.5136324147795244])
-     (IFLT (cos (IFLT x sum (sin (cos sum)) x))
-         (- x x) (* (cos C[0.224004777771325]) x)
-         (- x x)))) x)))) x))))
+ high
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.572148850941901 Adjusted=0.38877998823194376 Hits=684
+Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (* C[0.6772947816847066] sum) sum (/ (+ (*
-     C[0.6772947816847066] sum) x) (log (log (IFLT
-     x sum (log (+ (* (- skew (- skew (IFLT x
-     sum (sin (IFLT x sum stdev x)) x))) C[0.5136324147795244])
-     (IFLT (cos (IFLT x sum (sin (cos sum)) x))
-         (- x x) (* (cos C[0.224004777771325]) x)
-         (- x x)))) x)))) x))))
+ high
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5531124596300658 Adjusted=0.3916787904222971 Hits=684
+Fitness: Standardized=0.4358158721437481 Adjusted=0.6964681331367006 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     C[0.7736656803873188]) x) (log (log (IFLT
-     x sum x x)))) (log (log (IFLT x sum (+ (*
-     (- skew (cos (* sum stdev))) (+ (* C[0.6772947816847066]
-     sum) x)) C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5503778652272537 Adjusted=0.39209876059322457 Hits=684
+Fitness: Standardized=0.4350689635541623 Adjusted=0.6968306230547631 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     C[0.7736656803873188]) x) (log (log (IFLT
-     x sum x x)))) (log (log (IFLT x sum (+ (*
-     (- skew (* (IFLT x sum (IFLT (/ (IFLT (+
-         skew C[0.6006027457234823]) (cos sum) (sin
-         C[0.05716630682999824]) C[0.9054373522540198])
-         (- x (sin C[0.8661267900403811]))) stdev
-         sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-         x) (cos (IFLT x sum C[0.224004777771325]
-         x)))) (+ (* C[0.6772947816847066] sum) x))
-     C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5484902010125778 Adjusted=0.39238918776406334 Hits=684
+Fitness: Standardized=0.43264927964149497 Adjusted=0.6980075404430031 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     C[0.7736656803873188]) x) (log (log (IFLT
-     x sum x x)))) (log (log (IFLT x sum (* (IFLT
-     x sum (IFLT (/ (IFLT (+ skew C[0.6006027457234823])
-     (cos sum) (sin C[0.05716630682999824]) C[0.9054373522540198])
-     (- x (sin C[0.8661267900403811]))) stdev
-     sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-     x) (cos sum)) x)))))))
+ high
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5467469913253509 Adjusted=0.3926577722114401 Hits=684
+Fitness: Standardized=0.4130492917225707 Adjusted=0.7076893961575501 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     C[0.7736656803873188]) x) (log (log (IFLT
-     x sum x x)))) (log (IFLT (IFLT (cos (IFLT
-     x sum (sin (cos sum)) x)) (* (+ C[0.4458167351831206]
-     x) (/ x (cos C[0.224004777771325]))) (* (-
-     skew x) x) stdev) sum (IFLT x sum (+ (* (-
-     skew (cos (* sum x))) C[0.38579490784372705])
-     C[0.7736656803873188]) x) x))))))
+ high
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5459391606018735 Adjusted=0.3927823631746151 Hits=684
+Fitness: Standardized=0.43032197222717217 Adjusted=0.6991432834125364 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     C[0.7736656803873188]) x) (log (log (IFLT
-     x sum x x)))) (log (IFLT (IFLT (cos (IFLT
-     x sum (sin (cos sum)) x)) (* (+ C[0.4458167351831206]
-     x) (/ x (cos C[0.224004777771325]))) (* (-
-     skew x) x) stdev) sum (IFLT x sum (+ (* (-
-     skew (cos (* sum x))) (+ (* (- skew (* C[0.6772947816847066]
-     sum)) (/ x C[0.224004777771325])) C[0.7736656803873188]))
-     C[0.7736656803873188]) x) x))))))
+ high
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5358571551744036 Adjusted=0.3943439787053877 Hits=684
+Fitness: Standardized=0.43270458949424406 Adjusted=0.6979805937196082 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     (* (cos (log (log (IFLT x sum stdev x))))
-         sum)) x) (log (log (IFLT x sum x x)))) (log
-     (log (IFLT x sum (+ (* (- skew (* (IFLT x
-         sum (IFLT (/ (* sum stdev) (- x (sin C[0.8661267900403811])))
-         stdev sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-         x) (cos (IFLT x sum C[0.224004777771325]
-         x)))) (+ (* C[0.6772947816847066] sum) x))
-         C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5358571551744036 Adjusted=0.3943439787053877 Hits=684
+Fitness: Standardized=0.4353860911737119 Adjusted=0.6966766684929364 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     (* (cos (log (log (IFLT x sum stdev x))))
-         sum)) x) (log (log (IFLT x sum x x)))) (log
-     (log (IFLT x sum (+ (* (- skew (* (IFLT x
-         sum (IFLT (/ (* sum stdev) (- x (sin C[0.8661267900403811])))
-         stdev sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-         x) (cos (IFLT x sum C[0.224004777771325]
-         x)))) (+ (* C[0.6772947816847066] sum) x))
-         C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5351402120803574 Adjusted=0.3944555000290858 Hits=684
+Fitness: Standardized=0.4356749475138471 Adjusted=0.696536497855379 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     (* (cos (log (log (IFLT x sum x x)))) sum))
-     x) (log (log (IFLT x sum x x)))) (log (log
-     (IFLT x sum (+ (log (IFLT x sum x x)) C[0.7736656803873188])
-         x)))))))
+ high
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5351402120803574 Adjusted=0.3944555000290858 Hits=684
+Fitness: Standardized=0.4198093839495456 Adjusted=0.7043198976599636 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     (* (cos (log (log (IFLT x sum x x)))) sum))
-     x) (log (log (IFLT x sum x x)))) (log (log
-     (IFLT x sum (+ (log (IFLT x sum x x)) C[0.7736656803873188])
-         x)))))))
+ high
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.526270259059604 Adjusted=0.39584046735057027 Hits=684
+Fitness: Standardized=0.4336159125264546 Adjusted=0.6975369004084956 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) (* (cos (log (log (IFLT x sum stdev
-     x)))) sum)) x) (log (log (IFLT x sum x x))))
-     (log (log (IFLT x sum (+ (* (- skew (* (IFLT
-         x sum (IFLT (/ (* sum stdev) (cos (IFLT x
-         x sum C[0.4430919861184395]))) stdev sum
-         (log (cos (IFLT x x sum C[0.4430919861184395]))))
-         x) (cos (IFLT x sum C[0.224004777771325]
-         x)))) (+ (* C[0.6772947816847066] sum) x))
-         C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5244894597297223 Adjusted=0.3961196970523546 Hits=685
+Fitness: Standardized=0.42462410659878097 Adjusted=0.7019395469780798 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* x (+ (* C[0.6772947816847066]
-         sum) x))))) sum) (* (cos (log (log (IFLT
-     x sum stdev x)))) sum)) x) (log (log (IFLT
-     x sum x x)))) (log (log (IFLT x sum (+ (*
-     (- skew (* (IFLT x sum (IFLT (/ (* sum stdev)
-         (cos (IFLT x x sum C[0.4430919861184395])))
-         stdev sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-         x) (cos (IFLT x sum C[0.224004777771325]
-         x)))) (+ (* C[0.6772947816847066] sum) x))
-     C[0.7736656803873188]) x)))))))
+ high
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5205612994254178 Adjusted=0.3967370284658255 Hits=684
+Fitness: Standardized=0.4332249033407656 Adjusted=0.6977272008524671 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (IFLT x sum stdev x)))) sum)
-     (* (cos (log (* (- skew (- skew (IFLT x sum
-         (sin (IFLT x sum stdev x)) x))) C[0.5136324147795244])))
-         sum)) x) (log (log (IFLT x sum x x)))) (log
-     (IFLT (* (- skew (cos (* sum x))) (/ (sin
-         (IFLT (log C[0.9015192726268537]) (+ C[0.6844916424473985]
-             C[0.550191579639328]) C[0.6116687686714117]
-             (IFLT sum C[0.7698677021299459] skew C[0.476004022983049])))
-         (cos (sin (IFLT x sum stdev sum))))) sum
-         (IFLT x sum (+ (+ (+ (* (cos (log (log (IFLT
-             x sum stdev x)))) sum) (* (cos (log (log
-             (IFLT x sum stdev x)))) sum)) x) C[0.7736656803873188])
-             x) x))))))
+ high
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.5182974934177635 Adjusted=0.3970936724567945 Hits=685
+Fitness: Standardized=0.4326279163042871 Adjusted=0.6980179491264374 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos sum) sum (/ (+ (+ (* (cos (log (log
-     (* (+ C[0.4458167351831206] x) (/ x (cos
-         C[0.224004777771325])))))) sum) (* (cos (log
-     (log (IFLT x sum stdev x)))) sum)) x) (log
-     (log (IFLT x sum x x)))) (log (log (IFLT
-     x sum (+ (* (- skew (log (cos (cos (log (log
-     (IFLT x sum stdev x))))))) (log (log (log
-     (* C[0.6772947816847066] sum))))) C[0.7736656803873188])
-     x)))))))
+ high
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4716837387441246 Adjusted=0.4045825055709211 Hits=685
+Fitness: Standardized=0.43344670327963586 Adjusted=0.6976192401936276 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (cos (log (log (IFLT
-     x sum stdev x)))) sum) (* (cos (log (log
-     (IFLT x sum (/ (* sum stdev) (- x (sin C[0.8661267900403811])))
-         x)))) sum))))))
+ high
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4795718698465055 Adjusted=0.40329542860231904 Hits=685
+Fitness: Standardized=0.43220715791432784 Adjusted=0.6982230150673624 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (cos (log (log (IFLT
-     x sum stdev x)))) sum) (* (cos (log (log
-     (IFLT x sum (/ (* sum stdev) (* (cos stdev)
-         (cos sum))) x)))) sum))))))
+ high
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4636417110092736 Adjusted=0.4059031780194745 Hits=685
+Fitness: Standardized=0.4132887291585317 Adjusted=0.7075695003917546 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (+ (* C[0.6772947816847066]
-     sum) x) sum) (* (cos (log (log (IFLT x sum
-     (/ (* sum stdev) (- x (sin C[0.8661267900403811])))
-     x)))) sum))))))
+ high
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4636417110092736 Adjusted=0.4059031780194745 Hits=685
+Fitness: Standardized=0.43140667184506254 Adjusted=0.6986134825758596 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (+ (* C[0.6772947816847066]
-     sum) x) sum) (* (cos (log (log (IFLT x sum
-     (/ (* sum stdev) (- x (sin C[0.8661267900403811])))
-     x)))) sum))))))
+ high
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.462119032088969 Adjusted=0.4061542057743473 Hits=685
+Fitness: Standardized=0.4350760008831961 Adjusted=0.6968272059351316 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ sum x))))) sum) (* (* (cos (log (log
-     (* (log (IFLT x sum stdev x)) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (+ (* (- skew (* (IFLT
-     x sum (IFLT (/ (* sum stdev) (cos (IFLT x
-     x (cos C[0.224004777771325]) C[0.4430919861184395])))
-     stdev sum (log (cos (IFLT x x sum C[0.4430919861184395]))))
-     x) (cos (IFLT (log (log (log (* C[0.6772947816847066]
-     sum)))) sum C[0.224004777771325] x)))) (+
-     (* C[0.6772947816847066] sum) x)) C[0.7736656803873188])
-     sum) (* (cos (log (log (IFLT x sum (/ (*
-     sum stdev) (- x (sin C[0.8661267900403811])))
-     x)))) sum))))))
+ high
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4535953741714214 Adjusted=0.40756516356642536 Hits=685
+Fitness: Standardized=0.4332785780987007 Adjusted=0.6977010717110825 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (IFLT x sum stdev x) (+
-         (* C[0.6772947816847066] sum) x))))) sum)
-     (* (* (cos (log (log (* (log (IFLT x sum
-         stdev x)) (+ (* C[0.6772947816847066] sum)
-         x))))) sum) sum)) x) (log (log (IFLT x sum
-     x x)))) (+ (* (cos (log (log (IFLT x sum
-     stdev x)))) sum) (* (cos (log x)) sum))))))
+ high
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4600943933133306 Adjusted=0.4064884675637057 Hits=685
+Fitness: Standardized=0.42130318480099255 Adjusted=0.7035796518953257 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (cos (log (log (IFLT
-     x sum stdev x)))) sum) x)))))
+ high
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4544872153790511 Adjusted=0.4074170742199479 Hits=685
+Fitness: Standardized=0.4320022713949493 Adjusted=0.6983229146877503 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (IFLT x sum stdev x) (+
-         (* C[0.6772947816847066] sum) x))))) sum)
-     (* (* (cos (log (log (* (log (IFLT x sum
-         stdev x)) (+ (* C[0.6772947816847066] sum)
-         x))))) sum) sum)) x) (log (log (IFLT x sum
-     x x)))) (+ (* (cos (log (cos C[0.224004777771325])))
-     sum) (* (cos (log (log (IFLT x sum (/ (*
-     sum stdev) (* (cos stdev) (cos sum))) x))))
-     sum))))))
+ high
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.454475598518927 Adjusted=0.4074190024962632 Hits=685
+Fitness: Standardized=0.42832122379187676 Adjusted=0.7001226218183759 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) (* (* (cos (log (log (*
-     (log (IFLT x sum stdev x)) (IFLT x sum stdev
-     x))))) sum) sum)) x) (log (log (IFLT x sum
-     x x)))) (+ (* (cos (log (log (IFLT x sum
-     (IFLT x sum x x) x)))) sum) x)))))
+ high
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.454475598518927 Adjusted=0.4074190024962632 Hits=685
+Fitness: Standardized=0.43324935954349447 Adjusted=0.6977152952076049 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) (* (* (cos (log (log (*
-     (log (IFLT x sum stdev x)) (IFLT x sum stdev
-     x))))) sum) sum)) x) (log (log (IFLT x sum
-     x x)))) (+ (* (cos (log (log (IFLT x sum
-     (IFLT x sum x x) x)))) sum) x)))))
+ high
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.453553857714676 Adjusted=0.40757205995528223 Hits=685
+Fitness: Standardized=0.4117865066613301 Adjusted=0.7083223952641783 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (log (* (IFLT x sum x x) (+ (*
-         C[0.6772947816847066] sum) x))))) sum) (*
-     (* (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-         sum) sum)) x) (log (log (IFLT x sum x x))))
-     (+ (* (cos (log (cos (log (log (IFLT x sum
-         stdev x)))))) sum) (* (cos (log (log (* (log
-         (log (IFLT x sum stdev x))) sum)))) sum))))))
+ high
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4485176457447353 Adjusted=0.4084103709597087 Hits=685
+Fitness: Standardized=0.4332248275156831 Adjusted=0.6977272377658819 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4485176457447353 Adjusted=0.4084103709597087 Hits=685
+Fitness: Standardized=0.43370349364798394 Adjusted=0.6974942897401694 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4485176457447353 Adjusted=0.4084103709597087 Hits=685
+Fitness: Standardized=0.43417313961824255 Adjusted=0.6972658826020033 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4482101935757263 Adjusted=0.40846166012382 Hits=685
+Fitness: Standardized=0.4332255296562101 Adjusted=0.697726895947682 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (* C[0.6772947816847066]
-         sum) x) (+ x x))))) sum) (* (* (cos (log
-     (log (* (log (IFLT x sum stdev x)) (+ (*
-         C[0.6772947816847066] sum) x))))) sum) sum))
-     x) (log (log (IFLT x sum x x)))) (+ (* (cos
-     (log (log (* (log (IFLT x sum stdev x)) (IFLT
-         x sum stdev x))))) sum) x)))))
+ high
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.442869645300943 Adjusted=0.4093546300858012 Hits=685
+Fitness: Standardized=0.4332689311068147 Adjusted=0.69770576777086 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     (cos C[0.224004777771325]) sum (/ (+ (+ (*
-     (cos (log (* (IFLT x sum x x) (+ (* C[0.6772947816847066]
-         sum) x)))) sum) (* (* (cos (log (log (* (log
-     (IFLT x sum stdev x)) (+ (log (IFLT x sum
-     x x)) x))))) sum) sum)) x) (log (log (IFLT
-     x sum x x)))) (+ (* (cos (log (cos (log (log
-     (IFLT x sum stdev x)))))) sum) (* (cos (log
-     (log (* (log (log (IFLT x sum stdev x)))
-         sum)))) sum))))))
+ high
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4482101935757263 Adjusted=0.40846166012382 Hits=685
+Fitness: Standardized=0.42595771798008064 Adjusted=0.7012830656834168 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (* C[0.6772947816847066]
-         sum) x) (+ x x))))) sum) (* (* (cos (log
-     (log (* (log (IFLT x sum stdev x)) (+ (*
-         C[0.6772947816847066] sum) x))))) sum) sum))
-     x) (log (log (IFLT x sum x x)))) (+ (* (cos
-     (log (log (* (log (IFLT x sum stdev x)) (IFLT
-         x sum stdev x))))) sum) x)))))
+ high
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4482101935757263 Adjusted=0.40846166012382 Hits=685
+Fitness: Standardized=0.43511572240319474 Adjusted=0.6968079189637996 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (* C[0.6772947816847066]
-         sum) x) (+ x x))))) sum) (* (* (cos (log
-     (log (* (log (IFLT x sum stdev x)) (+ (*
-         C[0.6772947816847066] sum) x))))) sum) sum))
-     x) (log (log (IFLT x sum x x)))) (+ (* (cos
-     (log (log (* (log (IFLT x sum stdev x)) (IFLT
-         x sum stdev x))))) sum) x)))))
+ high
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.43348818106631953 Adjusted=0.6975990546752443 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.43106535592347045 Adjusted=0.6987801052277568 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.43549849113243094 Adjusted=0.696622118502628 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.43037665725227753 Adjusted=0.6991165543214178 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.37043795087856196 Adjusted=0.7296937445135103 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ max
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.4323341984554096 Adjusted=0.6981610863430985 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.4238872655455214 Adjusted=0.7023027905350911 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ max
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.419352766881944 Adjusted=0.7045464829697097 Hits=686
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ max
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.424601560286352 Adjusted=0.4124388998091288 Hits=664
+Fitness: Standardized=0.4343690376087482 Adjusted=0.6971706539811474 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (+ x x)))))
-     sum) (* (* (cos (log (log (* (log (IFLT x
-     sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ high
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4057313422172493 Adjusted=0.4156740124931602 Hits=679
+Fitness: Standardized=0.4008086018644916 Adjusted=0.713873400455272 Hits=687
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ max
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.4057313422172493 Adjusted=0.4156740124931602 Hits=679
+Fitness: Standardized=0.37292421361285283 Adjusted=0.7283723238943379 Hits=687
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* (* sum
-     C[0.9381321602448895]) (cos stdev)))) (+
-     (* (log (IFLT x sum stdev x)) sum) x)))))
+ max
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.3749462246138344 Adjusted=0.4210621653812813 Hits=676
+Fitness: Standardized=0.43437851591067034 Adjusted=0.6971660471121262 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* sum (cos
-     stdev)))) (+ (* (log (IFLT x sum stdev x))
-     sum) x)))))
+ high
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.278767890201327 Adjusted=0.4388336365015442 Hits=674
+Fitness: Standardized=0.4301605102445855 Adjusted=0.6992222151547034 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* sum (cos
-     stdev)))) (+ (* (log (* (* sum C[0.9381321602448895])
-     (cos stdev))) sum) x)))))
+ high
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.278767890201327 Adjusted=0.4388336365015442 Hits=674
+Fitness: Standardized=0.4343394050628421 Adjusted=0.6971850570863927 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* sum (cos
-     stdev)))) (+ (* (log (* (* sum C[0.9381321602448895])
-     (cos stdev))) sum) x)))))
+ high
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.278767890201327 Adjusted=0.4388336365015442 Hits=674
+Fitness: Standardized=0.4240757114509712 Adjusted=0.7022098558096421 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* sum (cos
-     stdev)))) (+ (* (log (* (* sum C[0.9381321602448895])
-     (cos stdev))) sum) x)))))
+ high
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.278767890201327 Adjusted=0.4388336365015442 Hits=674
+Fitness: Standardized=0.4350996547280457 Adjusted=0.6968157205706401 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ (* C[0.6772947816847066] sum) x)))))
-     sum) sum) (* (* (cos (log (log (* (log (IFLT
-     x sum stdev x)) (+ (* C[0.6772947816847066]
-     sum) x))))) sum) sum)) x) (log (* sum (cos
-     stdev)))) (+ (* (log (* (* sum C[0.9381321602448895])
-     (cos stdev))) sum) x)))))
+ high
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.1134896417569609 Adjusted=0.47315112420834576 Hits=676
+Fitness: Standardized=0.4334789359202541 Adjusted=0.6976035538032007 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (cos
-     (log (log (* (IFLT x sum (/ (* sum stdev)
-         (* (cos stdev) (cos sum))) x) (IFLT x sum
-         stdev x))))) sum) (* (* (* (cos (log (log
-     (* (log (IFLT x sum stdev x)) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) sum) sum)) x) (log (* (*
-     sum C[0.9381321602448895]) (cos stdev))))
-     (+ (* (log (IFLT (* C[0.6772947816847066]
-         sum) sum stdev x)) sum) x)))))
+ high
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0487950622258442 Adjusted=0.48809176595417203 Hits=685
+Fitness: Standardized=0.4284895272538668 Adjusted=0.7000401339465215 Hits=689
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (+ (* C[0.6772947816847066]
-         sum) x) (+ (* C[0.6772947816847066] sum)
-         x))))) sum) sum) (* (* (* (cos (log (log
-     (* (log (IFLT x sum stdev x)) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) sum) sum)) x) (log (* sum
-     (cos stdev)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0487950622258442 Adjusted=0.48809176595417203 Hits=685
+Fitness: Standardized=0.4323753263770154 Adjusted=0.6981410399810183 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (+ (* C[0.6772947816847066]
-         sum) x) (+ (* C[0.6772947816847066] sum)
-         x))))) sum) sum) (* (* (* (cos (log (log
-     (* (log (IFLT x sum stdev x)) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) sum) sum)) x) (log (* sum
-     (cos stdev)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=1.0487950622258442 Adjusted=0.48809176595417203 Hits=685
+Fitness: Standardized=0.4328990744044635 Adjusted=0.6978858580222174 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (+ (* C[0.6772947816847066]
-         sum) x) (+ (* C[0.6772947816847066] sum)
-         x))))) sum) sum) (* (* (* (cos (log (log
-     (* (log (IFLT x sum stdev x)) (+ (* C[0.6772947816847066]
-         sum) x))))) sum) sum) sum)) x) (log (* sum
-     (cos stdev)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.9486164978609268 Adjusted=0.5131846112858736 Hits=679
+Fitness: Standardized=0.4316000315084356 Adjusted=0.6985191240505415 Hits=688
 Tree 0:
- (* C[0.5136324147795244] (log (log (IFLT
-     C[0.7736656803873188] sum (/ (+ (+ (* (*
-     (cos (log (log (* (log (IFLT x sum stdev
-         x)) (+ x x))))) sum) sum) (* (* (* (cos (log
-     (log (* (log (IFLT x sum stdev x)) (+ (*
-         C[0.6772947816847066] sum) x))))) sum) sum)
-     sum)) x) (log (* (* sum C[0.9381321602448895])
-     (cos stdev)))) (+ (* (log (IFLT x sum stdev
-     x)) sum) x)))))
+ high
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.7172076206144892 Adjusted=0.5823407653188482 Hits=689
+Fitness: Standardized=0.37043795087856196 Adjusted=0.7296937445135103 Hits=688
 Tree 0:
- (* C[0.5940122099660289] (log sum))
+ max
