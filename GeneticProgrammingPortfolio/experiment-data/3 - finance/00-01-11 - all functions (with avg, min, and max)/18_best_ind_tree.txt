@@ -1,0 +1,11 @@
+STD: 0.026279286294489553
+
+
+ADJ: 0.8098051415266165
+HIT: 689
+
+
+Evaluated: T
+Fitness: d4597629922541575761|0.2348649677808106|i689|
+Tree 0:
+ (IFLT low (sin sum) (- avg min) avg)

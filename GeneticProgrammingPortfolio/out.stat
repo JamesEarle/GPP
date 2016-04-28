@@ -3,808 +3,2703 @@ Generation: 0
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4105751843712177 Adjusted=0.7089306625266933 Hits=686
+Fitness: Standardized=8.654931972183968 Adjusted=0.10357400786261549 Hits=376
 Tree 0:
- max
+ (IFLT (cos C[0.7033390195872292]) (log x)
+     (sin C[0.9743392306001447]) (sin x))
 
 Generation: 1
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=8.434752176202066 Adjusted=0.10599112529127896 Hits=377
 Tree 0:
- high
+ (sin (cos (/ (IFLT x C[0.7452538944153477]
+     C[0.23913389957570286] C[0.599862324835808])
+     (log x))))
 
 Generation: 2
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=8.1986400103726 Adjusted=0.10871172247988581 Hits=377
 Tree 0:
- high
+ (sin (cos (/ (IFLT (* (* x (cos x)) (/ (*
+     C[0.5897178614258605] x) (/ C[0.7932738093770091]
+     x))) x (/ (* (cos x) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (log C[0.6896650867290642]))
+     (log x))))
 
 Generation: 3
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43488217360906223 Adjusted=0.6969213350004674 Hits=688
+Fitness: Standardized=8.004730818231975 Adjusted=0.11105273663209224 Hits=375
 Tree 0:
- high
+ (sin (cos (/ (IFLT (* (* x (cos x)) (sin
+     C[0.9743392306001447])) x (/ (* (cos x) (log
+     C[0.49028090302960636])) C[0.36272428484320673])
+     (log C[0.6896650867290642])) (log x))))
 
 Generation: 4
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=6.844484389340821 Adjusted=0.12747810440655755 Hits=461
 Tree 0:
- high
+ (sin (cos (/ (IFLT (* (* x (cos x)) (/ (*
+     C[0.5897178614258605] x) (+ x C[0.8014098012461396])))
+     x (/ (log (sin C[0.9743392306001447])) C[0.36272428484320673])
+     (log C[0.6896650867290642])) (log x))))
 
 Generation: 5
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=5.194609847700455 Adjusted=0.16143066707763962 Hits=466
 Tree 0:
- high
+ (sin (cos (/ (IFLT (* (/ C[0.007296797571811342]
+     C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+     x) (/ C[0.7932738093770091] x))) x (/ (cos
+     C[0.6004934275821083]) C[0.36272428484320673])
+     (cos C[0.587415702817269])) (log x))))
 
 Generation: 6
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=5.299242376299355 Adjusted=0.15874924955459083 Hits=482
 Tree 0:
- high
+ (IFLT (sin (/ (IFLT C[0.12670868042375438]
+     C[0.19481078674233132] C[0.22061728601844022]
+     C[0.7745596795061922]) x)) (/ (/ (/ (log
+     (IFLT C[0.4246638829998307] x C[0.8664614438991213]
+         C[0.27302026864852946])) (- C[0.46156267617917934]
+     x)) (sin C[0.08549208937371389])) (- (cos
+     (* C[0.587736941639796] x)) (* (IFLT C[0.06268042603368762]
+     C[0.9257118733697006] C[0.27686401155721385]
+     C[0.8541466709181916]) (+ x C[0.8014098012461396]))))
+     C[0.6674430422006586] (log (sin (log (cos
+     C[0.2527087317668595])))))
 
 Generation: 7
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4354054160020902 Adjusted=0.6966672891518084 Hits=688
+Fitness: Standardized=4.539005710520712 Adjusted=0.18053781712133166 Hits=503
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* x (log (sin C[0.9743392306001447])))
+         (sin C[0.9743392306001447])) x (/ (* (cos
+         x) (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 8
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332274347194964 Adjusted=0.697725968520631 Hits=688
+Fitness: Standardized=4.242308874263717 Adjusted=0.1907556429781048 Hits=518
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* x (log (sin C[0.9743392306001447])))
+         (sin C[0.9743392306001447])) x (/ (/ C[0.007296797571811342]
+         C[0.7545185721084173]) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 9
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=4.539005710520712 Adjusted=0.18053781712133166 Hits=503
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (sin (/ x C[0.12240459615501464]))
+         (log x)) (log (sin C[0.9743392306001447])))
+         (sin C[0.9743392306001447])) x (/ (* (cos
+         x) (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 10
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=4.251592708092682 Adjusted=0.19041842267375464 Hits=518
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (* (IFLT C[0.12670868042375438] C[0.19481078674233132]
+         C[0.22061728601844022] C[0.7745596795061922])
+         (sin C[0.9743392306001447])) (log x)))))))
 
 Generation: 11
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.46102176165268816 Adjusted=0.6844525018359846 Hits=688
+Fitness: Standardized=4.078650783268021 Adjusted=0.19690268984324966 Hits=522
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (/ (sin (log x)) C[0.36272428484320673])
+         (log x)))))))
 
 Generation: 12
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.44459065903369094 Adjusted=0.6922376202189452 Hits=689
+Fitness: Standardized=3.468900700544572 Adjusted=0.22376867758062782 Hits=607
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (IFLT C[0.226696578986874]
+     x C[0.9105678941900096] C[0.11434262808529738]))
 
 Generation: 13
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.468900700544572 Adjusted=0.22376867758062782 Hits=607
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (IFLT C[0.226696578986874]
+     x C[0.9105678941900096] C[0.11434262808529738]))
 
 Generation: 14
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4652836061117484 Adjusted=0.6824617403954876 Hits=688
+Fitness: Standardized=3.988235751763165 Adjusted=0.2004716797209385 Hits=521
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log (log x))) x)) (sin
+     C[0.9743392306001447]) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (IFLT (log C[0.4610061914103486]) x (IFLT
+             x x C[0.0936230193835057] C[0.5947376080383099])
+             (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) (sin C[0.9743392306001447]))
+         x (/ (* (/ (sin (log x)) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 15
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4649964408740159 Adjusted=0.6825955149784533 Hits=688
+Fitness: Standardized=3.988235751763165 Adjusted=0.2004716797209385 Hits=521
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log (log x))) x)) (sin
+     C[0.9743392306001447]) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (IFLT (log C[0.4610061914103486]) x (IFLT
+             x x C[0.0936230193835057] C[0.5947376080383099])
+             (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) (sin C[0.9743392306001447]))
+         x (/ (* (/ (sin (log x)) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 16
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4634764603080009 Adjusted=0.6833044651702438 Hits=688
+Fitness: Standardized=3.6905370443617693 Adjusted=0.213195203564599 Hits=547
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (log (cos (cos
+     (IFLT C[0.49289560651117603] C[0.34728978757247886]
+         x C[0.9965735922420066]))))))
 
 Generation: 17
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.45167477844568193 Adjusted=0.6888595261472455 Hits=689
+Fitness: Standardized=3.396999080777036 Adjusted=0.2274278392214902 Hits=595
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (cos (log x))))
 
 Generation: 18
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.45992246299463424 Adjusted=0.6849678838071794 Hits=688
+Fitness: Standardized=2.9580387136423405 Adjusted=0.25265038377549404 Hits=628
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (cos (sin (log
+     x)))))
 
 Generation: 19
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4494863936255785 Adjusted=0.6898995426226217 Hits=689
+Fitness: Standardized=3.468900700544572 Adjusted=0.22376867758062782 Hits=607
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (IFLT C[0.36272428484320673]
+     x C[0.9105678941900096] C[0.11434262808529738])))
 
 Generation: 20
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4552872557813009 Adjusted=0.687149561729055 Hits=688
+Fitness: Standardized=3.468900700544572 Adjusted=0.22376867758062782 Hits=607
 Tree 0:
- low
+ (IFLT (sin (/ (- x (log x)) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] C[0.9105678941900096])
 
 Generation: 21
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.46205264561833165 Adjusted=0.6839698987563336 Hits=688
+Fitness: Standardized=3.618079358593942 Adjusted=0.21654023726098726 Hits=524
 Tree 0:
- low
+ (IFLT (sin (/ (- x (IFLT (log (log x)) x
+     (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+     (log x))) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (IFLT (sin C[0.9743392306001447])
+         x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) (log x))
+         x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 22
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.618079358593942 Adjusted=0.21654023726098726 Hits=524
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (IFLT (log C[0.4610061914103486])
+         x (* x x) (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) (/ (sin
+         (- x (log (log x)))) C[0.36272428484320673]))
+         x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 23
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.45673370875950525 Adjusted=0.6864672616463026 Hits=688
+Fitness: Standardized=3.614163378202241 Adjusted=0.21672401214142045 Hits=524
 Tree 0:
- low
+ (IFLT (IFLT C[0.36272428484320673] x C[0.9105678941900096]
+     C[0.11434262808529738]) (cos (* (/ C[0.007296797571811342]
+     C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (/ (sin (- (sin C[0.8384239503690362]) (-
+             C[0.8222930956070192] C[0.6944190295883282])))
+             x) x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x)) (log (sin C[0.9743392306001447])))
+         (log x)) x (/ (* (/ (sin (log (sin (log x))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (log C[0.6896650867290642]))
+         (log x)))))))
 
 Generation: 24
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.46163852572873537 Adjusted=0.6841636850680477 Hits=688
+Fitness: Standardized=3.6131055888514 Adjusted=0.21677370715656785 Hits=524
 Tree 0:
- low
+ (IFLT (sin (/ (- x (/ (log C[0.6896650867290642])
+     C[0.36272428484320673])) x)) (sin C[0.9743392306001447])
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT x C[0.36272428484320673]
+         C[0.0936230193835057] C[0.5947376080383099])
+         (log x)) (log (sin C[0.9743392306001447])))
+         (- x (log x))) x (/ (* (/ (sin (log (sin
+         (log x)))) C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (log C[0.6896650867290642]))
+         (log x)))))))
 
 Generation: 25
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.6127470875308814 Adjusted=0.2167905547440889 Hits=524
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (log
+     x))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+             C[0.5947376080383099]) (- x x)) x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 26
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.44861470838713297 Adjusted=0.6903146807845032 Hits=689
+Fitness: Standardized=3.6127470875308814 Adjusted=0.2167905547440889 Hits=524
 Tree 0:
- (IFLT (IFLT (* (IFLT x high vol vol) (* x
-     vol)) (* (IFLT vol sum low sum) high) vol
-     (* (IFLT vol low sum sum) open)) (sin (-
-     (+ low low) (/ stdev skew))) low min)
+ (IFLT (sin (/ (- x (sin (/ (- x (log (log
+     x))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (IFLT (log x) x (IFLT x x (* C[0.48337676973523613]
+             x) C[0.5947376080383099]) (- x x)) x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 27
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.6127470875308814 Adjusted=0.2167905547440889 Hits=524
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (log
+     x))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (sin C[0.9743392306001447]) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) x) x (/
+         (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 28
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4641062908234902 Adjusted=0.6830105206620944 Hits=688
+Fitness: Standardized=3.5995303556006712 Adjusted=0.21741350152898511 Hits=528
 Tree 0:
- low
+ (IFLT (sin (/ (- x (sin (/ (sin C[0.9743392306001447])
+     x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+             C[0.5947376080383099]) (- x x)) x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (/ (IFLT (/ (sin (- (sin C[0.8384239503690362])
+             (- C[0.8222930956070192] C[0.6944190295883282])))
+             x) x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+             (log x)) (log x))) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 29
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43844405773450934 Adjusted=0.6951956140546468 Hits=688
+Fitness: Standardized=3.5994396291552087 Adjusted=0.21741779012841891 Hits=528
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log x))) x)) (cos
+     (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x))
+         (log (sin C[0.9743392306001447]))) x) x (/
+         (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (/ (IFLT (/ (sin (- (sin C[0.8384239503690362])
+                 (- C[0.8222930956070192] C[0.6944190295883282])))
+                 x) x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+                 (log x)) (log x))) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 30
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.454605470955457 Adjusted=0.6874716340391257 Hits=688
+Fitness: Standardized=3.581847584894179 Adjusted=0.21825256765346893 Hits=526
 Tree 0:
- low
+ (IFLT (sin (/ (- x (sin (/ (- x (log C[0.44161968261127604]))
+     x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) C[0.6674430422006586]
+     (log (sin (log (cos (/ (IFLT (* (* (log (sin
+         (log x))) (log x)) x) x (/ (* (/ (sin (log
+         (sin (log x)))) C[0.36272428484320673]) (log
+         C[0.49028090302960636])) C[0.36272428484320673])
+         C[0.36272428484320673]) (log x)))))))
 
 Generation: 31
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4566569524407392 Adjusted=0.6865034339927628 Hits=688
+Fitness: Standardized=3.599261860453416 Adjusted=0.21742619366782817 Hits=528
 Tree 0:
- low
+ (IFLT (sin (/ (- x (/ (sin (log (sin (log
+     x)))) C[0.36272428484320673])) x)) (cos (*
+     (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     C[0.6674430422006586] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (IFLT (log x) x (log
+         C[0.6896650867290642]) (- x x)) x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (/ (IFLT (/ (sin (- (sin C[0.8384239503690362])
+             (- C[0.8222930956070192] C[0.6944190295883282])))
+             x) x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+             (log x)) (log x))) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 32
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4351268335965172 Adjusted=0.6968025240625859 Hits=688
+Fitness: Standardized=3.5178133561692024 Adjusted=0.22134601878461213 Hits=532
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (log
+     x))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (IFLT (log x)
+     x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (log (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x)) (log x)) (log
+         (sin C[0.9743392306001447]))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 33
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4469758755343126 Adjusted=0.6910965254557118 Hits=687
+Fitness: Standardized=3.5178133561692024 Adjusted=0.22134601878461213 Hits=532
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (IFLT (log x)
+     x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (log (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x)) (log x)) (log
+         (sin C[0.9743392306001447]))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 34
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4494604014718197 Adjusted=0.6899119141058107 Hits=689
+Fitness: Standardized=3.5104005020866396 Adjusted=0.22170980149930622 Hits=532
 Tree 0:
- low
+ (IFLT (sin (/ (- x (sin (/ (/ (- x (sin (/
+     (sin C[0.9743392306001447]) x))) x) x)))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (log (cos (/ (IFLT (* (* (/ (log (/ (- x
+         (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+         x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 35
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4357543953883453 Adjusted=0.6964979548117756 Hits=688
+Fitness: Standardized=3.5178133561692024 Adjusted=0.22134601878461213 Hits=532
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     C[0.9743392306001447]))) x))) x)) (cos (*
+     (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (log (cos (/ (IFLT (* (* (/ (log (/ (- x
+         (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+         x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 36
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.5028922118315573 Adjusted=0.22207948868339636 Hits=532
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (sin C[0.8384239503690362])
+     x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (IFLT (log x)
+     x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (log (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x)) (log x)) (log
+         (sin C[0.9743392306001447]))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 37
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.5018801397482267 Adjusted=0.22212941459075056 Hits=527
 Tree 0:
- high
+ (IFLT (cos C[0.3504609322330182]) (cos (*
+     (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (log (cos (/ (IFLT (* (* (/ (log (/ (/ (*
+         C[0.5897178614258605] x) C[0.9743392306001447])
+         x)) (log x)) (log C[0.6896650867290642]))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 38
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.458093264265344 Adjusted=0.22431114396275234 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (IFLT (log x)
+     x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (IFLT (IFLT
+         (log x) x (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x)) (log x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 39
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.436584871233942 Adjusted=0.2253985957721285 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (sin (log x)))) x))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (IFLT (IFLT
+         (log x) x (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x)) (log x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+         (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+             (* C[0.450893189039252] C[0.8761094736393165])
+             (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+             C[0.36878404738648163])))) (log x))))))
 
 Generation: 40
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.4224420776767026 Adjusted=0.22611941150065726 Hits=532
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (log (cos (/ (IFLT (* (* (/ (log (/ (- x
+         (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+         x)) (log x)) (log (sin C[0.9743392306001447])))
+         x) x (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (log C[0.6896650867290642])) (log x)))))))
 
 Generation: 41
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.4178291937562273 Adjusted=0.226355514471522 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (sin (log C[0.6896650867290642]))
+     (log (sin (cos (/ (IFLT (* (* (/ (IFLT (cos
+         (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (log x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+         (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+             (* C[0.450893189039252] C[0.8761094736393165])
+             (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+             C[0.36878404738648163])))) (log x))))))
 
 Generation: 42
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.417700455430535 Adjusted=0.2263621108060264 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (sin (log C[0.6896650867290642]))
+     (log (sin (cos (/ (IFLT (* (* (/ (IFLT (cos
+         (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (log x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+         (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (/ (log (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x)) (IFLT (log x)
+             x (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+             x x (IFLT C[0.9437058452467255] C[0.5058765915542113]
+             C[0.8069427360864679] x)) (- x x)))) (log
+         x))))))
 
 Generation: 43
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.4140227926366147 Adjusted=0.2265507105373765 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (+ C[0.793676163971683]
+     (sin (+ x x))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]))) (sin (log C[0.6896650867290642]))
+     (log (sin (cos (/ (IFLT (* (* (/ (IFLT (cos
+         (* (/ (sin (log x)) C[0.7545185721084173])
+             (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (log x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+         (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+             (* C[0.450893189039252] C[0.8761094736393165])
+             (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+             C[0.36878404738648163])))) (log x))))))
 
 Generation: 44
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.36892041450964 Adjusted=0.2288894978903474 Hits=536
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x)) (log x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x))) x (/ (/ (/ (log (+ x C[0.3965055694730818]))
+         (cos x)) (* x (/ (cos C[0.9951007022960044])
+         (- C[0.21819838626764432] x)))) C[0.36272428484320673])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (- x x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636]))))
+     (log x)) x (/ (log (sin C[0.9743392306001447]))
+     C[0.36272428484320673]) (log C[0.6896650867290642])))
+     x) x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (log (log (sin (log x))))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (/ (- x (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x)))))))
 
 Generation: 45
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43559142122405037 Adjusted=0.6965770240862506 Hits=688
+Fitness: Standardized=3.3627219857728443 Adjusted=0.2292146974437228 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/ (sin
+         (log x)) C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (log (log (sin
+         (log x)))) (log x))) (log x)) (log (log (sin
+         (log x))))) x) x (/ (* (/ (sin (log (sin
+         (log x)))) C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (* C[0.7346469151165137]
+         C[0.36878404738648163]) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 46
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.3627219857728443 Adjusted=0.2292146974437228 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x)) (log (sin
+     (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/ (sin
+         (log x)) C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (log (log (sin
+         (log x)))) (log x))) (log x)) (log (log (sin
+         (log x))))) x) x (/ (* (/ (sin (log (sin
+         (log x)))) C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT C[0.5897178614258605]
+         (sin C[0.017665578664204706]) (* C[0.450893189039252]
+         C[0.8761094736393165]) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x))))))
 
 Generation: 47
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358695544172102 Adjusted=0.696442094564697 Hits=688
+Fitness: Standardized=3.3627219857728443 Adjusted=0.2292146974437228 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (IFLT x (sin (log C[0.6896650867290642]))
+         C[0.0936230193835057] C[0.5947376080383099])
+         (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (* (/ (sin (log x)) C[0.7545185721084173])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (log (log (sin (log x)))) (log x))) (log
+     x)) (log (log (sin (log x))))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (* C[0.7346469151165137] C[0.36878404738648163])
+         (sin C[0.017665578664204706]) (- C[0.9743392306001447]
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 48
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4358158721437481 Adjusted=0.6964681331367006 Hits=688
+Fitness: Standardized=3.355799519173572 Adjusted=0.2295789775443408 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (sin C[0.6554529559225386])
+         (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x))) x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (log (log (sin (log x)))) (log x))) (log
+     x)) (log (log (sin (log x))))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT C[0.5897178614258605] (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 49
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4350689635541623 Adjusted=0.6968306230547631 Hits=688
+Fitness: Standardized=3.3557854784872148 Adjusted=0.22957971758225906 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (sin C[0.6554529559225386])
+         (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x))) x (/ (* (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) x) C[0.9743392306001447])
+         (/ (log (log (sin (log x)))) (log x))) (log
+     x)) (log (log (sin (log x))))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT C[0.5897178614258605] (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 50
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43264927964149497 Adjusted=0.6980075404430031 Hits=688
+Fitness: Standardized=3.3557854784872148 Adjusted=0.22957971758225906 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (sin C[0.6554529559225386])
+         (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]))) x (/ (* (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) x) C[0.9743392306001447])
+         (/ (log (log (sin (log x)))) (log x))) (log
+     x)) (log (log (sin (log x))))) x) x (/ (*
+     (/ (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT C[0.5897178614258605] (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x))))))
 
 Generation: 51
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4130492917225707 Adjusted=0.7076893961575501 Hits=689
+Fitness: Standardized=3.3556704864506273 Adjusted=0.22958577860991627 Hits=536
 Tree 0:
- high
+ (IFLT (sin (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636])))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     (IFLT (log x) x (sin C[0.6554529559225386])
+         (- x x)) (log (sin (cos (/ (IFLT (* (* (/
+     (IFLT (cos (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x))) x (/ (* (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) x) C[0.9743392306001447])
+         (/ (log (log (sin (log x)))) x)) (log x))
+     (log (log (sin (log x))))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (/ C[0.007296797571811342] C[0.7545185721084173]))
+     (log x))))))
 
 Generation: 52
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43032197222717217 Adjusted=0.6991432834125364 Hits=689
+Fitness: Standardized=3.296668750750171 Adjusted=0.23273844413195838 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x))) x (/ (/ (/ (log (+ x C[0.3965055694730818]))
+         (cos x)) (* x (/ (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x) (- C[0.21819838626764432] x)))) C[0.36272428484320673])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (- x x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636]))))
+     (log x)) x (/ (log (sin C[0.9743392306001447]))
+     C[0.36272428484320673]) (log C[0.6896650867290642])))
+     x) x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+         C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))))
 
 Generation: 53
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43270458949424406 Adjusted=0.6979805937196082 Hits=688
+Fitness: Standardized=3.296668750750171 Adjusted=0.23273844413195838 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (* C[0.7346469151165137]
+         C[0.36878404738648163]) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (- x x))) x (/ (/
+         (/ (log (+ x C[0.3965055694730818])) (cos
+             x)) (* x (/ (IFLT C[0.9437058452467255] C[0.5058765915542113]
+         C[0.8069427360864679] x) (- C[0.21819838626764432]
+         x)))) C[0.36272428484320673]) (/ (IFLT (IFLT
+         (log x) x (IFLT (- C[0.6554529559225386]
+         C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x)) (- x x)) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (log C[0.49028090302960636]))))
+     (log x)) x (/ (log (sin C[0.9743392306001447]))
+     C[0.36272428484320673]) (log C[0.6896650867290642])))
+     x) x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+         C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))))
 
 Generation: 54
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4353860911737119 Adjusted=0.6966766684929364 Hits=688
+Fitness: Standardized=3.288816822425462 Adjusted=0.23316453963973877 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x))) x (/ (/ (/ (log (+ x C[0.3965055694730818]))
+         (cos x)) (* x (/ (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x) (- C[0.21819838626764432] x)))) C[0.36272428484320673])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (- x x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447])))))) (log x)) x
+     (/ (log (sin C[0.9743392306001447])) C[0.36272428484320673])
+     (log C[0.6896650867290642]))) x) x (IFLT
+     x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+         C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))))
 
 Generation: 55
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4356749475138471 Adjusted=0.696536497855379 Hits=688
+Fitness: Standardized=3.288816822425462 Adjusted=0.23316453963973877 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x))) x (/ (/ (/ (log (+ x C[0.3965055694730818]))
+         (cos x)) (* x (/ (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x) (- C[0.21819838626764432] x)))) C[0.36272428484320673])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (- x x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447])))))) (log x)) x
+     (/ (log (sin C[0.9743392306001447])) C[0.36272428484320673])
+     (log C[0.6896650867290642]))) x) x (IFLT
+     x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+         C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))))
 
 Generation: 56
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4198093839495456 Adjusted=0.7043198976599636 Hits=689
+Fitness: Standardized=3.288816822425462 Adjusted=0.23316453963973877 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (IFLT (IFLT (log x) x (IFLT x x C[0.0936230193835057]
+         C[0.5947376080383099]) (IFLT (log x) x (IFLT
+         x x C[0.0936230193835057] C[0.5947376080383099])
+         (- x x))) x (/ (/ (/ (log (+ x C[0.3965055694730818]))
+         (cos x)) (* x (/ (IFLT C[0.9437058452467255]
+         C[0.5058765915542113] C[0.8069427360864679]
+         x) (- C[0.21819838626764432] x)))) C[0.36272428484320673])
+         (/ (IFLT (IFLT (log x) x (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+             C[0.5058765915542113] C[0.8069427360864679]
+             x)) (- x x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+     (sin (/ (- x x) x))) (log (* (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673]) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447])))))) (log x)) x
+     (/ (log (sin C[0.9743392306001447])) C[0.36272428484320673])
+     (log C[0.6896650867290642]))) x) x (IFLT
+     x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+         C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+         C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+         (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (IFLT (log x) x (log x) (log x))))))))
 
 Generation: 57
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4336159125264546 Adjusted=0.6975369004084956 Hits=688
+Fitness: Standardized=3.2881275349475763 Adjusted=0.233202019261357 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (log x) C[0.36272428484320673]) (log
+         x)) (log x))) (log x)) (log (log (sin (log
+     x))))) x) x (/ (* (/ (sin (/ (- x (/ (log
+     C[0.6896650867290642]) C[0.36272428484320673]))
+     x)) C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (log x) (sin (/ (- x x) x))) (log (* (/ (sin
+     C[0.9743392306001447]) C[0.36272428484320673])
+     (log C[0.49028090302960636])))) (log x))
+     x (/ (log (sin (log (log (sin (log x))))))
+     C[0.36272428484320673]) (log C[0.6896650867290642])))
+     x) x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (- x x)) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (/ (* (/ (sin (log (sin (log x))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (sin C[0.017665578664204706])
+         (/ (- x (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x)))))))
 
 Generation: 58
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.42462410659878097 Adjusted=0.7019395469780798 Hits=688
+Fitness: Standardized=3.2881275349475763 Adjusted=0.233202019261357 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (/ (- x (log (sin
+     (log x)))) x))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (log x) C[0.36272428484320673]) (log
+         x)) (log x))) (log x)) (log (log (sin (log
+     x))))) x) x (/ (* (/ (sin (/ (- x (/ (log
+     C[0.6896650867290642]) C[0.36272428484320673]))
+     x)) C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+     (log x)))))) (IFLT (/ (- x (IFLT (* (* (/
+     (log x) (sin (/ (- x x) x))) (log (* (/ (sin
+     C[0.9743392306001447]) C[0.36272428484320673])
+     (log C[0.49028090302960636])))) (log x))
+     x (/ (log (sin (log (log (sin (log x))))))
+     C[0.36272428484320673]) (log C[0.6896650867290642])))
+     x) x (IFLT x x C[0.0936230193835057] C[0.5947376080383099])
+     (- x x)) (log (sin (log (cos (/ (IFLT (*
+     (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ C[0.007296797571811342]
+         C[0.7545185721084173])) (log x)) (- (IFLT
+         (sin (- x x)) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+     (sin (log (sin (log x)))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (/ (* (/ (sin (log (sin (log x))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (sin C[0.017665578664204706])
+         (/ (- x (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log x)))))))
 
 Generation: 59
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332249033407656 Adjusted=0.6977272008524671 Hits=688
+Fitness: Standardized=3.2869724581031763 Adjusted=0.23326485294063734 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) C[0.6142608849418408] (log (sin
+     (log (cos (/ (IFLT (* (* (/ (IFLT (cos (*
+         (/ C[0.007296797571811342] C[0.7545185721084173])
+         (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+                 C[0.9966601177384914] C[0.6142608849418408])))
+             x) (log x))) (log x)) (- (IFLT (sin (sin
+         C[0.017665578664204706])) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x)))))))
 
 Generation: 60
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4326279163042871 Adjusted=0.6980179491264374 Hits=688
+Fitness: Standardized=3.2869724581031763 Adjusted=0.23326485294063734 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) C[0.6142608849418408] (log (sin
+     (log (cos (/ (IFLT (* (* (/ (IFLT (cos (*
+         (/ C[0.007296797571811342] C[0.7545185721084173])
+         (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+                 C[0.9966601177384914] C[0.6142608849418408])))
+             x) (log x))) (log x)) (- (IFLT (sin (sin
+         C[0.017665578664204706])) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x)))))))
 
 Generation: 61
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43344670327963586 Adjusted=0.6976192401936276 Hits=688
+Fitness: Standardized=3.2869724581031763 Adjusted=0.23326485294063734 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (/ C[0.25404508549189453]
+         C[0.2801943539269349])) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (sin C[0.9743392306001447])))) (log
+     x)))))) C[0.6142608849418408] (log (sin (log
+     (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x)))))))
 
 Generation: 62
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43220715791432784 Adjusted=0.6982230150673624 Hits=688
+Fitness: Standardized=3.2869724581031763 Adjusted=0.23326485294063734 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) C[0.6142608849418408] (log (sin
+     (log (cos (/ (IFLT (* (* (/ (IFLT (cos (*
+         (/ C[0.007296797571811342] C[0.7545185721084173])
+         (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (log (sin (log x))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x)))))))
 
 Generation: 63
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4132887291585317 Adjusted=0.7075695003917546 Hits=689
+Fitness: Standardized=3.2867354732078122 Adjusted=0.23327774859214456 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (log x))
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+     (log x)))))) C[0.6142608849418408] (log (sin
+     (log (cos (/ (IFLT (* (* (/ (IFLT (cos (*
+         (/ C[0.007296797571811342] C[0.7545185721084173])
+         (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (log (sin (log x))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (/ (log (* x C[0.9812046674216928])) (IFLT
+             (/ C[0.25404508549189453] C[0.2801943539269349])
+             (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+             C[0.9966601177384914] C[0.6142608849418408]))))
+         (log x)))))))
 
 Generation: 64
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43140667184506254 Adjusted=0.6986134825758596 Hits=688
+Fitness: Standardized=3.2865117272720266 Adjusted=0.23328992514769317 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x C[0.36272428484320673])
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (IFLT
+             (log x) x (log x) (log x)) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673])) C[0.36272428484320673])
+             (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+             (* C[0.450893189039252] C[0.8761094736393165])
+             (cos C[0.3504609322330182])) (cos (sin C[0.9743392306001447]))))
+         (log x)))))) C[0.6142608849418408] (log (sin
+     (log (cos (/ (IFLT (* (* (/ (IFLT (cos (*
+         (/ C[0.007296797571811342] C[0.7545185721084173])
+         (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (log x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+                 C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log x)))))))
 
 Generation: 65
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4350760008831961 Adjusted=0.6968272059351316 Hits=688
+Fitness: Standardized=3.285779321136052 Adjusted=0.23332979256965686 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (/ C[0.25404508549189453]
+         C[0.2801943539269349])) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (sin (log (sin (log x))))))) (log x))))))
+     C[0.6142608849418408] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])))))))))
 
 Generation: 66
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332785780987007 Adjusted=0.6977010717110825 Hits=688
+Fitness: Standardized=3.285779321136052 Adjusted=0.23332979256965686 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT C[0.9743392306001447] x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin (log
+         (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (cos (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+                 C[0.9966601177384914] C[0.6142608849418408])))
+             x) (log x))) (log x)) (- (IFLT (sin (sin
+         C[0.017665578664204706])) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])))))))))
 
 Generation: 67
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.42130318480099255 Adjusted=0.7035796518953257 Hits=689
+Fitness: Standardized=3.285779321136052 Adjusted=0.23332979256965686 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447])))) x)) (cos (*
+     (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (IFLT
+             (log x) x (log x) (/ C[0.25404508549189453]
+             C[0.2801943539269349])) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log x)) (log (log (sin (log x))))) x) x
+         (/ (* (/ (sin (log (log (sin (log x)))))
+             C[0.36272428484320673]) (log C[0.49028090302960636]))
+             C[0.36272428484320673]) (- (IFLT (sin (log
+         x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+         C[0.8761094736393165]) (cos C[0.3504609322330182]))
+         (cos (sin (log (sin (log x))))))) (log x))))))
+     C[0.6142608849418408] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])))))))))
 
 Generation: 68
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4320022713949493 Adjusted=0.6983229146877503 Hits=688
+Fitness: Standardized=3.2850716478865336 Adjusted=0.23336832664004953 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT C[0.9743392306001447] x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin (log
+         (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (cos (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+                 C[0.9966601177384914] C[0.6142608849418408])))
+             x) (log x))) (log x)) (- (IFLT (sin (sin
+         C[0.017665578664204706])) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log (+ x C[0.3965055694730818])))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+         x)) (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (- x (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log (- x (/ (log
+         C[0.6896650867290642]) C[0.36272428484320673])))))))))
 
 Generation: 69
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.42832122379187676 Adjusted=0.7001226218183759 Hits=689
+Fitness: Standardized=3.2850716478865336 Adjusted=0.23336832664004953 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* x (log (log (sin (log
+     x))))) x) x (/ (* (/ (sin (log (log (sin
+     (log x))))) C[0.36272428484320673]) (log
+     C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin (log
+         (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (sin (log (cos (/ (IFLT (* (* (/ (IFLT
+         (cos (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ C[0.36272428484320673] C[0.9743392306001447])))
+         x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (/ (* (/ (log (* x C[0.9812046674216928]))
+             (IFLT (/ C[0.25404508549189453] C[0.2801943539269349])
+                 (+ C[0.6986758133286066] x) x (IFLT x C[0.1680535652043258]
+                 C[0.9966601177384914] C[0.6142608849418408])))
+             x) (log x))) (log x)) (- (IFLT (sin (sin
+         C[0.017665578664204706])) (sin C[0.017665578664204706])
+         (/ (- x (/ (sin C[0.9743392306001447]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log (+ x C[0.3965055694730818])))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+         x)) (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (- x (/ (log C[0.6896650867290642]) C[0.36272428484320673]))
+             x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) (log (- x (/ (log
+         C[0.6896650867290642]) C[0.36272428484320673])))))))))
 
 Generation: 70
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43324935954349447 Adjusted=0.6977152952076049 Hits=688
+Fitness: Standardized=3.284222942530368 Adjusted=0.2334145569486576 Hits=538
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ C[0.8761094736393165] C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ C[0.007296797571811342] C[0.5955922549663631]))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (sin (log
+     x)) (sin C[0.017665578664204706]) (* C[0.450893189039252]
+     C[0.8761094736393165]) (cos C[0.3504609322330182]))
+     (cos (sin (log (sin (log x))))))) (log x))))))
+     C[0.6142608849418408] (log (sin (log (cos
+     (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+         C[0.7545185721084173]) (/ C[0.36272428484320673]
+         C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447]) (/ (* (/ (log (*
+         x C[0.9812046674216928])) (IFLT (/ C[0.25404508549189453]
+         C[0.2801943539269349]) (+ C[0.6986758133286066]
+         x) x (IFLT x C[0.1680535652043258] C[0.9966601177384914]
+         C[0.6142608849418408]))) x) (log x))) (log
+         x)) (- (IFLT (sin (sin C[0.017665578664204706]))
+         (sin C[0.017665578664204706]) (/ (- x (/
+         (sin C[0.9743392306001447]) C[0.36272428484320673]))
+         x) (cos C[0.3504609322330182])) (cos (* C[0.7346469151165137]
+         C[0.36878404738648163])))) x) x (/ (* (/
+         (sin (log (sin (log x)))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (/ C[0.007296797571811342]
+             C[0.5955922549663631]) (/ (- x (/ (log C[0.6896650867290642])
+             C[0.36272428484320673])) x) (cos C[0.3504609322330182]))
+             (cos (* C[0.7346469151165137] C[0.36878404738648163]))))
+         (log (- x (/ (IFLT (IFLT (log x) x (log x)
+             (/ C[0.25404508549189453] C[0.2801943539269349]))
+             x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+             (log x)) C[0.36272428484320673])))))))))
 
 Generation: 71
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4117865066613301 Adjusted=0.7083223952641783 Hits=689
+Fitness: Standardized=2.5481085249477764 Adjusted=0.281840308144103 Hits=637
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT C[0.9743392306001447] x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin (log
+         (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (cos (sin (log (sin (log x)))))))
 
 Generation: 72
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332248275156831 Adjusted=0.6977272377658819 Hits=688
+Fitness: Standardized=2.5481085249477764 Adjusted=0.281840308144103 Hits=637
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT C[0.9743392306001447] x (/ (sin
+         C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (log (log
+     (sin (log x))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (sin (log
+         (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (cos (sin (log (sin (log x)))))))
 
 Generation: 73
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43370349364798394 Adjusted=0.6974942897401694 Hits=688
+Fitness: Standardized=2.5481085249477764 Adjusted=0.281840308144103 Hits=637
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (IFLT (log x) x (log x) (/ C[0.25404508549189453]
+         C[0.2801943539269349])) x (/ (sin C[0.9743392306001447])
+         C[0.36272428484320673]) (log x)) (log x)))
+     (log x)) (log (log (sin (log x))))) x) x
+     (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (log x)) (log x))))))
+     C[0.6142608849418408] (cos (sin (log (sin
+     (log x))))))
 
 Generation: 74
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43417313961824255 Adjusted=0.6972658826020033 Hits=688
+Fitness: Standardized=2.5377582325034647 Adjusted=0.2826648782306298 Hits=637
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (/ C[0.007296797571811342] C[0.7545185721084173])
+     C[0.9743392306001447]) (/ (IFLT (IFLT (log
+     x) x (log x) (/ C[0.25404508549189453] C[0.2801943539269349]))
+     x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+     (log x)) (log x))) (log x)) (log (log (sin
+     (log x))))) x) x (/ (* (/ (sin (cos (sin
+     (log (sin (log x)))))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+         (sin C[0.017665578664204706]) (* C[0.450893189039252]
+         C[0.8761094736393165]) (cos C[0.3504609322330182]))
+         (cos (sin (log (sin (log x))))))) (log x))))))
+     C[0.6142608849418408] (cos (sin (log (sin
+     (log x))))))
 
 Generation: 75
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332255296562101 Adjusted=0.697726895947682 Hits=688
+Fitness: Standardized=2.5377093938446946 Adjusted=0.28266878046566307 Hits=637
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ C[0.007296797571811342]
+     (/ C[0.007296797571811342] C[0.7545185721084173])))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT C[0.9743392306001447]
+             x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+             (log x)) (log x))) (log x)) (log (log (sin
+             (log x))))) x) x (/ (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (sin (log x)) (sin C[0.017665578664204706])
+             (* C[0.450893189039252] C[0.8761094736393165])
+             (cos C[0.3504609322330182])) (cos (sin (log
+             (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (log (cos (sin (log (sin (log x)))))))
 
 Generation: 76
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4332689311068147 Adjusted=0.69770576777086 Hits=688
+Fitness: Standardized=1.6307975094271903 Adjusted=0.380112873155993 Hits=653
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (IFLT (- C[0.6554529559225386]
+     C[0.5589705329428163]) x x (IFLT C[0.9437058452467255]
+     C[0.5058765915542113] C[0.8069427360864679]
+     x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log (sin
+     (log x))))))) (log (log (sin (log x)))))
+     x) x (/ (* (/ (sin (log (log (sin (log x)))))
+     C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+     C[0.8761094736393165]) (sin C[0.017665578664204706])
+     (* C[0.450893189039252] C[0.8761094736393165])
+     (cos C[0.3504609322330182])) (cos (sin (log
+     (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 77
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.42595771798008064 Adjusted=0.7012830656834168 Hits=688
+Fitness: Standardized=1.6235965012190794 Adjusted=0.38115617227547766 Hits=653
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ C[0.007296797571811342]
+     C[0.5955922549663631])) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log (sin
+     (log x))))))) (log (log (sin (log x)))))
+     x) x (/ (* (/ (sin (log (log (sin (log x)))))
+     C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+     C[0.8761094736393165]) (sin C[0.017665578664204706])
+     (* C[0.450893189039252] C[0.8761094736393165])
+     (cos C[0.3504609322330182])) (cos (sin (log
+     (sin (log x))))))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 78
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43511572240319474 Adjusted=0.6968079189637996 Hits=688
+Fitness: Standardized=1.6235965012190794 Adjusted=0.38115617227547766 Hits=653
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ C[0.007296797571811342]
+     C[0.5955922549663631])) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log (sin
+     (log x))))))) (log (log (sin (log x)))))
+     x) x (/ (* (/ (sin (log (log (sin (log x)))))
+     C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+     C[0.8761094736393165]) (sin C[0.017665578664204706])
+     (* C[0.450893189039252] C[0.8761094736393165])
+     (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+     x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 79
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43348818106631953 Adjusted=0.6975990546752443 Hits=688
+Fitness: Standardized=1.5874470930793425 Adjusted=0.3864813323815219 Hits=666
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ C[0.007296797571811342]
+     C[0.5955922549663631])) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log (sin
+     (log x))))))) (log (log (sin (log x)))))
+     x) x (/ (* (/ (sin (log (log (sin (log x)))))
+     C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+     C[0.8761094736393165]) (sin C[0.017665578664204706])
+     (* C[0.450893189039252] C[0.8761094736393165])
+     (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+     x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (* (/ (sin
+         (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 80
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43106535592347045 Adjusted=0.6987801052277568 Hits=688
+Fitness: Standardized=1.5874470930793425 Adjusted=0.3864813323815219 Hits=666
 Tree 0:
- high
+ (IFLT (sin (/ (- x (/ C[0.007296797571811342]
+     C[0.5955922549663631])) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log (sin
+     (log x))))))) (log (log (sin (log x)))))
+     x) x (/ (* (/ (sin (log (log (sin (log x)))))
+     C[0.36272428484320673]) (log C[0.49028090302960636]))
+     C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+     C[0.8761094736393165]) (sin C[0.017665578664204706])
+     (* C[0.450893189039252] C[0.8761094736393165])
+     (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+     x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (* (/ (sin
+         (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 81
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43549849113243094 Adjusted=0.696622118502628 Hits=688
+Fitness: Standardized=1.587429922126851 Adjusted=0.38648389718628834 Hits=666
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log (sin (log x))))))) (log
+             (log (sin (log x))))) x) x (/ (* (/ (sin
+         (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+             (sin C[0.017665578664204706]) (* C[0.450893189039252]
+             C[0.8761094736393165]) (cos C[0.3504609322330182]))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (log
+     (sin (* (/ (sin (* (/ (sin (log (log (sin
+         (log x))))) C[0.36272428484320673]) (log
+         C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 82
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43037665725227753 Adjusted=0.6991165543214178 Hits=688
+Fitness: Standardized=1.587429922126851 Adjusted=0.38648389718628834 Hits=666
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log (sin (log x))))))) (log
+             (log (sin (log x))))) x) x (/ (* (/ (sin
+         (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636])) C[0.36272428484320673])
+         (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+             (sin C[0.017665578664204706]) (* C[0.450893189039252]
+             C[0.8761094736393165]) (cos C[0.3504609322330182]))
+             (cos (log x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (log (sin (* (/ (sin (* (/ (sin
+         (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636])))))))
 
 Generation: 83
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.37043795087856196 Adjusted=0.7296937445135103 Hits=688
+Fitness: Standardized=1.3552394899111098 Adjusted=0.4245852722339253 Hits=665
 Tree 0:
- max
+ (IFLT (sin (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log x)))))
+     (log (log (sin (log x))))) x) x (/ (* (/
+     (sin (log (log (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447])))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+         (sin C[0.017665578664204706]) (* C[0.450893189039252]
+         C[0.8761094736393165]) (cos C[0.3504609322330182]))
+         (cos (sin (log (sin (log x))))))) (log x))))))
+     C[0.6142608849418408] (cos (sin (log (sin
+     (* (log (/ (* C[0.5897178614258605] x) C[0.9743392306001447]))
+         (log C[0.49028090302960636])))))))
 
 Generation: 84
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4323341984554096 Adjusted=0.6981610863430985 Hits=688
+Fitness: Standardized=1.2953050553915253 Adjusted=0.43567193722292546 Hits=671
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) C[0.36272428484320673])
+             (log x)) (log x))) (log (cos (sin (log (sin
+             (log x))))))) (log (log (sin (log x)))))
+             x) x (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))
+         C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+         C[0.8761094736393165]) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+         x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (log (sin (* (/ (sin (* (/
+         (sin (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 85
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4238872655455214 Adjusted=0.7023027905350911 Hits=688
+Fitness: Standardized=1.2373079383389218 Adjusted=0.4469657407743545 Hits=672
 Tree 0:
- max
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) C[0.36272428484320673])
+             (log x)) (log x))) (log (cos (sin (log (sin
+             (log x))))))) (log (log (sin (log x)))))
+             x) x (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (sin C[0.017665578664204706]))
+         C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+         C[0.8761094736393165]) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+         x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (log (sin (* (/ (sin (* (/
+         (sin (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 86
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.419352766881944 Adjusted=0.7045464829697097 Hits=686
+Fitness: Standardized=1.2373079383389218 Adjusted=0.4469657407743545 Hits=672
 Tree 0:
- max
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) C[0.36272428484320673])
+             (log x)) (log x))) (log (cos (sin (log (sin
+             (log x))))))) (log (log (sin (log x)))))
+             x) x (/ (* (/ (sin (log (log (sin (log x)))))
+         C[0.36272428484320673]) (sin C[0.017665578664204706]))
+         C[0.36272428484320673]) (- (IFLT (* C[0.450893189039252]
+         C[0.8761094736393165]) (sin C[0.017665578664204706])
+         (* C[0.450893189039252] C[0.8761094736393165])
+         (cos C[0.3504609322330182])) (cos (* C[0.5897178614258605]
+         x)))) (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (log (sin (* (/ (sin (* (/
+         (sin (log (log (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 87
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4343690376087482 Adjusted=0.6971706539811474 Hits=688
+Fitness: Standardized=1.2274590495219884 Adjusted=0.4489420356412835 Hits=671
 Tree 0:
- high
+ (IFLT (sin (/ (sin C[0.9743392306001447])
+     C[0.36272428484320673])) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (* C[0.5897178614258605]
+     x) (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/
+     C[0.007296797571811342] C[0.7545185721084173])
+     (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+     x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+     (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+         x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+         (log x)) (log x))) (log (cos (sin (log x)))))
+     (log (log (sin (log x))))) x) x (/ (* (/
+     (sin (log (log (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447])))) C[0.36272428484320673])
+     (log C[0.49028090302960636])) C[0.36272428484320673])
+     (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+         (sin C[0.017665578664204706]) (* C[0.450893189039252]
+         C[0.8761094736393165]) (cos C[0.3504609322330182]))
+         (cos (* (/ C[0.007296797571811342] C[0.7545185721084173])
+             (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))))
+     (log x)))))) C[0.6142608849418408] (cos (sin
+     (log (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636])))))))
 
 Generation: 88
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4008086018644916 Adjusted=0.713873400455272 Hits=687
+Fitness: Standardized=1.2208835812061007 Adjusted=0.45027123819652337 Hits=671
 Tree 0:
- max
+ (IFLT (sin (/ C[0.3504609322330182] C[0.36272428484320673]))
+     (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+         (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log (sin (log x))))
+             (log x))) (log (cos (sin (log (sin (log x)))))))))
+     C[0.6142608849418408] (cos (sin (log (sin
+     (* (log (* C[0.5897178614258605] x)) (log
+         C[0.49028090302960636])))))))
 
 Generation: 89
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.37292421361285283 Adjusted=0.7283723238943379 Hits=687
+Fitness: Standardized=1.195929624085481 Adjusted=0.45538800015800185 Hits=677
 Tree 0:
- max
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log x))))) (log (log (sin
+             (log x))))) x) x (/ (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+             (sin C[0.017665578664204706]) (* C[0.450893189039252]
+             C[0.8761094736393165]) (cos C[0.3504609322330182]))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (sin (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])
+         C[0.5589705329428163])))))))
 
 Generation: 90
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.43437851591067034 Adjusted=0.6971660471121262 Hits=688
+Fitness: Standardized=1.1754965337763013 Adjusted=0.45966517733961443 Hits=677
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log x))))) (log (log (sin
+             (log x))))) x) x (/ (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (IFLT (/ C[0.007296797571811342] C[0.5955922549663631])
+             (sin C[0.017665578664204706]) (* C[0.450893189039252]
+             C[0.8761094736393165]) (cos C[0.3504609322330182]))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (sin (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         C[0.5589705329428163])) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 91
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4301605102445855 Adjusted=0.6992222151547034 Hits=688
+Fitness: Standardized=1.0444713649233546 Adjusted=0.48912399418100394 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (/ (sin
+     (* (/ (sin (log x)) C[0.36272428484320673])
+         (log C[0.49028090302960636]))) C[0.36272428484320673])))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) C[0.36272428484320673])
+             (* C[0.5897178614258605] x)) (log x))) (log
+             (cos (sin (log (sin (log x))))))) (log (log
+             (sin (log x))))) x) x (/ (* (/ (sin (log
+         (log (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (IFLT (* C[0.450893189039252] C[0.8761094736393165])
+             (sin C[0.017665578664204706]) (* C[0.450893189039252]
+             C[0.8761094736393165]) (cos C[0.3504609322330182]))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (log (sin (* (log (/ (* C[0.5897178614258605]
+         x) C[0.9743392306001447])) (log C[0.49028090302960636]))))
+         C[0.36272428484320673]) (log C[0.49028090302960636]))))))))
 
 Generation: 92
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4343394050628421 Adjusted=0.6971850570863927 Hits=688
+Fitness: Standardized=1.030725340028654 Adjusted=0.49243488535278224 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log x))))) (log (log (sin
+             (log x))))) x) x (/ (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (sin (* (/ (sin (log (log (sin (log x)))))
+             C[0.36272428484320673]) (log C[0.49028090302960636])))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 93
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4240757114509712 Adjusted=0.7022098558096421 Hits=689
+Fitness: Standardized=1.030725340028654 Adjusted=0.49243488535278224 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]))) x (/ (* C[0.5897178614258605]
+             x) C[0.9743392306001447]) (/ (IFLT (- C[0.6554529559225386]
+             C[0.5589705329428163]) x (/ (sin C[0.9743392306001447])
+             C[0.36272428484320673]) (log x)) (log x)))
+             (log (cos (sin (log x))))) (log (log (sin
+             (log x))))) x) x (/ (* (/ (sin (log (log
+         (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (sin (* (/ (sin (log (log (sin (log x)))))
+             C[0.36272428484320673]) (log C[0.49028090302960636])))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 94
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4350996547280457 Adjusted=0.6968157205706401 Hits=688
+Fitness: Standardized=1.030725340028654 Adjusted=0.49243488535278224 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (IFLT
+         (* (* (/ (IFLT (cos (* C[0.5955922549663631]
+             (/ (* C[0.5897178614258605] x) C[0.9743392306001447])))
+             x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+             (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+                 x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+                 (log x)) (log x))) (log (cos (sin (log x)))))
+             (log (log (sin (log x))))) x) x (/ (* (/
+         (sin (log (log (sin (log x))))) C[0.36272428484320673])
+         (sin C[0.017665578664204706])) C[0.36272428484320673])
+         (- (sin (* (/ (sin (log (log (sin (log x)))))
+             C[0.36272428484320673]) (log C[0.49028090302960636])))
+             (cos (* C[0.5897178614258605] x)))) (log
+         x)))))) C[0.6142608849418408] (cos (sin (sin
+     (log (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 95
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4334789359202541 Adjusted=0.6976035538032007 Hits=688
+Fitness: Standardized=1.030154217937945 Adjusted=0.49257341691790957 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (* C[0.5897178614258605] x) (cos (/ (sin
+         (* (log (/ (* C[0.5897178614258605] x) C[0.9743392306001447]))
+             (log C[0.49028090302960636]))) (log x))))))
+     C[0.6142608849418408] (cos (sin (sin (log
+     (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))))
 
 Generation: 96
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4284895272538668 Adjusted=0.7000401339465215 Hits=689
+Fitness: Standardized=0.9694969779554156 Adjusted=0.507743861093976 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (cos (/ (IFLT (* (* (/ (IFLT (cos (* (/ C[0.007296797571811342]
+             C[0.7545185721084173]) (* C[0.5897178614258605]
+             x))) x (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+             (/ (IFLT (- C[0.6554529559225386] C[0.5589705329428163])
+                 x (/ (sin C[0.9743392306001447]) C[0.36272428484320673])
+                 (log x)) (log x))) (log (cos (sin (log x)))))
+             (log (log (sin (log x))))) x) x (/ (* (/
+             (sin (log (log (sin (log x))))) C[0.36272428484320673])
+             (sin C[0.017665578664204706])) C[0.36272428484320673])
+             (- (sin (* (/ (sin (log (log (sin (log x)))))
+                 C[0.36272428484320673]) (log C[0.49028090302960636])))
+                 (cos (* C[0.5897178614258605] x)))) (log
+             x)))))) C[0.6142608849418408] (cos (sin (sin
+     (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))
 
 Generation: 97
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4323753263770154 Adjusted=0.6981410399810183 Hits=688
+Fitness: Standardized=0.924533400040087 Adjusted=0.5196064666787131 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (sin (log (sin (log x)))))
+     x)) (cos (* (/ C[0.007296797571811342] C[0.5955922549663631])
+     (/ (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (cos (sin (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))
 
 Generation: 98
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4328990744044635 Adjusted=0.6978858580222174 Hits=688
+Fitness: Standardized=0.9211617528562911 Adjusted=0.5205183782746289 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (cos (- (sin (- C[0.9913898406491012]
+     x)) (cos x)))) x)) (cos (* (/ C[0.007296797571811342]
+     C[0.5955922549663631]) (/ (/ (* C[0.5897178614258605]
+     x) C[0.9743392306001447]) (cos (sin (log
+     x)))))) C[0.6142608849418408] (cos (sin (sin
+     (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))
 
 Generation: 99
 Best Individual:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.4316000315084356 Adjusted=0.6985191240505415 Hits=688
+Fitness: Standardized=0.9193209799109775 Adjusted=0.5210175944861407 Hits=676
 Tree 0:
- high
+ (IFLT (sin (/ (- x (log x)) x)) (cos (* (/
+     C[0.007296797571811342] C[0.5955922549663631])
+     (/ (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (cos (sin (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))
 
 Best Individual of Run:
 Subpopulation 0:
 Evaluated: true
-Fitness: Standardized=0.37043795087856196 Adjusted=0.7296937445135103 Hits=688
+Fitness: Standardized=0.9193209799109775 Adjusted=0.5210175944861407 Hits=676
 Tree 0:
- max
+ (IFLT (sin (/ (- x (log x)) x)) (cos (* (/
+     C[0.007296797571811342] C[0.5955922549663631])
+     (/ (/ (* C[0.5897178614258605] x) C[0.9743392306001447])
+         (cos (sin (log x)))))) C[0.6142608849418408]
+     (cos (sin (sin (* (/ (sin (* (log (* C[0.5897178614258605]
+         x)) (log C[0.49028090302960636]))) C[0.36272428484320673])
+         (log C[0.49028090302960636]))))))
